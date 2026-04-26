@@ -73,6 +73,7 @@ p{margin:0 0 10px}p:last-child{margin-bottom:0}
 .rt-l{font-family:'Inter Tight',sans-serif;font-size:11px;font-weight:600;color:rgba(255,255,255,.55);margin-top:2px}
 @keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
 .flt{animation:flt 4.5s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 
 /* ── BRANDS ── */
 #brands{padding:24px 0;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);overflow:hidden}
@@ -133,9 +134,9 @@ section{padding:86px 0}
 .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;overflow-x:auto;padding:0 0 16px}
 @media(max-width:1200px){.pgrid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:768px){.pgrid{grid-template-columns:1fr}}
-.pcard{border-radius:16px;overflow:hidden;transition:transform .3s,box-shadow .3s}
-.pcard:hover{transform:translateY(-5px);box-shadow:0 15px 46px rgba(0,0,0,.28)}
-.cw{background:#fff}.cl2{background:#c5c9f5}.cm{background:#8b92ec}.cd{background:#5a5fcf;position:relative}
+.pcard{border-radius:16px;overflow:hidden;transition:transform .3s,box-shadow .3s;background:linear-gradient(135deg,rgba(255,206,0,.08),rgba(208,0,0,.08));border:1.5px solid;border-image:linear-gradient(135deg,#ffce00,#d00000) 1}
+.pcard:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(255,206,0,.15)}
+.cw{background:linear-gradient(135deg,#f5f5f5,#ffffff);border:1.5px solid rgba(255,206,0,.2)}.cl2{background:linear-gradient(135deg,rgba(255,206,0,.12),rgba(208,0,0,.08));border:1.5px solid rgba(255,206,0,.3)}.cm{background:linear-gradient(135deg,rgba(255,206,0,.18),rgba(208,0,0,.12));border:1.5px solid rgba(255,206,0,.4)}.cd{background:linear-gradient(135deg,rgba(255,206,0,.25),rgba(208,0,0,.18));border:1.5px solid rgba(255,206,0,.5);position:relative}
 .cbdg{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#f5a623;color:#fff;font-family:'Inter Tight',sans-serif;font-size:10px;font-weight:800;padding:3px 11px;border-radius:99px;white-space:nowrap}
 .pin{padding:24px 19px}
 .pdur{font-family:'Inter Tight',sans-serif;font-size:14px;font-weight:700;margin-bottom:5px}
@@ -149,9 +150,8 @@ section{padding:86px 0}
 .cm .pper,.cd .pper{color:rgba(255,255,255,.46)}
 .pfts{list-style:none;margin:0 0 18px}
 .pfts li{display:flex;align-items:flex-start;gap:6px;font-size:12px;margin-bottom:4px;line-height:1.38}
-.pbtn{display:block;text-align:center;padding:10px;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:13px;transition:opacity .2s;text-decoration:none}
-.cw .pbtn,.cl2 .pbtn{background:#5a5fcf;color:#fff}.cm .pbtn{background:#fff;color:#8b92ec}.cd .pbtn{background:#fff;color:#5a5fcf}
-.pbtn:hover{opacity:.85}
+.pbtn{display:block;text-align:center;padding:10px;border-radius:8px;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:13px;transition:opacity .2s,transform .2s;text-decoration:none;background:linear-gradient(135deg,#ffce00,#d00000);color:#1a1a1a}
+.pbtn:hover{opacity:.95;transform:translateY(-2px)}
 .pnote{text-align:center;margin-top:20px;color:rgba(255,255,255,.28);font-size:12px}
 
 /* ── FEATURES ── */
@@ -287,17 +287,32 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
 <nav id="nav">
   <div class="ni">
     <a href="index.html" class="logo-a">
-      <!-- Germany Flag -->
-      <svg class="logo-gate" width="32" height="24" viewBox="0 0 5 3" xmlns="http://www.w3.org/2000/svg">
-        <rect width="5" height="1" fill="#000"/>
-        <rect y="1" width="5" height="1" fill="#D00"/>
-        <rect y="2" width="5" height="1" fill="#FFCE00"/>
+      <!-- Animated Germany Flag Logo -->
+      <svg width="40" height="40" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg" style="animation:float 3s ease-in-out infinite">
+        <defs>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <!-- Flag stripes -->
+        <rect x="10" y="15" width="80" height="20" fill="#000" filter="url(#glow)"/>
+        <rect x="10" y="35" width="80" height="20" fill="#d00000" filter="url(#glow)"/>
+        <rect x="10" y="55" width="80" height="20" fill="#ffce00" filter="url(#glow)"/>
+        <!-- Animated circle overlay -->
+        <circle cx="50" cy="45" r="25" fill="none" stroke="#ffce00" stroke-width="2" opacity="0.6">
+          <animate attributeName="r" values="25;35;25" dur="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+        </circle>
       </svg>
       <div class="logo-txt" style="font-size:1.1rem"><span class="w">IPTV</span><span class="o" style="font-size:0.85em">KAUFEN</span></div>
     </a>
     <ul class="nmenu">
       <li><a href="index.html">Heim</a></li>
-      <li><a href="preise.html">Preise</a></li>
+      <li><a href="/preise.html">Preise</a></li>
       <li><a href="faqs.html">FAQs</a></li>
       <li><a href="kontakt.html">Kontaktiere uns</a></li>
     </ul>
@@ -307,7 +322,7 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
 </nav>
 <div class="mmenu" id="mm">
   <a href="index.html">Heim</a>
-  <a href="preise.html">Preise</a>
+  <a href="/preise.html">Preise</a>
   <a href="faqs.html">FAQs</a>
   <a href="kontakt.html">Kontaktiere uns</a>
   <a href="/whatsapp-kontakt" target="_blank" style="background:linear-gradient(135deg,#043fff,#00d4d6);border-radius:50px;text-align:center;margin-top:12px;display:block;padding:11px 0;font-family:'Inter Tight',sans-serif;font-weight:700;font-size:14px;color:#fff;border-bottom:none">Kostenloser Test</a>
@@ -322,7 +337,7 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
       <h1 class="h-title" style="font-size:clamp(28px,5vw,48px)">IPTV kaufen bei IPTVV.DE</h1>
       <p class="h-desc" style="font-size:16px;max-width:100%">Zuverlässige Server ohne Einfrieren, kristallklare 4K&#8209;Qualität, täglich aktualisierte Inhalte mit Filmen, Serien, Sport und Live&#8209;TV.</p>
       <div class="h-btns" style="justify-content:center">
-        <a href="preise.html" class="btn">Jetzt starten</a>
+        <a href="/preise.html" class="btn">Jetzt starten</a>
         <a href="/whatsapp-kontakt" class="btn-ol">WhatsApp Test</a>
       </div>
     </div>
@@ -479,7 +494,7 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
           <div class="pb"><div class="pbh"><span class="pblbl">22.000+ Kanäle</span><span class="pbpct">92%</span></div><div class="pbtr"><div class="pbfill" data-w="92"></div></div></div>
           <div class="pb"><div class="pbh"><span class="pblbl">Server-Stabilität</span><span class="pbpct">99%</span></div><div class="pbtr"><div class="pbfill" data-w="99"></div></div></div>
         </div>
-        <a href="preise.html" class="btn" style="margin-top:24px">Jetzt buchen</a>
+        <a href="/preise.html" class="btn" style="margin-top:24px">Jetzt buchen</a>
       </div>
     </div>
   </div>
@@ -527,7 +542,7 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
         <div class="sp-tags">
           <span class="sp-tag">Bundesliga</span><span class="sp-tag">Champions League</span><span class="sp-tag">Basketball</span><span class="sp-tag">Boxen</span><span class="sp-tag">Tennis</span><span class="sp-tag">Formel 1</span>
         </div>
-        <a href="preise.html" class="btn" style="margin-top:24px">Zugriff erhalten</a>
+        <a href="/preise.html" class="btn" style="margin-top:24px">Zugriff erhalten</a>
       </div>
       <div class="revr">
         <div class="sp-icons">
@@ -563,7 +578,7 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
       </div>
       <div class="fc2">
         <h4>Schnelllinks</h4>
-        <ul class="fl"><li><a href="preise.html">Preisgestaltung</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="#">Datenschutzrichtlinie</a></li><li><a href="#">Geschäftsbedingungen</a></li><li><a href="#">Rückerstattungsrichtlinie</a></li></ul>
+        <ul class="fl"><li><a href="/preise.html">Preisgestaltung</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="#">Datenschutzrichtlinie</a></li><li><a href="#">Geschäftsbedingungen</a></li><li><a href="#">Rückerstattungsrichtlinie</a></li></ul>
       </div>
       <div class="fc2">
         <h4>Support</h4>
