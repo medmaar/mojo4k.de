@@ -291,38 +291,47 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
 }
 @media(max-width:480px){.g-grid{grid-template-columns:1fr}.stgr{grid-template-columns:1fr 1fr}}
 
-/* ════ GERMANY FLAG GRADIENT ON EVERY PRICING CARD ════ */
+/* ════ PRICING CARD GRADIENT ════ */
 .pcard.cw,
 .pcard.cl2,
 .pcard.cm,
 .pcard.cd {
-  background: linear-gradient(90deg, rgba(255,0,21,0.18) 0%, rgba(49,54,50,0.22) 50%, rgba(255,229,0,0.16) 100%) !important;
-  border: 1.5px solid rgba(255,229,0,0.38) !important;
-  box-shadow: 0 6px 32px rgba(255,0,21,0.2) !important;
+  background: linear-gradient(160deg,#c97e00 0%,#8a0000 100%) !important;
+  border: 2px solid rgba(255,206,0,0.7) !important;
+  box-shadow: 0 6px 32px rgba(255,160,0,0.35) !important;
   border-radius: 18px !important;
   overflow: visible !important;
 }
+.pcard.cd {
+  border-color: #FFD700 !important;
+  box-shadow: 0 6px 40px rgba(255,160,0,0.5) !important;
+}
 .pcard.cw:hover,.pcard.cl2:hover,.pcard.cm:hover,.pcard.cd:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(255,0,21,0.3) !important;
+  box-shadow: 0 16px 48px rgba(255,160,0,0.55) !important;
 }
-/* All card text white — gradient bg is semi-transparent with dark midpoint */
-.pcard .pdur { color: #fff !important; }
+.pcard .pdur { color: #FFD700 !important; }
 .pcard .pam  { color: #fff !important; }
-.pcard .pcu  { color: rgba(255,255,255,.8) !important; }
-.pcard .pper { color: rgba(255,255,255,.52) !important; }
-.pcard .pfts li { color: rgba(255,255,255,.88) !important; }
-/* Frosted glass button on each card */
+.pcard .pcu  { color: #FFD700 !important; }
+.pcard .pper { color: rgba(255,220,120,0.7) !important; }
+.pcard .pfts li { color: rgba(255,255,255,.92) !important; }
+.pcard .pfts li::before { color: #FFD700 !important; }
 .pcard .pbtn {
-  background: rgba(255,255,255,0.15) !important;
+  background: rgba(0,0,0,0.3) !important;
   color: #fff !important;
-  border: 1.5px solid rgba(255,255,255,0.38) !important;
+  border: 1.5px solid rgba(255,206,0,0.6) !important;
   backdrop-filter: blur(6px);
 }
+.pcard.cd .pbtn {
+  background: linear-gradient(135deg,#FFD700,#CC0000) !important;
+  border: none !important;
+  box-shadow: 0 4px 18px rgba(255,160,0,0.4) !important;
+}
 .pcard .pbtn:hover {
-  background: rgba(255,255,255,0.25) !important;
+  background: linear-gradient(135deg,#FFD700,#CC0000) !important;
+  border-color: transparent !important;
+  box-shadow: 0 6px 22px rgba(255,160,0,0.5) !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;
 }
 
 /* ── CANONICAL NAV ── */
