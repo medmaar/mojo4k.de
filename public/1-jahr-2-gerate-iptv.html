@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
+<title>IPTV Paket – IPTVV.DE</title>
+<meta name="description" content="IPTV Paket Details – Deutschlands führender IPTV Anbieter."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#ff5266;--gfrom:#ff9a3e;--gto:#ff5266}
+html{scroll-behavior:smooth}
+body{background:#140438;color:#fff;font-family:'Lato',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+a{color:#fff;text-decoration:none}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gfrom),var(--gto));color:#fff;font-family:'Inter Tight',sans-serif;font-weight:700;padding:0 34px;line-height:50px;border-radius:50px;border:none;cursor:pointer;font-size:15px;transition:opacity .3s,transform .2s;text-decoration:none}
+.btn:hover{opacity:.88;transform:translateY(-1px)}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,4,30,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s}
+.ni{max-width:1200px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo-a{display:flex;align-items:center;gap:9px;text-decoration:none}
+.logo-txt{font-family:'Inter Tight',sans-serif;font-weight:900;font-size:1.1rem;letter-spacing:.05em;line-height:1}
+.logo-txt .w{color:#fff}
+.logo-txt .o{background:linear-gradient(135deg,#ff9a3e,#ff5266);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nmenu{display:flex;gap:26px;list-style:none}
+.nmenu a{color:rgba(255,255,255,.7);font-size:14px;font-weight:600;transition:color .2s}
+.ncta{background:linear-gradient(135deg,#043fff,#00d4d6);color:#fff;font-family:'Inter Tight',sans-serif;font-weight:700;padding:0 24px;line-height:42px;border-radius:50px;font-size:13px;transition:opacity .2s}
+
+/* MAIN */
+main{padding:100px 20px 60px;min-height:100vh}
+.plan-hero{text-align:center;margin-bottom:50px}
+.plan-hero h1{font-family:'Inter Tight',sans-serif;font-size:clamp(28px,5vw,42px);font-weight:900;margin-bottom:16px}
+.plan-hero p{color:rgba(255,255,255,.65);font-size:16px;max-width:600px;margin:0 auto 30px}
+
+.plan-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:40px}
+.plan-card{background:rgba(255,255,255,.034);border:1px solid rgba(255,255,255,.07);border-radius:17px;padding:28px;transition:all .3s}
+.plan-card:hover{transform:translateY(-4px);background:rgba(255,255,255,.054)}
+.plan-duration{font-family:'Inter Tight',sans-serif;font-size:14px;font-weight:700;color:rgba(255,255,255,.65);margin-bottom:8px}
+.plan-price{font-size:clamp(32px,4vw,42px);font-weight:900;margin-bottom:4px}
+.plan-per{font-size:12px;color:rgba(255,255,255,.45);margin-bottom:20px}
+.plan-features{list-style:none;margin:20px 0;font-size:13px}
+.plan-features li{padding:8px 0;display:flex;gap:8px;color:rgba(255,255,255,.75)}
+.plan-features li::before{content:'✓';color:#4caf50;font-weight:700;flex-shrink:0}
+.plan-btn{display:block;width:100%;text-align:center;padding:12px;background:linear-gradient(135deg,var(--gfrom),var(--gto));color:#fff;font-weight:700;border-radius:8px;text-decoration:none;margin-top:24px;transition:opacity .2s}
+.plan-btn:hover{opacity:.88}
+
+footer{background:#0a0120;padding:48px 0 20px;border-top:1px solid rgba(255,255,255,.05)}
+.footer-content{max-width:1200px;margin:0 auto;padding:0 20px;text-align:center}
+.footer-content p{font-size:12px;color:rgba(255,255,255,.45)}
+
+@media(max-width:768px){
+  main{padding:80px 16px 40px}
+  .plan-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="ni">
+    <a href="index.html" class="logo-a">
+      <svg class="logo-gate" width="32" height="24" viewBox="0 0 5 3" xmlns="http://www.w3.org/2000/svg">
+        <rect width="5" height="1" fill="#000"/>
+        <rect y="1" width="5" height="1" fill="#D00"/>
+        <rect y="2" width="5" height="1" fill="#FFCE00"/>
+      </svg>
+      <div class="logo-txt" style="font-size:1.1rem"><span class="w">IPTV</span><span class="o" style="font-size:0.85em">KAUFEN</span></div>
+    </a>
+    <ul class="nmenu">
+      <li><a href="index.html">Heim</a></li>
+      <li><a href="preise.html">Preise</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="kontakt.html">Kontaktiere uns</a></li>
+    </ul>
+    <a href="/whatsapp-kontakt" class="ncta">Kostenloser Test</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main>
+  <div class="container">
+    <div class="plan-hero">
+      <h1 id="planTitle">IPTV Paket laden...</h1>
+      <p id="planDesc">Bitte einen Moment Geduld...</p>
+    </div>
+    <div class="plan-grid" id="planContent"></div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <p>© 2026 IPTVV.DE – Alle Rechte vorbehalten | Nur für legale Inhalte.</p>
+  </div>
+</footer>
+
+<script>
+// Plan data from URL
+const plans = {
+  '1-monat-1-gerat-iptv': {
+    title: '1 Monat – 1 Gerät',
+    duration: '1 Monat',
+    price: '9€',
+    desc: 'Flexibles Abonnement für 1 Gerät'
+  },
+  '3-monate-1-gerat-iptv': {
+    title: '3 Monate – 1 Gerät',
+    duration: '3 Monate',
+    price: '29€',
+    desc: 'Sparen Sie mit unserm 3-Monats-Plan'
+  },
+  '6-monate-1-gerat-iptv': {
+    title: '6 Monate – 1 Gerät',
+    duration: '6 Monate',
+    price: '39€',
+    desc: 'Halbjahresplan mit noch mehr Ersparnissen'
+  },
+  '1-jahr-1-gerat-iptv': {
+    title: '1 Jahr – 1 Gerät',
+    duration: '1 Jahr',
+    price: '49€',
+    desc: 'Bester Preis – Ganzes Jahr Zugriff'
+  },
+  '1-monat-2-gerate-iptv': {
+    title: '1 Monat – 2 Geräte',
+    duration: '1 Monat',
+    price: '18€',
+    desc: 'Flexibel mit 2 Geräten gleichzeitig'
+  },
+  '3-monate-2-gerate-iptv': {
+    title: '3 Monate – 2 Geräte',
+    duration: '3 Monate',
+    price: '50€',
+    desc: 'Sparen Sie mit 2 Geräten'
+  },
+  '6-monate-2-gerate-iptv': {
+    title: '6 Monate – 2 Geräte',
+    duration: '6 Monate',
+    price: '69€',
+    desc: 'Halbjahresplan – 2 Geräte'
+  },
+  '1-jahr-2-gerate-iptv': {
+    title: '1 Jahr – 2 Geräte',
+    duration: '1 Jahr',
+    price: '89€',
+    desc: 'Ganzes Jahr – 2 Geräte'
+  },
+  '1-monat-3-gerate-iptv': {
+    title: '1 Monat – 3 Geräte',
+    duration: '1 Monat',
+    price: '27€',
+    desc: 'Flexibel mit 3 Geräten'
+  },
+  '3-monate-3-gerate-iptv': {
+    title: '3 Monate – 3 Geräte',
+    duration: '3 Monate',
+    price: '75€',
+    desc: 'Sparen Sie mit 3 Geräten'
+  },
+  '6-monate-3-gerate-iptv': {
+    title: '6 Monate – 3 Geräte',
+    duration: '6 Monate',
+    price: '105€',
+    desc: 'Halbjahresplan – 3 Geräte'
+  },
+  '1-jahr-3-gerate-iptv': {
+    title: '1 Jahr – 3 Geräte',
+    duration: '1 Jahr',
+    price: '135€',
+    desc: 'Ganzes Jahr – 3 Geräte'
+  },
+  '1-monat-4-gerate-iptv': {
+    title: '1 Monat – 4 Geräte',
+    duration: '1 Monat',
+    price: '36€',
+    desc: 'Flexibel mit 4 Geräten'
+  },
+  '3-monate-4-gerate-iptv': {
+    title: '3 Monate – 4 Geräte',
+    duration: '3 Monate',
+    price: '99€',
+    desc: 'Sparen Sie mit 4 Geräten'
+  },
+  '6-monate-4-gerate-iptv': {
+    title: '6 Monate – 4 Geräte',
+    duration: '6 Monate',
+    price: '140€',
+    desc: 'Halbjahresplan – 4 Geräte'
+  },
+  '1-jahr-4-gerate-iptv': {
+    title: '1 Jahr – 4 Geräte',
+    duration: '1 Jahr',
+    price: '180€',
+    desc: 'Ganzes Jahr – 4 Geräte'
+  },
+  '1-monat-5-gerate-iptv': {
+    title: '1 Monat – 5 Geräte',
+    duration: '1 Monat',
+    price: '45€',
+    desc: 'Flexibel mit 5 Geräten'
+  },
+  '3-monate-5-gerate-iptv': {
+    title: '3 Monate – 5 Geräte',
+    duration: '3 Monate',
+    price: '120€',
+    desc: 'Sparen Sie mit 5 Geräten'
+  },
+  '6-monate-5-gerate-iptv': {
+    title: '6 Monate – 5 Geräte',
+    duration: '6 Monate',
+    price: '175€',
+    desc: 'Halbjahresplan – 5 Geräte'
+  },
+  '1-jahr-5-gerate-iptv': {
+    title: '1 Jahr – 5 Geräte',
+    duration: '1 Jahr',
+    price: '225€',
+    desc: 'Ganzes Jahr – 5 Geräte'
+  }
+};
+
+const features = ['25.000+ Live-Kanäle','120.000+ Filme & Serien','4K Ultra HD Qualität','Bundesliga · Sky · Dazn','PPV Events inklusive','EPG & Catch-Up TV','24/7 Deutscher Support'];
+
+const pathname = window.location.pathname.split('/').pop().replace('.html', '');
+const plan = plans[pathname];
+
+if (plan) {
+  document.getElementById('planTitle').textContent = plan.title;
+  document.getElementById('planDesc').textContent = plan.desc;
+  
+  const html = `
+    <div class="plan-card">
+      <div class="plan-duration">${plan.duration}</div>
+      <div class="plan-price">${plan.price}</div>
+      <p class="plan-per">Paketpreis</p>
+      <ul class="plan-features">
+        ${features.map(f => `<li>${f}</li>`).join('')}
+      </ul>
+      <a href="/whatsapp-kontakt?plan=${pathname}" class="plan-btn">Jetzt bestellen →</a>
+    </div>
+  `;
+  document.getElementById('planContent').innerHTML = html;
+}
+</script>
+
+</body>
+</html>
