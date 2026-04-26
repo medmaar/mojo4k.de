@@ -124,6 +124,36 @@ footer{background:#0a0120;padding:48px 0 24px;border-top:1px solid rgba(255,206,
 .cm .pbtn{background:rgba(255,229,0,.25) !important;color:#ffe100 !important;border:1.5px solid rgba(255,229,0,.5) !important}
 .cd .pbtn{background:rgba(0,0,0,.28) !important;color:#1a0a0a !important;border:1.5px solid rgba(0,0,0,.3) !important}
 
+
+/* ════ PRICING CARD – Each card has the full flag gradient ════ */
+.cw,.cl2,.cm,.cd{
+  background:linear-gradient(90deg,rgba(255,0,21,0.55) 0%,rgba(49,54,50,0.6) 50%,rgba(255,229,0,0.59) 100%) !important;
+  border:1.5px solid rgba(255,229,0,0.35) !important;
+  box-shadow:0 6px 32px rgba(255,0,21,0.18) !important;
+  border-radius:18px !important;
+}
+.cw:hover,.cl2:hover,.cm:hover,.cd:hover{
+  box-shadow:0 10px 40px rgba(255,0,21,0.28) !important;
+  transform:translateY(-6px);
+}
+/* Text – white works on every card since bg is semi-transparent dark mix */
+.cw .pdur,.cl2 .pdur,.cm .pdur,.cd .pdur{color:#fff !important}
+.cw .pcu,.cl2 .pcu,.cm .pcu,.cd .pcu{color:rgba(255,255,255,.85) !important}
+.cw .pam,.cl2 .pam,.cm .pam,.cd .pam{color:#fff !important}
+.cw .pper,.cl2 .pper,.cm .pper,.cd .pper{color:rgba(255,255,255,.52) !important}
+.cw .pfts li,.cl2 .pfts li,.cm .pfts li,.cd .pfts li{color:rgba(255,255,255,.88) !important}
+/* Buttons – frosted glass style matching the gradient */
+.cw .pbtn,.cl2 .pbtn,.cm .pbtn,.cd .pbtn{
+  background:rgba(255,255,255,0.15) !important;
+  color:#fff !important;
+  border:1.5px solid rgba(255,255,255,0.35) !important;
+  backdrop-filter:blur(6px);
+}
+.cw .pbtn:hover,.cl2 .pbtn:hover,.cm .pbtn:hover,.cd .pbtn:hover{
+  background:rgba(255,255,255,0.25) !important;
+  box-shadow:0 6px 20px rgba(0,0,0,0.3) !important;
+}
+
 </style>
 </head>
 <body>
