@@ -136,31 +136,30 @@ section{padding:86px 0}
 .pcard{border-radius:18px;overflow:visible;transition:transform .3s,box-shadow .3s;position:relative}
 .pcard:hover{transform:translateY(-6px)}
 /* Germany flag gradient progression: card1=light/white, card2=gold tinted, card3=red tinted, card4=black/dark */
-.cw{background:#ffffff;border:2px solid rgba(255,206,0,.35);box-shadow:0 4px 20px rgba(0,0,0,.15)}
-.cl2{background:linear-gradient(160deg,#221400 0%,#1a0e00 100%);border:2px solid rgba(255,206,0,.55);box-shadow:0 4px 24px rgba(255,206,0,.12)}
-.cm{background:linear-gradient(160deg,#220000 0%,#1a0000 100%);border:2px solid rgba(204,0,0,.55);box-shadow:0 4px 24px rgba(204,0,0,.15)}
-.cd{background:linear-gradient(160deg,#111111 0%,#0a0a0a 100%);border:2px solid rgba(255,206,0,.65);box-shadow:0 6px 32px rgba(255,206,0,.25)}
+.cw{background:linear-gradient(135deg,rgba(255,215,0,0.22) 0%,rgba(180,10,10,0.18) 55%,rgba(10,0,20,0.55) 100%);border:2px solid rgba(255,206,0,0.55);box-shadow:0 4px 28px rgba(255,180,0,0.18),0 1px 0 rgba(255,206,0,0.12) inset}
+.cl2{background:linear-gradient(135deg,rgba(255,215,0,0.22) 0%,rgba(180,10,10,0.18) 55%,rgba(10,0,20,0.55) 100%);border:2px solid rgba(255,206,0,0.55);box-shadow:0 4px 28px rgba(255,180,0,0.18),0 1px 0 rgba(255,206,0,0.12) inset}
+.cm{background:linear-gradient(135deg,rgba(255,215,0,0.22) 0%,rgba(180,10,10,0.18) 55%,rgba(10,0,20,0.55) 100%);border:2px solid rgba(255,206,0,0.55);box-shadow:0 4px 28px rgba(255,180,0,0.18),0 1px 0 rgba(255,206,0,0.12) inset}
+.cd{background:linear-gradient(135deg,rgba(255,215,0,0.22) 0%,rgba(180,10,10,0.18) 55%,rgba(10,0,20,0.55) 100%);border:2px solid rgba(255,206,0,0.75);box-shadow:0 6px 40px rgba(255,180,0,0.28),0 1px 0 rgba(255,206,0,0.2) inset}
 /* Badge positioned above card */
 .cbdg-wrap{position:absolute;top:-14px;left:0;right:0;display:flex;justify-content:center;z-index:2;pointer-events:none}
 .cbdg{background:linear-gradient(135deg,#ffce00,#ff8c00);color:#1a0a0a;font-family:'Inter Tight',sans-serif;font-size:10px;font-weight:900;padding:4px 14px;border-radius:99px;white-space:nowrap;letter-spacing:.06em;box-shadow:0 3px 12px rgba(255,206,0,.4)}
 .pin{padding:26px 20px 22px}
 .pdur{font-family:'Inter Tight',sans-serif;font-size:14px;font-weight:700;margin-bottom:6px}
-.cw .pdur{color:#1a0a0a}.cl2 .pdur{color:#ffce00}.cm .pdur{color:#ff8888}.cd .pdur{color:#ffce00}
+.cw .pdur,.cl2 .pdur,.cm .pdur,.cd .pdur{color:#FFD700}
 .ppr{display:flex;align-items:baseline;gap:3px;margin-bottom:2px}
 .pcu{font-size:.52em;font-family:'Inter Tight',sans-serif;font-weight:700;line-height:2;align-self:flex-start}
-.cw .pcu{color:#333}.cl2 .pcu{color:#ffce00}.cm .pcu{color:#ff9999}.cd .pcu{color:#ffce00}
+.cw .pcu,.cl2 .pcu,.cm .pcu,.cd .pcu{color:#FFD700}
 .pam{font-family:'Inter Tight',sans-serif;font-size:clamp(34px,4vw,46px);font-weight:900;line-height:1}
-.cw .pam{color:#1a0a0a}.cl2 .pam{color:#ffce00}.cm .pam{color:#ff9999}.cd .pam{color:#ffce00}
+.cw .pam,.cl2 .pam,.cm .pam,.cd .pam{color:#fff}
 .pper{font-size:11px;font-weight:600;margin-bottom:16px}
-.cw .pper{color:rgba(60,40,0,.6)}.cl2 .pper{color:rgba(255,206,0,.5)}.cm .pper{color:rgba(255,180,180,.5)}.cd .pper{color:rgba(255,255,255,.4)}
+.cw .pper,.cl2 .pper,.cm .pper,.cd .pper{color:rgba(255,220,120,0.55)}
 .pfts{list-style:none;margin:0 0 20px}
 .pfts li{display:flex;align-items:flex-start;gap:7px;font-size:12.5px;margin-bottom:6px;line-height:1.4}
-.cw .pfts li{color:#333}.cl2 .pfts li{color:rgba(255,240,200,.85)}.cm .pfts li{color:rgba(255,220,220,.82)}.cd .pfts li{color:rgba(255,255,255,.82)}
+.cw .pfts li,.cl2 .pfts li,.cm .pfts li,.cd .pfts li{color:rgba(255,255,255,.9)}
 .pbtn{display:block;text-align:center;padding:12px;border-radius:10px;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:13px;transition:all .25s;text-decoration:none;letter-spacing:.02em}
-.cw .pbtn{background:linear-gradient(135deg,#1a1a1a,#333);color:#fff}
-.cl2 .pbtn{background:linear-gradient(135deg,#ffce00,#ff8c00);color:#1a0a0a}
-.cm .pbtn{background:linear-gradient(135deg,#cc0000,#880000);color:#fff}
-.cd .pbtn{background:linear-gradient(135deg,#ffce00,#cc0000);color:#fff}
+.cw .pbtn,.cl2 .pbtn,.cm .pbtn{background:linear-gradient(135deg,rgba(255,206,0,0.25),rgba(204,0,0,0.25));color:#fff;border:1.5px solid rgba(255,206,0,0.5);backdrop-filter:blur(8px)}
+.cd .pbtn{background:linear-gradient(135deg,#FFD700,#CC0000);color:#fff;border:none;box-shadow:0 4px 18px rgba(255,180,0,0.35)}
+.cw .pbtn:hover,.cl2 .pbtn:hover,.cm .pbtn:hover,.cd .pbtn:hover{background:linear-gradient(135deg,#FFD700,#CC0000);border-color:transparent;box-shadow:0 6px 22px rgba(255,180,0,0.4);transform:translateY(-2px)}
 .pbtn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.35)}
 .pnote{text-align:center;margin-top:20px;color:rgba(255,255,255,.28);font-size:12px}
 @media(max-width:1100px){.pgrid{grid-template-columns:repeat(2,1fr)}}
