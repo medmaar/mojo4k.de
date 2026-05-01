@@ -35,10 +35,29 @@ h1,h2,h3,h4{font-family:'Inter Tight',sans-serif;font-weight:700;margin:0 0 12px
 
 /* PRICING GRID */
 .pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:40px 0;padding:20px;background:rgba(255,206,0,.02);border:1px solid rgba(255,206,0,.1);border-radius:20px;overflow-x:auto}
-.pricing-card{background:linear-gradient(135deg,rgba(255,206,0,.08) 0%,rgba(208,0,0,.08) 100%);border:1.5px solid;border-image:linear-gradient(135deg,#ffce00,#d00000) 1;border-radius:16px;padding:24px;transition:all .3s;position:relative;min-width:200px}
-.pricing-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,206,0,.1),rgba(208,0,0,.1));opacity:0;transition:opacity .3s;border-radius:16px;pointer-events:none}
-.pricing-card:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(255,206,0,.15)}
-.pricing-card:hover::before{opacity:1}
+.pricing-card{border-radius:16px;padding:24px;transition:all .3s;position:relative;min-width:200px;overflow:visible}
+.pricing-card:hover{transform:translateY(-8px)}
+/* Per-duration card colors */
+.pricing-card.pc-m1  { background:#003049; border:2px solid rgba(0,100,160,0.7); box-shadow:0 4px 28px rgba(0,48,73,0.5); }
+.pricing-card.pc-m3  { background:#D62828; border:2px solid rgba(255,80,80,0.6);  box-shadow:0 4px 28px rgba(214,40,40,0.45); }
+.pricing-card.pc-m6  { background:#F77F00; border:2px solid rgba(255,160,0,0.6);  box-shadow:0 4px 28px rgba(247,127,0,0.45); }
+.pricing-card.pc-m12 { background:#FCBF49; border:2px solid rgba(255,220,100,0.8);box-shadow:0 6px 40px rgba(252,191,73,0.5); }
+.pricing-card.pc-m1:hover,.pricing-card.pc-m3:hover  { box-shadow:0 16px 44px rgba(0,0,0,0.35); }
+.pricing-card.pc-m6:hover  { box-shadow:0 16px 44px rgba(247,127,0,0.5); }
+.pricing-card.pc-m12:hover { box-shadow:0 14px 48px rgba(252,191,73,0.6); }
+/* Text colors for dark cards */
+.pricing-card.pc-m1 .price-duration,.pricing-card.pc-m3 .price-duration,.pricing-card.pc-m6 .price-duration { color:rgba(255,220,80,0.9); }
+.pricing-card.pc-m12 .price-duration { color:#1a0a00; }
+.pricing-card.pc-m1 .price-amount,.pricing-card.pc-m3 .price-amount,.pricing-card.pc-m6 .price-amount { background:none;-webkit-background-clip:unset;-webkit-text-fill-color:#fff; }
+.pricing-card.pc-m12 .price-amount { background:none;-webkit-background-clip:unset;-webkit-text-fill-color:#1a0a00; }
+.pricing-card.pc-m1 .price-per,.pricing-card.pc-m3 .price-per,.pricing-card.pc-m6 .price-per { color:rgba(255,255,255,.55); }
+.pricing-card.pc-m12 .price-per { color:rgba(50,30,0,.6); }
+.pricing-card.pc-m1 .price-features li,.pricing-card.pc-m3 .price-features li,.pricing-card.pc-m6 .price-features li { color:rgba(255,255,255,.85); }
+.pricing-card.pc-m12 .price-features li { color:rgba(30,15,0,.85); }
+.pricing-card.pc-m1 .price-features li::before,.pricing-card.pc-m3 .price-features li::before,.pricing-card.pc-m6 .price-features li::before { color:#FFD700; }
+.pricing-card.pc-m12 .price-features li::before { color:#1a0a00; }
+/* Badge */
+.pc-badge { position:absolute;top:-14px;right:16px;background:linear-gradient(135deg,#ffce00,#ff8c00);color:#1a0a00;font-size:10px;font-weight:900;padding:4px 14px;border-radius:99px;white-space:nowrap;letter-spacing:.06em;box-shadow:0 3px 12px rgba(255,206,0,.4); }
 
 .price-duration{font-family:'Inter Tight',sans-serif;font-size:12px;font-weight:700;color:rgba(255,206,0,.8);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
 .price-amount{font-size:clamp(28px,5vw,36px);font-weight:900;background:linear-gradient(135deg,#ffce00,#d00000);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:4px}
@@ -46,8 +65,19 @@ h1,h2,h3,h4{font-family:'Inter Tight',sans-serif;font-weight:700;margin:0 0 12px
 .price-features{list-style:none;margin:16px 0;font-size:12px}
 .price-features li{padding:6px 0;color:rgba(255,255,255,.65);display:flex;gap:8px}
 .price-features li::before{content:'✓';color:#ffce00;font-weight:700;flex-shrink:0}
-.price-btn{display:block;width:100%;text-align:center;margin-top:20px;padding:10px;background:linear-gradient(135deg,#ffce00,#d00000);color:#1a1a1a;font-weight:700;border-radius:8px;font-size:13px;border:none;cursor:pointer;transition:all .2s}
-.price-btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(255,206,0,.25)}
+.price-btn{display:block;width:100%;text-align:center;margin-top:20px;padding:10px;font-weight:800;border-radius:8px;font-size:13px;border:none;cursor:pointer;transition:all .2s;text-decoration:none}
+/* 1 Monat: yellow + dark → hover red + white */
+.pc-m1  .price-btn { background:#FFD700; color:#1a0a00; }
+.pc-m1  .price-btn:hover { background:#D62828; color:#fff; transform:translateY(-2px); box-shadow:0 6px 20px rgba(214,40,40,0.4); }
+/* 3 Monate: yellow + dark → hover dark + white */
+.pc-m3  .price-btn { background:#FFD700; color:#1a0a00; }
+.pc-m3  .price-btn:hover { background:#1a0a00; color:#fff; transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.4); }
+/* 6 Monate: red + white → hover dark + white */
+.pc-m6  .price-btn { background:#D62828; color:#fff; }
+.pc-m6  .price-btn:hover { background:#1a0a00; color:#fff; transform:translateY(-2px); box-shadow:0 6px 20px rgba(0,0,0,0.4); }
+/* 1 Jahr: dark + yellow → hover hard red + white */
+.pc-m12 .price-btn { background:#1a0a00; color:#FFD700; }
+.pc-m12 .price-btn:hover { background:#D62828; color:#fff; transform:translateY(-2px); box-shadow:0 6px 20px rgba(214,40,40,0.5); }
 
 .pricing-note{text-align:center;margin-top:32px;color:rgba(255,255,255,.45);font-size:12px}
 
@@ -278,7 +308,10 @@ const durations = [
   {key: 'm12', label: '1 Jahr', badge: 'Bester Preis'}
 ];
 
-const features = ['25.000+ Kanäle','4K Ultra HD','120.000+ VOD','Bundesliga & Sky','EPG & Catchup'];
+const features = ['50.000+ Live-Kanäle','120.000+ Filme & Serien (VOD)','4K Ultra HD Qualität','Bundesliga · Sky · Dazn','PPV Events inklusive','EPG & Catch-Up TV','Alle Geräte','24/7 Deutscher Support'];
+const featuresM12 = [...features, '🎁 IBO Player Abo kostenlos inklusive'];
+
+const cardClass = {m1:'pc-m1', m3:'pc-m3', m6:'pc-m6', m12:'pc-m12'};
 
 let currentDevices = 1;
 
@@ -296,13 +329,20 @@ function renderPricing() {
   
   grid.innerHTML = durations.map(dur => {
     const plan = planData[dur.key];
+    const cls = cardClass[dur.key];
+    const fList = dur.key === 'm12' ? featuresM12 : features;
+    const featuresHtml = fList.map((f, i) => {
+      const isBonus = dur.key === 'm12' && i === fList.length - 1;
+      return `<li style="${isBonus ? 'font-weight:800;' : ''}">${f}</li>`;
+    }).join('');
     return `
-      <div class="pricing-card">
+      <div class="pricing-card ${cls}">
+        ${dur.badge ? `<span class="pc-badge">${dur.badge}</span>` : ''}
         <div class="price-duration">${dur.label}</div>
         <div class="price-amount">${plan.price}</div>
         <div class="price-per">/ ${currentDevices} Gerät${currentDevices > 1 ? 'e' : ''}</div>
-        <ul class="price-features">${features.map(f => `<li>${f}</li>`).join('')}</ul>
-        <a href="/${plan.url}.html" class="price-btn">Details →</a>
+        <ul class="price-features">${featuresHtml}</ul>
+        <a href="/${plan.url}.html" class="price-btn">Jetzt starten →</a>
       </div>
     `;
   }).join('');

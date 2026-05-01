@@ -313,10 +313,18 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
 .pcard.cd .pfts li { color: rgba(30,15,0,.9) !important; }
 .pcard.cd .pfts li::before { color: #1a0a00 !important; }
 /* Buttons */
-.pcard.cw .pbtn,.pcard.cl2 .pbtn,.pcard.cm .pbtn { background: rgba(0,0,0,0.35) !important; color: #fff !important; border: 1.5px solid rgba(255,180,0,0.4) !important; }
-.pcard.cd .pbtn { background: #1a0a00 !important; color: #FCBF49 !important; border: none !important; box-shadow: 0 4px 18px rgba(0,0,0,0.4) !important; }
-.pcard.cw .pbtn:hover,.pcard.cl2 .pbtn:hover,.pcard.cm .pbtn:hover { background: rgba(0,0,0,0.55) !important; transform: translateY(-2px); }
-.pcard.cd .pbtn:hover { background: #2a1400 !important; transform: translateY(-2px); }
+/* 1 Monat (cw): yellow + dark text → hover red + white */
+.pcard.cw .pbtn { background: #FFD700 !important; color: #1a0a00 !important; border: none !important; font-weight: 800 !important; }
+.pcard.cw .pbtn:hover { background: #D62828 !important; color: #fff !important; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(214,40,40,0.4) !important; }
+/* 3 Monate (cl2): yellow + dark text → hover dark + white */
+.pcard.cl2 .pbtn { background: #FFD700 !important; color: #1a0a00 !important; border: none !important; font-weight: 800 !important; }
+.pcard.cl2 .pbtn:hover { background: #1a0a00 !important; color: #fff !important; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important; }
+/* 6 Monate (cm): red + white → hover dark + white */
+.pcard.cm .pbtn { background: #D62828 !important; color: #fff !important; border: none !important; font-weight: 800 !important; }
+.pcard.cm .pbtn:hover { background: #1a0a00 !important; color: #fff !important; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important; }
+/* 1 Jahr (cd): dark + yellow text → hover hard red + white */
+.pcard.cd .pbtn { background: #1a0a00 !important; color: #FFD700 !important; border: none !important; font-weight: 800 !important; }
+.pcard.cd .pbtn:hover { background: #D62828 !important; color: #fff !important; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(214,40,40,0.5) !important; }
 
 /* ── CANONICAL NAV ── */
 #nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(20,4,56,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,206,0,0.12)}
@@ -764,6 +772,7 @@ const durs=[
   {k:'m12',l:'1 Jahr',   cls:'cd',  slug:'1-jahr', badge:'Bester Preis'},
 ];
 const feats=['50.000+ Live-Kanäle','120.000+ Filme & Serien (VOD)','4K Ultra HD Qualität','Bundesliga · Sky · Dazn','PPV Events inklusive','EPG & Catch-Up TV','Alle Geräte','24/7 Deutscher Support'];
+const featsM12=['50.000+ Live-Kanäle','120.000+ Filme & Serien (VOD)','4K Ultra HD Qualität','Bundesliga · Sky · Dazn','PPV Events inklusive','EPG & Catch-Up TV','Alle Geräte','24/7 Deutscher Support','🎁 IBO Player Abo kostenlos inklusive'];
 
 /* Check colour: white card uses dark check, coloured cards use gold/light */
 const checkClr={cw:'#FFD700', cl2:'#FFD700', cm:'#FFD700', cd:'#1a0a00'};
@@ -779,14 +788,16 @@ function renderPricing(){
     const cc=checkClr[d.cls]||'#ffce00';
     const fc=textClr[d.cls]||'rgba(255,255,255,.82)';
     const productUrl=`/${d.slug}-${devSlug}.html`;
+    const fList=d.k==='m12'?featsM12:feats;
+    const iboStyle=d.k==='m12'?'color:#D62828;font-weight:800;':'';
     return `<div class="pcard ${d.cls}">
       ${d.badge?`<div class="cbdg-wrap"><span class="cbdg">${d.badge}</span></div>`:''}
       <div class="pin">
         <p class="pdur">${d.l}</p>
         <div class="ppr"><span class="pcu">€</span><span class="pam">${pr}</span></div>
         <p class="pper">/ ${aD} Gerät${aD>1?'e':''}</p>
-        <ul class="pfts">${feats.map(f=>`<li><span style="color:${cc};font-weight:700;flex-shrink:0;font-size:14px">✓</span><span style="color:${fc}">${f}</span></li>`).join('')}</ul>
-        <a href="${productUrl}" class="pbtn">Jetzt starten →</a>
+        <ul class="pfts">${fList.map((f,i)=>{const isBonus=d.k==='m12'&&i===fList.length-1;return`<li><span style="color:${isBonus?'#D62828':cc};font-weight:700;flex-shrink:0;font-size:14px">${isBonus?'★':'✓'}</span><span style="color:${fc};${isBonus?'font-weight:800;':''}">${f}</span></li>`}).join('')}</ul>
+        <a href="${productUrl}" class="pbtn btn-${d.cls}">Jetzt starten →</a>
       </div></div>`;
   }).join('');
 }
