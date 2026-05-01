@@ -136,10 +136,10 @@ section{padding:86px 0}
 .pcard{border-radius:18px;overflow:visible;transition:transform .3s,box-shadow .3s;position:relative}
 .pcard:hover{transform:translateY(-6px)}
 /* Germany flag gradient progression: card1=light/white, card2=gold tinted, card3=red tinted, card4=black/dark */
-.cw{background:linear-gradient(160deg,#c97e00 0%,#8a0000 100%);border:2px solid rgba(255,206,0,0.7);box-shadow:0 4px 28px rgba(255,160,0,0.35)}
-.cl2{background:linear-gradient(160deg,#c97e00 0%,#8a0000 100%);border:2px solid rgba(255,206,0,0.7);box-shadow:0 4px 28px rgba(255,160,0,0.35)}
-.cm{background:linear-gradient(160deg,#c97e00 0%,#8a0000 100%);border:2px solid rgba(255,206,0,0.7);box-shadow:0 4px 28px rgba(255,160,0,0.35)}
-.cd{background:linear-gradient(160deg,#c97e00 0%,#8a0000 100%);border:2px solid #FFD700;box-shadow:0 6px 40px rgba(255,160,0,0.5)}
+.cw{background:#003049;border:2px solid rgba(0,80,130,0.7);box-shadow:0 4px 28px rgba(0,48,73,0.5)}
+.cl2{background:#D62828;border:2px solid rgba(255,80,80,0.6);box-shadow:0 4px 28px rgba(214,40,40,0.45)}
+.cm{background:#F77F00;border:2px solid rgba(255,160,0,0.6);box-shadow:0 4px 28px rgba(247,127,0,0.45)}
+.cd{background:#FCBF49;border:2px solid rgba(255,220,100,0.8);box-shadow:0 6px 40px rgba(252,191,73,0.5)}
 /* Badge positioned above card */
 .cbdg-wrap{position:absolute;top:-14px;left:0;right:0;display:flex;justify-content:center;z-index:2;pointer-events:none}
 .cbdg{background:linear-gradient(135deg,#ffce00,#ff8c00);color:#1a0a0a;font-family:'Inter Tight',sans-serif;font-size:10px;font-weight:900;padding:4px 14px;border-radius:99px;white-space:nowrap;letter-spacing:.06em;box-shadow:0 3px 12px rgba(255,206,0,.4)}
@@ -158,7 +158,7 @@ section{padding:86px 0}
 .cw .pfts li,.cl2 .pfts li,.cm .pfts li,.cd .pfts li{color:rgba(255,255,255,.9)}
 .pbtn{display:block;text-align:center;padding:12px;border-radius:10px;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:13px;transition:all .25s;text-decoration:none;letter-spacing:.02em}
 .cw .pbtn,.cl2 .pbtn,.cm .pbtn{background:linear-gradient(135deg,rgba(255,206,0,0.25),rgba(204,0,0,0.25));color:#fff;border:1.5px solid rgba(255,206,0,0.5);backdrop-filter:blur(8px)}
-.cd .pbtn{background:linear-gradient(135deg,#FFD700,#CC0000);color:#fff;border:none;box-shadow:0 4px 18px rgba(255,180,0,0.35)}
+.cd .pbtn{background:#1a0a00;color:#FCBF49;border:none;box-shadow:0 4px 18px rgba(0,0,0,0.4)}
 .cw .pbtn:hover,.cl2 .pbtn:hover,.cm .pbtn:hover,.cd .pbtn:hover{background:linear-gradient(135deg,#FFD700,#CC0000);border-color:transparent;box-shadow:0 6px 22px rgba(255,180,0,0.4);transform:translateY(-2px)}
 .pbtn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.35)}
 .pnote{text-align:center;margin-top:20px;color:rgba(255,255,255,.28);font-size:12px}
@@ -296,7 +296,7 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
 .pcard.cl2,
 .pcard.cm,
 .pcard.cd {
-  background: linear-gradient(160deg,rgba(180,110,0,0.45) 0%,rgba(120,0,0,0.55) 100%) !important;
+  background: inherit !important;
   border: 1.5px solid rgba(255,180,0,0.35) !important;
   box-shadow: 0 4px 24px rgba(180,80,0,0.25) !important;
   border-radius: 18px !important;
@@ -311,11 +311,16 @@ footer{background:#0a0120;padding:64px 0 26px;border-top:1px solid rgba(255,255,
   transform: translateY(-6px);
   box-shadow: 0 16px 44px rgba(200,100,0,0.4) !important;
 }
-.pcard .pdur { color: #FFD700 !important; }
-.pcard .pam  { color: #fff !important; }
-.pcard .pcu  { color: #FFD700 !important; }
-.pcard .pper { color: rgba(255,220,120,0.6) !important; }
-.pcard .pfts li { color: rgba(255,255,255,.88) !important; }
+.pcard.cw .pdur,.pcard.cl2 .pdur,.pcard.cm .pdur { color: #FFD700 !important; }
+.pcard.cd .pdur { color: #1a0a00 !important; }
+.pcard.cw .pam,.pcard.cl2 .pam,.pcard.cm .pam { color: #fff !important; }
+.pcard.cd .pam  { color: #1a0a00 !important; }
+.pcard.cw .pcu,.pcard.cl2 .pcu,.pcard.cm .pcu { color: #FFD700 !important; }
+.pcard.cd .pcu  { color: #1a0a00 !important; }
+.pcard.cw .pper,.pcard.cl2 .pper,.pcard.cm .pper { color: rgba(255,220,120,0.6) !important; }
+.pcard.cd .pper { color: rgba(50,30,0,0.7) !important; }
+.pcard.cw .pfts li,.pcard.cl2 .pfts li,.pcard.cm .pfts li { color: rgba(255,255,255,.88) !important; }
+.pcard.cd .pfts li { color: rgba(30,15,0,.9) !important; }
 .pcard .pfts li::before { color: #FFD700 !important; }
 .pcard .pbtn {
   background: rgba(0,0,0,0.35) !important;
@@ -703,20 +708,20 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
    Source: streambleu-fr repo, translated
 ═══════════════════════════════════════ */
 const tpR=[
-  {t:"Bester IPTV-Service – endlich ohne Aussetzer",x:"Ich habe mindestens vier IPTV-Anbieter getestet und keiner kam an IPTVV.DE heran. Aktivierung war schnell, Support antwortete sofort, Live-Sport läuft endlich flüssig.",n:"Thomas R.",c:"de"},
-  {t:"Support der wirklich hilft",x:"Der Kundenservice hat mich bei IPTVV.DE gehalten. Ich kam von einem Anbieter, der bei Problemen verschwand. Hier hört der Support wirklich zu und antwortet schnell.",n:"Julian M.",c:"de"},
-  {t:"Stabil seit dem ersten Tag",x:"Ich war skeptisch, weil IPTV-Dienste mich bereits enttäuscht haben. IPTVV.DE ist seit dem ersten Tag stabil. Live-Matches getestet – keinerlei Probleme.",n:"Anton B.",c:"de"},
-  {t:"Qualität weit über den anderen",x:"Nach dem Vergleich mit zwei Anbietern war der Unterschied offensichtlich. Die anderen waren unzuverlässig. IPTVV.DE hat mir bei der Einrichtung geholfen und nachgehakt.",n:"Peter L.",c:"de"},
-  {t:"Meine Verbindung war nie das Problem",x:"Mein alter Anbieter schob Einfrieren immer auf meine Verbindung. Mit IPTVV.DE merkte ich: die Verbindung war nie das Problem. Stabile Streams, konstante HD-Qualität.",n:"Niklas D.",c:"de"},
+  {t:"Bester IPTV-Service – endlich ohne Aussetzer",x:"Ich habe mindestens vier IPTV-Anbieter getestet und keiner kam an iptvv heran. Aktivierung war schnell, Support antwortete sofort, Live-Sport läuft endlich flüssig.",n:"Thomas R.",c:"de"},
+  {t:"Support der wirklich hilft",x:"Der Kundenservice hat mich bei IPTVV gehalten. Ich kam von einem Anbieter, der bei Problemen verschwand. Hier hört der Support wirklich zu und antwortet schnell.",n:"Julian M.",c:"de"},
+  {t:"Stabil seit dem ersten Tag",x:"Ich war skeptisch, weil IPTV-Dienste mich bereits enttäuscht haben. Der Service ist seit dem ersten Tag stabil. Live-Matches getestet – keinerlei Probleme.",n:"Anton B.",c:"de"},
+  {t:"Qualität weit über den anderen",x:"Nach dem Vergleich mit zwei Anbietern war der Unterschied offensichtlich. Die anderen waren unzuverlässig. iptvv.de hat mir bei der Einrichtung geholfen und nachgehakt.",n:"Peter L.",c:"de"},
+  {t:"Meine Verbindung war nie das Problem",x:"Mein alter Anbieter schob Einfrieren immer auf meine Verbindung. Mit diesem Service merkte ich: die Verbindung war nie das Problem. Stabile Streams, konstante HD-Qualität.",n:"Niklas D.",c:"de"},
   {t:"Transparent – liefert genau was versprochen",x:"Vor dem Abo hatte ich viele Fragen. Der Support gab ehrliche Antworten ohne zu übertreiben. Nach dem Abo stimmte alles überein.",n:"Roman C.",c:"de"},
-  {t:"Schnelle Aktivierung und echter Support",x:"Ich wechselte zu IPTVV.DE nachdem mein alter Service während eines Spiels abstürzte. IPTVV.DE aktivierte schnell und begleitete mich geduldig bei der Einrichtung.",n:"Max P.",c:"de"},
-  {t:"Bessere Stabilität und deutlich besserer Support",x:"IPTVV.DE bietet bessere Stabilität als andere. Bei anderen waren Antworten langsam oder generisch. Hier liest der Support wirklich Ihre Nachricht und hilft gezielt.",n:"Lukas F.",c:"de"},
-  {t:"Optimiert und zuverlässig",x:"Ich schreibe selten Bewertungen, aber IPTVV.DE verdient es. Der Service scheint wirklich optimiert zu sein und gibt hilfreiche statt kopierte Ratschläge.",n:"Sebastian K.",c:"de"},
-  {t:"Beständigkeit die andere nicht erreichen",x:"Der größte Unterschied ist die Beständigkeit. Frühere Anbieter waren unberechenbar. IPTVV.DE ist seit dem ersten Tag stabil und meldete sich nach Aktivierung von selbst.",n:"Matthias C.",c:"de"},
-  {t:"Der Vergleich war nicht mal knapp",x:"IPTVV.DE eine Woche parallel zum alten Anbieter getestet – nicht mal knapp. Bessere Bildqualität, schnellerer Kanalwechsel, keine zufälligen Unterbrechungen.",n:"Florian D.",c:"de"},
-  {t:"Stabilster IPTV-Service den ich je hatte",x:"Ich nutze IPTVV.DE seit Monaten – der stabilste Service den ich je hatte. Live-Sport einwandfrei, VOD lädt schnell, Support reaktionsschnell und freundlich.",n:"Vincent L.",c:"de"},
-  {t:"Solide Leistung und echter Kundensupport",x:"Nach Vergleich günstigerer Alternativen wechselte ich. Bei denen gab es immer Abstriche. IPTVV.DE liefert gute Leistung und echten Kundendienst.",n:"Alex R.",c:"de"},
-  {t:"Hat mein Vertrauen in IPTV zurückgegeben",x:"Nach mehreren schlechten Erfahrungen war ich bereit, IPTV aufzugeben. IPTVV.DE hat bewiesen, dass ein Service stabil, ehrlich und von echten Menschen unterstützt sein kann.",n:"Chris A.",c:"de"},
+  {t:"Schnelle Aktivierung und echter Support",x:"Ich wechselte zu IPTV Kaufen nachdem mein alter Service während eines Spiels abstürzte. Der Service aktivierte schnell und begleitete mich geduldig bei der Einrichtung.",n:"Max P.",c:"de"},
+  {t:"Bessere Stabilität und deutlich besserer Support",x:"iptvv bietet bessere Stabilität als andere. Bei anderen waren Antworten langsam oder generisch. Hier liest der Support wirklich Ihre Nachricht und hilft gezielt.",n:"Lukas F.",c:"de"},
+  {t:"Optimiert und zuverlässig",x:"Ich schreibe selten Bewertungen, aber dieser Service verdient es. Der Service scheint wirklich optimiert zu sein und gibt hilfreiche statt kopierte Ratschläge.",n:"Sebastian K.",c:"de"},
+  {t:"Beständigkeit die andere nicht erreichen",x:"Der größte Unterschied ist die Beständigkeit. Frühere Anbieter waren unberechenbar. iptvv.de ist seit dem ersten Tag stabil und meldete sich nach Aktivierung von selbst.",n:"Matthias C.",c:"de"},
+  {t:"Der Vergleich war nicht mal knapp",x:"IPTV Kaufen eine Woche parallel zum alten Anbieter getestet – nicht mal knapp. Bessere Bildqualität, schnellerer Kanalwechsel, keine zufälligen Unterbrechungen.",n:"Florian D.",c:"de"},
+  {t:"Stabilster IPTV-Service den ich je hatte",x:"Ich nutze iptvv.de seit Monaten – der stabilste Service den ich je hatte. Live-Sport einwandfrei, VOD lädt schnell, Support reaktionsschnell und freundlich.",n:"Vincent L.",c:"de"},
+  {t:"Solide Leistung und echter Kundensupport",x:"Nach Vergleich günstigerer Alternativen wechselte ich. Bei denen gab es immer Abstriche. Der Anbieter liefert gute Leistung und echten Kundendienst.",n:"Alex R.",c:"de"},
+  {t:"Hat mein Vertrauen in IPTV zurückgegeben",x:"Nach mehreren schlechten Erfahrungen war ich bereit, IPTV aufzugeben. iptvv hat bewiesen, dass ein Service stabil, ehrlich und von echten Menschen unterstützt sein kann.",n:"Chris A.",c:"de"},
   {t:"Premium und zuverlässig",x:"Die Servicequalität ist klar überlegen. Kanäle stabil, VOD-Auswahl exzellent, Support erklärt Dinge korrekt. Das ist Premium und zuverlässig.",n:"Stefan B.",c:"de"},
 ];
 
@@ -744,20 +749,20 @@ const waR=[
 ];
 
 const gR=[
-  {x:"Viele IPTV-Services genutzt – IPTVV.DE ist der erste der mich nach der ersten Woche nicht enttäuscht hat. Sender laden schnell, Sport ist flüssig, Qualität konstant.",n:"Matthias C."},
-  {x:"Von einem anderen Anbieter gewechselt der ständig gepuffert hat. IPTVV.DE ist deutlich besser. Streams stabil und der Kundenservice reagiert wirklich.",n:"Julian T."},
+  {x:"Viele IPTV-Services genutzt – IPTV Kaufen ist der erste der mich nach der ersten Woche nicht enttäuscht hat. Sender laden schnell, Sport ist flüssig, Qualität konstant.",n:"Matthias C."},
+  {x:"Von einem anderen Anbieter gewechselt der ständig gepuffert hat. iptvv.de ist deutlich besser. Streams stabil und der Kundenservice reagiert wirklich.",n:"Julian T."},
   {x:"Aktivierung war schnell und alles funktionierte wie erwartet. Für Sport und Filme – keine größeren Probleme. Support war höflich und hilfreich.",n:"Anton M."},
-  {x:"Nach schlechten Erfahrungen war ich zögerlich, aber IPTVV.DE hat mich überrascht. Bildqualität gut, Sender frieren nicht ein, Support blieb verfügbar.",n:"Roman W."},
-  {x:"IPTVV.DE war bisher zuverlässig. Zu Stoßzeiten getestet und alles lief gut. Beim alten Anbieter waren Wochenenden immer problematisch.",n:"Niklas P."},
-  {x:"Was mir am meisten gefällt ist die Beständigkeit. Bei anderen änderte sich die Qualität täglich. IPTVV.DE ist seit dem Abo stabil geblieben.",n:"Max J."},
-  {x:"Schaue hauptsächlich Fußball und PPV-Events – IPTVV.DE handhabt diese gut. Kein nennenswertes Puffern. Support beantwortete Fragen klar.",n:"Peter O."},
+  {x:"Nach schlechten Erfahrungen war ich zögerlich, aber IPTVV hat mich überrascht. Bildqualität gut, Sender frieren nicht ein, Support blieb verfügbar.",n:"Roman W."},
+  {x:"iptvv.de war bisher zuverlässig. Zu Stoßzeiten getestet und alles lief gut. Beim alten Anbieter waren Wochenenden immer problematisch.",n:"Niklas P."},
+  {x:"Was mir am meisten gefällt ist die Beständigkeit. Bei anderen änderte sich die Qualität täglich. IPTV Kaufen ist seit dem Abo stabil geblieben.",n:"Max J."},
+  {x:"Schaue hauptsächlich Fußball und PPV-Events – iptvv.de handhabt diese gut. Kein nennenswertes Puffern. Support beantwortete Fragen klar.",n:"Peter O."},
   {x:"Installation einfach. Support antwortete schneller als erwartet. Streams sauber und VOD funktioniert gut. Professioneller als die meisten.",n:"Sebastian H."},
   {x:"Auf Empfehlung ausprobiert. Im Vergleich zum alten Service stabiler und einfacher. Kundenservice verschwand nicht nach der Zahlung.",n:"Lukas C."},
   {x:"Sender wechseln schnell, Qualität konstant. Hatte ein kleines Problem und Support löste es in wenigen Minuten. Insgesamt sehr zufrieden.",n:"Florian R."},
-  {x:"IPTVV.DE seit Monaten genutzt. Live-Sport zuverlässig, Filme laden schnell. Support war jedes Mal reaktionsschnell.",n:"Vincent A."},
-  {x:"IPTVV.DE macht was es verspricht. Keine übertriebenen Aussagen, nur stabiler Service. Beim alten Anbieter hatte ich fast täglich Pufferprobleme. Hier nicht.",n:"Alex T."},
-  {x:"Gute Stream-Qualität und schnelle Aktivierung. Kundenservice hilfreich. Im Vergleich zu anderen wirkt IPTVV.DE organisierter und vertrauenswürdiger.",n:"Chris M."},
-  {x:"Lasse selten Bewertungen, aber IPTVV.DE war solide. Sport-Sender gut, VOD-Auswahl gut, Support antwortet schnell statt generische Nachrichten zu senden.",n:"Stefan B."},
+  {x:"IPTVV seit Monaten genutzt. Live-Sport zuverlässig, Filme laden schnell. Support war jedes Mal reaktionsschnell.",n:"Vincent A."},
+  {x:"iptvv macht was es verspricht. Keine übertriebenen Aussagen, nur stabiler Service. Beim alten Anbieter hatte ich fast täglich Pufferprobleme. Hier nicht.",n:"Alex T."},
+  {x:"Gute Stream-Qualität und schnelle Aktivierung. Kundenservice hilfreich. Im Vergleich zu anderen wirkt der Anbieter organisierter und vertrauenswürdiger.",n:"Chris M."},
+  {x:"Lasse selten Bewertungen, aber der Service war solide. Sport-Sender gut, VOD-Auswahl gut, Support antwortet schnell statt generische Nachrichten zu senden.",n:"Stefan B."},
   {x:"Zu IPTVV.DE gewechselt nach ständigen Problemen. Der Unterschied ist spürbar. Bessere Stabilität, deutlich besserer Support.",n:"Jonathan L."},
   {x:"Aktivierung schnell, Support verfügbar bei Fragen. Hauptsächlich Serien und Filme – alles läuft problemlos. Guter zuverlässiger Service.",n:"Daniel L."},
   {x:"IPTVV.DE war zu Stoßzeiten stabil, was mein größtes Problem mit früheren Services war. Kundenservice reaktionsschnell und professionell.",n:"David M."},
@@ -783,8 +788,8 @@ const durs=[
 const feats=['50.000+ Live-Kanäle','120.000+ Filme & Serien (VOD)','4K Ultra HD Qualität','Bundesliga · Sky · Dazn','PPV Events inklusive','EPG & Catch-Up TV','Alle Geräte','24/7 Deutscher Support'];
 
 /* Check colour: white card uses dark check, coloured cards use gold/light */
-const checkClr={cw:'#FFD700', cl2:'#FFD700', cm:'#FFD700', cd:'#FFD700'};
-const textClr={cw:'rgba(255,255,255,.9)', cl2:'rgba(255,255,255,.9)', cm:'rgba(255,255,255,.9)', cd:'rgba(255,255,255,.9)'};
+const checkClr={cw:'#FFD700', cl2:'#FFD700', cm:'#FFD700', cd:'#1a0a00'};
+const textClr={cw:'rgba(255,255,255,.9)', cl2:'rgba(255,255,255,.9)', cm:'rgba(255,255,255,.9)', cd:'rgba(30,15,0,.9)'};
 
 let aD=1;
 function renderPricing(){
