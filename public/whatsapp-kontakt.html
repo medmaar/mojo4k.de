@@ -3,85 +3,23 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"/>
-<title>WhatsApp Kontakt – IPTVV.DE</title>
+<title>WhatsApp Kontakt – IPTV kostenlos testen | IPTVV.DE</title>
+<meta name="description" content="Kostenloser IPTV Test via WhatsApp. Hinterlassen Sie Ihre Nummer – wir melden uns in 5 Minuten."/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/favicon.svg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init("pKiB2WLLYTKea3AR9");</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--primary:#ff5266;--gfrom:#ff9a3e;--gto:#ff5266}
 html{scroll-behavior:smooth}
-body{background:#140438;color:#fff;font-family:'Lato',sans-serif;font-size:16px;line-height:1.6}
-.container{max-width:600px;margin:0 auto;padding:20px}
-
-#nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,4,30,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06)}
-.ni{max-width:1200px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:74px}
-.logo-a{display:flex;align-items:center;gap:9px;text-decoration:none}
-.logo-txt{font-family:'Inter Tight',sans-serif;font-weight:900;font-size:1.1rem;letter-spacing:.05em;line-height:1}
-.logo-txt .w{color:#fff}
-.logo-txt .o{background:linear-gradient(135deg,#ff9a3e,#ff5266);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-
-main{padding:100px 20px 60px;min-height:100vh;display:flex;align-items:center}
-.form-container{background:rgba(255,255,255,.034);border:1px solid rgba(255,255,255,.07);border-radius:24px;padding:32px}
-
-h1{font-family:'Inter Tight',sans-serif;font-size:28px;font-weight:900;margin-bottom:12px;text-align:center}
-.subtitle{color:rgba(255,255,255,.65);font-size:14px;text-align:center;margin-bottom:30px}
-
-.form-group{margin-bottom:20px}
-label{display:block;font-size:13px;color:#79C9C5;margin-bottom:6px;font-weight:600}
-input,select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:12px 16px;color:#fff;font-size:14px;font-family:'Lato',sans-serif}
-input::placeholder{color:rgba(255,255,255,.3)}
-input:focus,select:focus{outline:none;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.08)}
-
-.btn{display:block;width:100%;background:linear-gradient(135deg,#ff9a3e,#ff5266);color:#fff;font-family:'Inter Tight',sans-serif;font-weight:700;padding:12px;border:none;border-radius:8px;cursor:pointer;font-size:15px;margin-top:24px;transition:opacity .3s}
-.btn:hover{opacity:.88}
-
-.note{text-align:center;color:rgba(255,255,255,.45);font-size:12px;margin-top:16px}
-
-footer{background:#0a0120;padding:32px 20px;border-top:1px solid rgba(255,255,255,.05);text-align:center}
-.footer-text{color:rgba(255,255,255,.45);font-size:12px}
-
-@media(max-width:480px){
-  .form-container{padding:24px}
-  h1{font-size:24px}
-}
-
-/* ════ GERMANY FLAG GRADIENT ON EVERY PRICING CARD ════ */
-.pcard.cw,
-.pcard.cl2,
-.pcard.cm,
-.pcard.cd {
-  background: linear-gradient(90deg, rgba(255,0,21,0.18) 0%, rgba(49,54,50,0.22) 50%, rgba(255,229,0,0.16) 100%) !important;
-  border: 1.5px solid rgba(255,229,0,0.38) !important;
-  box-shadow: 0 6px 32px rgba(255,0,21,0.2) !important;
-  border-radius: 18px !important;
-  overflow: visible !important;
-}
-.pcard.cw:hover,.pcard.cl2:hover,.pcard.cm:hover,.pcard.cd:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 40px rgba(255,0,21,0.3) !important;
-}
-/* All card text white — gradient bg is semi-transparent with dark midpoint */
-.pcard .pdur { color: #fff !important; }
-.pcard .pam  { color: #fff !important; }
-.pcard .pcu  { color: rgba(255,255,255,.8) !important; }
-.pcard .pper { color: rgba(255,255,255,.52) !important; }
-.pcard .pfts li { color: rgba(255,255,255,.88) !important; }
-/* Frosted glass button on each card */
-.pcard .pbtn {
-  background: rgba(255,255,255,0.15) !important;
-  color: #fff !important;
-  border: 1.5px solid rgba(255,255,255,0.38) !important;
-  backdrop-filter: blur(6px);
-}
-.pcard .pbtn:hover {
-  background: rgba(255,255,255,0.25) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;
-}
-
-/* ── CANONICAL NAV ── */
+body{background:#140438;color:#fff;font-family:'Lato',sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden;min-height:100vh}
+a{color:#fff;text-decoration:none}
+h1,h2,h3{font-family:'Inter Tight',sans-serif;font-weight:800;line-height:1.2}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(37,211,102,0.07),transparent 65%),radial-gradient(ellipse 60% 50% at 20% 80%,rgba(255,206,0,0.05),transparent 65%);pointer-events:none;z-index:0}
 #nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(20,4,56,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,206,0,0.12)}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .logo-a{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
@@ -100,7 +38,34 @@ footer{background:#0a0120;padding:32px 20px;border-top:1px solid rgba(255,255,25
 .mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;z-index:999;background:rgba(20,4,56,0.98);padding:18px 22px;border-bottom:1px solid rgba(255,206,0,0.12)}
 .mobile-menu.open{display:block}
 .mobile-menu a{display:block;padding:11px 0;color:rgba(255,255,255,0.78);font-size:15px;font-weight:600;border-bottom:1px solid rgba(255,255,255,0.06);font-family:'Inter Tight',sans-serif}
-/* ── CANONICAL FOOTER ── */
+.page-bg{min-height:100vh;padding-top:72px;position:relative;z-index:1}
+.plan-header{max-width:620px;margin:0 auto;padding:52px 24px 36px;text-align:center}
+.plan-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(37,211,102,0.12);border:1px solid rgba(37,211,102,0.3);border-radius:50px;padding:5px 16px;margin-bottom:20px;font-family:'Inter Tight',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#25D366}
+.plan-header h1{font-size:clamp(26px,5vw,40px);margin-bottom:12px;color:#fff}
+.plan-header p{color:rgba(255,255,255,0.55);font-size:14px;line-height:1.75}
+.trust-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 0}
+.trust-badge{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:50px;padding:5px 13px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.65)}
+.main-content{max-width:560px;margin:0 auto;padding:0 24px 80px}
+.order-card{background:rgba(255,255,255,0.035);border:1px solid rgba(37,211,102,0.2);border-radius:24px;padding:32px;position:relative;overflow:hidden;margin-bottom:20px}
+.order-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#25D366,#FFD700,transparent)}
+.form-header{margin-bottom:24px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,0.07)}
+.form-header h2{font-family:'Inter Tight',sans-serif;font-size:17px;font-weight:800;color:#fff;margin-bottom:5px}
+.form-header p{font-size:13px;color:rgba(255,255,255,0.5)}
+.form-group{margin-bottom:16px}
+.form-label{display:block;font-size:12px;color:#25D366;margin-bottom:6px;font-weight:700;letter-spacing:0.05em;font-family:'Inter Tight',sans-serif}
+.form-input{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 16px;color:#fff;font-size:14px;font-family:'Lato',sans-serif;outline:none;transition:border-color 0.2s}
+.form-input:focus{border-color:rgba(37,211,102,0.4);background:rgba(255,255,255,0.07)}
+.form-input::placeholder{color:rgba(255,255,255,0.25)}
+select.form-input{cursor:pointer;background-color:#160430}
+select.form-input option{background:#160430;color:#fff}
+.submit-btn{width:100%;background:linear-gradient(135deg,#25D366,#128c4a);color:#fff;font-family:'Inter Tight',sans-serif;font-weight:800;font-size:15px;padding:14px;border:none;border-radius:12px;cursor:pointer;transition:all 0.3s;margin-top:8px;letter-spacing:0.02em}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(37,211,102,0.35)}
+.form-note{text-align:center;color:rgba(255,255,255,0.3);font-size:11px;margin-top:10px}
+.features-card{background:rgba(255,255,255,0.025);border:1px solid rgba(255,206,0,0.1);border-radius:20px;padding:24px}
+.features-card h3{font-family:'Inter Tight',sans-serif;font-size:12px;font-weight:800;color:#FFD700;margin-bottom:14px;letter-spacing:0.08em;text-transform:uppercase}
+.feat-item{display:flex;align-items:center;gap:10px;font-size:13px;color:rgba(255,255,255,0.72);margin-bottom:9px}
+.feat-check{width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#25D366,#128c4a);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.feat-check svg{width:9px;height:9px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,206,0,0.1);position:relative;z-index:1}
 .footer-inner{max-width:1200px;margin:0 auto}
 .footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:24px;border-bottom:1px solid rgba(255,255,255,0.06)}
@@ -112,101 +77,117 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
 .footer-col a::before{content:'›';color:#CC0000;margin-right:5px}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .footer-bottom p{font-size:11px;color:rgba(255,255,255,0.25)}
-@media(max-width:768px){.nav-links,.nav-cta{display:none}.nav-mobile-btn{display:flex}.footer-top{flex-direction:column}.footer-links{gap:24px}}
-
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.nav-mobile-btn{display:flex}.footer-top{flex-direction:column}.footer-links{gap:24px}.main-content{padding:0 16px 60px}.order-card,.features-card{padding:20px 16px}}
 </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav id="nav">
-  <div class="ni">
-    <a href="index.html" class="logo-a">
-      <svg width="32" height="24" viewBox="0 0 5 3" xmlns="http://www.w3.org/2000/svg">
-        <rect width="5" height="1" fill="#000"/>
-        <rect y="1" width="5" height="1" fill="#D00"/>
-        <rect y="2" width="5" height="1" fill="#FFCE00"/>
+  <div class="nav-inner">
+    <a href="/index.html" class="logo-a" aria-label="IPTVV.DE">
+      <svg class="logo-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFD700"/><stop offset="100%" stop-color="#FFA500"/></linearGradient></defs>
+        <path d="M28 4 L50 14 L50 34 Q50 46 28 54 Q6 46 6 34 L6 14 Z" fill="#1a0a0a" stroke="rgba(255,206,0,0.3)" stroke-width="1"/>
+        <path d="M9 14 L47 14 L47 26 L9 26 Z" fill="#111"/>
+        <path d="M9 26 L47 26 L47 38 L9 38 Z" fill="#CC0000"/>
+        <path d="M9 38 L47 38 L47 50 L9 50 Z" fill="#FFD700"/>
+        <circle cx="28" cy="32" r="18" fill="none" stroke="url(#g1)" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3"><animateTransform attributeName="transform" type="rotate" from="0 28 32" to="360 28 32" dur="8s" repeatCount="indefinite"/></circle>
+        <text x="28" y="36" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="900" font-size="11" fill="white" opacity="0.9">.DE</text>
       </svg>
-      <div class="logo-txt" style="font-size:1.1rem"><span class="w">IPTV</span><span class="o" style="font-size:0.85em">KAUFEN</span></div>
+      <div class="logo-text"><span class="logo-main">IPTV</span><span class="logo-sub">KAUFEN</span></div>
     </a>
+    <ul class="nav-links">
+      <li><a href="/index.html">Startseite</a></li>
+      <li><a href="/preise.html">Preise</a></li>
+      <li><a href="/faqs.html">FAQs</a></li>
+      <li><a href="/kontakt.html">Kontakt</a></li>
+    </ul>
+    <a href="/whatsapp-kontakt.html" class="nav-cta">Kostenloser Test</a>
+    <div class="nav-mobile-btn" onclick="document.getElementById('mobileMenu').classList.toggle('open')"><span></span><span></span><span></span></div>
   </div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/index.html">Startseite</a>
+  <a href="/preise.html">Preise</a>
+  <a href="/faqs.html">FAQs</a>
+  <a href="/kontakt.html">Kontakt</a>
+  <a href="/whatsapp-kontakt.html" style="background:linear-gradient(135deg,#FFD700,#CC0000);color:#1a0a0a;text-align:center;border-radius:10px;margin-top:10px;font-weight:800;font-family:'Inter Tight',sans-serif;border-bottom:none;padding:12px 0;">Kostenloser Test</a>
+</div>
 
-<!-- MAIN -->
-<main>
-  <div class="container">
-    <div class="form-container">
-      <h1>WhatsApp Kontakt</h1>
-      <p class="subtitle">Wir kontaktieren Sie auf WhatsApp in 5 Minuten</p>
-      
-      <form id="contactForm">
+<div class="page-bg">
+  <header class="plan-header">
+    <div class="plan-eyebrow">
+      💬 WhatsApp Kontakt
+    </div>
+    <h1>IPTV Kostenlos Testen</h1>
+    <p>Hinterlassen Sie Ihre WhatsApp-Nummer – wir melden uns <strong style="color:#FFD700">innerhalb von 5 Minuten</strong> mit Ihrem kostenlosen 24h-Testzugang.</p>
+    <div class="trust-row">
+      <span class="trust-badge">✅ 100% kostenlos</span>
+      <span class="trust-badge">⚡ In 5 Min. aktiviert</span>
+      <span class="trust-badge">🔒 Keine Kreditkarte</span>
+      <span class="trust-badge">⏱ 24h Testzugang</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="order-card">
+      <div class="form-header">
+        <h2>Kostenloser Test anfordern</h2>
+        <p>Wir kontaktieren Sie auf WhatsApp und senden direkt Ihre Zugangsdaten.</p>
+      </div>
+      <form id="waForm">
         <div class="form-group">
-          <label for="firstName">Vorname *</label>
-          <input type="text" id="firstName" name="firstName" placeholder="Ihr Vorname" required/>
+          <label class="form-label">Vorname *</label>
+          <input type="text" name="first_name" class="form-input" placeholder="Ihr Vorname" required/>
         </div>
-
         <div class="form-group">
-          <label for="country">Land *</label>
-          <select id="country" name="country" required>
+          <label class="form-label">Land *</label>
+          <select name="country" class="form-input" required>
             <option value="">Land wählen</option>
-            <option value="Deutschland">Deutschland</option>
+            <option value="Deutschland" selected>Deutschland</option>
             <option value="Österreich">Österreich</option>
             <option value="Schweiz">Schweiz</option>
             <option value="Niederlande">Niederlande</option>
             <option value="Belgien">Belgien</option>
             <option value="Luxemburg">Luxemburg</option>
-            <option value="Polen">Polen</option>
-            <option value="Tschechien">Tschechien</option>
-            <option value="Ungarn">Ungarn</option>
-            <option value="Rumänien">Rumänien</option>
-            <option value="Bulgarien">Bulgarien</option>
-            <option value="Kroatien">Kroatien</option>
-            <option value="Serbien">Serbien</option>
-            <option value="Slovenien">Slovenien</option>
-            <option value="Slowakei">Slowakei</option>
             <option value="Frankreich">Frankreich</option>
-            <option value="Italien">Italien</option>
-            <option value="Spanien">Spanien</option>
-            <option value="Portugal">Portugal</option>
-            <option value="Griechenland">Griechenland</option>
+            <option value="Polen">Polen</option>
             <option value="Türkei">Türkei</option>
-            <option value="Vereinigte Staaten">Vereinigte Staaten</option>
-            <option value="Kanada">Kanada</option>
             <option value="Großbritannien">Großbritannien</option>
-            <option value="Skandinavien">Skandinavien</option>
+            <option value="USA">USA</option>
+            <option value="Kanada">Kanada</option>
             <option value="Andere">Andere</option>
           </select>
         </div>
-
         <div class="form-group">
-          <label for="whatsapp">WhatsApp Nummer *</label>
-          <input type="tel" id="whatsapp" name="whatsapp" placeholder="+49 160 123456" required/>
-          <small style="color:rgba(255,255,255,.35);font-size:11px;display:block;margin-top:4px">Bitte mit Ländervorwahl eingeben (z.B. +49)</small>
+          <label class="form-label">WhatsApp Nummer *</label>
+          <input type="tel" name="whatsapp" class="form-input" placeholder="+49 160 123 4567" required/>
+          <small style="color:rgba(255,255,255,.3);font-size:11px;display:block;margin-top:4px">Bitte mit Ländervorwahl eingeben (z.B. +49)</small>
         </div>
-
-        <button type="submit" class="btn">WhatsApp Kontakt →</button>
-        <p class="note">Ihre Nummer wird nicht weitergegeben</p>
+        <button type="submit" class="submit-btn">💬 Kostenlos testen – Wir melden uns in 5 Min.</button>
+        <p class="form-note">Ihre Nummer wird ausschließlich für den Support genutzt &middot; Kein Spam</p>
       </form>
     </div>
-  </div>
-</main>
 
-<!-- FOOTER -->
-<footer>
+    <div class="features-card">
+      <h3>Im kostenlosen Test inklusive</h3>
+      <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2"/></svg></div>50.000+ Live-Kanäle für 24 Stunden</div>
+      <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2"/></svg></div>4K Ultra HD Qualität ohne Puffern</div>
+      <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2"/></svg></div>Bundesliga, Sky Sport &amp; DAZN</div>
+      <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2"/></svg></div>120.000+ Filme &amp; Serien (VOD)</div>
+      <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2"/></svg></div>Alle Geräte kompatibel</div>
+      <div class="feat-item"><div class="feat-check"><svg viewBox="0 0 10 10"><polyline points="2,5 4,8 8,2"/></svg></div>Kein Vertrag, keine Kreditkarte nötig</div>
+    </div>
+  </main>
+
+  <footer>
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
           <a href="/index.html" class="logo-a" style="margin-bottom:0">
-            <svg width="32" height="32" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M28 4 L50 14 L50 34 Q50 46 28 54 Q6 46 6 34 L6 14 Z" fill="#1a0a0a" stroke="rgba(255,206,0,0.3)" stroke-width="1"/>
-              <path d="M9 14 L47 14 L47 26 L9 26 Z" fill="#111"/>
-              <path d="M9 26 L47 26 L47 38 L9 38 Z" fill="#CC0000"/>
-              <path d="M9 38 L47 38 L47 50 L9 50 Z" fill="#FFD700"/>
-              <text x="28" y="36" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="900" font-size="11" fill="white" opacity="0.9">.DE</text>
-            </svg>
+            <svg width="32" height="32" viewBox="0 0 56 56" fill="none"><path d="M28 4 L50 14 L50 34 Q50 46 28 54 Q6 46 6 34 L6 14 Z" fill="#1a0a0a" stroke="rgba(255,206,0,0.3)" stroke-width="1"/><path d="M9 14 L47 14 L47 26 L9 26 Z" fill="#111"/><path d="M9 26 L47 26 L47 38 L9 38 Z" fill="#CC0000"/><path d="M9 38 L47 38 L47 50 L9 50 Z" fill="#FFD700"/><text x="28" y="36" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="900" font-size="11" fill="white" opacity="0.9">.DE</text></svg>
             <div class="logo-text"><span class="logo-main">IPTV</span><span class="logo-sub">KAUFEN</span></div>
           </a>
-          <p>Deutschlands führender IPTV-Dienst mit 25.000+ Kanälen und 120.000+ VOD-Titeln in 4K.</p>
+          <p>Deutschlands bester IPTV Anbieter mit 50.000+ Kanälen und 120.000+ VOD-Titeln in 4K.</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
@@ -218,40 +199,49 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
           </div>
           <div class="footer-col">
             <h4>Beliebte Pakete</h4>
-            <a href="/1-monat-1-gerat.html">1 Monat · 1 Gerät</a>
-            <a href="/6-monate-1-gerat.html">6 Monate · 1 Gerät</a>
-            <a href="/1-jahr-1-gerat.html">1 Jahr · 1 Gerät</a>
-            <a href="/1-jahr-2-gerate.html">1 Jahr · 2 Geräte</a>
+            <a href="/1-monat-1-gerat.html">1 Monat &middot; 1 Gerät</a>
+            <a href="/6-monate-1-gerat.html">6 Monate &middot; 1 Gerät</a>
+            <a href="/1-jahr-1-gerat.html">1 Jahr &middot; 1 Gerät</a>
+            <a href="/1-jahr-2-gerate.html">1 Jahr &middot; 2 Geräte</a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 IPTVV.DE – Alle Rechte vorbehalten</p>
+        <p>&copy; 2026 IPTVV.DE &ndash; Alle Rechte vorbehalten</p>
         <p>Nur für legale Inhalte. Nutzung auf eigene Verantwortung.</p>
       </div>
     </div>
   </footer>
+</div>
 
 <script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('waForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  
-  const firstName = document.getElementById('firstName').value;
-  const country = document.getElementById('country').value;
-  const whatsapp = document.getElementById('whatsapp').value;
-  
-  // Show success message (EmailJS integration will be added later)
-  alert(`Danke ${firstName}! Wir kontaktieren Sie bald auf WhatsApp.\n\nDaten:\nLand: ${country}\nNummer: ${whatsapp}`);
-  
-  // Reset form
-  this.reset();
-  
-  // Redirect to home after 2 seconds
-  setTimeout(() => {
-    window.location.href = '/index.html';
-  }, 2000);
+  var btn = this.querySelector('.submit-btn');
+  var d = new FormData(this);
+  btn.disabled = true;
+  btn.textContent = 'Senden...';
+  emailjs.send('service_rmnuog9', 'template_0qhdvki', {
+    plan:      'Kostenloser 24h Test',
+    full_name: d.get('first_name'),
+    email:     'WhatsApp-Anfrage',
+    phone:     d.get('whatsapp'),
+    country:   d.get('country'),
+    device:    'WhatsApp',
+    message:   'Kostenloser Test angefordert via WhatsApp-Kontakt-Seite',
+    reply_to:  'no-reply@iptvv.de',
+  }).then(function() {
+    document.querySelector('.order-card').innerHTML = '<div style="text-align:center;padding:48px 16px"><div style="font-size:56px;margin-bottom:16px">✅</div><div style="font-family:\'Inter Tight\',sans-serif;font-size:22px;font-weight:900;color:#25D366;margin-bottom:12px">Anfrage erhalten!</div><p style="color:rgba(255,255,255,.6);font-size:14px;line-height:1.8">Wir melden uns <strong style="color:#FFD700">innerhalb von 5 Minuten</strong> auf WhatsApp.<br>Bitte halten Sie Ihr Handy bereit.</p><a href="/preise.html" style="display:inline-block;margin-top:24px;background:linear-gradient(135deg,#FFD700,#FFA500);color:#1a0a0a;font-weight:800;padding:12px 28px;border-radius:50px;font-family:\'Inter Tight\',sans-serif;font-size:14px">Alle Pakete ansehen &rarr;</a></div>';
+  }).catch(function(err) {
+    btn.disabled = false;
+    btn.textContent = '\uD83D\uDCAC Kostenlos testen \u2013 Wir melden uns in 5 Min.';
+    alert('Fehler. Bitte versuchen Sie es erneut.');
+    console.error(err);
+  });
+});
+window.addEventListener('scroll', function() {
+  document.getElementById('nav').style.background = window.scrollY > 40 ? 'rgba(10,0,16,0.98)' : 'rgba(20,4,56,0.92)';
 });
 </script>
-
 </body>
 </html>
