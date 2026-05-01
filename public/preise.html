@@ -171,6 +171,13 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
 .footer-bottom p{font-size:11px;color:rgba(255,255,255,0.25)}
 @media(max-width:768px){.nav-links,.nav-cta{display:none}.nav-mobile-btn{display:flex}.footer-top{flex-direction:column}.footer-links{gap:24px}}
 
+/* IBO Player bonus banner */
+.ibo-banner{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,0.18);border:1.5px solid rgba(255,255,255,0.45);border-radius:11px;padding:10px 13px;margin-bottom:14px;backdrop-filter:blur(4px)}
+.ibo-star{font-size:17px;flex-shrink:0;line-height:1}
+.ibo-text{font-family:'Inter Tight',sans-serif;font-size:12px;font-weight:800;color:#fff;line-height:1.3}
+.pc-m12 .ibo-banner{background:rgba(0,0,0,0.1);border-color:rgba(0,0,0,0.2)}
+.pc-m12 .ibo-text{color:#1a0a00}
+
 </style>
 </head>
 <body>
@@ -312,7 +319,7 @@ const durations = [
 ];
 
 const features = ['50.000+ Live-Kanäle (IPTV alle Sender)','120.000+ Filme & Serien (VOD)','4K Ultra HD Qualität','Bundesliga · Sky · Dazn','PPV Events inklusive','EPG & Catch-Up TV','IPTV Stick, Box, Receiver, Smart TV','24/7 Deutscher Support'];
-const featuresM12 = [...features, '🎁 IBO Player Abo kostenlos inklusive'];
+const featuresM12 = [...features];
 
 const cardClass = {m1:'pc-m1', m3:'pc-m3', m6:'pc-m6', m12:'pc-m12'};
 
@@ -333,17 +340,18 @@ function renderPricing() {
   grid.innerHTML = durations.map(dur => {
     const plan = planData[dur.key];
     const cls = cardClass[dur.key];
-    const fList = dur.key === 'm12' ? featuresM12 : features;
-    const featuresHtml = fList.map((f, i) => {
-      const isBonus = dur.key === 'm12' && i === fList.length - 1;
-      return `<li style="${isBonus ? 'font-weight:800;' : ''}">${f}</li>`;
-    }).join('');
+    const fList = features;
+    const featuresHtml = fList.map(f => `<li>${f}</li>`).join('');
+    const iboBanner = dur.key === 'm12'
+      ? `<div class="ibo-banner"><span class="ibo-star">⭐</span><span class="ibo-text">IBO Player Abo<br>kostenlos inklusive</span></div>`
+      : '';
     return `
       <div class="pricing-card ${cls}">
         ${dur.badge ? `<span class="pc-badge">${dur.badge}</span>` : ''}
         <div class="price-duration">${dur.label}</div>
         <div class="price-amount">${plan.price}</div>
         <div class="price-per">/ ${currentDevices} Gerät${currentDevices > 1 ? 'e' : ''}</div>
+        ${iboBanner}
         <ul class="price-features">${featuresHtml}</ul>
         <a href="/${plan.url}.html" class="price-btn">Jetzt starten →</a>
       </div>
