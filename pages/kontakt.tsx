@@ -33,13 +33,13 @@ export default function Kontakt() {
           <h1 style={{ color: '#fff', fontSize: 'clamp(1.8rem, 3vw, 2.8rem)', fontWeight: 900, marginTop: '12px', marginBottom: '16px' }}>
             Kontaktiere uns
           </h1>
-          <p style={{ color: '#777', lineHeight: 1.75, marginBottom: '48px' }}>
+          <p style={{ color: '#8c8c8c', lineHeight: 1.75, marginBottom: '48px' }}>
             Unser Support-Team ist 7 Tage die Woche für Sie erreichbar. Schreiben Sie uns einfach über einen der folgenden Kanäle.
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '20px', marginBottom: '48px' }}>
             {[
               { icon: '💬', label: 'WhatsApp', val: 'Klicken zum Schreiben', href: `${WA}&text=Hallo+IPTVV%2C+ich+habe+eine+Frage`, color: '#25D366' },
-              { icon: '✉️', label: 'E-Mail', val: 'info@iptvv.de', href: 'mailto:info@iptvv.de', color: '#e53935' },
+              { icon: '✉️', label: 'E-Mail', val: 'info[at]iptvv.de', href: '#email', color: '#e53935' },
             ].map(c => (
               <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer"
                 style={{ background: '#111', border: `1px solid #1e1e1e`, borderRadius: '12px', padding: '32px', textDecoration: 'none', display: 'block', transition: 'border-color 0.2s' }}

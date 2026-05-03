@@ -5,7 +5,6 @@ import { useState } from 'react'
 const WA = 'https://api.whatsapp.com/send/?phone=4917600000000'
 
 function Navbar() {
-  const [open, setOpen] = useState(false)
   return (
     <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50 }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
@@ -29,8 +28,16 @@ function Navbar() {
 
 function Hero() {
   return (
-    <section style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #1a0000 60%, #0a0a0a 100%)', paddingTop: '100px', paddingBottom: '80px' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '48px' }}>
+    <section style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #1a0000 60%, #0a0a0a 100%)', paddingTop: '100px', paddingBottom: '80px', position: 'relative', overflow: 'hidden' }}>
+      <img
+        src="/hero-mobile.webp"
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
+        decoding="sync"
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.08, zIndex: 0 }}
+      />
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '48px', position: 'relative', zIndex: 1 }}>
         <div style={{ flex: '1 1 400px' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(229,57,53,0.12)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '99px', padding: '6px 16px', marginBottom: '24px' }}>
             <span style={{ width: '8px', height: '8px', background: '#e53935', borderRadius: '50%', display: 'inline-block' }} />
@@ -57,7 +64,7 @@ function Hero() {
           {[{ val: '+22.000', label: 'TV-Kanäle' }, { val: '+120.000', label: 'VOD Titel' }, { val: '4K Ultra HD', label: 'Qualität' }, { val: '99,9%', label: 'Verfügbarkeit' }].map(s => (
             <div key={s.label} style={{ background: '#111', border: '1px solid #222', borderRadius: '12px', padding: '22px', textAlign: 'center' }}>
               <div style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>{s.val}</div>
-              <div style={{ color: '#777', fontSize: '0.8rem', marginTop: '4px' }}>{s.label}</div>
+              <div style={{ color: '#8c8c8c', fontSize: '0.8rem', marginTop: '4px' }}>{s.label}</div>
             </div>
           ))}
         </div>
@@ -83,7 +90,7 @@ function Features() {
           <h2 style={{ color: '#fff', fontSize: 'clamp(1.7rem, 3vw, 2.4rem)', fontWeight: 900, marginTop: '12px', marginBottom: '16px' }}>
             Warum IPTVV der führende IPTV-Service in Deutschland ist
           </h2>
-          <p style={{ color: '#777', maxWidth: '580px', margin: '0 auto', lineHeight: 1.75 }}>
+          <p style={{ color: '#8c8c8c', maxWidth: '580px', margin: '0 auto', lineHeight: 1.75 }}>
             Tauchen Sie ein in 4K-Bildqualität auf jedem Gerät. Mehr als 22.000 Kanäle, 120.000+ VODs und 100% Verfügbarkeit ohne Pufferung oder Einfrieren.
           </p>
         </div>
@@ -94,7 +101,7 @@ function Features() {
               onMouseLeave={e => (e.currentTarget.style.borderColor = '#1e1e1e')}>
               <div style={{ fontSize: '2.2rem', marginBottom: '14px' }}>{item.icon}</div>
               <h3 style={{ color: '#fff', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '1px', marginBottom: '10px' }}>{item.title}</h3>
-              <p style={{ color: '#777', fontSize: '0.9rem', lineHeight: 1.7 }}>{item.desc}</p>
+              <p style={{ color: '#8c8c8c', fontSize: '0.9rem', lineHeight: 1.7 }}>{item.desc}</p>
             </div>
           ))}
         </div>
@@ -132,7 +139,7 @@ function HowItWorks() {
             <div key={s.n} style={{ textAlign: 'center' }}>
               <div style={{ width: '64px', height: '64px', background: 'rgba(229,57,53,0.1)', border: '2px solid #e53935', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', fontSize: '1.2rem', fontWeight: 900, color: '#e53935' }}>{s.n}</div>
               <h3 style={{ color: '#fff', fontWeight: 700, marginBottom: '10px', fontSize: '1rem' }}>{s.title}</h3>
-              <p style={{ color: '#777', fontSize: '0.88rem', lineHeight: 1.7 }}>{s.desc}</p>
+              <p style={{ color: '#8c8c8c', fontSize: '0.88rem', lineHeight: 1.7 }}>{s.desc}</p>
             </div>
           ))}
         </div>
@@ -201,7 +208,7 @@ function Stats() {
           <h2 style={{ color: '#fff', fontSize: 'clamp(1.7rem, 3vw, 2.4rem)', fontWeight: 900 }}>
             besten iptv kaufen in <span style={{ color: '#e53935' }}>Deutschland</span>
           </h2>
-          <p style={{ color: '#777', marginTop: '16px', maxWidth: '680px', margin: '16px auto 0', lineHeight: 1.75 }}>
+          <p style={{ color: '#8c8c8c', marginTop: '16px', maxWidth: '680px', margin: '16px auto 0', lineHeight: 1.75 }}>
             IPTV kaufen bei uns und erhalten Sie Zugang zu 20.000 Kanälen und mehr als 120.000 VOD mit allen Qualitäten in FHD und 4K – Der beste IPTV Anbieter mit 99,9% Verfügbarkeit, <strong style={{ color: '#fff' }}>100% Geld-zurück-Garantie</strong> in 7 Tagen.
           </p>
         </div>
@@ -209,7 +216,7 @@ function Stats() {
           {[{ val: '100%', label: 'Trusted' }, { val: '7 Tage', label: 'Rückerstattung' }, { val: '99%', label: 'Stabiler Server' }, { val: '120K+', label: 'VOD & Kanäle' }].map(s => (
             <div key={s.label} style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '28px', textAlign: 'center' }}>
               <div style={{ color: '#e53935', fontSize: '2rem', fontWeight: 900 }}>{s.val}</div>
-              <div style={{ color: '#777', fontSize: '0.85rem', marginTop: '6px' }}>{s.label}</div>
+              <div style={{ color: '#8c8c8c', fontSize: '0.85rem', marginTop: '6px' }}>{s.label}</div>
             </div>
           ))}
         </div>
@@ -234,24 +241,24 @@ function Footer() {
               <span style={{ color: '#e53935', fontSize: '1.4rem', fontWeight: 900 }}>IPTVV</span>
               <span style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 900 }}>.DE</span>
             </div>
-            <p style={{ color: '#555', fontSize: '0.88rem', lineHeight: 1.7 }}>
+            <p style={{ color: '#8c8c8c', fontSize: '0.88rem', lineHeight: 1.7 }}>
               Der beste IPTV-Service in Deutschland mit über 22.000 Kanälen und 120.000+ VOD-Titeln in 4K-Qualität.
             </p>
           </div>
           <div>
-            <h4 style={{ color: '#fff', fontWeight: 700, marginBottom: '16px', fontSize: '0.95rem' }}>Schnelllinks</h4>
+            <p style={{ color: '#fff', fontWeight: 700, marginBottom: '16px', fontSize: '0.95rem' }}>Schnelllinks</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
               {[['/', 'Heim'], ['/preise', 'Preisgestaltung'], ['/faqs', 'FAQs'], ['/datenschutz', 'Datenschutzrichtlinie'], ['/agb', 'Geschäftsbedingungen']].map(([href, label]) => (
-                <Link key={href} href={href} style={{ color: '#555', fontSize: '0.88rem', textDecoration: 'none' }}>{label}</Link>
+                <Link key={href} href={href} style={{ color: '#8c8c8c', fontSize: '0.88rem', textDecoration: 'none' }}>{label}</Link>
               ))}
             </div>
           </div>
           <div>
-            <h4 style={{ color: '#fff', fontWeight: 700, marginBottom: '16px', fontSize: '0.95rem' }}>Support</h4>
+            <p style={{ color: '#fff', fontWeight: 700, marginBottom: '16px', fontSize: '0.95rem' }}>Support</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <Link href="/kontakt" style={{ color: '#555', fontSize: '0.88rem', textDecoration: 'none' }}>Kontaktiere uns</Link>
-              <a href={`https://wa.me/4917600000000`} target="_blank" rel="noopener noreferrer" style={{ color: '#555', fontSize: '0.88rem', textDecoration: 'none' }}>WhatsApp Support</a>
-              <a href="mailto:info@iptvv.de" style={{ color: '#555', fontSize: '0.88rem', textDecoration: 'none' }}>info@iptvv.de</a>
+              <Link href="/kontakt" style={{ color: '#8c8c8c', fontSize: '0.88rem', textDecoration: 'none' }}>Kontaktiere uns</Link>
+              <a href={`https://wa.me/4917600000000`} target="_blank" rel="noopener noreferrer" style={{ color: '#8c8c8c', fontSize: '0.88rem', textDecoration: 'none' }}>WhatsApp Support</a>
+              <a href="mailto:info@iptvv.de" style={{ color: '#8c8c8c', fontSize: '0.88rem', textDecoration: 'none' }}>info@iptvv.de</a>
             </div>
           </div>
         </div>
@@ -271,9 +278,17 @@ export default function Home() {
         <title>IPTV kaufen 2026 – IPTV Anbieter in Deutschland | IPTVV.DE</title>
         <meta name="description" content="IPTV kaufen bei IPTVV Premium – der beste IPTV-Service in Deutschland. +22.000 Kanäle, +120.000 VOD, 4K Ultra HD. Kostenlos testen!" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0a0a0a" />
+        <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
         <meta property="og:title" content="IPTV kaufen 2026 – IPTV Anbieter in Deutschland | IPTVV.DE" />
         <meta property="og:description" content="+22.000 Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
         <meta property="og:url" content="https://iptvv.de" />
+        <link rel="canonical" href="https://iptvv.de/" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="IPTVV.DE" />
+        <meta property="og:locale" content="de_DE" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
