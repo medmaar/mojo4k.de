@@ -277,6 +277,7 @@ export default function Home() {
       <Head>
         <title>IPTV kaufen 2026 – IPTV Anbieter in Deutschland | IPTVV.DE</title>
         <meta name="description" content="IPTV kaufen bei IPTVV Premium – der beste IPTV-Service in Deutschland. +22.000 Kanäle, +120.000 VOD, 4K Ultra HD. Kostenlos testen!" />
+        <meta name="google-site-verification" content="6n21n_IARwicV--IqE2jrwkzUt4QOp6Wmx2robpca8k" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0a0a0a" />
         <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
