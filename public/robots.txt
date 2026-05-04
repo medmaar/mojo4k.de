@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /plan-page
+Disallow: /whatsapp-kontakt
+
+Sitemap: https://iptvv.de/sitemap.xml
