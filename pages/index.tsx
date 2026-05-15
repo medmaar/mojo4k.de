@@ -4,39 +4,116 @@ import { useState } from 'react'
 
 const WA = 'https://api.whatsapp.com/send/?phone=4917600000000'
 
+const faqSchemaData = [
+  { q: 'Was ist IPTV und wie funktioniert es?', a: 'IPTV (Internet Protocol Television) ist eine Methode zur Übertragung von TV-Inhalten über das Internet statt über Kabel oder Satellit. Mit IPTVV.DE erhalten Sie Zugang zu über 22.000 Live-Kanälen und 120.000+ Filmen und Serien in HD und 4K-Qualität.' },
+  { q: 'Welche Geräte werden von IPTVV.DE unterstützt?', a: 'IPTVV.DE funktioniert auf Amazon Fire TV Stick, Android TV Box, Samsung Smart TV, LG Smart TV, iPhone, iPad, Android-Smartphones, PC, Mac, MAG-Box, Enigma2 und allen IPTV-Playern wie Smarters Pro und TiviMate.' },
+  { q: 'Kann ich IPTVV.DE kostenlos testen?', a: 'Ja! Wir bieten einen kostenlosen Testplan an. Kontaktieren Sie uns einfach über WhatsApp, und wir aktivieren Ihren Test sofort – ohne Kreditkarte.' },
+  { q: 'Wie schnell wird mein Abonnement aktiviert?', a: 'Die Aktivierung erfolgt innerhalb weniger Minuten nach Zahlungseingang. Sie erhalten Ihre Zugangsdaten per E-Mail und WhatsApp und können sofort mit dem Streaming beginnen.' },
+  { q: 'Ist IPTV legal in Deutschland?', a: 'Die IPTV-Technologie selbst ist legal. Entscheidend ist die Quelle des Inhalts. IPTVV.DE stellt seinen Service im Rahmen der geltenden Vorschriften bereit. Nutzer sind für die Einhaltung der Gesetze in ihrem Land verantwortlich.' },
+  { q: 'Welche Internetgeschwindigkeit benötige ich?', a: 'Für HD-Streaming empfehlen wir mindestens 16 Mbit/s, für 4K Ultra HD mindestens 25 Mbit/s. Eine stabile Verbindung ist wichtiger als die reine Geschwindigkeit.' },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqSchemaData.map(f => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'IPTVV.DE',
+  url: 'https://iptvv.de',
+  logo: 'https://iptvv.de/favicon.svg',
+  description: 'Bester IPTV Anbieter in Deutschland. Über 22.000 Kanäle, 120.000+ VOD in 4K. Kompatibel mit Fire Stick, Smart TV, Android, iOS und mehr.',
+  areaServed: ['DE', 'AT', 'CH'],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer support',
+    availableLanguage: 'German',
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '1090',
+    bestRating: '5',
+    worstRating: '1',
+  },
+}
+
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'IPTVV Premium IPTV Abonnement',
+  description: 'Premium IPTV Service in Deutschland mit 22.000+ Kanälen, 120.000+ VOD, 4K Ultra HD, EPG und 24/7 Support.',
+  brand: { '@type': 'Brand', name: 'IPTVV.DE' },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '1090',
+    bestRating: '5',
+  },
+  offers: {
+    '@type': 'AggregateOffer',
+    lowPrice: '15.99',
+    highPrice: '59.99',
+    priceCurrency: 'EUR',
+    offerCount: '4',
+  },
+}
+
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
-    <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50 }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
-        <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-          <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
-          <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
-        </Link>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }} className="hidden-mobile">
-          {[['/', 'Heim'], ['/preise', 'Preise'], ['/faqs', 'FAQs'], ['/kontakt', 'Kontakt']].map(([href, label]) => (
-            <Link key={href} href={href} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{label}</Link>
-          ))}
+    <>
+      <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px', width: '100%' }}>
+          <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+            <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+            <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
+          </Link>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }} className="hidden-mobile">
+            {[['/', 'Heim'], ['/preise', 'Preise'], ['/faqs', 'FAQs'], ['/kontakt', 'Kontakt']].map(([href, label]) => (
+              <Link key={href} href={href} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{label}</Link>
+            ))}
+          </div>
+          <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+den+Service+gerne+testen`} target="_blank" rel="noopener noreferrer"
+            style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }} className="hidden-mobile">
+            Kostenloser Test
+          </a>
+          <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Menü öffnen"
+            style={{ display: 'none', flexDirection: 'column', gap: '5px', background: 'none', border: 'none', cursor: 'pointer', padding: '8px' }} className="show-mobile">
+            <span style={{ display: 'block', width: '22px', height: '2px', background: '#fff', borderRadius: '2px' }} />
+            <span style={{ display: 'block', width: '22px', height: '2px', background: '#fff', borderRadius: '2px' }} />
+            <span style={{ display: 'block', width: '22px', height: '2px', background: '#fff', borderRadius: '2px' }} />
+          </button>
         </div>
-        <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+den+Service+gerne+testen`} target="_blank" rel="noopener noreferrer"
-          style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
-          Kostenloser Test
-        </a>
-      </div>
-    </nav>
+      </nav>
+      {menuOpen && (
+        <div style={{ position: 'fixed', inset: '64px 0 0 0', background: 'rgba(10,10,10,0.97)', zIndex: 49, display: 'flex', flexDirection: 'column', padding: '2rem 1.5rem' }}>
+          {[['/', 'Heim'], ['/preise', 'Preise'], ['/faqs', 'FAQs'], ['/kontakt', 'Kontakt']].map(([href, label]) => (
+            <Link key={href} href={href} onClick={() => setMenuOpen(false)}
+              style={{ padding: '1rem 0', borderBottom: '1px solid #1e1e1e', color: '#ccc', textDecoration: 'none', fontSize: '1rem', fontWeight: 600 }}>{label}</Link>
+          ))}
+          <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+testen`} target="_blank" rel="noopener noreferrer"
+            style={{ marginTop: '1.5rem', background: '#e53935', color: '#fff', fontWeight: 700, padding: '0.85rem', borderRadius: '8px', textAlign: 'center', textDecoration: 'none' }}>
+            Kostenloser Test
+          </a>
+        </div>
+      )}
+    </>
   )
 }
 
 function Hero() {
   return (
     <section style={{ background: 'linear-gradient(135deg, #0a0a0a 0%, #1a0000 60%, #0a0a0a 100%)', paddingTop: '100px', paddingBottom: '80px', position: 'relative', overflow: 'hidden' }}>
-      <img
-        src="/hero-mobile.webp"
-        alt=""
-        aria-hidden="true"
-        fetchPriority="high"
-        decoding="sync"
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.08, zIndex: 0 }}
-      />
+      <img src="/hero-mobile.webp" alt="" aria-hidden="true" fetchPriority="high" decoding="sync"
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', opacity: 0.08, zIndex: 0 }} />
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '48px', position: 'relative', zIndex: 1 }}>
         <div style={{ flex: '1 1 400px' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(229,57,53,0.12)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '99px', padding: '6px 16px', marginBottom: '24px' }}>
@@ -96,7 +173,7 @@ function Features() {
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px', marginBottom: '32px' }}>
           {items.map(item => (
-            <div key={item.title} style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '28px', cursor: 'default', transition: 'border-color 0.2s' }}
+            <div key={item.title} style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '28px', transition: 'border-color 0.2s' }}
               onMouseEnter={e => (e.currentTarget.style.borderColor = '#e53935')}
               onMouseLeave={e => (e.currentTarget.style.borderColor = '#1e1e1e')}>
               <div style={{ fontSize: '2.2rem', marginBottom: '14px' }}>{item.icon}</div>
@@ -131,7 +208,7 @@ function HowItWorks() {
         <div style={{ textAlign: 'center', marginBottom: '56px' }}>
           <p style={{ color: '#e53935', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.82rem' }}>Wie es funktioniert</p>
           <h2 style={{ color: '#fff', fontSize: 'clamp(1.7rem, 3vw, 2.4rem)', fontWeight: 900, marginTop: '12px' }}>
-            IPTV Kaufen und greifen Sie zu
+            IPTV kaufen und greifen Sie zu
           </h2>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '32px' }}>
@@ -202,29 +279,73 @@ function PricingSection() {
 
 function Stats() {
   return (
-    <section style={{ background: '#080808', padding: '80px 0' }}>
+    <section style={{ background: '#080808', padding: '64px 0', borderTop: '1px solid #1a1a1a' }}>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '32px', textAlign: 'center' }}>
+        {[{ n: '22.000+', l: 'Live-Kanäle' }, { n: '120.000+', l: 'VOD Titel' }, { n: '99,9%', l: 'Betriebszeit' }, { n: '1.090+', l: 'Zufriedene Kunden' }].map(s => (
+          <div key={s.l}>
+            <div style={{ fontSize: '2.2rem', fontWeight: 900, color: '#e53935' }}>{s.n}</div>
+            <div style={{ color: '#666', fontSize: '0.85rem', marginTop: '6px' }}>{s.l}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+function DeviceLinks() {
+  const devices = [
+    { label: 'IPTV Fire Stick', href: '/iptv-fire-stick-deutschland' },
+    { label: 'IPTV Samsung TV', href: '/iptv-samsung-tv-deutschland' },
+    { label: 'IPTV Android Box', href: '/iptv-android-box-deutschland' },
+    { label: 'IPTV Smarters Pro', href: '/iptv-smarters-pro-deutschland' },
+  ]
+  return (
+    <section style={{ background: '#0a0a0a', padding: '40px 0', borderTop: '1px solid #1a1a1a' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px' }}>
-        <div style={{ textAlign: 'center', marginBottom: '48px' }}>
-          <h2 style={{ color: '#fff', fontSize: 'clamp(1.7rem, 3vw, 2.4rem)', fontWeight: 900 }}>
-            besten iptv kaufen in <span style={{ color: '#e53935' }}>Deutschland</span>
-          </h2>
-          <p style={{ color: '#8c8c8c', marginTop: '16px', maxWidth: '680px', margin: '16px auto 0', lineHeight: 1.75 }}>
-            IPTV kaufen bei uns und erhalten Sie Zugang zu 20.000 Kanälen und mehr als 120.000 VOD mit allen Qualitäten in FHD und 4K – Der beste IPTV Anbieter mit 99,9% Verfügbarkeit, <strong style={{ color: '#fff' }}>100% Geld-zurück-Garantie</strong> in 7 Tagen.
-          </p>
+        <p style={{ textAlign: 'center', color: '#555', fontSize: '0.82rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '20px' }}>Anleitungen nach Gerät</p>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center' }}>
+          {devices.map(d => (
+            <Link key={d.href} href={d.href}
+              style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '8px', padding: '8px 18px', color: '#aaa', textDecoration: 'none', fontSize: '0.88rem', transition: 'border-color 0.2s, color 0.2s' }}
+              onMouseEnter={e => { (e.currentTarget as HTMLAnchorElement).style.borderColor = '#e53935'; (e.currentTarget as HTMLAnchorElement).style.color = '#fff' }}
+              onMouseLeave={e => { (e.currentTarget as HTMLAnchorElement).style.borderColor = '#1e1e1e'; (e.currentTarget as HTMLAnchorElement).style.color = '#aaa' }}>
+              {d.label}
+            </Link>
+          ))}
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '20px' }}>
-          {[{ val: '100%', label: 'Trusted' }, { val: '7 Tage', label: 'Rückerstattung' }, { val: '99%', label: 'Stabiler Server' }, { val: '120K+', label: 'VOD & Kanäle' }].map(s => (
-            <div key={s.label} style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '28px', textAlign: 'center' }}>
-              <div style={{ color: '#e53935', fontSize: '2rem', fontWeight: 900 }}>{s.val}</div>
-              <div style={{ color: '#8c8c8c', fontSize: '0.85rem', marginTop: '6px' }}>{s.label}</div>
+      </div>
+    </section>
+  )
+}
+
+function FAQSection() {
+  const [open, setOpen] = useState<number | null>(null)
+  return (
+    <section style={{ background: '#080808', padding: '80px 0' }}>
+      <div style={{ maxWidth: '860px', margin: '0 auto', padding: '0 16px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+          <p style={{ color: '#e53935', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.82rem' }}>FAQ</p>
+          <h2 style={{ color: '#fff', fontSize: 'clamp(1.6rem, 3vw, 2.2rem)', fontWeight: 900, marginTop: '12px' }}>Häufig gestellte Fragen</h2>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          {faqSchemaData.map((f, i) => (
+            <div key={i} style={{ border: `1px solid ${open === i ? '#e53935' : '#1e1e1e'}`, borderRadius: '10px', overflow: 'hidden', transition: 'border-color 0.2s' }}>
+              <button onClick={() => setOpen(open === i ? null : i)}
+                style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '18px 22px', background: '#111', border: 'none', cursor: 'pointer', textAlign: 'left', gap: '16px' }}>
+                <span style={{ color: '#fff', fontWeight: 600, fontSize: '0.95rem' }}>{f.q}</span>
+                <svg width="18" height="18" fill="none" stroke="#e53935" strokeWidth="2" viewBox="0 0 24 24"
+                  style={{ flexShrink: 0, transform: open === i ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }}>
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </button>
+              {open === i && <div style={{ padding: '16px 22px 20px', background: '#0d0d0d', color: '#999', fontSize: '0.9rem', lineHeight: 1.75 }}>{f.a}</div>}
             </div>
           ))}
         </div>
-        <div style={{ textAlign: 'center', marginTop: '48px' }}>
-          <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+den+Service+testen`} target="_blank" rel="noopener noreferrer"
-            style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '16px 48px', borderRadius: '8px', fontSize: '1.05rem', textDecoration: 'none', display: 'inline-block' }}>
-            Zugriff erhalten
-          </a>
+        <div style={{ textAlign: 'center', marginTop: '32px' }}>
+          <Link href="/faqs" style={{ color: '#e53935', textDecoration: 'none', fontWeight: 600, fontSize: '0.9rem' }}>
+            Alle Fragen ansehen →
+          </Link>
         </div>
       </div>
     </section>
@@ -233,38 +354,34 @@ function Stats() {
 
 function Footer() {
   return (
-    <footer style={{ background: '#050505', borderTop: '1px solid #111', padding: '60px 0 28px' }}>
+    <footer style={{ background: '#050505', borderTop: '1px solid #1a1a1a', padding: '48px 0 32px' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '40px', marginBottom: '40px' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', justifyContent: 'space-between', marginBottom: '40px' }}>
           <div>
-            <div style={{ marginBottom: '14px' }}>
+            <div style={{ marginBottom: '12px' }}>
               <span style={{ color: '#e53935', fontSize: '1.4rem', fontWeight: 900 }}>IPTVV</span>
               <span style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 900 }}>.DE</span>
             </div>
-            <p style={{ color: '#8c8c8c', fontSize: '0.88rem', lineHeight: 1.7 }}>
-              Der beste IPTV-Service in Deutschland mit über 22.000 Kanälen und 120.000+ VOD-Titeln in 4K-Qualität.
-            </p>
+            <p style={{ color: '#555', fontSize: '0.85rem', maxWidth: '240px', lineHeight: 1.7 }}>Bester IPTV Anbieter Deutschland. 22.000+ Kanäle in 4K.</p>
           </div>
-          <div>
-            <p style={{ color: '#fff', fontWeight: 700, marginBottom: '16px', fontSize: '0.95rem' }}>Schnelllinks</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              {[['/', 'Heim'], ['/preise', 'Preisgestaltung'], ['/faqs', 'FAQs'], ['/datenschutz', 'Datenschutzrichtlinie'], ['/agb', 'Geschäftsbedingungen']].map(([href, label]) => (
-                <Link key={href} href={href} style={{ color: '#8c8c8c', fontSize: '0.88rem', textDecoration: 'none' }}>{label}</Link>
+          <div style={{ display: 'flex', gap: '60px', flexWrap: 'wrap' }}>
+            <div>
+              <p style={{ color: '#fff', fontWeight: 700, marginBottom: '14px', fontSize: '0.85rem' }}>Service</p>
+              {[['/', 'Startseite'], ['/preise', 'Preise'], ['/faqs', 'FAQs'], ['/kontakt', 'Kontakt']].map(([h, l]) => (
+                <Link key={h} href={h} style={{ display: 'block', color: '#555', textDecoration: 'none', fontSize: '0.85rem', marginBottom: '8px' }}>{l}</Link>
+              ))}
+            </div>
+            <div>
+              <p style={{ color: '#fff', fontWeight: 700, marginBottom: '14px', fontSize: '0.85rem' }}>Geräte</p>
+              {[['/iptv-fire-stick-deutschland', 'Fire Stick'], ['/iptv-samsung-tv-deutschland', 'Samsung TV'], ['/iptv-android-box-deutschland', 'Android Box'], ['/iptv-smarters-pro-deutschland', 'Smarters Pro']].map(([h, l]) => (
+                <Link key={h} href={h} style={{ display: 'block', color: '#555', textDecoration: 'none', fontSize: '0.85rem', marginBottom: '8px' }}>{l}</Link>
               ))}
             </div>
           </div>
-          <div>
-            <p style={{ color: '#fff', fontWeight: 700, marginBottom: '16px', fontSize: '0.95rem' }}>Support</p>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-              <Link href="/kontakt" style={{ color: '#8c8c8c', fontSize: '0.88rem', textDecoration: 'none' }}>Kontaktiere uns</Link>
-              <a href={`https://wa.me/4917600000000`} target="_blank" rel="noopener noreferrer" style={{ color: '#8c8c8c', fontSize: '0.88rem', textDecoration: 'none' }}>WhatsApp Support</a>
-              <a href="mailto:info@iptvv.de" style={{ color: '#8c8c8c', fontSize: '0.88rem', textDecoration: 'none' }}>info@iptvv.de</a>
-            </div>
-          </div>
         </div>
-        <div style={{ borderTop: '1px solid #111', paddingTop: '22px', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
-          <p style={{ color: '#333', fontSize: '0.83rem' }}>Alle Rechte vorbehalten © {new Date().getFullYear()} IPTVV.DE</p>
-          <p style={{ color: '#2a2a2a', fontSize: '0.78rem' }}>⚠️ Nur für legale Inhalte.</p>
+        <div style={{ borderTop: '1px solid #1a1a1a', paddingTop: '24px', display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'space-between', alignItems: 'center' }}>
+          <p style={{ color: '#333', fontSize: '0.8rem' }}>© {new Date().getFullYear()} IPTVV.DE. Alle Rechte vorbehalten.</p>
+          <p style={{ color: '#333', fontSize: '0.8rem' }}>Die IPTV-Technologie ist legal. Nutzer sind für die Einhaltung der Gesetze ihres Landes verantwortlich.</p>
         </div>
       </div>
     </footer>
@@ -275,22 +392,27 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>IPTV kaufen 2026 – IPTV Anbieter in Deutschland | IPTVV.DE</title>
-        <meta name="description" content="IPTV kaufen bei IPTVV Premium – der beste IPTV-Service in Deutschland. +22.000 Kanäle, +120.000 VOD, 4K Ultra HD. Kostenlos testen!" />
+        <title>IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | IPTVV.DE</title>
+        <meta name="description" content="IPTV kaufen bei IPTVV – bester IPTV Anbieter in Deutschland 2026. 22.000+ Kanäle, 120.000+ VOD, 4K Ultra HD. Fire Stick, Smart TV, Smarters Pro. Kostenlos testen!" />
+        <meta name="keywords" content="IPTV kaufen Deutschland, IPTV Anbieter Deutschland, IPTV Stick Deutschland, IPTV Smarters Pro, IPTV Bundesliga, IPTV Samsung TV, bester IPTV Anbieter" />
         <meta name="google-site-verification" content="6n21n_IARwicV--IqE2jrwkzUt4QOp6Wmx2robpca8k" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0a0a0a" />
-        <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
-        <meta property="og:title" content="IPTV kaufen 2026 – IPTV Anbieter in Deutschland | IPTVV.DE" />
-        <meta property="og:description" content="+22.000 Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
-        <meta property="og:url" content="https://iptvv.de" />
-        <link rel="canonical" href="https://iptvv.de/" />
         <meta name="robots" content="index, follow" />
+        <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
+        <link rel="canonical" href="https://iptvv.de/" />
+        <meta property="og:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | IPTVV.DE" />
+        <meta property="og:description" content="22.000+ Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
+        <meta property="og:url" content="https://iptvv.de" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="IPTVV.DE" />
         <meta property="og:locale" content="de_DE" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
+        {/* Structured data */}
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
       <Navbar />
       <main>
@@ -299,6 +421,8 @@ export default function Home() {
         <HowItWorks />
         <PricingSection />
         <Stats />
+        <DeviceLinks />
+        <FAQSection />
       </main>
       <Footer />
     </>
