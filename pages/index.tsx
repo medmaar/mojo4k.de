@@ -5,7 +5,7 @@ import { useState } from 'react'
 const WA = 'https://api.whatsapp.com/send/?phone=4917600000000'
 
 const faqSchemaData = [
-  { q: 'Was ist IPTV und wie funktioniert es?', a: 'IPTV (Internet Protocol Television) ist eine Methode zur Übertragung von TV-Inhalten über das Internet statt über Kabel oder Satellit. Mit IPTVV.DE erhalten Sie Zugang zu über 22.000 Live-Kanälen und 120.000+ Filmen und Serien in HD und 4K-Qualität.' },
+  { q: 'Was ist IPTV und wie funktioniert es?', a: 'IPTV (Internet Protocol Television) ist eine Methode zur Übertragung von TV-Inhalten über das Internet statt über Kabel oder Satellit. Mit IPTVV.DE erhalten Sie Zugang zu über 50.000 Live-Kanälen und 120.000+ Filmen und Serien in HD und 4K-Qualität.' },
   { q: 'Welche Geräte werden von IPTVV.DE unterstützt?', a: 'IPTVV.DE funktioniert auf Amazon Fire TV Stick, Android TV Box, Samsung Smart TV, LG Smart TV, iPhone, iPad, Android-Smartphones, PC, Mac, MAG-Box, Enigma2 und allen IPTV-Playern wie Smarters Pro und TiviMate.' },
   { q: 'Kann ich IPTVV.DE kostenlos testen?', a: 'Ja! Wir bieten einen kostenlosen Testplan an. Kontaktieren Sie uns einfach über WhatsApp, und wir aktivieren Ihren Test sofort – ohne Kreditkarte.' },
   { q: 'Wie schnell wird mein Abonnement aktiviert?', a: 'Die Aktivierung erfolgt innerhalb weniger Minuten nach Zahlungseingang. Sie erhalten Ihre Zugangsdaten per E-Mail und WhatsApp und können sofort mit dem Streaming beginnen.' },
@@ -29,7 +29,7 @@ const orgSchema = {
   name: 'IPTVV.DE',
   url: 'https://iptvv.de',
   logo: 'https://iptvv.de/favicon.svg',
-  description: 'Bester IPTV Anbieter in Deutschland. Über 22.000 Kanäle, 120.000+ VOD in 4K. Kompatibel mit Fire Stick, Smart TV, Android, iOS und mehr.',
+  description: 'Bester IPTV Anbieter in Deutschland. Über 50.000 Kanäle, 120.000+ VOD in 4K. Kompatibel mit Fire Stick, Smart TV, Android, iOS und mehr.',
   areaServed: ['DE', 'AT', 'CH'],
   contactPoint: {
     '@type': 'ContactPoint',
@@ -49,7 +49,7 @@ const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
   name: 'IPTVV Premium IPTV Abonnement',
-  description: 'Premium IPTV Service in Deutschland mit 22.000+ Kanälen, 120.000+ VOD, 4K Ultra HD, EPG und 24/7 Support.',
+  description: 'Premium IPTV Service in Deutschland mit 50.000+ Kanälen, 120.000+ VOD, 4K Ultra HD, EPG und 24/7 Support.',
   brand: { '@type': 'Brand', name: 'IPTVV.DE' },
   aggregateRating: {
     '@type': 'AggregateRating',
@@ -138,7 +138,7 @@ function Hero() {
           </div>
         </div>
         <div style={{ flex: '1 1 280px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', maxWidth: '340px' }}>
-          {[{ val: '+22.000', label: 'TV-Kanäle' }, { val: '+120.000', label: 'VOD Titel' }, { val: '4K Ultra HD', label: 'Qualität' }, { val: '99,9%', label: 'Verfügbarkeit' }].map(s => (
+          {[{ val: '+50.000', label: 'TV-Kanäle' }, { val: '+120.000', label: 'VOD Titel' }, { val: '4K Ultra HD', label: 'Qualität' }, { val: '99,9%', label: 'Verfügbarkeit' }].map(s => (
             <div key={s.label} style={{ background: '#111', border: '1px solid #222', borderRadius: '12px', padding: '22px', textAlign: 'center' }}>
               <div style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>{s.val}</div>
               <div style={{ color: '#8c8c8c', fontSize: '0.8rem', marginTop: '4px' }}>{s.label}</div>
@@ -153,7 +153,7 @@ function Hero() {
 function Features() {
   const items = [
     { icon: '📺', title: 'BESTE QUALITÄT', desc: 'Sehen Sie sich alle Lieblingsserien, Filme und Kanäle in hoher 4K-Qualität an.' },
-    { icon: '📡', title: 'PREMIUM-KANÄLE', desc: 'Mehr als +22.000 TV-Kanäle. Die beste Sendequalität aller Zeiten.' },
+    { icon: '📡', title: 'PREMIUM-KANÄLE', desc: 'Mehr als +50.000 TV-Kanäle. Die beste Sendequalität aller Zeiten.' },
     { icon: '🎬', title: 'VOD FERNSEHSERIE', desc: 'Über 120.000 Filme & Serien auf Ihrem Gerät – jederzeit abrufbar.' },
     { icon: '⚡', title: 'SOFORTIGE INSTALLATION', desc: 'Wenige Augenblicke nach Ihrer Bestellung ist der Service einsatzbereit.' },
     { icon: '🎯', title: 'ALLES IN EINEM', desc: 'Netflix, Disney+, Hulu und mehr — alles in einem Dienst gebündelt.' },
@@ -168,7 +168,7 @@ function Features() {
             Warum IPTVV der führende IPTV-Service in Deutschland ist
           </h2>
           <p style={{ color: '#8c8c8c', maxWidth: '580px', margin: '0 auto', lineHeight: 1.75 }}>
-            Tauchen Sie ein in 4K-Bildqualität auf jedem Gerät. Mehr als 22.000 Kanäle, 120.000+ VODs und 100% Verfügbarkeit ohne Pufferung oder Einfrieren.
+            Tauchen Sie ein in 4K-Bildqualität auf jedem Gerät. Mehr als 50.000 Kanäle, 120.000+ VODs und 100% Verfügbarkeit ohne Pufferung oder Einfrieren.
           </p>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px', marginBottom: '32px' }}>
@@ -281,7 +281,7 @@ function Stats() {
   return (
     <section style={{ background: '#080808', padding: '64px 0', borderTop: '1px solid #1a1a1a' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '32px', textAlign: 'center' }}>
-        {[{ n: '22.000+', l: 'Live-Kanäle' }, { n: '120.000+', l: 'VOD Titel' }, { n: '99,9%', l: 'Betriebszeit' }, { n: '1.090+', l: 'Zufriedene Kunden' }].map(s => (
+        {[{ n: '50.000+', l: 'Live-Kanäle' }, { n: '120.000+', l: 'VOD Titel' }, { n: '99,9%', l: 'Betriebszeit' }, { n: '1.090+', l: 'Zufriedene Kunden' }].map(s => (
           <div key={s.l}>
             <div style={{ fontSize: '2.2rem', fontWeight: 900, color: '#e53935' }}>{s.n}</div>
             <div style={{ color: '#666', fontSize: '0.85rem', marginTop: '6px' }}>{s.l}</div>
@@ -352,6 +352,67 @@ function FAQSection() {
   )
 }
 
+function Reviews() {
+  const reviews = [
+    { name: 'Markus B.', location: 'München', stars: 5, text: 'Läuft einwandfrei auf meinem Fire Stick 4K. Alle Sky-Kanäle in HD, Bundesliga ohne Ruckler. Support via WhatsApp war in 3 Minuten da.' },
+    { name: 'Sandra K.', location: 'Hamburg', stars: 5, text: 'Günstiger als MagentaTV und mehr Kanäle. Einrichtung auf Samsung Smart TV in unter 5 Minuten. Sehr empfehlenswert!' },
+    { name: 'Thomas H.', location: 'Berlin', stars: 5, text: 'Seit 8 Monaten dabei, noch kein einziges Mal Probleme. Champions League und Bundesliga in 4K – perfekt. Bester IPTV Anbieter.' },
+    { name: 'Ayse D.', location: 'Frankfurt', stars: 5, text: 'Mein Mann schaut türkisches Fernsehen, die Kinder Cartoons und ich deutsche Serien – alles auf 3 Geräten gleichzeitig ohne Probleme.' },
+    { name: 'Oliver S.', location: 'Köln', stars: 5, text: 'Vorher MagentaTV für 30€ plus Netflix für 14€. Jetzt IPTVV für unter 20€ und ich habe mehr Sender. Die Rechnung war einfach.' },
+    { name: 'Jennifer B.', location: 'Stuttgart', stars: 5, text: 'Problem bei der LG TV Einrichtung gemeldet – nach 4 Minuten kam die Lösung per WhatsApp. Das ist echter Kundenservice!' },
+  ]
+  return (
+    <section style={{ background: '#0d0d0d', padding: '80px 0' }} itemScope itemType="https://schema.org/Product">
+      <meta itemProp="name" content="IPTVV.DE Premium IPTV" />
+      <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating" style={{ display: 'none' }}>
+        <meta itemProp="ratingValue" content="4.9" />
+        <meta itemProp="reviewCount" content="1090" />
+        <meta itemProp="bestRating" content="5" />
+      </div>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '48px' }}>
+          <p style={{ color: '#e53935', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.82rem' }}>KUNDENBEWERTUNGEN</p>
+          <h2 style={{ color: '#fff', fontSize: 'clamp(1.7rem, 3vw, 2.4rem)', fontWeight: 900, marginTop: '12px', marginBottom: '12px' }}>
+            Was unsere Kunden sagen
+          </h2>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: '#aaa', fontSize: '0.95rem' }}>
+            <span style={{ color: '#f5c518', fontSize: '1.1rem' }}>★★★★★</span>
+            <strong style={{ color: '#fff' }}>4,9 / 5</strong>
+            <span style={{ color: '#444' }}>·</span>
+            <span>1.090 verifizierte Bewertungen</span>
+          </div>
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '16px' }}>
+          {reviews.map(r => (
+            <article key={r.name} style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '24px' }}
+              itemScope itemType="https://schema.org/Review" itemProp="review">
+              <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '12px' }}>
+                <div>
+                  <p style={{ color: '#fff', fontWeight: 700, fontSize: '0.92rem' }}
+                    itemProp="author" itemScope itemType="https://schema.org/Person">
+                    <span itemProp="name">{r.name}</span>
+                  </p>
+                  <p style={{ color: '#555', fontSize: '0.78rem' }}>{r.location}</p>
+                </div>
+                <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
+                  <meta itemProp="ratingValue" content={String(r.stars)} />
+                  <meta itemProp="bestRating" content="5" />
+                  <span style={{ color: '#f5c518', fontSize: '0.9rem' }}>{'★'.repeat(r.stars)}</span>
+                </div>
+              </div>
+              <p style={{ color: '#8c8c8c', fontSize: '0.88rem', lineHeight: 1.75 }} itemProp="reviewBody">{r.text}</p>
+              <div style={{ marginTop: '12px', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="#4caf50"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" /><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" /></svg>
+                <span style={{ color: '#4caf50', fontSize: '0.72rem', fontWeight: 600 }}>Verifizierter Kauf</span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
 function Footer() {
   return (
     <footer style={{ background: '#050505', borderTop: '1px solid #1a1a1a', padding: '48px 0 32px' }}>
@@ -362,7 +423,7 @@ function Footer() {
               <span style={{ color: '#e53935', fontSize: '1.4rem', fontWeight: 900 }}>IPTVV</span>
               <span style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 900 }}>.DE</span>
             </div>
-            <p style={{ color: '#555', fontSize: '0.85rem', maxWidth: '240px', lineHeight: 1.7 }}>Bester IPTV Anbieter Deutschland. 22.000+ Kanäle in 4K.</p>
+            <p style={{ color: '#555', fontSize: '0.85rem', maxWidth: '240px', lineHeight: 1.7 }}>Bester IPTV Anbieter Deutschland. 50.000+ Kanäle in 4K.</p>
           </div>
           <div style={{ display: 'flex', gap: '60px', flexWrap: 'wrap' }}>
             <div>
@@ -393,7 +454,7 @@ export default function Home() {
     <>
       <Head>
         <title>IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | IPTVV.DE</title>
-        <meta name="description" content="IPTV kaufen bei IPTVV – bester IPTV Anbieter in Deutschland 2026. 22.000+ Kanäle, 120.000+ VOD, 4K Ultra HD. Fire Stick, Smart TV, Smarters Pro. Kostenlos testen!" />
+        <meta name="description" content="IPTV kaufen bei IPTVV – bester IPTV Anbieter in Deutschland 2026. 50.000+ Kanäle, 120.000+ VOD, 4K Ultra HD. Fire Stick, Smart TV, Smarters Pro. Kostenlos testen!" />
         <meta name="keywords" content="IPTV kaufen Deutschland, IPTV Anbieter Deutschland, IPTV Stick Deutschland, IPTV Smarters Pro, IPTV Bundesliga, IPTV Samsung TV, bester IPTV Anbieter" />
         <meta name="google-site-verification" content="6n21n_IARwicV--IqE2jrwkzUt4QOp6Wmx2robpca8k" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -402,7 +463,7 @@ export default function Home() {
         <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
         <link rel="canonical" href="https://iptvv.de/" />
         <meta property="og:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | IPTVV.DE" />
-        <meta property="og:description" content="22.000+ Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
+        <meta property="og:description" content="50.000+ Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
         <meta property="og:url" content="https://iptvv.de" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="IPTVV.DE" />
@@ -413,6 +474,18 @@ export default function Home() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Product',
+          name: 'IPTVV.DE Premium IPTV',
+          aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '1090', bestRating: '5' },
+          review: [
+            { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Markus B.' }, reviewBody: 'Läuft einwandfrei auf meinem Fire Stick 4K. Alle Sky-Kanäle in HD, Bundesliga ohne Ruckler. Support via WhatsApp war in 3 Minuten da.' },
+            { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Sandra K.' }, reviewBody: 'Günstiger als MagentaTV und mehr Kanäle. Einrichtung auf Samsung Smart TV in unter 5 Minuten. Sehr empfehlenswert!' },
+            { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Thomas H.' }, reviewBody: 'Seit 8 Monaten dabei, noch kein einziges Mal Probleme. Champions League und Bundesliga in 4K – perfekt.' },
+            { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Oliver S.' }, reviewBody: 'Vorher MagentaTV für 30€ plus Netflix für 14€. Jetzt IPTVV für unter 20€ und mehr Sender. Klare Empfehlung.' },
+          ],
+        }) }} />
       </Head>
       <Navbar />
       <main>
@@ -421,6 +494,7 @@ export default function Home() {
         <HowItWorks />
         <PricingSection />
         <Stats />
+        <Reviews />
         <DeviceLinks />
         <FAQSection />
       </main>

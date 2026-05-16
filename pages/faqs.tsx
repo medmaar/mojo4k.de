@@ -5,7 +5,7 @@ import { useState } from 'react'
 const WA = 'https://api.whatsapp.com/send/?phone=4917600000000'
 
 const faqs = [
-  { q: 'Was ist IPTV und wie funktioniert es?', a: 'IPTV (Internet Protocol Television) überträgt TV-Inhalte über das Internet statt über Kabel oder Satellit. Sie erhalten Zugang zu über 22.000 Live-Kanälen und 120.000+ Filmen und Serien in HD und 4K – auf jedem Gerät mit Internetverbindung.' },
+  { q: 'Was ist IPTV und wie funktioniert es?', a: 'IPTV (Internet Protocol Television) überträgt TV-Inhalte über das Internet statt über Kabel oder Satellit. Sie erhalten Zugang zu über 50.000 Live-Kanälen und 120.000+ Filmen und Serien in HD und 4K – auf jedem Gerät mit Internetverbindung.' },
   { q: 'Wie Kann Ich Den IPTV-Dienst Nutzen?', a: 'Schauen Sie sich unser IPTV-Paket auf all Ihren Geräten an. Nach dem Kauf können Sie es auf Ihrem Fernseher, Android-Box, Mobiltelefon, MAG-Box und Tablets nutzen.' },
   { q: 'Welche Geräte werden von IPTVV.DE unterstützt?', a: 'IPTVV.DE funktioniert auf Amazon Fire TV Stick, Android TV Box, Samsung Smart TV, LG Smart TV, iPhone, iPad, Android-Smartphones, PC, Mac, MAG-Box, Enigma2 und allen IPTV-Playern wie Smarters Pro, TiviMate und GSE IPTV.' },
   { q: 'Kann ich IPTVV.DE kostenlos testen?', a: 'Ja! Wir bieten einen kostenlosen Testplan an. Kontaktieren Sie uns einfach über WhatsApp, und wir aktivieren Ihren Test sofort – ohne Kreditkarte und ohne Vertrag.' },

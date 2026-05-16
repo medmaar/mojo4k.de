@@ -7,7 +7,7 @@ const steps = [
   { n: '01', title: 'Fire Stick einrichten', desc: 'Schließen Sie den Amazon Fire TV Stick an Ihren TV an und verbinden Sie ihn mit dem Internet.' },
   { n: '02', title: 'IPTV App installieren', desc: 'Öffnen Sie den Amazon App Store oder Downloader und installieren Sie IPTV Smarters Pro oder TiviMate.' },
   { n: '03', title: 'Abonnement kaufen', desc: 'Wählen Sie ein IPTVV-Paket und erhalten Sie Ihre Zugangsdaten innerhalb von Minuten per WhatsApp.' },
-  { n: '04', title: 'Einloggen & Genießen', desc: 'Geben Sie Ihre Zugangsdaten in die App ein und streamen Sie sofort über 22.000 Kanäle in 4K.' },
+  { n: '04', title: 'Einloggen & Genießen', desc: 'Geben Sie Ihre Zugangsdaten in die App ein und streamen Sie sofort über 50.000 Kanäle in 4K.' },
 ]
 
 const faqSchema = {
@@ -16,7 +16,7 @@ const faqSchema = {
   mainEntity: [
     { '@type': 'Question', name: 'Wie installiere ich IPTV auf dem Amazon Fire Stick?', acceptedAnswer: { '@type': 'Answer', text: 'Installieren Sie IPTV Smarters Pro oder TiviMate aus dem App Store, kaufen Sie ein IPTVV-Abonnement, und geben Sie die Zugangsdaten in die App ein. Die Einrichtung dauert unter 5 Minuten.' } },
     { '@type': 'Question', name: 'Welche IPTV App ist die beste für Fire Stick?', acceptedAnswer: { '@type': 'Answer', text: 'IPTV Smarters Pro und TiviMate sind die beliebtesten IPTV Apps für den Amazon Fire TV Stick. Beide sind kostenlos verfügbar und bieten eine übersichtliche Benutzeroberfläche.' } },
-    { '@type': 'Question', name: 'Kann ich 4K IPTV auf dem Fire Stick 4K streamen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja! Mit dem Amazon Fire TV Stick 4K Max und einem IPTVV-Abonnement können Sie über 22.000 Kanäle in bis zu 4K Ultra HD-Qualität streamen.' } },
+    { '@type': 'Question', name: 'Kann ich 4K IPTV auf dem Fire Stick 4K streamen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja! Mit dem Amazon Fire TV Stick 4K Max und einem IPTVV-Abonnement können Sie über 50.000 Kanäle in bis zu 4K Ultra HD-Qualität streamen.' } },
   ],
 }
 
@@ -34,7 +34,7 @@ export default function IPTVFireStick() {
     <>
       <Head>
         <title>IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | IPTVV.DE</title>
-        <meta name="description" content="IPTV auf Amazon Fire TV Stick in Deutschland einrichten. Schritt-für-Schritt Anleitung für IPTV Smarters Pro & TiviMate. 22.000+ Kanäle in 4K. Kostenlos testen!" />
+        <meta name="description" content="IPTV auf Amazon Fire TV Stick in Deutschland einrichten. Schritt-für-Schritt Anleitung für IPTV Smarters Pro & TiviMate. 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iptvv.de/iptv-fire-stick-deutschland" />
         <meta property="og:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | IPTVV.DE" />
@@ -76,7 +76,7 @@ export default function IPTVFireStick() {
             IPTV auf <span style={{ color: '#e53935' }}>Amazon Fire TV Stick</span> einrichten – Komplette Anleitung für Deutschland
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '40px', maxWidth: '680px' }}>
-            Mit dem Amazon Fire TV Stick und IPTVV können Sie über 22.000 Kanäle in 4K Ultra HD auf Ihrem Fernseher genießen – ganz ohne Kabel oder Satellit. Diese Schritt-für-Schritt-Anleitung erklärt den kompletten Einrichtungsprozess.
+            Mit dem Amazon Fire TV Stick und IPTVV können Sie über 50.000 Kanäle in 4K Ultra HD auf Ihrem Fernseher genießen – ganz ohne Kabel oder Satellit. Diese Schritt-für-Schritt-Anleitung erklärt den kompletten Einrichtungsprozess.
           </p>
 
           <div style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '32px', marginBottom: '48px' }}>

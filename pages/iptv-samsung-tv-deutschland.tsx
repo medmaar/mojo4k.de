@@ -27,11 +27,11 @@ export default function Page() {
     <>
       <Head>
         <title>IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | IPTVV.DE</title>
-        <meta name="description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS: App installieren, Zugangsdaten eingeben. 22.000+ Kanäle in 4K. Jetzt kostenlos testen!" />
+        <meta name="description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS: App installieren, Zugangsdaten eingeben. 50.000+ Kanäle in 4K. Jetzt kostenlos testen!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iptvv.de/iptv-samsung-tv-deutschland" />
         <meta property="og:title" content="IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | IPTVV.DE" />
-        <meta property="og:description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS: App installieren, Zugangsdaten eingeben. 22.000+ Kanäle in 4K. Jetzt kostenlos testen!" />
+        <meta property="og:description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS: App installieren, Zugangsdaten eingeben. 50.000+ Kanäle in 4K. Jetzt kostenlos testen!" />
         <meta property="og:url" content="https://iptvv.de/iptv-samsung-tv-deutschland" />
         <meta property="og:type" content="article" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -69,7 +69,7 @@ export default function Page() {
             IPTV auf <span style={{ color: '#e53935' }}>Samsung Smart TV</span> einrichten – Anleitung für Deutschland 2026
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '40px', maxWidth: '680px' }}>
-            Mit IPTVV können Sie direkt auf Ihrem Samsung Smart TV über 22.000 Kanäle in 4K streamen – ganz ohne externe Hardware. Diese Anleitung erklärt die Einrichtung auf Samsung Tizen OS.
+            Mit IPTVV können Sie direkt auf Ihrem Samsung Smart TV über 50.000 Kanäle in 4K streamen – ganz ohne externe Hardware. Diese Anleitung erklärt die Einrichtung auf Samsung Tizen OS.
           </p>
 
           <section style={{ marginBottom: '56px' }}>

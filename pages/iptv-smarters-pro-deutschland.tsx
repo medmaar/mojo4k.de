@@ -27,11 +27,11 @@ export default function Page() {
     <>
       <Head>
         <title>IPTV Smarters Pro Deutschland – Einrichtung & Anleitung 2026 | IPTVV.DE</title>
-        <meta name="description" content="IPTV Smarters Pro in Deutschland einrichten. Schritt-für-Schritt Anleitung für Fire Stick, Android, iPhone und Smart TV. Mit IPTVV 22.000+ Kanäle in 4K." />
+        <meta name="description" content="IPTV Smarters Pro in Deutschland einrichten. Schritt-für-Schritt Anleitung für Fire Stick, Android, iPhone und Smart TV. Mit IPTVV 50.000+ Kanäle in 4K." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iptvv.de/iptv-smarters-pro-deutschland" />
         <meta property="og:title" content="IPTV Smarters Pro Deutschland – Einrichtung & Anleitung 2026 | IPTVV.DE" />
-        <meta property="og:description" content="IPTV Smarters Pro in Deutschland einrichten. Schritt-für-Schritt Anleitung für Fire Stick, Android, iPhone und Smart TV. Mit IPTVV 22.000+ Kanäle in 4K." />
+        <meta property="og:description" content="IPTV Smarters Pro in Deutschland einrichten. Schritt-für-Schritt Anleitung für Fire Stick, Android, iPhone und Smart TV. Mit IPTVV 50.000+ Kanäle in 4K." />
         <meta property="og:url" content="https://iptvv.de/iptv-smarters-pro-deutschland" />
         <meta property="og:type" content="article" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -100,7 +100,7 @@ export default function Page() {
                 <div style={{ width: '52px', height: '52px', background: 'rgba(229,57,53,0.1)', border: '2px solid #e53935', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, color: '#e53935', fontSize: '1rem', flexShrink: 0 }}>04</div>
                 <div>
                   <h3 style={{ color: '#fff', fontWeight: 700, fontSize: '1rem', marginBottom: '6px' }}>Kanäle laden & genießen</h3>
-                  <p style={{ color: '#8c8c8c', fontSize: '0.9rem', lineHeight: 1.7 }}>Warten Sie bis die Kanalliste geladen ist (1–2 Min.) und starten Sie mit dem Streaming von 22.000+ Kanälen.</p>
+                  <p style={{ color: '#8c8c8c', fontSize: '0.9rem', lineHeight: 1.7 }}>Warten Sie bis die Kanalliste geladen ist (1–2 Min.) und starten Sie mit dem Streaming von 50.000+ Kanälen.</p>
                 </div>
               </div>
             </div>

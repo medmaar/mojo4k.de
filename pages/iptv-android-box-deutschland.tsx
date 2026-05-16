@@ -27,11 +27,11 @@ export default function Page() {
     <>
       <Head>
         <title>IPTV Android Box Deutschland 2026 – Beste Box & Einrichtung | IPTVV.DE</title>
-        <meta name="description" content="Die beste IPTV Android Box für Deutschland 2026. Einrichtung, empfohlene Boxen und Apps. 22.000+ Kanäle in 4K Ultra HD. Kostenlos testen bei IPTVV.DE!" />
+        <meta name="description" content="Die beste IPTV Android Box für Deutschland 2026. Einrichtung, empfohlene Boxen und Apps. 50.000+ Kanäle in 4K Ultra HD. Kostenlos testen bei IPTVV.DE!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://iptvv.de/iptv-android-box-deutschland" />
         <meta property="og:title" content="IPTV Android Box Deutschland 2026 – Beste Box & Einrichtung | IPTVV.DE" />
-        <meta property="og:description" content="Die beste IPTV Android Box für Deutschland 2026. Einrichtung, empfohlene Boxen und Apps. 22.000+ Kanäle in 4K Ultra HD. Kostenlos testen bei IPTVV.DE!" />
+        <meta property="og:description" content="Die beste IPTV Android Box für Deutschland 2026. Einrichtung, empfohlene Boxen und Apps. 50.000+ Kanäle in 4K Ultra HD. Kostenlos testen bei IPTVV.DE!" />
         <meta property="og:url" content="https://iptvv.de/iptv-android-box-deutschland" />
         <meta property="og:type" content="article" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -69,7 +69,7 @@ export default function Page() {
             IPTV <span style={{ color: '#e53935' }}>Android Box</span> Deutschland – Beste Box & komplette Einrichtung 2026
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '40px', maxWidth: '680px' }}>
-            Eine Android TV Box ist die flexibelste Lösung für IPTV in Deutschland. Sie erhalten Zugang zu allen IPTV Apps wie TiviMate und IPTV Smarters Pro – und können über 22.000 Kanäle in 4K streamen.
+            Eine Android TV Box ist die flexibelste Lösung für IPTV in Deutschland. Sie erhalten Zugang zu allen IPTV Apps wie TiviMate und IPTV Smarters Pro – und können über 50.000 Kanäle in 4K streamen.
           </p>
 
           <section style={{ marginBottom: '56px' }}>
