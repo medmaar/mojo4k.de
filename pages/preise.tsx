@@ -42,7 +42,7 @@ function PlanGrid({ plans, devices }: { plans: typeof plans1, devices: string })
               </li>
             ))}
           </ul>
-          <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+ein+${p.msg}+kaufen`} target="_blank" rel="noopener noreferrer"
+          <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+ein+${p.msg}+kaufen`} target="_blank" rel="noopener noreferrer"
             style={{ display: 'block', textAlign: 'center', background: p.popular ? '#fff' : '#e53935', color: p.popular ? '#e53935' : '#fff', fontWeight: 700, padding: '12px', borderRadius: '8px', fontSize: '0.9rem', textDecoration: 'none' }}>
             Jetzt kaufen
           </a>
@@ -58,15 +58,15 @@ export default function Preise() {
   return (
     <>
       <Head>
-        <title>Preise – IPTV kaufen | IPTVV.DE</title>
-        <meta name="description" content="IPTV Preise bei IPTVV.DE – ab €15,99/Monat. 1 oder 2 Geräte, alle Pakete inkl. 20.000+ Kanäle und 120.000+ VOD." />
+        <title>Preise – IPTV kaufen | MOJO4K.DE</title>
+        <meta name="description" content="IPTV Preise bei MOJO4K.DE – ab €15,99/Monat. 1 oder 2 Geräte, alle Pakete inkl. 20.000+ Kanäle und 120.000+ VOD." />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', paddingTop: '64px' }}>
         {/* Navbar */}
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50 }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
             <div style={{ display: 'flex', gap: '32px' }}>
@@ -74,7 +74,7 @@ export default function Preise() {
                 <Link key={href} href={href} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{label}</Link>
               ))}
             </div>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+testen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
               Kostenloser Test
             </a>

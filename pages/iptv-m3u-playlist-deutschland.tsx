@@ -7,10 +7,10 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'Was ist eine IPTV M3U Playlist?', acceptedAnswer: { '@type': 'Answer', text: 'Eine M3U Playlist ist eine Textdatei mit URLs zu IPTV-Streams. Sie enthält alle Kanäle Ihres IPTV-Anbieters und kann in Apps wie TiviMate, Smarters Pro oder VLC eingefügt werden. IPTVV stellt nach dem Kauf eine persönliche M3U-URL zur Verfügung.' } },
-    { '@type': 'Question', name: 'Wo bekomme ich eine IPTV M3U Playlist für Deutschland?', acceptedAnswer: { '@type': 'Answer', text: 'Mit einem IPTVV-Abonnement erhalten Sie eine persönliche M3U-URL mit 50.000+ deutschen und internationalen Kanälen. Die URL wird nach dem Kauf sofort per WhatsApp zugeschickt.' } },
+    { '@type': 'Question', name: 'Was ist eine IPTV M3U Playlist?', acceptedAnswer: { '@type': 'Answer', text: 'Eine M3U Playlist ist eine Textdatei mit URLs zu IPTV-Streams. Sie enthält alle Kanäle Ihres IPTV-Anbieters und kann in Apps wie TiviMate, Smarters Pro oder VLC eingefügt werden. MOJO4K stellt nach dem Kauf eine persönliche M3U-URL zur Verfügung.' } },
+    { '@type': 'Question', name: 'Wo bekomme ich eine IPTV M3U Playlist für Deutschland?', acceptedAnswer: { '@type': 'Answer', text: 'Mit einem MOJO4K-Abonnement erhalten Sie eine persönliche M3U-URL mit 50.000+ deutschen und internationalen Kanälen. Die URL wird nach dem Kauf sofort per WhatsApp zugeschickt.' } },
     { '@type': 'Question', name: 'In welche Apps kann ich die M3U URL eingeben?', acceptedAnswer: { '@type': 'Answer', text: 'Die M3U-URL funktioniert mit TiviMate, IPTV Smarters Pro, GSE Smart IPTV, VLC, Kodi (PVR IPTV Simple Client), Smart IPTV (Samsung/LG) und SS IPTV. Fast jeder IPTV-Player unterstützt M3U.' } },
-    { '@type': 'Question', name: 'Was ist der Unterschied zwischen M3U und Xtream Codes?', acceptedAnswer: { '@type': 'Answer', text: 'M3U ist eine einfache Playlist-URL – universell, funktioniert überall. Xtream Codes ist ein API-Protokoll, das zusätzlich VOD-Bibliotheken, EPG und schnelleres Laden ermöglicht. IPTVV unterstützt beide Methoden.' } },
+    { '@type': 'Question', name: 'Was ist der Unterschied zwischen M3U und Xtream Codes?', acceptedAnswer: { '@type': 'Answer', text: 'M3U ist eine einfache Playlist-URL – universell, funktioniert überall. Xtream Codes ist ein API-Protokoll, das zusätzlich VOD-Bibliotheken, EPG und schnelleres Laden ermöglicht. MOJO4K unterstützt beide Methoden.' } },
   ],
 }
 
@@ -18,8 +18,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://iptvv.de' },
-    { '@type': 'ListItem', position: 2, name: 'IPTV M3U Playlist Deutschland', item: 'https://iptvv.de/iptv-m3u-playlist-deutschland' },
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'IPTV M3U Playlist Deutschland', item: 'https://mojo4k.de/iptv-m3u-playlist-deutschland' },
   ],
 }
 
@@ -38,15 +38,15 @@ export default function IPTVm3u() {
   return (
     <>
       <Head>
-        <title>IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | IPTVV.DE</title>
-        <meta name="description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC, Kodi & Smart TV. Jetzt kostenlos testen bei IPTVV.DE!" />
+        <title>IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | MOJO4K.DE</title>
+        <meta name="description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC, Kodi & Smart TV. Jetzt kostenlos testen bei MOJO4K.DE!" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iptvv.de/iptv-m3u-playlist-deutschland" />
-        <meta property="og:title" content="IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | IPTVV.DE" />
+        <link rel="canonical" href="https://mojo4k.de/iptv-m3u-playlist-deutschland" />
+        <meta property="og:title" content="IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | MOJO4K.DE" />
         <meta property="og:description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC & Smart TV. Kostenlos testen!" />
-        <meta property="og:url" content="https://iptvv.de/iptv-m3u-playlist-deutschland" />
+        <meta property="og:url" content="https://mojo4k.de/iptv-m3u-playlist-deutschland" />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="IPTVV.DE" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
         <meta property="og:locale" content="de_DE" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -56,7 +56,7 @@ export default function IPTVm3u() {
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
             <div style={{ display: 'flex', gap: '32px' }} className="hidden-mobile">
@@ -64,7 +64,7 @@ export default function IPTVm3u() {
                 <Link key={h} href={h} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{l}</Link>
               ))}
             </div>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+eine+M3U+Playlist+f%C3%BCr+Deutschland`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+eine+M3U+Playlist+f%C3%BCr+Deutschland`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
               M3U URL anfordern
             </a>
@@ -88,7 +88,7 @@ export default function IPTVm3u() {
             IPTV <span style={{ color: '#e53935' }}>M3U Playlist</span> Deutschland – Persönliche URL für alle IPTV-Apps 2026
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '40px', maxWidth: '680px' }}>
-            Mit einem IPTVV-Abonnement erhalten Sie eine persönliche M3U-URL mit 50.000+ deutschen und internationalen Kanälen. Einfach in TiviMate, Smarters Pro, VLC oder Ihren Smart TV eingeben – fertig.
+            Mit einem MOJO4K-Abonnement erhalten Sie eine persönliche M3U-URL mit 50.000+ deutschen und internationalen Kanälen. Einfach in TiviMate, Smarters Pro, VLC oder Ihren Smart TV eingeben – fertig.
           </p>
 
           <section style={{ marginBottom: '56px' }}>
@@ -100,9 +100,9 @@ export default function IPTVm3u() {
               <div style={{ background: '#0a0a0a', border: '1px solid #222', borderRadius: '8px', padding: '16px', fontFamily: 'monospace', fontSize: '0.82rem', color: '#4caf50' }}>
                 <div>#EXTM3U</div>
                 <div>#EXTINF:-1 tvg-name="ARD" group-title="Deutschland",ARD Das Erste</div>
-                <div style={{ color: '#666' }}>http://server.iptvv.de:8080/ARD/stream.ts</div>
+                <div style={{ color: '#666' }}>http://server.mojo4k.de:8080/ARD/stream.ts</div>
                 <div style={{ marginTop: '8px' }}>#EXTINF:-1 tvg-name="ZDF" group-title="Deutschland",ZDF</div>
-                <div style={{ color: '#666' }}>http://server.iptvv.de:8080/ZDF/stream.ts</div>
+                <div style={{ color: '#666' }}>http://server.mojo4k.de:8080/ZDF/stream.ts</div>
               </div>
               <p style={{ color: '#555', fontSize: '0.8rem', marginTop: '10px' }}>Hinweis: Dies ist ein Beispiel. Ihre persönliche M3U-URL enthält alle 50.000+ Kanäle.</p>
             </div>
@@ -112,7 +112,7 @@ export default function IPTVm3u() {
             <h2 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '28px' }}>So bekommen Sie Ihre persönliche M3U-URL</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
               {[
-                { n: '01', t: 'Abonnement kaufen', d: 'Wählen Sie ein IPTVV-Paket ab €15,99/Monat. Zahlung und Aktivierung via WhatsApp.' },
+                { n: '01', t: 'Abonnement kaufen', d: 'Wählen Sie ein MOJO4K-Paket ab €15,99/Monat. Zahlung und Aktivierung via WhatsApp.' },
                 { n: '02', t: 'M3U-URL erhalten', d: 'Innerhalb von Minuten erhalten Sie Ihre persönliche M3U-URL per WhatsApp. Format: http://server/get.php?username=XXX&password=YYY&type=m3u' },
                 { n: '03', t: 'In Ihre App eingeben', d: 'Kopieren Sie die URL in TiviMate, Smarters Pro, VLC oder eine andere kompatible App. Kanäle laden automatisch.' },
               ].map(s => (
@@ -155,7 +155,7 @@ export default function IPTVm3u() {
                 ['VOD (Filme & Serien)', '⚠️ Eingeschränkt', '✅ Vollständige Bibliothek'],
                 ['EPG-Geschwindigkeit', 'Mittel', '✅ Schneller'],
                 ['Empfehlung für...', 'Smart TV, VLC, Kodi', 'TiviMate, Smarters Pro'],
-                ['IPTVV Support', '✅ Ja', '✅ Ja'],
+                ['MOJO4K Support', '✅ Ja', '✅ Ja'],
               ].map(([feat, m3u, xtream], i) => (
                 <div key={feat} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', padding: '13px 22px', borderBottom: i < 4 ? '1px solid #1a1a1a' : 'none' }}>
                   <span style={{ color: '#666', fontSize: '0.85rem' }}>{feat}</span>
@@ -180,8 +180,8 @@ export default function IPTVm3u() {
 
           <div style={{ background: 'linear-gradient(135deg, #1a0000, #0a0a0a)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '16px', padding: '40px', textAlign: 'center' }}>
             <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>M3U Playlist anfordern</h2>
-            <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>Kaufen Sie ein IPTVV-Abonnement und erhalten Sie Ihre persönliche M3U-URL in Minuten.</p>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+eine+M3U+Playlist+f%C3%BCr+Deutschland+testen`} target="_blank" rel="noopener noreferrer"
+            <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>Kaufen Sie ein MOJO4K-Abonnement und erhalten Sie Ihre persönliche M3U-URL in Minuten.</p>
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+eine+M3U+Playlist+f%C3%BCr+Deutschland+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 36px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block' }}>
               Kostenlos testen – M3U URL erhalten
             </a>

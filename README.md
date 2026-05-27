@@ -1,4 +1,4 @@
-# IPTVV.DE
+# MOJO4K.DE
 
 Premium IPTV Website für Deutschland — built with Next.js 13 + Tailwind CSS.
 

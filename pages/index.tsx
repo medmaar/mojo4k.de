@@ -5,11 +5,11 @@ import { useState } from 'react'
 const WA = 'https://api.whatsapp.com/send/?phone=4917600000000'
 
 const faqSchemaData = [
-  { q: 'Was ist IPTV und wie funktioniert es?', a: 'IPTV (Internet Protocol Television) ist eine Methode zur Übertragung von TV-Inhalten über das Internet statt über Kabel oder Satellit. Mit IPTVV.DE erhalten Sie Zugang zu über 50.000 Live-Kanälen und 120.000+ Filmen und Serien in HD und 4K-Qualität.' },
-  { q: 'Welche Geräte werden von IPTVV.DE unterstützt?', a: 'IPTVV.DE funktioniert auf Amazon Fire TV Stick, Android TV Box, Samsung Smart TV, LG Smart TV, iPhone, iPad, Android-Smartphones, PC, Mac, MAG-Box, Enigma2 und allen IPTV-Playern wie Smarters Pro und TiviMate.' },
-  { q: 'Kann ich IPTVV.DE kostenlos testen?', a: 'Ja! Wir bieten einen kostenlosen Testplan an. Kontaktieren Sie uns einfach über WhatsApp, und wir aktivieren Ihren Test sofort – ohne Kreditkarte.' },
+  { q: 'Was ist IPTV und wie funktioniert es?', a: 'IPTV (Internet Protocol Television) ist eine Methode zur Übertragung von TV-Inhalten über das Internet statt über Kabel oder Satellit. Mit MOJO4K.DE erhalten Sie Zugang zu über 50.000 Live-Kanälen und 120.000+ Filmen und Serien in HD und 4K-Qualität.' },
+  { q: 'Welche Geräte werden von MOJO4K.DE unterstützt?', a: 'MOJO4K.DE funktioniert auf Amazon Fire TV Stick, Android TV Box, Samsung Smart TV, LG Smart TV, iPhone, iPad, Android-Smartphones, PC, Mac, MAG-Box, Enigma2 und allen IPTV-Playern wie Smarters Pro und TiviMate.' },
+  { q: 'Kann ich MOJO4K.DE kostenlos testen?', a: 'Ja! Wir bieten einen kostenlosen Testplan an. Kontaktieren Sie uns einfach über WhatsApp, und wir aktivieren Ihren Test sofort – ohne Kreditkarte.' },
   { q: 'Wie schnell wird mein Abonnement aktiviert?', a: 'Die Aktivierung erfolgt innerhalb weniger Minuten nach Zahlungseingang. Sie erhalten Ihre Zugangsdaten per E-Mail und WhatsApp und können sofort mit dem Streaming beginnen.' },
-  { q: 'Ist IPTV legal in Deutschland?', a: 'Die IPTV-Technologie selbst ist legal. Entscheidend ist die Quelle des Inhalts. IPTVV.DE stellt seinen Service im Rahmen der geltenden Vorschriften bereit. Nutzer sind für die Einhaltung der Gesetze in ihrem Land verantwortlich.' },
+  { q: 'Ist IPTV legal in Deutschland?', a: 'Die IPTV-Technologie selbst ist legal. Entscheidend ist die Quelle des Inhalts. MOJO4K.DE stellt seinen Service im Rahmen der geltenden Vorschriften bereit. Nutzer sind für die Einhaltung der Gesetze in ihrem Land verantwortlich.' },
   { q: 'Welche Internetgeschwindigkeit benötige ich?', a: 'Für HD-Streaming empfehlen wir mindestens 16 Mbit/s, für 4K Ultra HD mindestens 25 Mbit/s. Eine stabile Verbindung ist wichtiger als die reine Geschwindigkeit.' },
 ]
 
@@ -26,9 +26,9 @@ const faqSchema = {
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'IPTVV.DE',
-  url: 'https://iptvv.de',
-  logo: 'https://iptvv.de/favicon.svg',
+  name: 'MOJO4K.DE',
+  url: 'https://mojo4k.de',
+  logo: 'https://mojo4k.de/favicon.svg',
   description: 'Bester IPTV Anbieter in Deutschland. Über 50.000 Kanäle, 120.000+ VOD in 4K. Kompatibel mit Fire Stick, Smart TV, Android, iOS und mehr.',
   areaServed: ['DE', 'AT', 'CH'],
   contactPoint: {
@@ -48,9 +48,9 @@ const orgSchema = {
 const productSchema = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'IPTVV Premium IPTV Abonnement',
+  name: 'MOJO4K Premium IPTV Abonnement',
   description: 'Premium IPTV Service in Deutschland mit 50.000+ Kanälen, 120.000+ VOD, 4K Ultra HD, EPG und 24/7 Support.',
-  brand: { '@type': 'Brand', name: 'IPTVV.DE' },
+  brand: { '@type': 'Brand', name: 'MOJO4K.DE' },
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
@@ -73,7 +73,7 @@ function Navbar() {
       <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px', width: '100%' }}>
           <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-            <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+            <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
             <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
           </Link>
           <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }} className="hidden-mobile">
@@ -81,7 +81,7 @@ function Navbar() {
               <Link key={href} href={href} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{label}</Link>
             ))}
           </div>
-          <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+den+Service+gerne+testen`} target="_blank" rel="noopener noreferrer"
+          <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+den+Service+gerne+testen`} target="_blank" rel="noopener noreferrer"
             style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }} className="hidden-mobile">
             Kostenloser Test
           </a>
@@ -99,7 +99,7 @@ function Navbar() {
             <Link key={href} href={href} onClick={() => setMenuOpen(false)}
               style={{ padding: '1rem 0', borderBottom: '1px solid #1e1e1e', color: '#ccc', textDecoration: 'none', fontSize: '1rem', fontWeight: 600 }}>{label}</Link>
           ))}
-          <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+testen`} target="_blank" rel="noopener noreferrer"
+          <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+testen`} target="_blank" rel="noopener noreferrer"
             style={{ marginTop: '1.5rem', background: '#e53935', color: '#fff', fontWeight: 700, padding: '0.85rem', borderRadius: '8px', textAlign: 'center', textDecoration: 'none' }}>
             Kostenloser Test
           </a>
@@ -121,16 +121,16 @@ function Hero() {
             <span style={{ color: '#e53935', fontSize: '0.83rem', fontWeight: 600 }}>Zufriedene Kunden 4.9 ★★★★★ (1.090)</span>
           </div>
           <h1 style={{ fontSize: 'clamp(1.9rem, 4vw, 3.2rem)', fontWeight: 900, lineHeight: 1.15, color: '#fff', marginBottom: '20px' }}>
-            IPTV kaufen bei <span style={{ color: '#e53935' }}>IPTVV Premium</span> – der beste IPTV-Service in Deutschland
+            IPTV kaufen bei <span style={{ color: '#e53935' }}>MOJO4K Premium</span> – der beste IPTV-Service in Deutschland
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '36px', maxWidth: '540px' }}>
-            Verbessern Sie Ihr Streaming-Erlebnis mit IPTVV Premium. Zuverlässige globale Server, kein Einfrieren, keine Pufferung, kristallklare 4K-Qualität und täglich aktualisierte Inhalte mit Filmen, Serien, Sport und Live-TV.
+            Verbessern Sie Ihr Streaming-Erlebnis mit MOJO4K Premium. Zuverlässige globale Server, kein Einfrieren, keine Pufferung, kristallklare 4K-Qualität und täglich aktualisierte Inhalte mit Filmen, Serien, Sport und Live-TV.
           </p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <Link href="/preise" style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 32px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none' }}>
               Jetzt starten
             </Link>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+den+Service+testen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+den+Service+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#25D366', color: '#fff', fontWeight: 700, padding: '14px 32px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
               Kostenloser Test
@@ -163,9 +163,9 @@ function Features() {
     <section style={{ background: '#0d0d0d', padding: '80px 0' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px' }}>
         <div style={{ textAlign: 'center', marginBottom: '56px' }}>
-          <p style={{ color: '#e53935', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.82rem' }}>Warum IPTVV.DE?</p>
+          <p style={{ color: '#e53935', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.82rem' }}>Warum MOJO4K.DE?</p>
           <h2 style={{ color: '#fff', fontSize: 'clamp(1.7rem, 3vw, 2.4rem)', fontWeight: 900, marginTop: '12px', marginBottom: '16px' }}>
-            Warum IPTVV der führende IPTV-Service in Deutschland ist
+            Warum MOJO4K der führende IPTV-Service in Deutschland ist
           </h2>
           <p style={{ color: '#8c8c8c', maxWidth: '580px', margin: '0 auto', lineHeight: 1.75 }}>
             Tauchen Sie ein in 4K-Bildqualität auf jedem Gerät. Mehr als 50.000 Kanäle, 120.000+ VODs und 100% Verfügbarkeit ohne Pufferung oder Einfrieren.
@@ -264,7 +264,7 @@ function PricingSection() {
                   </li>
                 ))}
               </ul>
-              <a href={`${WA}&text=Hallo+IPTVV%2C+${p.msg}`} target="_blank" rel="noopener noreferrer"
+              <a href={`${WA}&text=Hallo+MOJO4K%2C+${p.msg}`} target="_blank" rel="noopener noreferrer"
                 style={{ display: 'block', textAlign: 'center', background: p.popular ? '#fff' : '#e53935', color: p.popular ? '#e53935' : '#fff', fontWeight: 700, padding: '12px', borderRadius: '8px', fontSize: '0.9rem', textDecoration: 'none' }}>
                 Jetzt kaufen
               </a>
@@ -358,12 +358,12 @@ function Reviews() {
     { name: 'Sandra K.', location: 'Hamburg', stars: 5, text: 'Günstiger als MagentaTV und mehr Kanäle. Einrichtung auf Samsung Smart TV in unter 5 Minuten. Sehr empfehlenswert!' },
     { name: 'Thomas H.', location: 'Berlin', stars: 5, text: 'Seit 8 Monaten dabei, noch kein einziges Mal Probleme. Champions League und Bundesliga in 4K – perfekt. Bester IPTV Anbieter.' },
     { name: 'Ayse D.', location: 'Frankfurt', stars: 5, text: 'Mein Mann schaut türkisches Fernsehen, die Kinder Cartoons und ich deutsche Serien – alles auf 3 Geräten gleichzeitig ohne Probleme.' },
-    { name: 'Oliver S.', location: 'Köln', stars: 5, text: 'Vorher MagentaTV für 30€ plus Netflix für 14€. Jetzt IPTVV für unter 20€ und ich habe mehr Sender. Die Rechnung war einfach.' },
+    { name: 'Oliver S.', location: 'Köln', stars: 5, text: 'Vorher MagentaTV für 30€ plus Netflix für 14€. Jetzt MOJO4K für unter 20€ und ich habe mehr Sender. Die Rechnung war einfach.' },
     { name: 'Jennifer B.', location: 'Stuttgart', stars: 5, text: 'Problem bei der LG TV Einrichtung gemeldet – nach 4 Minuten kam die Lösung per WhatsApp. Das ist echter Kundenservice!' },
   ]
   return (
     <section style={{ background: '#0d0d0d', padding: '80px 0' }} itemScope itemType="https://schema.org/Product">
-      <meta itemProp="name" content="IPTVV.DE Premium IPTV" />
+      <meta itemProp="name" content="MOJO4K.DE Premium IPTV" />
       <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating" style={{ display: 'none' }}>
         <meta itemProp="ratingValue" content="4.9" />
         <meta itemProp="reviewCount" content="1090" />
@@ -420,7 +420,7 @@ function Footer() {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px', justifyContent: 'space-between', marginBottom: '40px' }}>
           <div>
             <div style={{ marginBottom: '12px' }}>
-              <span style={{ color: '#e53935', fontSize: '1.4rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.4rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 900 }}>.DE</span>
             </div>
             <p style={{ color: '#555', fontSize: '0.85rem', maxWidth: '240px', lineHeight: 1.7 }}>Bester IPTV Anbieter Deutschland. 50.000+ Kanäle in 4K.</p>
@@ -441,7 +441,7 @@ function Footer() {
           </div>
         </div>
         <div style={{ borderTop: '1px solid #1a1a1a', paddingTop: '24px', display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'space-between', alignItems: 'center' }}>
-          <p style={{ color: '#333', fontSize: '0.8rem' }}>© {new Date().getFullYear()} IPTVV.DE. Alle Rechte vorbehalten.</p>
+          <p style={{ color: '#333', fontSize: '0.8rem' }}>© {new Date().getFullYear()} MOJO4K.DE. Alle Rechte vorbehalten.</p>
           <p style={{ color: '#333', fontSize: '0.8rem' }}>Die IPTV-Technologie ist legal. Nutzer sind für die Einhaltung der Gesetze ihres Landes verantwortlich.</p>
         </div>
       </div>
@@ -453,20 +453,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | IPTVV.DE</title>
-        <meta name="description" content="IPTV kaufen bei IPTVV – bester IPTV Anbieter in Deutschland 2026. 50.000+ Kanäle, 120.000+ VOD, 4K Ultra HD. Fire Stick, Smart TV, Smarters Pro. Kostenlos testen!" />
+        <title>IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K.DE</title>
+        <meta name="description" content="IPTV kaufen bei MOJO4K – bester IPTV Anbieter in Deutschland 2026. 50.000+ Kanäle, 120.000+ VOD, 4K Ultra HD. Fire Stick, Smart TV, Smarters Pro. Kostenlos testen!" />
         <meta name="keywords" content="IPTV kaufen Deutschland, IPTV Anbieter Deutschland, IPTV Stick Deutschland, IPTV Smarters Pro, IPTV Bundesliga, IPTV Samsung TV, bester IPTV Anbieter" />
         <meta name="google-site-verification" content="6n21n_IARwicV--IqE2jrwkzUt4QOp6Wmx2robpca8k" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#0a0a0a" />
         <meta name="robots" content="index, follow" />
         <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
-        <link rel="canonical" href="https://iptvv.de/" />
-        <meta property="og:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | IPTVV.DE" />
+        <link rel="canonical" href="https://mojo4k.de/" />
+        <meta property="og:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K.DE" />
         <meta property="og:description" content="50.000+ Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
-        <meta property="og:url" content="https://iptvv.de" />
+        <meta property="og:url" content="https://mojo4k.de" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="IPTVV.DE" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
         <meta property="og:locale" content="de_DE" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/favicon.ico" />
@@ -477,13 +477,13 @@ export default function Home() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Product',
-          name: 'IPTVV.DE Premium IPTV',
+          name: 'MOJO4K.DE Premium IPTV',
           aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', reviewCount: '1090', bestRating: '5' },
           review: [
             { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Markus B.' }, reviewBody: 'Läuft einwandfrei auf meinem Fire Stick 4K. Alle Sky-Kanäle in HD, Bundesliga ohne Ruckler. Support via WhatsApp war in 3 Minuten da.' },
             { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Sandra K.' }, reviewBody: 'Günstiger als MagentaTV und mehr Kanäle. Einrichtung auf Samsung Smart TV in unter 5 Minuten. Sehr empfehlenswert!' },
             { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Thomas H.' }, reviewBody: 'Seit 8 Monaten dabei, noch kein einziges Mal Probleme. Champions League und Bundesliga in 4K – perfekt.' },
-            { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Oliver S.' }, reviewBody: 'Vorher MagentaTV für 30€ plus Netflix für 14€. Jetzt IPTVV für unter 20€ und mehr Sender. Klare Empfehlung.' },
+            { '@type': 'Review', reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' }, author: { '@type': 'Person', name: 'Oliver S.' }, reviewBody: 'Vorher MagentaTV für 30€ plus Netflix für 14€. Jetzt MOJO4K für unter 20€ und mehr Sender. Klare Empfehlung.' },
           ],
         }) }} />
       </Head>

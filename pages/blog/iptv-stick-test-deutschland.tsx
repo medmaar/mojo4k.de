@@ -8,7 +8,7 @@ const faqSchema = {
   '@type': 'FAQPage',
   mainEntity: [
     {"@type":"Question","name":"Welcher IPTV Stick ist der beste für Deutschland 2026?","acceptedAnswer":{"@type":"Answer","text":"Der Amazon Fire TV Stick 4K Max ist aktuell der beste IPTV Stick für Deutschland. Er unterstützt 4K, Wi-Fi 6E und läuft stabil mit IPTV Smarters Pro und TiviMate."}},
-    {"@type":"Question","name":"Kann ich meinen vorhandenen Fire Stick für IPTV nutzen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Jeder Amazon Fire TV Stick ab der 2. Generation kann für IPTV genutzt werden. Installieren Sie einfach IPTV Smarters Pro aus dem App Store und geben Sie Ihre IPTVV-Zugangsdaten ein."}}
+    {"@type":"Question","name":"Kann ich meinen vorhandenen Fire Stick für IPTV nutzen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Jeder Amazon Fire TV Stick ab der 2. Generation kann für IPTV genutzt werden. Installieren Sie einfach IPTV Smarters Pro aus dem App Store und geben Sie Ihre MOJO4K-Zugangsdaten ein."}}
   ],
 }
 
@@ -18,8 +18,8 @@ const articleSchema = {
   headline: "Bester IPTV Stick Deutschland 2026 – Test & Vergleich",
   datePublished: "2026-01-05",
   dateModified: "2026-01-05",
-  author: { '@type': 'Organization', name: 'IPTVV.DE' },
-  publisher: { '@type': 'Organization', name: 'IPTVV.DE', url: 'https://iptvv.de' },
+  author: { '@type': 'Organization', name: 'MOJO4K.DE' },
+  publisher: { '@type': 'Organization', name: 'MOJO4K.DE', url: 'https://mojo4k.de' },
 }
 
 export default function BlogPost() {
@@ -29,10 +29,10 @@ export default function BlogPost() {
         <title>Bester IPTV Stick Deutschland 2026 – Test & Vergleich</title>
         <meta name="description" content="Die besten IPTV Sticks für Deutschland 2026 im Test: Amazon Fire TV Stick 4K, Chromecast und mehr. Welcher Stick eignet sich für 4K IPTV?" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iptvv.de/blog/iptv-stick-test-deutschland" />
+        <link rel="canonical" href="https://mojo4k.de/blog/iptv-stick-test-deutschland" />
         <meta property="og:title" content="Bester IPTV Stick Deutschland 2026 – Test & Vergleich" />
         <meta property="og:description" content="Die besten IPTV Sticks für Deutschland 2026 im Test: Amazon Fire TV Stick 4K, Chromecast und mehr. Welcher Stick eignet sich für 4K IPTV?" />
-        <meta property="og:url" content="https://iptvv.de/blog/iptv-stick-test-deutschland" />
+        <meta property="og:url" content="https://mojo4k.de/blog/iptv-stick-test-deutschland" />
         <meta property="og:type" content="article" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -42,7 +42,7 @@ export default function BlogPost() {
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
             <div style={{ display: 'flex', gap: '28px' }} className="hidden-mobile">
@@ -103,15 +103,15 @@ export default function BlogPost() {
             </div>
             <div style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '10px', padding: '20px' }}>
               <h3 style={{ color: '#fff', fontWeight: 700, fontSize: '0.95rem', marginBottom: '8px' }}>Kann ich meinen vorhandenen Fire Stick für IPTV nutzen?</h3>
-              <p style={{ color: '#8c8c8c', fontSize: '0.88rem', lineHeight: 1.7 }}>Ja. Jeder Amazon Fire TV Stick ab der 2. Generation kann für IPTV genutzt werden. Installieren Sie einfach IPTV Smarters Pro aus dem App Store und geben Sie Ihre IPTVV-Zugangsdaten ein.</p>
+              <p style={{ color: '#8c8c8c', fontSize: '0.88rem', lineHeight: 1.7 }}>Ja. Jeder Amazon Fire TV Stick ab der 2. Generation kann für IPTV genutzt werden. Installieren Sie einfach IPTV Smarters Pro aus dem App Store und geben Sie Ihre MOJO4K-Zugangsdaten ein.</p>
             </div>
             </div>
           </section>
 
           <div style={{ background: 'linear-gradient(135deg, #1a0000, #0a0a0a)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '16px', padding: '36px', textAlign: 'center', marginTop: '48px' }}>
-            <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.4rem', marginBottom: '10px' }}>Kostenlos bei IPTVV.DE testen</h2>
+            <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.4rem', marginBottom: '10px' }}>Kostenlos bei MOJO4K.DE testen</h2>
             <p style={{ color: '#aaa', marginBottom: '24px', fontSize: '0.95rem' }}>Kein Vertrag. Aktivierung in Minuten.</p>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+möchte+IPTV+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+möchte+IPTV+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '12px 32px', borderRadius: '8px', fontSize: '0.95rem', textDecoration: 'none', display: 'inline-block' }}>
               Jetzt kostenlos testen
             </a>

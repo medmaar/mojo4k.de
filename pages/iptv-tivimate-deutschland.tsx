@@ -9,8 +9,8 @@ const faqSchema = {
   mainEntity: [
     { '@type': 'Question', name: 'Ist TiviMate kostenlos?', acceptedAnswer: { '@type': 'Answer', text: 'TiviMate ist kostenlos mit grundlegenden Funktionen. TiviMate Premium (ca. 4,99 €/Jahr) schaltet EPG-Aufnahmen, Multi-Screen und erweiterte Features frei.' } },
     { '@type': 'Question', name: 'Auf welchen Geräten läuft TiviMate?', acceptedAnswer: { '@type': 'Answer', text: 'TiviMate läuft auf Amazon Fire TV Stick, Android TV Boxen und Android-Geräten mit Google Play Zugang. Es ist nicht nativ für iOS oder Samsung/LG webOS verfügbar.' } },
-    { '@type': 'Question', name: 'Wie verbinde ich TiviMate mit IPTVV?', acceptedAnswer: { '@type': 'Answer', text: 'Öffnen Sie TiviMate → Playlist hinzufügen → Xtream Codes API wählen → Server-URL, Benutzername und Passwort von IPTVV eingeben. Fertig in unter 2 Minuten.' } },
-    { '@type': 'Question', name: 'Was ist der Unterschied zwischen TiviMate und IPTV Smarters Pro?', acceptedAnswer: { '@type': 'Answer', text: 'TiviMate hat das bessere UI/EPG-Design und ist die erste Wahl für Fire Stick und Android Box. Smarters Pro ist kostenlos auf mehr Plattformen verfügbar (inkl. iPhone). Beide funktionieren perfekt mit IPTVV.' } },
+    { '@type': 'Question', name: 'Wie verbinde ich TiviMate mit MOJO4K?', acceptedAnswer: { '@type': 'Answer', text: 'Öffnen Sie TiviMate → Playlist hinzufügen → Xtream Codes API wählen → Server-URL, Benutzername und Passwort von MOJO4K eingeben. Fertig in unter 2 Minuten.' } },
+    { '@type': 'Question', name: 'Was ist der Unterschied zwischen TiviMate und IPTV Smarters Pro?', acceptedAnswer: { '@type': 'Answer', text: 'TiviMate hat das bessere UI/EPG-Design und ist die erste Wahl für Fire Stick und Android Box. Smarters Pro ist kostenlos auf mehr Plattformen verfügbar (inkl. iPhone). Beide funktionieren perfekt mit MOJO4K.' } },
   ],
 }
 
@@ -18,14 +18,14 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://iptvv.de' },
-    { '@type': 'ListItem', position: 2, name: 'TiviMate IPTV Deutschland', item: 'https://iptvv.de/iptv-tivimate-deutschland' },
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'TiviMate IPTV Deutschland', item: 'https://mojo4k.de/iptv-tivimate-deutschland' },
   ],
 }
 
 const steps = [
   { n: '01', title: 'TiviMate installieren', desc: 'Öffnen Sie den Google Play Store oder Amazon App Store und suchen Sie nach "TiviMate IPTV Player". Die kostenlose Version ist sofort verfügbar.' },
-  { n: '02', title: 'IPTVV Abonnement kaufen', desc: 'Wählen Sie Ihr IPTVV-Paket und erhalten Sie Server-URL, Benutzername und Passwort innerhalb von Minuten per WhatsApp.' },
+  { n: '02', title: 'MOJO4K Abonnement kaufen', desc: 'Wählen Sie Ihr MOJO4K-Paket und erhalten Sie Server-URL, Benutzername und Passwort innerhalb von Minuten per WhatsApp.' },
   { n: '03', title: 'Playlist in TiviMate hinzufügen', desc: 'TiviMate öffnen → "Playlist hinzufügen" → "Xtream Codes API" wählen → die 3 Zugangsdaten eingeben → Laden.' },
   { n: '04', title: 'EPG aktivieren & genießen', desc: 'Einstellungen → EPG → URL eingeben. Dann haben Sie vollständiges TV-Programm für alle 50.000+ Kanäle.' },
 ]
@@ -43,15 +43,15 @@ export default function TiviMateDeutschland() {
   return (
     <>
       <Head>
-        <title>TiviMate IPTV Deutschland 2026 – Einrichtung & Anleitung | IPTVV.DE</title>
-        <meta name="description" content="TiviMate IPTV in Deutschland einrichten 2026. Schritt-für-Schritt Anleitung für Fire Stick & Android Box. Mit IPTVV 50.000+ Kanäle, EPG & Aufnahmen. Kostenlos testen!" />
+        <title>TiviMate IPTV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE</title>
+        <meta name="description" content="TiviMate IPTV in Deutschland einrichten 2026. Schritt-für-Schritt Anleitung für Fire Stick & Android Box. Mit MOJO4K 50.000+ Kanäle, EPG & Aufnahmen. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iptvv.de/iptv-tivimate-deutschland" />
-        <meta property="og:title" content="TiviMate IPTV Deutschland 2026 – Einrichtung & Anleitung | IPTVV.DE" />
-        <meta property="og:description" content="TiviMate IPTV in Deutschland einrichten. Fire Stick & Android Box Anleitung. Mit IPTVV 50.000+ Kanäle in 4K. Kostenlos testen!" />
-        <meta property="og:url" content="https://iptvv.de/iptv-tivimate-deutschland" />
+        <link rel="canonical" href="https://mojo4k.de/iptv-tivimate-deutschland" />
+        <meta property="og:title" content="TiviMate IPTV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE" />
+        <meta property="og:description" content="TiviMate IPTV in Deutschland einrichten. Fire Stick & Android Box Anleitung. Mit MOJO4K 50.000+ Kanäle in 4K. Kostenlos testen!" />
+        <meta property="og:url" content="https://mojo4k.de/iptv-tivimate-deutschland" />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="IPTVV.DE" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
         <meta property="og:locale" content="de_DE" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -61,7 +61,7 @@ export default function TiviMateDeutschland() {
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
             <div style={{ display: 'flex', gap: '32px' }} className="hidden-mobile">
@@ -69,7 +69,7 @@ export default function TiviMateDeutschland() {
                 <Link key={h} href={h} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{l}</Link>
               ))}
             </div>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+TiviMate+mit+IPTVV+nutzen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+TiviMate+mit+MOJO4K+nutzen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
               Kostenlos testen
             </a>
@@ -97,7 +97,7 @@ export default function TiviMateDeutschland() {
           </p>
 
           <section style={{ marginBottom: '56px' }}>
-            <h2 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '32px' }}>TiviMate mit IPTVV in 4 Schritten einrichten</h2>
+            <h2 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '32px' }}>TiviMate mit MOJO4K in 4 Schritten einrichten</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {steps.map(s => (
                 <div key={s.n} style={{ display: 'flex', gap: '20px', alignItems: 'flex-start', background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '24px' }}>
@@ -164,9 +164,9 @@ export default function TiviMateDeutschland() {
           </section>
 
           <div style={{ background: 'linear-gradient(135deg, #1a0000, #0a0a0a)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '16px', padding: '40px', textAlign: 'center' }}>
-            <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>Bereit für TiviMate + IPTVV?</h2>
+            <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>Bereit für TiviMate + MOJO4K?</h2>
             <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>Zugangsdaten in Minuten per WhatsApp. Kein Vertrag, kein Risiko.</p>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+TiviMate+mit+IPTVV+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+TiviMate+mit+MOJO4K+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 36px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block' }}>
               Kostenlos testen – TiviMate
             </a>

@@ -9,8 +9,8 @@ const faqSchema = {
   mainEntity: [
     { '@type': 'Question', name: 'Welche IPTV Receiver sind die besten für Deutschland?', acceptedAnswer: { '@type': 'Answer', text: 'MAG 522w3 und MAG 524w3 sind die empfohlenen IPTV Receiver für Deutschland 2026. Sie bieten 4K-Unterstützung, HEVC-Dekodierung und eingebautes WLAN. Für Enigma2-Nutzer sind VU+ und GigaBlue empfehlenswert.' } },
     { '@type': 'Question', name: 'Was ist der Unterschied zwischen MAG Box und Android Box?', acceptedAnswer: { '@type': 'Answer', text: 'MAG Boxen sind speziell für IPTV optimiert und laufen auf Linux – sehr stabil, aber keine App-Installation möglich. Android Boxen sind flexibler (Apps, Netflix, YouTube), aber etwas aufwendiger in der Einrichtung.' } },
-    { '@type': 'Question', name: 'Funktioniert IPTVV mit Enigma2?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. IPTVV liefert M3U-Playlisten und Xtream Codes, die vollständig mit Enigma2-Receivern (Dreambox, VU+, GigaBlue) kompatibel sind. Die Einrichtung erfolgt via Plugin oder M3U-Import.' } },
-    { '@type': 'Question', name: 'Brauche ich für die MAG Box ein IPTV-Abonnement?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Die MAG Box ist nur die Hardware. Für Inhalte benötigen Sie ein IPTV-Abonnement wie IPTVV. Nach dem Kauf erhalten Sie die Portal-URL, die Sie in der MAG Box eintragen.' } },
+    { '@type': 'Question', name: 'Funktioniert MOJO4K mit Enigma2?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. MOJO4K liefert M3U-Playlisten und Xtream Codes, die vollständig mit Enigma2-Receivern (Dreambox, VU+, GigaBlue) kompatibel sind. Die Einrichtung erfolgt via Plugin oder M3U-Import.' } },
+    { '@type': 'Question', name: 'Brauche ich für die MAG Box ein IPTV-Abonnement?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Die MAG Box ist nur die Hardware. Für Inhalte benötigen Sie ein IPTV-Abonnement wie MOJO4K. Nach dem Kauf erhalten Sie die Portal-URL, die Sie in der MAG Box eintragen.' } },
   ],
 }
 
@@ -18,8 +18,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://iptvv.de' },
-    { '@type': 'ListItem', position: 2, name: 'IPTV Receiver Deutschland', item: 'https://iptvv.de/iptv-receiver-deutschland' },
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'IPTV Receiver Deutschland', item: 'https://mojo4k.de/iptv-receiver-deutschland' },
   ],
 }
 
@@ -27,12 +27,12 @@ const receivers = [
   { name: 'MAG 524w3', tag: 'Testsieger', desc: '4K Ultra HD, HEVC, eingebautes Dual-Band WLAN 5GHz. Meistverkaufter IPTV Receiver in Deutschland. Ca. 90 Euro.' },
   { name: 'MAG 522w3', tag: 'Preis-Leistung', desc: '4K Ultra HD, HEVC, WLAN 2.4/5GHz. Identische Leistung wie 524w3 zu günstigerem Preis. Ca. 75 Euro.' },
   { name: 'Formuler Z10 Pro', tag: 'Premium', desc: 'Android 9 + MyTVOnline 2. Beste Kombination aus IPTV-Receiver und Android TV Box. Ca. 120 Euro.' },
-  { name: 'Enigma2 / VU+', tag: 'Für Profis', desc: 'Für erfahrene Nutzer. Voll kompatibel mit IPTVV via M3U-Plugin. Beste DVB-S2-Kombination (Satellit + IPTV).' },
+  { name: 'Enigma2 / VU+', tag: 'Für Profis', desc: 'Für erfahrene Nutzer. Voll kompatibel mit MOJO4K via M3U-Plugin. Beste DVB-S2-Kombination (Satellit + IPTV).' },
 ]
 
 const steps = [
   { n: '01', title: 'MAG Box einschalten', desc: 'Schließen Sie die MAG Box per HDMI an Ihren TV und per LAN oder WLAN an das Internet an.' },
-  { n: '02', title: 'IPTVV Abonnement kaufen', desc: 'Wählen Sie Ihr Paket – Sie erhalten die Portal-URL, Benutzername und Passwort per WhatsApp.' },
+  { n: '02', title: 'MOJO4K Abonnement kaufen', desc: 'Wählen Sie Ihr Paket – Sie erhalten die Portal-URL, Benutzername und Passwort per WhatsApp.' },
   { n: '03', title: 'Portal-URL eintragen', desc: 'In der MAG Box: Einstellungen → Server → Portals → Portal 1 URL eintragen → Speichern.' },
   { n: '04', title: 'Neu starten & genießen', desc: 'Nach dem Neustart lädt die MAG Box automatisch alle Kanäle. Sofort 50.000+ Kanäle verfügbar.' },
 ]
@@ -41,15 +41,15 @@ export default function IPTVReceiver() {
   return (
     <>
       <Head>
-        <title>IPTV Receiver & MAG Box Deutschland 2026 – Einrichtung & Vergleich | IPTVV.DE</title>
-        <meta name="description" content="Bester IPTV Receiver für Deutschland 2026: MAG Box, Enigma2 & Formuler im Vergleich. Einrichtung Schritt für Schritt. 50.000+ Kanäle in 4K mit IPTVV. Kostenlos testen!" />
+        <title>IPTV Receiver & MAG Box Deutschland 2026 – Einrichtung & Vergleich | MOJO4K.DE</title>
+        <meta name="description" content="Bester IPTV Receiver für Deutschland 2026: MAG Box, Enigma2 & Formuler im Vergleich. Einrichtung Schritt für Schritt. 50.000+ Kanäle in 4K mit MOJO4K. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iptvv.de/iptv-receiver-deutschland" />
-        <meta property="og:title" content="IPTV Receiver & MAG Box Deutschland 2026 – Einrichtung & Vergleich | IPTVV.DE" />
-        <meta property="og:description" content="Bester IPTV Receiver für Deutschland 2026: MAG Box, Enigma2 & Formuler im Vergleich. 50.000+ Kanäle in 4K mit IPTVV." />
-        <meta property="og:url" content="https://iptvv.de/iptv-receiver-deutschland" />
+        <link rel="canonical" href="https://mojo4k.de/iptv-receiver-deutschland" />
+        <meta property="og:title" content="IPTV Receiver & MAG Box Deutschland 2026 – Einrichtung & Vergleich | MOJO4K.DE" />
+        <meta property="og:description" content="Bester IPTV Receiver für Deutschland 2026: MAG Box, Enigma2 & Formuler im Vergleich. 50.000+ Kanäle in 4K mit MOJO4K." />
+        <meta property="og:url" content="https://mojo4k.de/iptv-receiver-deutschland" />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="IPTVV.DE" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
         <meta property="og:locale" content="de_DE" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -59,7 +59,7 @@ export default function IPTVReceiver() {
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
             <div style={{ display: 'flex', gap: '32px' }} className="hidden-mobile">
@@ -67,7 +67,7 @@ export default function IPTVReceiver() {
                 <Link key={h} href={h} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{l}</Link>
               ))}
             </div>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+IPTV+auf+meinem+Receiver+einrichten`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+IPTV+auf+meinem+Receiver+einrichten`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
               Kostenlos testen
             </a>
@@ -91,7 +91,7 @@ export default function IPTVReceiver() {
             <span style={{ color: '#e53935' }}>IPTV Receiver</span> & MAG Box Deutschland – Vergleich & Einrichtung 2026
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '40px', maxWidth: '680px' }}>
-            IPTV Receiver wie die MAG Box oder Enigma2-Geräte sind die professionellste Lösung für IPTV in Deutschland. Sie bieten maximale Stabilität und sind perfekt kompatibel mit IPTVV – 50.000+ Kanäle in 4K Ultra HD.
+            IPTV Receiver wie die MAG Box oder Enigma2-Geräte sind die professionellste Lösung für IPTV in Deutschland. Sie bieten maximale Stabilität und sind perfekt kompatibel mit MOJO4K – 50.000+ Kanäle in 4K Ultra HD.
           </p>
 
           <section style={{ marginBottom: '56px' }}>
@@ -128,10 +128,10 @@ export default function IPTVReceiver() {
             <h2 style={{ fontSize: '1.6rem', fontWeight: 900, marginBottom: '20px' }}>Enigma2 / Dreambox einrichten</h2>
             <div style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '28px' }}>
               <p style={{ color: '#aaa', lineHeight: 1.8, marginBottom: '20px', fontSize: '0.95rem' }}>
-                Für Enigma2-Receiver (VU+, GigaBlue, Dreambox) gibt es zwei Möglichkeiten IPTVV einzurichten:
+                Für Enigma2-Receiver (VU+, GigaBlue, Dreambox) gibt es zwei Möglichkeiten MOJO4K einzurichten:
               </p>
               {[
-                { method: 'Via M3U-Import', desc: 'IPTVV sendet Ihnen eine M3U-URL. In Enigma2: Plugin "E2m3u2bouquet" installieren → URL eingeben → Kanalliste automatisch erstellen lassen.' },
+                { method: 'Via M3U-Import', desc: 'MOJO4K sendet Ihnen eine M3U-URL. In Enigma2: Plugin "E2m3u2bouquet" installieren → URL eingeben → Kanalliste automatisch erstellen lassen.' },
                 { method: 'Via Xtream Plugin', desc: 'Das Plugin "Xtream Editor" ermöglicht direkten Xtream-Codes-Import mit VOD und EPG-Unterstützung.' },
               ].map((m, i) => (
                 <div key={m.method} style={{ marginBottom: i === 0 ? '16px' : 0, paddingBottom: i === 0 ? '16px' : 0, borderBottom: i === 0 ? '1px solid #1a1a1a' : 'none' }}>
@@ -159,8 +159,8 @@ export default function IPTVReceiver() {
 
           <div style={{ background: 'linear-gradient(135deg, #1a0000, #0a0a0a)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '16px', padding: '40px', textAlign: 'center' }}>
             <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>Bereit zum Starten?</h2>
-            <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>MAG Box, Enigma2 oder Android – IPTVV funktioniert auf allen Receivern. Kostenlos testen.</p>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+IPTV+auf+meinem+Receiver+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
+            <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>MAG Box, Enigma2 oder Android – MOJO4K funktioniert auf allen Receivern. Kostenlos testen.</p>
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+IPTV+auf+meinem+Receiver+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 36px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block' }}>
               Kostenlos testen
             </a>

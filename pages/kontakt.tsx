@@ -7,14 +7,14 @@ export default function Kontakt() {
   return (
     <>
       <Head>
-        <title>Kontakt – IPTVV.DE</title>
-        <meta name="description" content="Kontaktieren Sie IPTVV.DE – 24/7 Support via WhatsApp oder E-Mail." />
+        <title>Kontakt – MOJO4K.DE</title>
+        <meta name="description" content="Kontaktieren Sie MOJO4K.DE – 24/7 Support via WhatsApp oder E-Mail." />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', paddingTop: '64px' }}>
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50 }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
             <div style={{ display: 'flex', gap: '32px' }}>
@@ -22,7 +22,7 @@ export default function Kontakt() {
                 <Link key={href} href={href} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{label}</Link>
               ))}
             </div>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+testen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
               Kostenloser Test
             </a>
@@ -38,8 +38,8 @@ export default function Kontakt() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: '20px', marginBottom: '48px' }}>
             {[
-              { icon: '💬', label: 'WhatsApp', val: 'Klicken zum Schreiben', href: `${WA}&text=Hallo+IPTVV%2C+ich+habe+eine+Frage`, color: '#25D366' },
-              { icon: '✉️', label: 'E-Mail', val: 'info[at]iptvv.de', href: '#email', color: '#e53935' },
+              { icon: '💬', label: 'WhatsApp', val: 'Klicken zum Schreiben', href: `${WA}&text=Hallo+MOJO4K%2C+ich+habe+eine+Frage`, color: '#25D366' },
+              { icon: '✉️', label: 'E-Mail', val: 'info[at]mojo4k.de', href: '#email', color: '#e53935' },
             ].map(c => (
               <a key={c.label} href={c.href} target="_blank" rel="noopener noreferrer"
                 style={{ background: '#111', border: `1px solid #1e1e1e`, borderRadius: '12px', padding: '32px', textDecoration: 'none', display: 'block', transition: 'border-color 0.2s' }}
@@ -56,7 +56,7 @@ export default function Kontakt() {
             <p style={{ color: '#888', marginBottom: '24px', fontSize: '0.92rem', lineHeight: 1.7 }}>
               Noch unentschlossen? Holen Sie sich Ihren kostenlosen 24-Stunden-Testaccount und überzeugen Sie sich selbst!
             </p>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+den+Service+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+den+Service+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 36px', borderRadius: '8px', textDecoration: 'none', fontSize: '1rem', display: 'inline-block' }}>
               Jetzt kostenlos testen
             </a>

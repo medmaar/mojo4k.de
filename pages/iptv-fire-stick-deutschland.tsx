@@ -6,7 +6,7 @@ const WA = 'https://api.whatsapp.com/send/?phone=4917600000000'
 const steps = [
   { n: '01', title: 'Fire Stick einrichten', desc: 'Schließen Sie den Amazon Fire TV Stick an Ihren TV an und verbinden Sie ihn mit dem Internet.' },
   { n: '02', title: 'IPTV App installieren', desc: 'Öffnen Sie den Amazon App Store oder Downloader und installieren Sie IPTV Smarters Pro oder TiviMate.' },
-  { n: '03', title: 'Abonnement kaufen', desc: 'Wählen Sie ein IPTVV-Paket und erhalten Sie Ihre Zugangsdaten innerhalb von Minuten per WhatsApp.' },
+  { n: '03', title: 'Abonnement kaufen', desc: 'Wählen Sie ein MOJO4K-Paket und erhalten Sie Ihre Zugangsdaten innerhalb von Minuten per WhatsApp.' },
   { n: '04', title: 'Einloggen & Genießen', desc: 'Geben Sie Ihre Zugangsdaten in die App ein und streamen Sie sofort über 50.000 Kanäle in 4K.' },
 ]
 
@@ -14,9 +14,9 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    { '@type': 'Question', name: 'Wie installiere ich IPTV auf dem Amazon Fire Stick?', acceptedAnswer: { '@type': 'Answer', text: 'Installieren Sie IPTV Smarters Pro oder TiviMate aus dem App Store, kaufen Sie ein IPTVV-Abonnement, und geben Sie die Zugangsdaten in die App ein. Die Einrichtung dauert unter 5 Minuten.' } },
+    { '@type': 'Question', name: 'Wie installiere ich IPTV auf dem Amazon Fire Stick?', acceptedAnswer: { '@type': 'Answer', text: 'Installieren Sie IPTV Smarters Pro oder TiviMate aus dem App Store, kaufen Sie ein MOJO4K-Abonnement, und geben Sie die Zugangsdaten in die App ein. Die Einrichtung dauert unter 5 Minuten.' } },
     { '@type': 'Question', name: 'Welche IPTV App ist die beste für Fire Stick?', acceptedAnswer: { '@type': 'Answer', text: 'IPTV Smarters Pro und TiviMate sind die beliebtesten IPTV Apps für den Amazon Fire TV Stick. Beide sind kostenlos verfügbar und bieten eine übersichtliche Benutzeroberfläche.' } },
-    { '@type': 'Question', name: 'Kann ich 4K IPTV auf dem Fire Stick 4K streamen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja! Mit dem Amazon Fire TV Stick 4K Max und einem IPTVV-Abonnement können Sie über 50.000 Kanäle in bis zu 4K Ultra HD-Qualität streamen.' } },
+    { '@type': 'Question', name: 'Kann ich 4K IPTV auf dem Fire Stick 4K streamen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja! Mit dem Amazon Fire TV Stick 4K Max und einem MOJO4K-Abonnement können Sie über 50.000 Kanäle in bis zu 4K Ultra HD-Qualität streamen.' } },
   ],
 }
 
@@ -24,8 +24,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://iptvv.de' },
-    { '@type': 'ListItem', position: 2, name: 'IPTV Fire Stick Deutschland', item: 'https://iptvv.de/iptv-fire-stick-deutschland' },
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'IPTV Fire Stick Deutschland', item: 'https://mojo4k.de/iptv-fire-stick-deutschland' },
   ],
 }
 
@@ -33,13 +33,13 @@ export default function IPTVFireStick() {
   return (
     <>
       <Head>
-        <title>IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | IPTVV.DE</title>
+        <title>IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | MOJO4K.DE</title>
         <meta name="description" content="IPTV auf Amazon Fire TV Stick in Deutschland einrichten. Schritt-für-Schritt Anleitung für IPTV Smarters Pro & TiviMate. 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iptvv.de/iptv-fire-stick-deutschland" />
-        <meta property="og:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | IPTVV.DE" />
+        <link rel="canonical" href="https://mojo4k.de/iptv-fire-stick-deutschland" />
+        <meta property="og:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | MOJO4K.DE" />
         <meta property="og:description" content="IPTV auf dem Amazon Fire TV Stick einrichten. Schritt-für-Schritt Anleitung auf Deutsch." />
-        <meta property="og:url" content="https://iptvv.de/iptv-fire-stick-deutschland" />
+        <meta property="og:url" content="https://mojo4k.de/iptv-fire-stick-deutschland" />
         <meta property="og:type" content="article" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -49,10 +49,10 @@ export default function IPTVFireStick() {
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+möchte+IPTV+auf+meinem+Fire+Stick+einrichten`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+möchte+IPTV+auf+meinem+Fire+Stick+einrichten`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
               Kostenlos testen
             </a>
@@ -76,13 +76,13 @@ export default function IPTVFireStick() {
             IPTV auf <span style={{ color: '#e53935' }}>Amazon Fire TV Stick</span> einrichten – Komplette Anleitung für Deutschland
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '40px', maxWidth: '680px' }}>
-            Mit dem Amazon Fire TV Stick und IPTVV können Sie über 50.000 Kanäle in 4K Ultra HD auf Ihrem Fernseher genießen – ganz ohne Kabel oder Satellit. Diese Schritt-für-Schritt-Anleitung erklärt den kompletten Einrichtungsprozess.
+            Mit dem Amazon Fire TV Stick und MOJO4K können Sie über 50.000 Kanäle in 4K Ultra HD auf Ihrem Fernseher genießen – ganz ohne Kabel oder Satellit. Diese Schritt-für-Schritt-Anleitung erklärt den kompletten Einrichtungsprozess.
           </p>
 
           <div style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '32px', marginBottom: '48px' }}>
             <p style={{ color: '#e53935', fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', marginBottom: '8px' }}>Schnellstart</p>
             <p style={{ color: '#ccc', fontSize: '0.95rem', lineHeight: 1.7 }}>
-              Fire Stick an TV anschließen → IPTV Smarters Pro installieren → IPTVV Abonnement kaufen → Zugangsdaten eingeben → Fertig in unter 5 Minuten.
+              Fire Stick an TV anschließen → IPTV Smarters Pro installieren → MOJO4K Abonnement kaufen → Zugangsdaten eingeben → Fertig in unter 5 Minuten.
             </p>
           </div>
 
@@ -137,7 +137,7 @@ export default function IPTVFireStick() {
           <div style={{ background: 'linear-gradient(135deg, #1a0000, #0a0a0a)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '16px', padding: '40px', textAlign: 'center' }}>
             <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>Bereit zum Starten?</h2>
             <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>Kostenlos testen – kein Vertrag, keine Kreditkarte. Aktivierung in Minuten.</p>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+möchte+IPTV+auf+meinem+Fire+Stick+testen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+möchte+IPTV+auf+meinem+Fire+Stick+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 36px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block' }}>
               Kostenlos testen – Fire Stick
             </a>

@@ -29,19 +29,19 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>IPTV Blog Deutschland – Anleitungen, Tests & Tipps | IPTVV.DE</title>
-        <meta name="description" content="IPTV Blog für Deutschland: Anleitungen für Fire Stick, Smarters Pro, Bundesliga live, Android Box und mehr. Aktuelle Tipps von IPTVV.DE." />
+        <title>IPTV Blog Deutschland – Anleitungen, Tests & Tipps | MOJO4K.DE</title>
+        <meta name="description" content="IPTV Blog für Deutschland: Anleitungen für Fire Stick, Smarters Pro, Bundesliga live, Android Box und mehr. Aktuelle Tipps von MOJO4K.DE." />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iptvv.de/blog" />
-        <meta property="og:title" content="IPTV Blog Deutschland – Anleitungen & Tipps | IPTVV.DE" />
-        <meta property="og:url" content="https://iptvv.de/blog" />
+        <link rel="canonical" href="https://mojo4k.de/blog" />
+        <meta property="og:title" content="IPTV Blog Deutschland – Anleitungen & Tipps | MOJO4K.DE" />
+        <meta property="og:url" content="https://mojo4k.de/blog" />
         <meta property="og:type" content="website" />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', color: '#fff' }}>
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
             <div style={{ display: 'flex', gap: '28px' }} className="hidden-mobile">

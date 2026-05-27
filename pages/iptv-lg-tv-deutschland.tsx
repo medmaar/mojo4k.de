@@ -9,7 +9,7 @@ const faqSchema = {
   mainEntity: [
     { '@type': 'Question', name: 'Welche IPTV App läuft auf LG Smart TV?', acceptedAnswer: { '@type': 'Answer', text: 'SS IPTV ist die empfohlene App für LG webOS – direkt im LG Content Store verfügbar. Beide unterstützen M3U-Playlisten und Xtream Codes.' } },
     { '@type': 'Question', name: 'Unterstützt LG webOS IPTV nativ?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. LG Smart TVs mit webOS (ab 2016) unterstützen IPTV-Apps direkt über den LG Content Store. Sie benötigen weder Fire Stick noch externe Hardware.' } },
-    { '@type': 'Question', name: 'Kann ich 4K IPTV auf meinem LG TV nutzen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, sofern Ihr LG TV 4K-fähig ist und Sie eine Internetverbindung mit mindestens 25 Mbit/s haben. IPTVV bietet ausgewählte Kanäle in 4K Ultra HD.' } },
+    { '@type': 'Question', name: 'Kann ich 4K IPTV auf meinem LG TV nutzen?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, sofern Ihr LG TV 4K-fähig ist und Sie eine Internetverbindung mit mindestens 25 Mbit/s haben. MOJO4K bietet ausgewählte Kanäle in 4K Ultra HD.' } },
     { '@type': 'Question', name: 'Funktioniert IPTV auch auf älteren LG Smart TVs?', acceptedAnswer: { '@type': 'Answer', text: 'Ältere LG Modelle (vor 2016) können IPTV über einen externen HDMI-Stick wie den Amazon Fire TV Stick nutzen, auf dem IPTV Smarters Pro installiert wird.' } },
   ],
 }
@@ -18,15 +18,15 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://iptvv.de' },
-    { '@type': 'ListItem', position: 2, name: 'IPTV LG TV Deutschland', item: 'https://iptvv.de/iptv-lg-tv-deutschland' },
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'IPTV LG TV Deutschland', item: 'https://mojo4k.de/iptv-lg-tv-deutschland' },
   ],
 }
 
 const steps = [
   { n: '01', title: 'LG TV mit Internet verbinden', desc: 'Stellen Sie sicher, dass Ihr LG Smart TV mit dem WLAN oder per LAN-Kabel mit dem Internet verbunden ist.' },
   { n: '02', title: 'SS IPTV aus dem LG Content Store laden', desc: 'Öffnen Sie den LG Content Store auf Ihrem TV, suchen Sie nach "SS IPTV" und installieren Sie die App kostenlos.' },
-  { n: '03', title: 'IPTVV Abonnement kaufen', desc: 'Wählen Sie Ihr IPTVV-Paket und erhalten Sie M3U-URL oder Xtream Codes per WhatsApp innerhalb von Minuten.' },
+  { n: '03', title: 'MOJO4K Abonnement kaufen', desc: 'Wählen Sie Ihr MOJO4K-Paket und erhalten Sie M3U-URL oder Xtream Codes per WhatsApp innerhalb von Minuten.' },
   { n: '04', title: 'URL in SS IPTV eingeben & loslegen', desc: 'Öffnen Sie SS IPTV → Playlist hinzufügen → URL eingeben → Fertig. Sofort 50.000+ Kanäle auf Ihrem LG TV.' },
 ]
 
@@ -40,15 +40,15 @@ export default function IPTVLgTv() {
   return (
     <>
       <Head>
-        <title>IPTV LG Smart TV Deutschland 2026 – Einrichtung & Anleitung | IPTVV.DE</title>
-        <meta name="description" content="IPTV auf LG Smart TV einrichten 2026. Komplette Anleitung für webOS: SS IPTV installieren, M3U-URL eingeben. 50.000+ Kanäle in 4K. Kostenlos testen bei IPTVV.DE!" />
+        <title>IPTV LG Smart TV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE</title>
+        <meta name="description" content="IPTV auf LG Smart TV einrichten 2026. Komplette Anleitung für webOS: SS IPTV installieren, M3U-URL eingeben. 50.000+ Kanäle in 4K. Kostenlos testen bei MOJO4K.DE!" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iptvv.de/iptv-lg-tv-deutschland" />
-        <meta property="og:title" content="IPTV LG Smart TV Deutschland 2026 – Einrichtung & Anleitung | IPTVV.DE" />
+        <link rel="canonical" href="https://mojo4k.de/iptv-lg-tv-deutschland" />
+        <meta property="og:title" content="IPTV LG Smart TV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE" />
         <meta property="og:description" content="IPTV auf LG Smart TV einrichten 2026. Komplette Anleitung für webOS: SS IPTV installieren, M3U-URL eingeben. 50.000+ Kanäle in 4K." />
-        <meta property="og:url" content="https://iptvv.de/iptv-lg-tv-deutschland" />
+        <meta property="og:url" content="https://mojo4k.de/iptv-lg-tv-deutschland" />
         <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="IPTVV.DE" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
         <meta property="og:locale" content="de_DE" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -58,7 +58,7 @@ export default function IPTVLgTv() {
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
             <div style={{ display: 'flex', gap: '32px' }} className="hidden-mobile">
@@ -66,7 +66,7 @@ export default function IPTVLgTv() {
                 <Link key={h} href={h} style={{ color: '#ccc', textDecoration: 'none', fontSize: '0.95rem' }}>{l}</Link>
               ))}
             </div>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+IPTV+auf+meinem+LG+Smart+TV+einrichten`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+IPTV+auf+meinem+LG+Smart+TV+einrichten`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
               Kostenlos testen
             </a>
@@ -90,7 +90,7 @@ export default function IPTVLgTv() {
             IPTV auf <span style={{ color: '#e53935' }}>LG Smart TV</span> einrichten – Komplette Anleitung für Deutschland 2026
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '40px', maxWidth: '680px' }}>
-            Mit IPTVV können Sie direkt auf Ihrem LG Smart TV über 50.000+ Kanäle in 4K streamen – ohne externe Hardware. Diese Anleitung erklärt die komplette Einrichtung auf LG webOS mit SS IPTV.
+            Mit MOJO4K können Sie direkt auf Ihrem LG Smart TV über 50.000+ Kanäle in 4K streamen – ohne externe Hardware. Diese Anleitung erklärt die komplette Einrichtung auf LG webOS mit SS IPTV.
           </p>
 
           <div style={{ background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '28px', marginBottom: '48px' }}>
@@ -185,7 +185,7 @@ export default function IPTVLgTv() {
           <div style={{ background: 'linear-gradient(135deg, #1a0000, #0a0a0a)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '16px', padding: '40px', textAlign: 'center' }}>
             <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>Bereit zum Starten?</h2>
             <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>Kostenlos testen – kein Vertrag, keine Kreditkarte. Aktivierung in Minuten per WhatsApp.</p>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+m%C3%B6chte+IPTV+auf+meinem+LG+Smart+TV+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+m%C3%B6chte+IPTV+auf+meinem+LG+Smart+TV+kostenlos+testen`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 36px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block' }}>
               Kostenlos testen – LG TV
             </a>

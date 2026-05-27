@@ -17,8 +17,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://iptvv.de' },
-    { '@type': 'ListItem', position: 2, name: 'IPTV Samsung TV Deutschland', item: 'https://iptvv.de/iptv-samsung-tv-deutschland' },
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'IPTV Samsung TV Deutschland', item: 'https://mojo4k.de/iptv-samsung-tv-deutschland' },
   ],
 }
 
@@ -26,13 +26,13 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | IPTVV.DE</title>
+        <title>IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE</title>
         <meta name="description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS: App installieren, Zugangsdaten eingeben. 50.000+ Kanäle in 4K. Jetzt kostenlos testen!" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iptvv.de/iptv-samsung-tv-deutschland" />
-        <meta property="og:title" content="IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | IPTVV.DE" />
+        <link rel="canonical" href="https://mojo4k.de/iptv-samsung-tv-deutschland" />
+        <meta property="og:title" content="IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE" />
         <meta property="og:description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS: App installieren, Zugangsdaten eingeben. 50.000+ Kanäle in 4K. Jetzt kostenlos testen!" />
-        <meta property="og:url" content="https://iptvv.de/iptv-samsung-tv-deutschland" />
+        <meta property="og:url" content="https://mojo4k.de/iptv-samsung-tv-deutschland" />
         <meta property="og:type" content="article" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
@@ -42,10 +42,10 @@ export default function Page() {
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
             <Link href="/" style={{ textDecoration: 'none' }}>
-              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>IPTVV</span>
+              <span style={{ color: '#e53935', fontSize: '1.5rem', fontWeight: 900 }}>MOJO4K</span>
               <span style={{ color: '#fff', fontSize: '1.5rem', fontWeight: 900 }}>.DE</span>
             </Link>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+möchte+IPTV+auf+meinem+Samsung+Smart+TV+einrichten`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+möchte+IPTV+auf+meinem+Samsung+Smart+TV+einrichten`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '8px 20px', borderRadius: '6px', fontSize: '0.9rem', textDecoration: 'none' }}>
               Kostenlos testen
             </a>
@@ -69,7 +69,7 @@ export default function Page() {
             IPTV auf <span style={{ color: '#e53935' }}>Samsung Smart TV</span> einrichten – Anleitung für Deutschland 2026
           </h1>
           <p style={{ color: '#aaa', fontSize: '1.05rem', lineHeight: 1.75, marginBottom: '40px', maxWidth: '680px' }}>
-            Mit IPTVV können Sie direkt auf Ihrem Samsung Smart TV über 50.000 Kanäle in 4K streamen – ganz ohne externe Hardware. Diese Anleitung erklärt die Einrichtung auf Samsung Tizen OS.
+            Mit MOJO4K können Sie direkt auf Ihrem Samsung Smart TV über 50.000 Kanäle in 4K streamen – ganz ohne externe Hardware. Diese Anleitung erklärt die Einrichtung auf Samsung Tizen OS.
           </p>
 
           <section style={{ marginBottom: '56px' }}>
@@ -93,7 +93,7 @@ export default function Page() {
                 <div style={{ width: '52px', height: '52px', background: 'rgba(229,57,53,0.1)', border: '2px solid #e53935', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 900, color: '#e53935', fontSize: '1rem', flexShrink: 0 }}>03</div>
                 <div>
                   <h3 style={{ color: '#fff', fontWeight: 700, fontSize: '1rem', marginBottom: '6px' }}>Abonnement kaufen</h3>
-                  <p style={{ color: '#8c8c8c', fontSize: '0.9rem', lineHeight: 1.7 }}>Wählen Sie ein IPTVV-Paket – Sie erhalten Zugangsdaten per WhatsApp in wenigen Minuten.</p>
+                  <p style={{ color: '#8c8c8c', fontSize: '0.9rem', lineHeight: 1.7 }}>Wählen Sie ein MOJO4K-Paket – Sie erhalten Zugangsdaten per WhatsApp in wenigen Minuten.</p>
                 </div>
               </div>
               <div key="04" style={{ display: 'flex', gap: '20px', alignItems: 'flex-start', background: '#111', border: '1px solid #1e1e1e', borderRadius: '12px', padding: '24px' }}>
@@ -154,7 +154,7 @@ export default function Page() {
           <div style={{ background: 'linear-gradient(135deg, #1a0000, #0a0a0a)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '16px', padding: '40px', textAlign: 'center' }}>
             <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>Bereit zum Starten?</h2>
             <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>Kostenlos testen – kein Vertrag, keine Kreditkarte. Aktivierung in Minuten.</p>
-            <a href={`${WA}&text=Hallo+IPTVV%2C+ich+möchte+IPTV+auf+meinem+Samsung+Smart+TV+einrichten`} target="_blank" rel="noopener noreferrer"
+            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+möchte+IPTV+auf+meinem+Samsung+Smart+TV+einrichten`} target="_blank" rel="noopener noreferrer"
               style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 36px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block' }}>
               Kostenlos testen
             </a>
