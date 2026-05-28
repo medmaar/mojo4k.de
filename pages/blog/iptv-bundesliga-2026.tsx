@@ -39,14 +39,24 @@ export default function BlogPost() {
         <title>IPTV Bundesliga 2026 – Alle Spiele live streamen in Deutschland</title>
         <meta name="description" content="Bundesliga live via IPTV streamen in Deutschland 2026. Alle Infos zu Kanälen, Geräten und Einrichtung. Champions League, DFB-Pokal und mehr bei MOJO4K.DE." />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://mojo4k.de/blog/iptv-bundesliga-2026" />
+        <link rel="canonical" href="https://mojo4k.de/blog/iptv-bundesliga-2026/" />
         <meta property="og:title" content="IPTV Bundesliga 2026 – Alle Spiele live streamen in Deutschland" />
         <meta property="og:description" content="Bundesliga live via IPTV streamen in Deutschland 2026. Alle Infos zu Kanälen, Geräten und Einrichtung. Champions League, DFB-Pokal und mehr bei MOJO4K.DE." />
-        <meta property="og:url" content="https://mojo4k.de/blog/iptv-bundesliga-2026" />
+        <meta property="og:url" content="https://mojo4k.de/blog/iptv-bundesliga-2026/" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://mojo4k.de/og-bundesliga.jpg" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta property="og:image:width" content="1200" />
+        <meta property="og:image:alt" content="IPTV Bundesliga 2026 live streamen – MOJO4K" />
         <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="IPTV Bundesliga 2026 – Alle Spiele live streamen in Deutschland" />
+        <meta name="twitter:description" content="Bundesliga live via IPTV streamen in Deutschland 2026. Alle Infos zu Kanälen, Geräten und Einrichtung." />
+        <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta name="author" content="MOJO4K.DE" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

@@ -464,12 +464,21 @@ export default function Home() {
         <link rel="canonical" href="https://mojo4k.de/" />
         <meta property="og:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K.DE" />
         <meta property="og:description" content="50.000+ Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
-        <meta property="og:url" content="https://mojo4k.de" />
+        <meta property="og:url" content="https://mojo4k.de/" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="MOJO4K.DE" />
         <meta property="og:locale" content="de_DE" />
+        <meta property="og:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="MOJO4K Premium IPTV – Bester IPTV Anbieter Deutschland" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K.DE" />
+        <meta name="twitter:description" content="50.000+ Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
+        <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         {/* Structured data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />

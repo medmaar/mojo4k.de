@@ -41,13 +41,24 @@ export default function IPTVm3u() {
         <title>IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | MOJO4K.DE</title>
         <meta name="description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC, Kodi & Smart TV. Jetzt kostenlos testen bei MOJO4K.DE!" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://mojo4k.de/iptv-m3u-playlist-deutschland" />
+        <link rel="canonical" href="https://mojo4k.de/iptv-m3u-playlist-deutschland/" />
         <meta property="og:title" content="IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | MOJO4K.DE" />
         <meta property="og:description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC & Smart TV. Kostenlos testen!" />
-        <meta property="og:url" content="https://mojo4k.de/iptv-m3u-playlist-deutschland" />
+        <meta property="og:url" content="https://mojo4k.de/iptv-m3u-playlist-deutschland/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="MOJO4K.DE" />
         <meta property="og:locale" content="de_DE" />
+        <meta property="og:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="IPTV M3U Playlist Deutschland – MOJO4K" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | MOJO4K.DE" />
+        <meta name="twitter:description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC & Smart TV." />
+        <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta name="author" content="MOJO4K.DE" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>

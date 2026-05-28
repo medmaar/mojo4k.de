@@ -7,8 +7,27 @@ export default function Kontakt() {
   return (
     <>
       <Head>
-        <title>Kontakt – MOJO4K.DE</title>
-        <meta name="description" content="Kontaktieren Sie MOJO4K.DE – 24/7 Support via WhatsApp oder E-Mail." />
+        <title>Kontakt – 24/7 Support via WhatsApp | MOJO4K.DE</title>
+        <meta name="description" content="Kontaktieren Sie MOJO4K.DE – 24/7 Support via WhatsApp oder E-Mail. Schnelle Hilfe bei allen IPTV-Fragen." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://mojo4k.de/kontakt/" />
+        <meta property="og:title" content="Kontakt – 24/7 Support via WhatsApp | MOJO4K.DE" />
+        <meta property="og:description" content="Kontaktieren Sie MOJO4K.DE – 24/7 Support via WhatsApp oder E-Mail. Schnelle Hilfe bei allen IPTV-Fragen." />
+        <meta property="og:url" content="https://mojo4k.de/kontakt/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="MOJO4K.DE Kontakt und Support" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kontakt – 24/7 Support via WhatsApp | MOJO4K.DE" />
+        <meta name="twitter:description" content="Kontaktieren Sie MOJO4K.DE – 24/7 Support via WhatsApp oder E-Mail." />
+        <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta name="author" content="MOJO4K.DE" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', paddingTop: '64px' }}>
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50 }}>

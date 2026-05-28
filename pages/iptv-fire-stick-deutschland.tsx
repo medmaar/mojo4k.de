@@ -36,11 +36,24 @@ export default function IPTVFireStick() {
         <title>IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | MOJO4K.DE</title>
         <meta name="description" content="IPTV auf Amazon Fire TV Stick in Deutschland einrichten. Schritt-für-Schritt Anleitung für IPTV Smarters Pro & TiviMate. 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://mojo4k.de/iptv-fire-stick-deutschland" />
+        <link rel="canonical" href="https://mojo4k.de/iptv-fire-stick-deutschland/" />
         <meta property="og:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | MOJO4K.DE" />
         <meta property="og:description" content="IPTV auf dem Amazon Fire TV Stick einrichten. Schritt-für-Schritt Anleitung auf Deutsch." />
-        <meta property="og:url" content="https://mojo4k.de/iptv-fire-stick-deutschland" />
+        <meta property="og:url" content="https://mojo4k.de/iptv-fire-stick-deutschland/" />
         <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="IPTV Fire Stick Deutschland einrichten – MOJO4K" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | MOJO4K.DE" />
+        <meta name="twitter:description" content="IPTV auf dem Amazon Fire TV Stick einrichten. Schritt-für-Schritt Anleitung auf Deutsch." />
+        <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta name="author" content="MOJO4K.DE" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>

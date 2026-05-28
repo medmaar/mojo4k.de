@@ -39,14 +39,24 @@ export default function BlogPost() {
         <title>Bester IPTV Stick Deutschland 2026 – Test & Vergleich</title>
         <meta name="description" content="Die besten IPTV Sticks für Deutschland 2026 im Test: Amazon Fire TV Stick 4K, Chromecast und mehr. Welcher Stick eignet sich für 4K IPTV?" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://mojo4k.de/blog/iptv-stick-test-deutschland" />
+        <link rel="canonical" href="https://mojo4k.de/blog/iptv-stick-test-deutschland/" />
         <meta property="og:title" content="Bester IPTV Stick Deutschland 2026 – Test & Vergleich" />
         <meta property="og:description" content="Die besten IPTV Sticks für Deutschland 2026 im Test: Amazon Fire TV Stick 4K, Chromecast und mehr. Welcher Stick eignet sich für 4K IPTV?" />
-        <meta property="og:url" content="https://mojo4k.de/blog/iptv-stick-test-deutschland" />
+        <meta property="og:url" content="https://mojo4k.de/blog/iptv-stick-test-deutschland/" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://mojo4k.de/og-iptv-stick-test.jpg" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta property="og:image:width" content="1200" />
+        <meta property="og:image:alt" content="Bester IPTV Stick Deutschland 2026 – Test & Vergleich" />
         <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bester IPTV Stick Deutschland 2026 – Test & Vergleich" />
+        <meta name="twitter:description" content="Die besten IPTV Sticks für Deutschland 2026 im Test: Amazon Fire TV Stick 4K, Chromecast und mehr." />
+        <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta name="author" content="MOJO4K.DE" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />

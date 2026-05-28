@@ -14,7 +14,9 @@ export default function Document() {
           @media(max-width:768px){.hidden-mobile{display:none!important}}
         `}} />
         {/* Google Fonts — deferred via JS to avoid render-blocking */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <script dangerouslySetInnerHTML={{ __html: `
           (function(){
             var l=document.createElement('link');

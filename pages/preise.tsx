@@ -58,8 +58,27 @@ export default function Preise() {
   return (
     <>
       <Head>
-        <title>Preise – IPTV kaufen | MOJO4K.DE</title>
-        <meta name="description" content="IPTV Preise bei MOJO4K.DE – ab €15,99/Monat. 1 oder 2 Geräte, alle Pakete inkl. 50.000+ Kanäle und 120.000+ VOD." />
+        <title>IPTV Preise 2026 – Ab €9/Monat | MOJO4K.DE</title>
+        <meta name="description" content="IPTV Preise bei MOJO4K.DE – ab €9/Monat. 1 bis 2 Geräte, alle Pakete inkl. 50.000+ Kanäle, 120.000+ VOD in 4K. Jetzt kostenlos testen!" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://mojo4k.de/preise/" />
+        <meta property="og:title" content="IPTV Preise 2026 – Ab €9/Monat | MOJO4K.DE" />
+        <meta property="og:description" content="IPTV Preise bei MOJO4K.DE – ab €9/Monat. 50.000+ Kanäle, 120.000+ VOD in 4K. Jetzt kostenlos testen!" />
+        <meta property="og:url" content="https://mojo4k.de/preise/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="IPTV Preise MOJO4K.DE" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="IPTV Preise 2026 – Ab €9/Monat | MOJO4K.DE" />
+        <meta name="twitter:description" content="IPTV Preise bei MOJO4K.DE – ab €9/Monat. 50.000+ Kanäle, 120.000+ VOD in 4K." />
+        <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta name="author" content="MOJO4K.DE" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', paddingTop: '64px' }}>
         {/* Navbar */}

@@ -32,10 +32,24 @@ export default function Blog() {
         <title>IPTV Blog Deutschland – Anleitungen, Tests & Tipps | MOJO4K.DE</title>
         <meta name="description" content="IPTV Blog für Deutschland: Anleitungen für Fire Stick, Smarters Pro, Bundesliga live, Android Box und mehr. Aktuelle Tipps von MOJO4K.DE." />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://mojo4k.de/blog" />
+        <link rel="canonical" href="https://mojo4k.de/blog/" />
         <meta property="og:title" content="IPTV Blog Deutschland – Anleitungen & Tipps | MOJO4K.DE" />
-        <meta property="og:url" content="https://mojo4k.de/blog" />
+        <meta property="og:description" content="IPTV Blog für Deutschland: Anleitungen für Fire Stick, Smarters Pro, Bundesliga live, Android Box und mehr." />
+        <meta property="og:url" content="https://mojo4k.de/blog/" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="MOJO4K.DE" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="IPTV Blog Deutschland – MOJO4K" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="IPTV Blog Deutschland – Anleitungen & Tipps | MOJO4K.DE" />
+        <meta name="twitter:description" content="IPTV Blog für Deutschland: Anleitungen für Fire Stick, Smarters Pro, Bundesliga live, Android Box und mehr." />
+        <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
+        <meta name="author" content="MOJO4K.DE" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', color: '#fff' }}>
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50, height: '64px', display: 'flex', alignItems: 'center' }}>
