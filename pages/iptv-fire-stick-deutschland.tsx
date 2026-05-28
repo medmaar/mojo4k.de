@@ -134,13 +134,21 @@ export default function IPTVFireStick() {
             </div>
           </section>
 
-          <div style={{ background: 'linear-gradient(135deg, #1a0000, #0a0a0a)', border: '1px solid rgba(229,57,53,0.3)', borderRadius: '16px', padding: '40px', textAlign: 'center' }}>
-            <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>Bereit zum Starten?</h2>
-            <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7 }}>Kostenlos testen – kein Vertrag, keine Kreditkarte. Aktivierung in Minuten.</p>
-            <a href={`${WA}&text=Hallo+MOJO4K%2C+ich+möchte+IPTV+auf+meinem+Fire+Stick+testen`} target="_blank" rel="noopener noreferrer"
-              style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 36px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block' }}>
-              Kostenlos testen – Fire Stick
-            </a>
+                    <div style={{ background: 'linear-gradient(135deg, #0d0d0d, #1a0000)', border: '1px solid rgba(229,57,53,0.35)', borderRadius: '16px', padding: '40px', textAlign: 'center', marginTop: '48px' }}>
+            <p style={{ color: '#e53935', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.78rem', marginBottom: '10px' }}>Abonnement wählen</p>
+            <h2 style={{ color: '#fff', fontWeight: 900, fontSize: '1.6rem', marginBottom: '12px' }}>Bereit loszulegen?</h2>
+            <p style={{ color: '#aaa', marginBottom: '28px', lineHeight: 1.7, maxWidth: '480px', margin: '0 auto 28px' }}>
+              Ab €9/Monat – kein Vertrag, keine Kreditkarte. Wählen Sie Ihr Paket und starten Sie in Minuten.
+            </p>
+            <div style={{ display: 'flex', gap: '14px', justifyContent: 'center', flexWrap: 'wrap' }}>
+              <Link href="/preise" style={{ background: '#e53935', color: '#fff', fontWeight: 700, padding: '14px 32px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block' }}>
+                Jetzt kaufen – Preise ansehen
+              </Link>
+              <a href={`${WA}`} target="_blank" rel="noopener noreferrer"
+                style={{ background: 'transparent', color: '#fff', fontWeight: 700, padding: '14px 32px', borderRadius: '8px', fontSize: '1rem', textDecoration: 'none', display: 'inline-block', border: '1px solid rgba(255,255,255,0.2)' }}>
+                Kostenlos testen
+              </a>
+            </div>
           </div>
         </div>
       </div>

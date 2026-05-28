@@ -22,6 +22,16 @@ const articleSchema = {
   publisher: { '@type': 'Organization', name: 'MOJO4K.DE', url: 'https://mojo4k.de' },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://mojo4k.de/blog' },
+    { '@type': 'ListItem', position: 3, name: 'IPTV Bundesliga 2026', item: 'https://mojo4k.de/blog/iptv-bundesliga-2026' },
+  ],
+}
+
 export default function BlogPost() {
   return (
     <>
@@ -34,8 +44,12 @@ export default function BlogPost() {
         <meta property="og:description" content="Bundesliga live via IPTV streamen in Deutschland 2026. Alle Infos zu Kanälen, Geräten und Einrichtung. Champions League, DFB-Pokal und mehr bei MOJO4K.DE." />
         <meta property="og:url" content="https://mojo4k.de/blog/iptv-bundesliga-2026" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://mojo4k.de/og-bundesliga.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
 
       <div style={{ background: '#0a0a0a', minHeight: '100vh', color: '#fff' }}>
