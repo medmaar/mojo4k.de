@@ -2,27 +2,64 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
-  <url><loc>https://mojo4k.de/</loc><lastmod>2026-05-16</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://mojo4k.de/preise/</loc><lastmod>2026-05-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://mojo4k.de/kostenlos-testen.html</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://mojo4k.de/faqs/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://mojo4k.de/kontakt/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://mojo4k.de/impressum.html</loc><lastmod>2026-05-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://mojo4k.de/datenschutz.html</loc><lastmod>2026-05-16</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://mojo4k.de/</loc><lastmod>2026-05-28</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://mojo4k.de/preise/</loc><lastmod>2026-05-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mojo4k.de/kostenlos-testen.html</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mojo4k.de/faqs/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mojo4k.de/kontakt/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mojo4k.de/impressum.html</loc><lastmod>2026-05-28</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://mojo4k.de/datenschutz.html</loc><lastmod>2026-05-28</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
-  <!-- Device landing pages -->
-  <url><loc>https://mojo4k.de/iptv-fire-stick-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://mojo4k.de/iptv-samsung-tv-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://mojo4k.de/iptv-lg-tv-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://mojo4k.de/iptv-android-box-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://mojo4k.de/iptv-smarters-pro-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://mojo4k.de/iptv-tivimate-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://mojo4k.de/iptv-receiver-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://mojo4k.de/iptv-m3u-playlist-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Device & platform landing pages -->
+  <url><loc>https://mojo4k.de/iptv-fire-stick-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-samsung-tv-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-lg-tv-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-android-box-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-smarters-pro-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-tivimate-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-receiver-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mojo4k.de/iptv-m3u-playlist-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- New keyword pages -->
+  <url><loc>https://mojo4k.de/iptv-anbieter-vergleich/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mojo4k.de/bester-iptv-anbieter/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mojo4k.de/iptv-test/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.de/iptv-gratis-testen/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.de/iptv-abo/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.87</priority></url>
+  <url><loc>https://mojo4k.de/iptv-stick/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-box/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-player-android/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/smart-iptv-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/beste-iptv-app/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.83</priority></url>
+  <url><loc>https://mojo4k.de/iptv-playlist-deutsch/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://mojo4k.de/iptv-kodi-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://mojo4k.de/iptv-reseller-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
 
   <!-- Blog -->
-  <url><loc>https://mojo4k.de/blog/</loc><lastmod>2026-05-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://mojo4k.de/blog/iptv-bundesliga-2026/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://mojo4k.de/blog/iptv-stick-test-deutschland/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/blog/</loc><lastmod>2026-05-28</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mojo4k.de/blog/iptv-bundesliga-2026/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/blog/iptv-stick-test-deutschland/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- City pages -->
+  <url><loc>https://mojo4k.de/iptv-berlin/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://mojo4k.de/iptv-hamburg/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://mojo4k.de/iptv-muenchen/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://mojo4k.de/iptv-koeln/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
+  <url><loc>https://mojo4k.de/iptv-frankfurt/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
+  <url><loc>https://mojo4k.de/iptv-stuttgart/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.76</priority></url>
+  <url><loc>https://mojo4k.de/iptv-duesseldorf/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.76</priority></url>
+  <url><loc>https://mojo4k.de/iptv-leipzig/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://mojo4k.de/iptv-dortmund/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://mojo4k.de/iptv-essen/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.73</priority></url>
+  <url><loc>https://mojo4k.de/iptv-bremen/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.73</priority></url>
+  <url><loc>https://mojo4k.de/iptv-dresden/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.73</priority></url>
+  <url><loc>https://mojo4k.de/iptv-hannover/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
+  <url><loc>https://mojo4k.de/iptv-nuernberg/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
+  <url><loc>https://mojo4k.de/iptv-duisburg/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.71</priority></url>
+  <url><loc>https://mojo4k.de/iptv-bochum/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.71</priority></url>
+  <url><loc>https://mojo4k.de/iptv-wuppertal/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://mojo4k.de/iptv-bielefeld/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://mojo4k.de/iptv-bonn/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
+  <url><loc>https://mojo4k.de/iptv-muenster/</loc><lastmod>2026-05-28</lastmod><changefreq>monthly</changefreq><priority>0.70</priority></url>
 
 </urlset>
