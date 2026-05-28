@@ -59,7 +59,7 @@ export default function Preise() {
     <>
       <Head>
         <title>Preise – IPTV kaufen | MOJO4K.DE</title>
-        <meta name="description" content="IPTV Preise bei MOJO4K.DE – ab €15,99/Monat. 1 oder 2 Geräte, alle Pakete inkl. 20.000+ Kanäle und 120.000+ VOD." />
+        <meta name="description" content="IPTV Preise bei MOJO4K.DE – ab €15,99/Monat. 1 oder 2 Geräte, alle Pakete inkl. 50.000+ Kanäle und 120.000+ VOD." />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', paddingTop: '64px' }}>
         {/* Navbar */}
