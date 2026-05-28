@@ -44,124 +44,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 
 /* ── NAV ── */
 #nav{position:fixed;top:0;left:0;right:0;z-index:100;height:72px;background:rgba(20,4,56,0.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,206,0,0.12)}
-.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo-a{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
-.logo-icon{width:38px;height:38px;animation:float 4s ease-in-out infinite;flex-shrink:0}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-.logo-text{display:flex;align-items:baseline;gap:2px;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:900;line-height:1}
-.logo-main{font-size:18px;color:#fff;letter-spacing:0.04em}
-.logo-sub{font-size:11px;background:linear-gradient(135deg,#FFD700,#FFA500);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.08em;font-weight:900}
-.nav-links{display:flex;gap:22px;list-style:none}
-.nav-links a{color:rgba(255,255,255,0.82);font-size:13px;font-weight:600;transition:color 0.2s;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif}
-.nav-links a:hover{color:#FFD700}
-.nav-cta{background:linear-gradient(135deg,#FFD700,#FFA500);color:#1a0a0a;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:800;padding:0 20px;line-height:40px;border-radius:50px;font-size:13px;transition:all 0.2s;white-space:nowrap;flex-shrink:0}
-.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(255,206,0,0.35)}
-.nav-mobile-btn{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.nav-mobile-btn span{width:22px;height:2px;background:#fff;border-radius:2px}
-.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;z-index:99;background:rgba(10,0,16,0.98);padding:16px 24px;border-bottom:1px solid rgba(255,206,0,0.1)}
-.mobile-menu.open{display:block}
-.mobile-menu a{display:block;padding:11px 0;color:rgba(255,255,255,0.75);font-weight:600;border-bottom:1px solid rgba(255,255,255,0.06);font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif}
 
-/* ── PAGE BG GRADIENT ── */
-.page-bg{background:linear-gradient(160deg,rgba(204,0,0,0.06) 0%,rgba(20,4,56,1) 30%,rgba(10,0,16,1) 70%,rgba(255,206,0,0.04) 100%);min-height:100vh;padding-top:72px}
-
-/* ── HERO HEADER ── */
-.plan-header{max-width:720px;margin:0 auto;padding:52px 24px 36px;text-align:center;position:relative;z-index:1}
-.plan-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(255,206,0,0.12);border:1px solid rgba(255,206,0,0.3);border-radius:50px;padding:5px 16px;margin-bottom:20px;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#FFD700}
-.plan-header h1{font-size:clamp(28px,6vw,46px);margin-bottom:12px;background:linear-gradient(135deg,#fff 30%,rgba(255,206,0,0.9));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.plan-price-row{display:flex;align-items:center;justify-content:center;gap:14px;margin:20px 0 10px}
-.plan-price-num{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:clamp(42px,8vw,64px);font-weight:900;line-height:1;background:linear-gradient(135deg,#FFD700,#FFA500);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.plan-price-suffix{font-size:14px;color:var(--muted);margin-top:8px;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif}
-.savings-badge{background:linear-gradient(135deg,#CC0000,#990000);color:#fff;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:11px;font-weight:800;padding:4px 12px;border-radius:50px;letter-spacing:0.08em;text-transform:uppercase}
-.plan-subtitle{color:rgba(255,255,255,0.6);font-size:14px;margin-top:8px}
-
-/* ── DURATION PILLS ── */
-.duration-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:28px 0 0}
-.dur-pill{padding:7px 16px;border-radius:50px;border:1.5px solid rgba(255,206,0,0.25);background:transparent;color:rgba(255,255,255,0.55);font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:700;font-size:12px;cursor:pointer;transition:all 0.2s;text-decoration:none}
-.dur-pill:hover{border-color:rgba(255,206,0,0.6);color:#FFD700}
-.dur-pill.active{background:linear-gradient(135deg,rgba(255,206,0,0.18),rgba(204,0,0,0.18));border-color:#FFD700;color:#FFD700}
-
-/* ── MAIN LAYOUT ── */
-.main-content{max-width:720px;margin:0 auto;padding:0 24px 80px;position:relative;z-index:1}
-
-/* ── ORDER FORM CARD ── */
-.order-card{background:rgba(255,255,255,0.035);border:1px solid rgba(255,206,0,0.15);border-radius:24px;padding:32px;margin-bottom:24px;backdrop-filter:blur(8px);position:relative;overflow:hidden}
-.order-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,#FFD700,#CC0000,transparent)}
-.plan-badge-top{position:absolute;top:16px;right:16px;background:linear-gradient(135deg,#FFD700,#FFA500);color:#1a0a0a;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:10px;font-weight:800;padding:3px 12px;border-radius:50px;letter-spacing:0.08em;text-transform:uppercase}
-.form-header{margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,0.07)}
-.form-header h2{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:17px;font-weight:800;color:#fff;margin-bottom:6px}
-.form-header p{font-size:13px;color:var(--muted);margin-bottom:12px}
-.form-steps{padding-left:18px;display:flex;flex-direction:column;gap:5px}
-.form-steps li{font-size:12px;color:rgba(255,255,255,0.55)}
-
-.form-group{margin-bottom:16px}
-.form-label{display:block;font-size:12px;color:#FFD700;margin-bottom:6px;font-weight:700;letter-spacing:0.05em;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif}
-.form-label .req{color:#CC0000;margin-left:2px}
-.form-label .opt{color:rgba(255,255,255,0.3);font-size:11px;margin-left:6px;font-weight:400}
-.form-input{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px 16px;color:#fff;font-size:14px;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;outline:none;transition:border-color 0.2s}
-.form-input:focus{border-color:rgba(255,206,0,0.4);background:rgba(255,255,255,0.07)}
-.form-input::placeholder{color:rgba(255,255,255,0.55)}
-select.form-input{cursor:pointer;background-color:#160430}
-select.form-input option{background:#160430;color:#fff}
-textarea.form-input{resize:vertical;min-height:80px}
-
-.submit-btn{width:100%;background:linear-gradient(135deg,#FFD700,#CC0000);color:#fff;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:800;font-size:15px;padding:14px;border:none;border-radius:12px;cursor:pointer;transition:all 0.3s;margin-top:8px;letter-spacing:0.02em}
-.submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,206,0,0.3)}
-.form-note{text-align:center;color:rgba(255,255,255,0.4);font-size:11px;margin-top:10px}
-
-/* ── FEATURES GRID ── */
-.features-card{background:rgba(255,255,255,0.025);border:1px solid rgba(255,206,0,0.1);border-radius:20px;padding:28px;margin-bottom:24px}
-.features-card h3{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:15px;font-weight:800;color:#FFD700;margin-bottom:16px;letter-spacing:0.05em;text-transform:uppercase}
-.features-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.feature-item{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid rgba(255,255,255,0.05)}
-.feature-check{width:18px;height:18px;border-radius:50%;background:linear-gradient(135deg,#FFD700,#FFA500);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.feature-check svg{width:9px;height:9px;stroke:#1a0a0a;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-.feature-text{font-size:13px;color:rgba(255,255,255,0.72);line-height:1.4}
-
-/* ── CROSS SELL ── */
-.more-plans-card{background:rgba(255,206,0,0.04);border:1px solid rgba(255,206,0,0.12);border-radius:20px;padding:24px;margin-bottom:24px}
-.more-plans-card p{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:rgba(255,206,0,0.6);margin-bottom:14px;text-align:center;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif}
-.plans-pill-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.plan-pill{background:rgba(255,255,255,0.07);color:#fff;border-radius:50px;padding:6px 14px;font-size:12px;font-weight:600;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;transition:all 0.2s;text-decoration:none;border:1px solid rgba(255,255,255,0.08)}
-.plan-pill:hover{background:rgba(255,206,0,0.15);border-color:rgba(255,206,0,0.3);color:#FFD700}
-.plan-pill.highlight{background:linear-gradient(135deg,rgba(255,206,0,0.25),rgba(204,0,0,0.2));border-color:rgba(255,206,0,0.4);color:#FFD700}
-
-/* ── FAQ ── */
-.faq-card{background:rgba(255,255,255,0.025);border:1px solid rgba(255,206,0,0.1);border-radius:20px;padding:28px;margin-bottom:24px}
-.faq-card h2{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:20px;font-weight:800;margin-bottom:4px}
-.faq-subtitle{color:var(--muted);font-size:13px;margin-bottom:24px}
-.faq-item{border-radius:12px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.03);margin-bottom:8px;overflow:hidden;transition:border-color 0.2s}
-.faq-item.open{border-color:rgba(255,206,0,0.2)}
-.faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;cursor:pointer;background:none;border:none;color:#fff;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:600;font-size:14px;text-align:left}
-.faq-icon{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:400;flex-shrink:0;transition:all 0.25s;color:rgba(255,255,255,0.6)}
-.faq-item.open .faq-icon{background:linear-gradient(135deg,#FFD700,#FFA500);color:#1a0a0a;transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height 0.35s ease}
-.faq-item.open .faq-a{max-height:300px}
-.faq-a p{padding:0 18px 16px;color:rgba(255,255,255,0.68);font-size:13px;line-height:1.75}
-
-/* ── FOOTER ── */
-footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,206,0,0.1);position:relative;z-index:1}
-.footer-inner{max-width:1200px;margin:0 auto}
-.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:24px;border-bottom:1px solid rgba(255,255,255,0.06)}
-.footer-brand p{color:rgba(255,255,255,0.60);font-size:13px;max-width:260px;line-height:1.7;margin-top:10px}
-.footer-links{display:flex;gap:48px;flex-wrap:wrap}
-.footer-col h3,.footer-col h4{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.65);margin-bottom:12px;line-height:1.2}
-.footer-col a{display:block;color:rgba(255,255,255,0.70);font-size:13px;margin-bottom:6px;transition:color 0.2s}
-.footer-col a:hover{color:#FFD700}
-.footer-col a::before{content:'›';color:#CC0000;margin-right:5px}
-.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-.footer-bottom p{font-size:11px;color:rgba(255,255,255,0.55)}
-
-/* ── SCROLL TOP ── */
-#scroll-top{position:fixed;bottom:24px;right:24px;z-index:99;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#FFD700,#CC0000);display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:all 0.3s;border:none;box-shadow:0 4px 16px rgba(255,206,0,0.3)}
-#scroll-top.visible{opacity:1;pointer-events:all}
-#scroll-top svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-
-/* ── RESPONSIVE ── */
-@media(max-width:768px){
-  .nav-links,.nav-cta{display:none}
-  .nav-mobile-btn{display:flex}
-  .plan-header{padding:36px 16px 28px}
   .main-content{padding:0 16px 60px}
   .order-card,.features-card,.faq-card,.more-plans-card{padding:20px 16px}
   .features-grid{grid-template-columns:1fr}
@@ -205,41 +88,105 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>emailjs.init("CGqUhN-jfhp-Ylqr7");</script>
+<style id="shared-nav-css">
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--primary:#ff5266;--gfrom:#ff9a3e;--gto:#ff5266}
+html{scroll-behavior:smooth}
+body{background:#140438;color:#fff;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+a{color:#fff;text-decoration:none}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo-a{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.logo-icon{width:38px;height:38px;animation:float 4s ease-in-out infinite;flex-shrink:0}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.logo-text{display:flex;align-items:baseline;gap:2px;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:900;line-height:1}
+.logo-main{font-size:18px;color:#fff;letter-spacing:0.04em}
+.logo-sub{font-size:11px;background:linear-gradient(135deg,#FFD700,#FFA500);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.08em;font-weight:900}
+.nav-links{display:flex;gap:22px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.82);font-size:13px;font-weight:600;transition:color 0.2s;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif}
+.nav-links a:hover{color:#FFD700}
+.nav-cta{background:linear-gradient(135deg,#FFD700,#FFA500);color:#1a0a0a;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:800;padding:0 20px;line-height:40px;border-radius:50px;font-size:13px;transition:all 0.2s;white-space:nowrap;flex-shrink:0}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(255,206,0,0.35)}
+.nav-mobile-btn{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.nav-mobile-btn span{width:22px;height:2px;background:#fff;border-radius:2px}
+.mobile-menu{display:none;position:fixed;top:72px;left:0;right:0;z-index:999;background:rgba(20,4,56,0.98);padding:18px 22px;border-bottom:1px solid rgba(255,206,0,0.12)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:11px 0;color:rgba(255,255,255,0.78);font-size:15px;font-weight:600;border-bottom:1px solid rgba(255,255,255,0.06);font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif}
+/* ── CANONICAL FOOTER ── */
+footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,206,0,0.1);position:relative;z-index:1}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;padding-bottom:32px;margin-bottom:24px;border-bottom:1px solid rgba(255,255,255,0.06)}
+.footer-brand p{color:rgba(255,255,255,0.60);font-size:13px;max-width:260px;line-height:1.7;margin-top:10px}
+.footer-links{display:flex;gap:48px;flex-wrap:wrap}
+.footer-col h3,.footer-col h4{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:rgba(255,255,255,0.65);margin-bottom:12px;line-height:1.2}
+.footer-col a{display:block;color:rgba(255,255,255,0.70);font-size:13px;margin-bottom:6px;transition:color 0.2s}
+.footer-col a:hover{color:#FFD700}
+.footer-col a::before{content:'›';color:#CC0000;margin-right:5px}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.footer-bottom p{font-size:11px;color:rgba(255,255,255,0.55)}
+@media(max-width:768px){.nav-links,.nav-cta{display:none}.nav-mobile-btn{display:flex}.footer-top{flex-direction:column}.footer-links{gap:24px}}
+/* scroll-top */
+#st{position:fixed;bottom:24px;right:24px;z-index:999;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gfrom),var(--gto));display:flex;align-items:center;justify-content:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s,transform .2s;box-shadow:0 3px 14px rgba(255,82,102,.28);border:none}
+#st.v{opacity:1;pointer-events:all}
+#st:hover{transform:scale(1.1)}
+#st svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+/* nav dropdown */
+.nav-drop{position:relative}
+.nav-drop>a::after{content:'▾';font-size:9px;margin-left:3px;opacity:0.6}
+.nav-drop-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:rgba(10,4,30,.98);border:1px solid rgba(255,206,0,.15);border-radius:10px;padding:8px 0;min-width:220px;z-index:2000;box-shadow:0 12px 40px rgba(0,0,0,.6)}
+.nav-drop:hover .nav-drop-menu{display:block}
+.nav-drop-menu a{display:block;padding:9px 18px;color:rgba(255,255,255,.75);font-size:12px;font-weight:600;border-bottom:none!important;white-space:nowrap}
+.nav-drop-menu a:hover{color:#FFD700;background:rgba(255,206,0,.06)}
+</style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav id="nav">
   <div class="nav-inner">
-    <a href="/index.html" class="logo-a" aria-label="MOJO4K.DE – IPTV Kaufen Deutschland">
-        <svg class="logo-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFD700"/><stop offset="100%" stop-color="#FFA500"/></linearGradient>
-          </defs>
-          <!-- Flag shield shape -->
-          <path d="M28 4 L50 14 L50 34 Q50 46 28 54 Q6 46 6 34 L6 14 Z" fill="#1a0a0a" stroke="rgba(255,206,0,0.3)" stroke-width="1"/>
-          <!-- Black stripe -->
-          <path d="M9 14 L47 14 L47 26 L9 26 Z" fill="#111" clip-path="url(#shield)"/>
-          <!-- Red stripe -->  
-          <path d="M9 26 L47 26 L47 38 L9 38 Z" fill="#CC0000"/>
-          <!-- Gold stripe -->
-          <path d="M9 38 L47 38 L47 50 L9 50 Z" fill="#FFD700"/>
-          <!-- Animated ring -->
-          <circle cx="28" cy="32" r="18" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3">
-            <animateTransform attributeName="transform" type="rotate" from="0 28 32" to="360 28 32" dur="8s" repeatCount="indefinite"/>
-          </circle>
-          <!-- DE letters -->
-          <text x="28" y="36" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="900" font-size="11" fill="white" opacity="0.9">.DE</text>
-        </svg>
-        <div class="logo-text">
-          <span class="logo-main">IPTV</span><span class="logo-sub">KAUFEN</span>
-        </div>
-      </a>
+    <a href="/" class="logo-a" aria-label="MOJO4K.DE – IPTV kaufen Deutschland">
+      <svg class="logo-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs><linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFD700"/><stop offset="100%" stop-color="#FFA500"/></linearGradient></defs>
+        <path d="M28 4 L50 14 L50 34 Q50 46 28 54 Q6 46 6 34 L6 14 Z" fill="#1a0a0a" stroke="rgba(255,206,0,0.3)" stroke-width="1"/>
+        <path d="M9 14 L47 14 L47 26 L9 26 Z" fill="#111"/>
+        <path d="M9 26 L47 26 L47 38 L9 38 Z" fill="#CC0000"/>
+        <path d="M9 38 L47 38 L47 50 L9 50 Z" fill="#FFD700"/>
+        <circle cx="28" cy="32" r="18" fill="none" stroke="url(#gg)" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 3"><animateTransform attributeName="transform" type="rotate" from="0 28 32" to="360 28 32" dur="8s" repeatCount="indefinite"/></circle>
+        <text x="28" y="36" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="900" font-size="11" fill="white" opacity="0.9">.DE</text>
+      </svg>
+      <div class="logo-text"><span class="logo-main">IPTV</span><span class="logo-sub">KAUFEN</span></div>
+    </a>
     <ul class="nav-links">
-      <li><a href="/index.html">Startseite</a></li>
-      <li><a href="/preise.html">Preise</a></li>
-      <li><a href="/faqs.html">FAQs</a></li>
-      <li><a href="/kontakt.html">Kontakt</a></li>
+      <li><a href="/">Startseite</a></li>
+      <li><a href="/preise/">Preise</a></li>
+      <li class="nav-drop"><a href="/bester-iptv-anbieter/">IPTV Kaufen</a>
+        <div class="nav-drop-menu">
+          <a href="/iptv-anbieter-vergleich/">Anbieter Vergleich</a>
+          <a href="/bester-iptv-anbieter/">Bester IPTV Anbieter</a>
+          <a href="/iptv-test/">IPTV Test</a>
+          <a href="/iptv-gratis-testen/">Gratis Testen</a>
+          <a href="/iptv-abo/">IPTV Abo</a>
+          <a href="/iptv-stick/">IPTV Stick</a>
+          <a href="/iptv-box/">IPTV Box</a>
+          <a href="/iptv-reseller-deutschland/">Reseller</a>
+        </div>
+      </li>
+      <li class="nav-drop"><a href="/iptv-fire-stick-deutschland/">Anleitungen</a>
+        <div class="nav-drop-menu">
+          <a href="/iptv-fire-stick-deutschland/">Fire TV Stick</a>
+          <a href="/iptv-samsung-tv-deutschland/">Samsung Smart TV</a>
+          <a href="/iptv-lg-tv-deutschland/">LG Smart TV</a>
+          <a href="/iptv-android-box-deutschland/">Android Box</a>
+          <a href="/iptv-smarters-pro-deutschland/">Smarters Pro</a>
+          <a href="/iptv-tivimate-deutschland/">TiviMate</a>
+          <a href="/iptv-receiver-deutschland/">MAG Receiver</a>
+          <a href="/iptv-m3u-playlist-deutschland/">M3U Playlist</a>
+          <a href="/iptv-player-android/">IPTV Android App</a>
+          <a href="/smart-iptv-deutschland/">Smart IPTV</a>
+          <a href="/iptv-kodi-deutschland/">Kodi</a>
+        </div>
+      </li>
+      <li><a href="/faqs/">FAQs</a></li>
+      <li><a href="/kontakt/">Kontakt</a></li>
     </ul>
     <a href="/whatsapp-kontakt.html" class="nav-cta">Kostenloser Test</a>
     <div class="nav-mobile-btn" onclick="document.getElementById('mobileMenu').classList.toggle('open')">
@@ -248,11 +195,18 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="/index.html">Startseite</a>
-  <a href="/preise.html">Preise</a>
-  <a href="/faqs.html">FAQs</a>
-  <a href="/kontakt.html">Kontakt</a>
-  <a href="/whatsapp-kontakt.html" style="background:linear-gradient(135deg,#FFD700,#CC0000);color:#1a0a0a;text-align:center;border-radius:10px;margin-top:10px;font-weight:800;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;border-bottom:none;padding:12px 0;">Kostenloser Test</a>
+  <a href="/">Startseite</a>
+  <a href="/preise/">Preise</a>
+  <a href="/iptv-anbieter-vergleich/">Anbieter Vergleich</a>
+  <a href="/bester-iptv-anbieter/">Bester IPTV Anbieter</a>
+  <a href="/iptv-gratis-testen/">Gratis Testen</a>
+  <a href="/iptv-abo/">IPTV Abo</a>
+  <a href="/iptv-fire-stick-deutschland/">Fire Stick Anleitung</a>
+  <a href="/iptv-samsung-tv-deutschland/">Samsung TV</a>
+  <a href="/iptv-smarters-pro-deutschland/">Smarters Pro</a>
+  <a href="/faqs/">FAQs</a>
+  <a href="/kontakt/">Kontakt</a>
+  <a href="/whatsapp-kontakt.html" style="background:linear-gradient(135deg,#FFD700,#CC0000);color:#1a0a0a;text-align:center;border-radius:10px;margin-top:10px;font-weight:800;border-bottom:none;padding:12px 0;display:block">Kostenloser Test</a>
 </div>
 
 <!-- PAGE -->
@@ -452,45 +406,84 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="/index.html" class="logo-a" style="margin-bottom:0">
-            <svg width="32" height="32" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M28 4 L50 14 L50 34 Q50 46 28 54 Q6 46 6 34 L6 14 Z" fill="#1a0a0a" stroke="rgba(255,206,0,0.3)" stroke-width="1"/>
-              <path d="M9 14 L47 14 L47 26 L9 26 Z" fill="#111"/>
-              <path d="M9 26 L47 26 L47 38 L9 38 Z" fill="#CC0000"/>
-              <path d="M9 38 L47 38 L47 50 L9 50 Z" fill="#FFD700"/>
-              <text x="28" y="36" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="900" font-size="11" fill="white" opacity="0.9">.DE</text>
-            </svg>
-            <div class="logo-text"><span class="logo-main">IPTV</span><span class="logo-sub">KAUFEN</span></div>
-          </a>
-          <p>Deutschlands führender IPTV-Dienst mit 25.000+ Kanälen und 120.000+ VOD-Titeln in 4K.</p>
-        </div>
-        <div class="footer-links">
-          <div class="footer-col">
-            <h3>Navigation</h3>
-            <a href="/index.html">Startseite</a>
-            <a href="/preise.html">Preise</a>
-            <a href="/faqs.html">FAQs</a>
-            <a href="/kontakt.html">Kontakt</a>
-          </div>
-          <div class="footer-col">
-            <h4>Beliebte Pakete</h4>
-            <a href="/1-monat-1-gerat.html">1 Monat · 1 Gerät</a>
-            <a href="/6-monate-1-gerat.html">6 Monate · 1 Gerät</a>
-            <a href="/1-jahr-1-gerat.html">1 Jahr · 1 Gerät</a>
-            <a href="/1-jahr-2-gerate.html">1 Jahr · 2 Geräte</a>
-          </div>
-        </div>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo-a" style="margin-bottom:0">
+          <svg width="32" height="32" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 4 L50 14 L50 34 Q50 46 28 54 Q6 46 6 34 L6 14 Z" fill="#1a0a0a" stroke="rgba(255,206,0,0.3)" stroke-width="1"/>
+            <path d="M9 14 L47 14 L47 26 L9 26 Z" fill="#111"/>
+            <path d="M9 26 L47 26 L47 38 L9 38 Z" fill="#CC0000"/>
+            <path d="M9 38 L47 38 L47 50 L9 50 Z" fill="#FFD700"/>
+            <text x="28" y="36" text-anchor="middle" font-family="'Inter Tight',sans-serif" font-weight="900" font-size="11" fill="white" opacity="0.9">.DE</text>
+          </svg>
+          <div class="logo-text"><span class="logo-main">IPTV</span><span class="logo-sub">KAUFEN</span></div>
+        </a>
+        <p>Deutschlands bester IPTV Anbieter – Germany IPTV mit 50.000+ Kanälen in 4K. IPTV Abo, Stick &amp; Box kompatibel.</p>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 MOJO4K.DE – Alle Rechte vorbehalten</p>
-        <p>Nur für legale Inhalte. Nutzung auf eigene Verantwortung.</p>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <a href="/">Startseite</a>
+          <a href="/preise/">Preise</a>
+          <a href="/faqs/">FAQs</a>
+          <a href="/kontakt/">Kontakt</a>
+          <a href="/blog/">Blog</a>
+          <a href="/iptv-reseller-deutschland/">Reseller</a>
+        </div>
+        <div class="footer-col">
+          <h3>IPTV Kaufen</h3>
+          <a href="/iptv-anbieter-vergleich/">Anbieter Vergleich</a>
+          <a href="/bester-iptv-anbieter/">Bester IPTV Anbieter</a>
+          <a href="/iptv-test/">IPTV Test</a>
+          <a href="/iptv-gratis-testen/">Gratis Testen</a>
+          <a href="/iptv-abo/">IPTV Abo</a>
+          <a href="/iptv-stick/">IPTV Stick</a>
+          <a href="/iptv-box/">IPTV Box</a>
+          <a href="/iptv-playlist-deutsch/">IPTV Playlist</a>
+        </div>
+        <div class="footer-col">
+          <h3>Anleitungen</h3>
+          <a href="/iptv-fire-stick-deutschland/">IPTV Fire Stick</a>
+          <a href="/iptv-samsung-tv-deutschland/">Samsung Smart TV</a>
+          <a href="/iptv-lg-tv-deutschland/">LG Smart TV</a>
+          <a href="/iptv-android-box-deutschland/">Android Box</a>
+          <a href="/iptv-smarters-pro-deutschland/">Smarters Pro</a>
+          <a href="/iptv-tivimate-deutschland/">TiviMate</a>
+          <a href="/iptv-receiver-deutschland/">MAG Receiver</a>
+          <a href="/iptv-m3u-playlist-deutschland/">M3U Playlist</a>
+          <a href="/iptv-player-android/">IPTV Android App</a>
+          <a href="/smart-iptv-deutschland/">Smart IPTV</a>
+          <a href="/iptv-kodi-deutschland/">IPTV Kodi</a>
+          <a href="/beste-iptv-app/">Beste IPTV App</a>
+        </div>
+        <div class="footer-col">
+          <h3>Städte</h3>
+          <a href="/iptv-berlin/">IPTV Berlin</a>
+          <a href="/iptv-hamburg/">IPTV Hamburg</a>
+          <a href="/iptv-muenchen/">IPTV München</a>
+          <a href="/iptv-koeln/">IPTV Köln</a>
+          <a href="/iptv-frankfurt/">IPTV Frankfurt</a>
+          <a href="/iptv-stuttgart/">IPTV Stuttgart</a>
+          <a href="/iptv-duesseldorf/">IPTV Düsseldorf</a>
+          <a href="/iptv-leipzig/">IPTV Leipzig</a>
+          <a href="/iptv-dortmund/">IPTV Dortmund</a>
+          <a href="/iptv-dresden/">IPTV Dresden</a>
+          <a href="/iptv-hannover/">IPTV Hannover</a>
+          <a href="/iptv-nuernberg/">IPTV Nürnberg</a>
+        </div>
       </div>
     </div>
-  </footer>
-
+    <div class="footer-bottom">
+      <p>© 2026 MOJO4K.DE – Bester IPTV Anbieter Deutschland | German IPTV | IPTV kaufen</p>
+      <p><a href="/impressum.html" style="color:#888;text-decoration:none;margin-right:16px">Impressum</a><a href="/datenschutz.html" style="color:#888;text-decoration:none;margin-right:16px">Datenschutz</a><a href="/blog/" style="color:#888;text-decoration:none">Blog</a></p>
+    </div>
+  </div>
+</footer>
+<button id="st" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Nach oben">
+  <svg viewBox="0 0 24 24"><polyline points="18,15 12,9 6,15"/></svg>
+</button>
+<script>window.addEventListener('scroll',function(){var b=document.getElementById('st');if(b)b.classList.toggle('v',window.scrollY>300)});</script>
 </div><!-- page-bg -->
 
 <button id="scroll-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
