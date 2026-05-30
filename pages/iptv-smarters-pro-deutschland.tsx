@@ -26,12 +26,12 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>IPTV Smarters Pro Deutschland – Einrichtung & Anleitung 2026 | MOJO4K.DE</title>
-        <meta name="description" content="IPTV Smarters Pro in Deutschland einrichten. Schritt-für-Schritt Anleitung für Fire Stick, Android, iPhone und Smart TV. Mit MOJO4K 50.000+ Kanäle in 4K." />
+        <title>IPTV Smarters Pro Deutschland 2026 – Einrichtung | MOJO4K.DE</title>
+        <meta name="description" content="IPTV Smarters Pro einrichten 2026. Anleitung für Fire Stick, Android & iPhone. Mit MOJO4K 50.000+ Kanäle in 4K Ultra HD. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/iptv-smarters-pro-deutschland/" />
-        <meta property="og:title" content="IPTV Smarters Pro Deutschland – Einrichtung & Anleitung 2026 | MOJO4K.DE" />
-        <meta property="og:description" content="IPTV Smarters Pro in Deutschland einrichten. Schritt-für-Schritt Anleitung für Fire Stick, Android, iPhone und Smart TV. Mit MOJO4K 50.000+ Kanäle in 4K." />
+        <meta property="og:title" content="IPTV Smarters Pro Deutschland 2026 – Einrichtung | MOJO4K.DE" />
+        <meta property="og:description" content="IPTV Smarters Pro einrichten 2026. Anleitung für Fire Stick, Android & iPhone. Mit MOJO4K 50.000+ Kanäle in 4K Ultra HD. Kostenlos testen!" />
         <meta property="og:url" content="https://mojo4k.de/iptv-smarters-pro-deutschland/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="MOJO4K.DE" />
@@ -41,8 +41,8 @@ export default function Page() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="IPTV Smarters Pro Deutschland – MOJO4K" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV Smarters Pro Deutschland – Einrichtung & Anleitung 2026 | MOJO4K.DE" />
-        <meta name="twitter:description" content="IPTV Smarters Pro in Deutschland einrichten. Schritt-für-Schritt Anleitung für Fire Stick, Android, iPhone und Smart TV." />
+        <meta name="twitter:title" content="IPTV Smarters Pro Deutschland 2026 – Einrichtung | MOJO4K.DE" />
+        <meta name="twitter:description" content="IPTV Smarters Pro einrichten 2026. Anleitung für Fire Stick, Android & iPhone. Mit MOJO4K 50.000+ Kanäle in 4K." />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />

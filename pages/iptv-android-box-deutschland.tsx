@@ -26,12 +26,12 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>IPTV Android Box Deutschland 2026 – Beste Box & Einrichtung | MOJO4K.DE</title>
-        <meta name="description" content="Die beste IPTV Android Box für Deutschland 2026. Einrichtung, empfohlene Boxen und Apps. 50.000+ Kanäle in 4K Ultra HD. Kostenlos testen bei MOJO4K.DE!" />
+        <title>IPTV Android Box Deutschland 2026 – Einrichtung | MOJO4K.DE</title>
+        <meta name="description" content="Die beste IPTV Android Box für Deutschland 2026. Einrichtung, Boxen & Apps erklärt. 50.000+ Kanäle in 4K Ultra HD. Jetzt kostenlos testen bei MOJO4K!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/iptv-android-box-deutschland/" />
-        <meta property="og:title" content="IPTV Android Box Deutschland 2026 – Beste Box & Einrichtung | MOJO4K.DE" />
-        <meta property="og:description" content="Die beste IPTV Android Box für Deutschland 2026. Einrichtung, empfohlene Boxen und Apps. 50.000+ Kanäle in 4K Ultra HD. Kostenlos testen bei MOJO4K.DE!" />
+        <meta property="og:title" content="IPTV Android Box Deutschland 2026 – Einrichtung | MOJO4K.DE" />
+        <meta property="og:description" content="Beste IPTV Android Box Deutschland 2026: Einrichtung, Apps & Empfehlungen. 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta property="og:url" content="https://mojo4k.de/iptv-android-box-deutschland/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="MOJO4K.DE" />
@@ -41,8 +41,8 @@ export default function Page() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="IPTV Android Box Deutschland – MOJO4K" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV Android Box Deutschland 2026 – Beste Box & Einrichtung | MOJO4K.DE" />
-        <meta name="twitter:description" content="Die beste IPTV Android Box für Deutschland 2026. Einrichtung, empfohlene Boxen und Apps. 50.000+ Kanäle in 4K." />
+        <meta name="twitter:title" content="IPTV Android Box Deutschland 2026 – Einrichtung | MOJO4K.DE" />
+        <meta name="twitter:description" content="Beste IPTV Android Box 2026: Einrichtung, Apps & Empfehlungen. 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />

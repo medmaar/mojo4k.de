@@ -33,12 +33,12 @@ export default function IPTVFireStick() {
   return (
     <>
       <Head>
-        <title>IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | MOJO4K.DE</title>
-        <meta name="description" content="IPTV auf Amazon Fire TV Stick in Deutschland einrichten. Schritt-für-Schritt Anleitung für IPTV Smarters Pro & TiviMate. 50.000+ Kanäle in 4K. Kostenlos testen!" />
+        <title>IPTV Fire Stick Deutschland 2026 – Anleitung | MOJO4K.DE</title>
+        <meta name="description" content="IPTV auf Fire TV Stick einrichten – Anleitung für Smarters Pro & TiviMate. 50.000+ Kanäle in 4K Ultra HD. Jetzt kostenlos testen bei MOJO4K!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/iptv-fire-stick-deutschland/" />
-        <meta property="og:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | MOJO4K.DE" />
-        <meta property="og:description" content="IPTV auf dem Amazon Fire TV Stick einrichten. Schritt-für-Schritt Anleitung auf Deutsch." />
+        <meta property="og:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung | MOJO4K.DE" />
+        <meta property="og:description" content="IPTV auf Fire TV Stick einrichten – Anleitung für Smarters Pro & TiviMate. 50.000+ Kanäle in 4K." />
         <meta property="og:url" content="https://mojo4k.de/iptv-fire-stick-deutschland/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="MOJO4K.DE" />
@@ -48,8 +48,8 @@ export default function IPTVFireStick() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="IPTV Fire Stick Deutschland einrichten – MOJO4K" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung & Setup | MOJO4K.DE" />
-        <meta name="twitter:description" content="IPTV auf dem Amazon Fire TV Stick einrichten. Schritt-für-Schritt Anleitung auf Deutsch." />
+        <meta name="twitter:title" content="IPTV Fire Stick Deutschland 2026 – Anleitung | MOJO4K.DE" />
+        <meta name="twitter:description" content="IPTV auf Fire TV Stick einrichten – Anleitung für Smarters Pro & TiviMate. 50.000+ Kanäle in 4K." />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />

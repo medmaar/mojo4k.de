@@ -41,12 +41,12 @@ export default function IPTVReceiver() {
   return (
     <>
       <Head>
-        <title>IPTV Receiver & MAG Box Deutschland 2026 – Einrichtung & Vergleich | MOJO4K.DE</title>
-        <meta name="description" content="Bester IPTV Receiver für Deutschland 2026: MAG Box, Enigma2 & Formuler im Vergleich. Einrichtung Schritt für Schritt. 50.000+ Kanäle in 4K mit MOJO4K. Kostenlos testen!" />
+        <title>IPTV Receiver Deutschland 2026 – MAG Box | MOJO4K.DE</title>
+        <meta name="description" content="Bester IPTV Receiver 2026: MAG Box, Enigma2 & Formuler im Vergleich. Einrichtung Schritt für Schritt. 50.000+ Kanäle in 4K mit MOJO4K. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/iptv-receiver-deutschland/" />
-        <meta property="og:title" content="IPTV Receiver & MAG Box Deutschland 2026 – Einrichtung & Vergleich | MOJO4K.DE" />
-        <meta property="og:description" content="Bester IPTV Receiver für Deutschland 2026: MAG Box, Enigma2 & Formuler im Vergleich. 50.000+ Kanäle in 4K mit MOJO4K." />
+        <meta property="og:title" content="IPTV Receiver Deutschland 2026 – MAG Box | MOJO4K.DE" />
+        <meta property="og:description" content="Bester IPTV Receiver 2026: MAG Box, Enigma2 & Formuler im Vergleich. 50.000+ Kanäle in 4K mit MOJO4K. Kostenlos testen!" />
         <meta property="og:url" content="https://mojo4k.de/iptv-receiver-deutschland/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="MOJO4K.DE" />
@@ -56,8 +56,8 @@ export default function IPTVReceiver() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="IPTV Receiver MAG Box Deutschland – MOJO4K" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV Receiver & MAG Box Deutschland 2026 – Einrichtung & Vergleich | MOJO4K.DE" />
-        <meta name="twitter:description" content="Bester IPTV Receiver für Deutschland 2026: MAG Box, Enigma2 & Formuler im Vergleich. 50.000+ Kanäle in 4K." />
+        <meta name="twitter:title" content="IPTV Receiver Deutschland 2026 – MAG Box | MOJO4K.DE" />
+        <meta name="twitter:description" content="Bester IPTV Receiver 2026: MAG Box, Enigma2 & Formuler im Vergleich. 50.000+ Kanäle in 4K mit MOJO4K." />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />

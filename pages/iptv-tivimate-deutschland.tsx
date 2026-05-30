@@ -43,12 +43,12 @@ export default function TiviMateDeutschland() {
   return (
     <>
       <Head>
-        <title>TiviMate IPTV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE</title>
-        <meta name="description" content="TiviMate IPTV in Deutschland einrichten 2026. Schritt-für-Schritt Anleitung für Fire Stick & Android Box. Mit MOJO4K 50.000+ Kanäle, EPG & Aufnahmen. Kostenlos testen!" />
+        <title>TiviMate IPTV Deutschland 2026 – Einrichtung | MOJO4K.DE</title>
+        <meta name="description" content="TiviMate IPTV einrichten 2026. Anleitung für Fire Stick & Android Box. Mit MOJO4K 50.000+ Kanäle, EPG & Aufnahmen. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/iptv-tivimate-deutschland/" />
-        <meta property="og:title" content="TiviMate IPTV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE" />
-        <meta property="og:description" content="TiviMate IPTV in Deutschland einrichten. Fire Stick & Android Box Anleitung. Mit MOJO4K 50.000+ Kanäle in 4K. Kostenlos testen!" />
+        <meta property="og:title" content="TiviMate IPTV Deutschland 2026 – Einrichtung | MOJO4K.DE" />
+        <meta property="og:description" content="TiviMate IPTV einrichten 2026. Fire Stick & Android Box Anleitung. Mit MOJO4K 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta property="og:url" content="https://mojo4k.de/iptv-tivimate-deutschland/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="MOJO4K.DE" />
@@ -58,8 +58,8 @@ export default function TiviMateDeutschland() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="TiviMate IPTV Deutschland – MOJO4K" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="TiviMate IPTV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE" />
-        <meta name="twitter:description" content="TiviMate IPTV in Deutschland einrichten. Fire Stick & Android Box Anleitung. Mit MOJO4K 50.000+ Kanäle in 4K." />
+        <meta name="twitter:title" content="TiviMate IPTV Deutschland 2026 – Einrichtung | MOJO4K.DE" />
+        <meta name="twitter:description" content="TiviMate IPTV einrichten 2026. Fire Stick & Android Box Anleitung. Mit MOJO4K 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />

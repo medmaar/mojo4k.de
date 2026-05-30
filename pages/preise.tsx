@@ -4,6 +4,37 @@ import { useState } from 'react'
 
 const WA = 'https://api.whatsapp.com/send/?phone=4917600000000'
 
+const productSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'MOJO4K Premium IPTV Abonnement',
+  description: 'Premium IPTV Service in Deutschland mit 50.000+ Kanälen, 120.000+ VOD, 4K Ultra HD, EPG und 24/7 Support.',
+  brand: { '@type': 'Brand', name: 'MOJO4K.DE' },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '1090',
+    bestRating: '5',
+  },
+  offers: {
+    '@type': 'AggregateOffer',
+    lowPrice: '15.99',
+    highPrice: '99.99',
+    priceCurrency: 'EUR',
+    offerCount: '8',
+    availability: 'https://schema.org/InStock',
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'Preise', item: 'https://mojo4k.de/preise' },
+  ],
+}
+
 const plans1 = [
   { name: '1 Monat', badge: 'Basisplan', price: '15,99', msg: '1-Monats-Abonnement+f%C3%BCr+1+Ger%C3%A4t', popular: false },
   { name: '3 Monate', badge: 'Standardplan', price: '25,99', msg: '3-Monats-Abonnement+f%C3%BCr+1+Ger%C3%A4t', popular: true },
@@ -79,6 +110,8 @@ export default function Preise() {
         <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', paddingTop: '64px' }}>
         {/* Navbar */}

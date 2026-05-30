@@ -38,11 +38,11 @@ export default function IPTVm3u() {
   return (
     <>
       <Head>
-        <title>IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | MOJO4K.DE</title>
-        <meta name="description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC, Kodi & Smart TV. Jetzt kostenlos testen bei MOJO4K.DE!" />
+        <title>IPTV M3U Playlist Deutschland 2026 – URL & Apps | MOJO4K.DE</title>
+        <meta name="description" content="IPTV M3U Playlist Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro & Smart TV. Kostenlos testen bei MOJO4K!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/iptv-m3u-playlist-deutschland/" />
-        <meta property="og:title" content="IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | MOJO4K.DE" />
+        <meta property="og:title" content="IPTV M3U Playlist Deutschland 2026 – URL & Apps | MOJO4K.DE" />
         <meta property="og:description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC & Smart TV. Kostenlos testen!" />
         <meta property="og:url" content="https://mojo4k.de/iptv-m3u-playlist-deutschland/" />
         <meta property="og:type" content="article" />
@@ -53,7 +53,7 @@ export default function IPTVm3u() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="IPTV M3U Playlist Deutschland – MOJO4K" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV M3U Playlist Deutschland 2026 – URL für alle Apps | MOJO4K.DE" />
+        <meta name="twitter:title" content="IPTV M3U Playlist Deutschland 2026 – URL & Apps | MOJO4K.DE" />
         <meta name="twitter:description" content="IPTV M3U Playlist für Deutschland 2026. Persönliche M3U-URL mit 50.000+ Kanälen für TiviMate, Smarters Pro, VLC & Smart TV." />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />

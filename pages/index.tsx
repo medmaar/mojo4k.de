@@ -296,8 +296,12 @@ function DeviceLinks() {
   const devices = [
     { label: 'IPTV Fire Stick', href: '/iptv-fire-stick-deutschland' },
     { label: 'IPTV Samsung TV', href: '/iptv-samsung-tv-deutschland' },
+    { label: 'IPTV LG Smart TV', href: '/iptv-lg-tv-deutschland' },
     { label: 'IPTV Android Box', href: '/iptv-android-box-deutschland' },
     { label: 'IPTV Smarters Pro', href: '/iptv-smarters-pro-deutschland' },
+    { label: 'TiviMate IPTV', href: '/iptv-tivimate-deutschland' },
+    { label: 'IPTV Receiver', href: '/iptv-receiver-deutschland' },
+    { label: 'M3U Playlist', href: '/iptv-m3u-playlist-deutschland' },
   ]
   return (
     <section style={{ background: '#0a0a0a', padding: '40px 0', borderTop: '1px solid #1a1a1a' }}>
@@ -434,7 +438,16 @@ function Footer() {
             </div>
             <div>
               <p style={{ color: '#fff', fontWeight: 700, marginBottom: '14px', fontSize: '0.85rem' }}>Geräte</p>
-              {[['/iptv-fire-stick-deutschland', 'Fire Stick'], ['/iptv-samsung-tv-deutschland', 'Samsung TV'], ['/iptv-android-box-deutschland', 'Android Box'], ['/iptv-smarters-pro-deutschland', 'Smarters Pro']].map(([h, l]) => (
+              {[
+                ['/iptv-fire-stick-deutschland', 'Fire Stick'],
+                ['/iptv-samsung-tv-deutschland', 'Samsung TV'],
+                ['/iptv-lg-tv-deutschland', 'LG Smart TV'],
+                ['/iptv-android-box-deutschland', 'Android Box'],
+                ['/iptv-smarters-pro-deutschland', 'Smarters Pro'],
+                ['/iptv-tivimate-deutschland', 'TiviMate'],
+                ['/iptv-receiver-deutschland', 'IPTV Receiver'],
+                ['/iptv-m3u-playlist-deutschland', 'M3U Playlist'],
+              ].map(([h, l]) => (
                 <Link key={h} href={h} style={{ display: 'block', color: '#555', textDecoration: 'none', fontSize: '0.85rem', marginBottom: '8px' }}>{l}</Link>
               ))}
             </div>
@@ -453,8 +466,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K.DE</title>
-        <meta name="description" content="IPTV kaufen bei MOJO4K – bester IPTV Anbieter in Deutschland 2026. 50.000+ Kanäle, 120.000+ VOD, 4K Ultra HD. Fire Stick, Smart TV, Smarters Pro. Kostenlos testen!" />
+        <title>IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K</title>
+        <meta name="description" content="IPTV kaufen bei MOJO4K – bester IPTV Anbieter Deutschland 2026. 50.000+ Kanäle, 120.000+ VOD, 4K Ultra HD. Fire Stick, Smart TV. Kostenlos testen!" />
         <meta name="keywords" content="IPTV kaufen Deutschland, IPTV Anbieter Deutschland, IPTV Stick Deutschland, IPTV Smarters Pro, IPTV Bundesliga, IPTV Samsung TV, bester IPTV Anbieter" />
         <meta name="google-site-verification" content="6n21n_IARwicV--IqE2jrwkzUt4QOp6Wmx2robpca8k" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -462,7 +475,7 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <link rel="preload" as="image" href="/hero-mobile.webp" type="image/webp" fetchPriority="high" />
         <link rel="canonical" href="https://mojo4k.de/" />
-        <meta property="og:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K.DE" />
+        <meta property="og:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K" />
         <meta property="og:description" content="50.000+ Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
         <meta property="og:url" content="https://mojo4k.de/" />
         <meta property="og:type" content="website" />
@@ -473,7 +486,7 @@ export default function Home() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="MOJO4K Premium IPTV – Bester IPTV Anbieter Deutschland" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K.DE" />
+        <meta name="twitter:title" content="IPTV kaufen 2026 – Bester IPTV Anbieter Deutschland | MOJO4K" />
         <meta name="twitter:description" content="50.000+ Kanäle, 4K Qualität, 99,9% Betriebszeit. Jetzt kostenlos testen!" />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />

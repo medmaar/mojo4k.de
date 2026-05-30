@@ -15,7 +15,7 @@ const faqSchema = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  headline: "IPTV Bundesliga 2026 – Alle Spiele live streamen in Deutschland",
+  headline: "IPTV Bundesliga 2026 – Live Streams Deutschland | MOJO4K",
   datePublished: "2026-01-15",
   dateModified: "2026-01-15",
   author: { '@type': 'Organization', name: 'MOJO4K.DE' },
@@ -36,11 +36,11 @@ export default function BlogPost() {
   return (
     <>
       <Head>
-        <title>IPTV Bundesliga 2026 – Alle Spiele live streamen in Deutschland</title>
+        <title>IPTV Bundesliga 2026 – Live Streams Deutschland | MOJO4K</title>
         <meta name="description" content="Bundesliga live via IPTV streamen in Deutschland 2026. Alle Infos zu Kanälen, Geräten und Einrichtung. Champions League, DFB-Pokal und mehr bei MOJO4K.DE." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/blog/iptv-bundesliga-2026/" />
-        <meta property="og:title" content="IPTV Bundesliga 2026 – Alle Spiele live streamen in Deutschland" />
+        <meta property="og:title" content="IPTV Bundesliga 2026 – Live Streams Deutschland | MOJO4K" />
         <meta property="og:description" content="Bundesliga live via IPTV streamen in Deutschland 2026. Alle Infos zu Kanälen, Geräten und Einrichtung. Champions League, DFB-Pokal und mehr bei MOJO4K.DE." />
         <meta property="og:url" content="https://mojo4k.de/blog/iptv-bundesliga-2026/" />
         <meta property="og:type" content="article" />
@@ -51,7 +51,7 @@ export default function BlogPost() {
         <meta property="og:image:alt" content="IPTV Bundesliga 2026 live streamen – MOJO4K" />
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV Bundesliga 2026 – Alle Spiele live streamen in Deutschland" />
+        <meta name="twitter:title" content="IPTV Bundesliga 2026 – Live Streams Deutschland | MOJO4K" />
         <meta name="twitter:description" content="Bundesliga live via IPTV streamen in Deutschland 2026. Alle Infos zu Kanälen, Geräten und Einrichtung." />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />

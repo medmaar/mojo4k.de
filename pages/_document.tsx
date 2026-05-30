@@ -13,6 +13,14 @@ export default function Document() {
           a{transition:opacity 0.2s}a:hover{opacity:.85}
           @media(max-width:768px){.hidden-mobile{display:none!important}}
         `}} />
+        {/* Global meta */}
+        <meta name="twitter:site" content="@mojo4kde" />
+        <link rel="alternate" hrefLang="de" href="https://mojo4k.de/" />
+        {/* Favicons */}
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         {/* Google Fonts — deferred via JS to avoid render-blocking */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

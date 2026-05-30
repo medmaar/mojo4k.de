@@ -33,7 +33,7 @@ export default function Blog() {
         <meta name="description" content="IPTV Blog für Deutschland: Anleitungen für Fire Stick, Smarters Pro, Bundesliga live, Android Box und mehr. Aktuelle Tipps von MOJO4K.DE." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/blog/" />
-        <meta property="og:title" content="IPTV Blog Deutschland – Anleitungen & Tipps | MOJO4K.DE" />
+        <meta property="og:title" content="IPTV Blog Deutschland – Anleitungen & Tipps | MOJO4K" />
         <meta property="og:description" content="IPTV Blog für Deutschland: Anleitungen für Fire Stick, Smarters Pro, Bundesliga live, Android Box und mehr." />
         <meta property="og:url" content="https://mojo4k.de/blog/" />
         <meta property="og:type" content="website" />
@@ -44,7 +44,7 @@ export default function Blog() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="IPTV Blog Deutschland – MOJO4K" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV Blog Deutschland – Anleitungen & Tipps | MOJO4K.DE" />
+        <meta name="twitter:title" content="IPTV Blog Deutschland – Anleitungen & Tipps | MOJO4K" />
         <meta name="twitter:description" content="IPTV Blog für Deutschland: Anleitungen für Fire Stick, Smarters Pro, Bundesliga live, Android Box und mehr." />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />

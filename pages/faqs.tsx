@@ -65,7 +65,7 @@ export default function FAQs() {
     <>
       <Head>
         <title>IPTV FAQ – Häufige Fragen zu IPTV Deutschland | MOJO4K.DE</title>
-        <meta name="description" content="Antworten auf alle Fragen zu IPTV in Deutschland: kompatible Geräte, Smarters Pro, Bundesliga, Aktivierung, Internetgeschwindigkeit und mehr. MOJO4K.DE erklärt alles." />
+        <meta name="description" content="Alle Antworten zu IPTV in Deutschland: kompatible Geräte, Smarters Pro, Bundesliga, Aktivierung und Internetgeschwindigkeit. MOJO4K.DE erklärt alles." />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/faqs/" />
         <meta property="og:title" content="IPTV FAQ – Häufige Fragen zu IPTV Deutschland | MOJO4K.DE" />

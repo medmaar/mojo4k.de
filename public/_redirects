@@ -1,0 +1,10 @@
+# Trailing slash redirects (Next.js uses trailingSlash: true)
+/faqs           /faqs/          301
+/kontakt        /kontakt/       301
+/preise         /preise/        301
+/blog           /blog/          301
+
+# Old .html URLs -> clean URLs
+/faqs.html      /faqs/          301
+/preise.html    /preise/        301
+/kontakt.html   /kontakt/       301

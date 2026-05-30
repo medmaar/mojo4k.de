@@ -3,6 +3,35 @@ import Link from 'next/link'
 
 const WA = 'https://api.whatsapp.com/send/?phone=4917600000000'
 
+const contactPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Kontakt – MOJO4K.DE',
+  url: 'https://mojo4k.de/kontakt/',
+  description: 'Kontaktieren Sie MOJO4K.DE – 24/7 Support via WhatsApp oder E-Mail.',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'MOJO4K.DE',
+    url: 'https://mojo4k.de',
+    logo: 'https://mojo4k.de/favicon.svg',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      availableLanguage: 'German',
+      contactOption: 'TollFree',
+    },
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Startseite', item: 'https://mojo4k.de' },
+    { '@type': 'ListItem', position: 2, name: 'Kontakt', item: 'https://mojo4k.de/kontakt' },
+  ],
+}
+
 export default function Kontakt() {
   return (
     <>
@@ -28,6 +57,8 @@ export default function Kontakt() {
         <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       </Head>
       <div style={{ background: '#0a0a0a', minHeight: '100vh', paddingTop: '64px' }}>
         <nav style={{ background: '#0a0a0a', borderBottom: '1px solid #1a1a1a', position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50 }}>

@@ -26,12 +26,12 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE</title>
-        <meta name="description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS: App installieren, Zugangsdaten eingeben. 50.000+ Kanäle in 4K. Jetzt kostenlos testen!" />
+        <title>IPTV Samsung TV Deutschland 2026 – Einrichtung | MOJO4K.DE</title>
+        <meta name="description" content="IPTV auf Samsung Smart TV einrichten 2026. Anleitung für Tizen OS: App installieren & Zugangsdaten eingeben. 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://mojo4k.de/iptv-samsung-tv-deutschland/" />
-        <meta property="og:title" content="IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE" />
-        <meta property="og:description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS: App installieren, Zugangsdaten eingeben. 50.000+ Kanäle in 4K. Jetzt kostenlos testen!" />
+        <meta property="og:title" content="IPTV Samsung TV Deutschland 2026 – Einrichtung | MOJO4K.DE" />
+        <meta property="og:description" content="IPTV auf Samsung Smart TV einrichten 2026. Anleitung für Tizen OS: App installieren & Zugangsdaten eingeben. 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta property="og:url" content="https://mojo4k.de/iptv-samsung-tv-deutschland/" />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="MOJO4K.DE" />
@@ -41,8 +41,8 @@ export default function Page() {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="IPTV Samsung Smart TV Deutschland – MOJO4K" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="IPTV Samsung Smart TV Deutschland 2026 – Einrichtung & Anleitung | MOJO4K.DE" />
-        <meta name="twitter:description" content="IPTV auf Samsung Smart TV einrichten. Komplette Anleitung für Tizen OS. 50.000+ Kanäle in 4K." />
+        <meta name="twitter:title" content="IPTV Samsung TV Deutschland 2026 – Einrichtung | MOJO4K.DE" />
+        <meta name="twitter:description" content="IPTV auf Samsung Smart TV einrichten 2026. Anleitung für Tizen OS. 50.000+ Kanäle in 4K. Kostenlos testen!" />
         <meta name="twitter:image" content="https://mojo4k.de/iptv-kaufen.jpg" />
         <meta name="author" content="MOJO4K.DE" />
         <link rel="icon" href="/favicon.ico" />
