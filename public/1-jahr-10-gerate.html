@@ -327,11 +327,11 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
       <form id="orderForm" onsubmit="submitOrder(event)" novalidate>
         <div class="form-group">
           <label class="form-label">Vollständiger Name</label>
-          <input type="text" name="full_name" class="form-input" placeholder="Vor- und Nachname"/>
+          <input type="text" name="full_name" class="form-input" placeholder="z.B. Max Mustermann (Ihr vollständiger Name)"/>
         </div>
         <div class="form-group">
           <label class="form-label">E-Mail-Adresse</label>
-          <input type="email" name="email" class="form-input" placeholder="ihre@email.de"/>
+          <input type="text" name="email" class="form-input" placeholder="z.B. max@gmail.com (Ihre E-Mail-Adresse)"/>
         </div>
         <div class="form-group">
           <label class="form-label">Telefon / WhatsApp<span class="opt">(optional)</span></label>
@@ -570,6 +570,14 @@ function submitOrder(e) {
   e.preventDefault();
   var btn = e.target.querySelector('.submit-btn');
   var d = new FormData(e.target);
+  // Bundle name and email into the message field so they always arrive
+  var msgField = e.target.querySelector('[name="message"]');
+  var nameVal = (e.target.querySelector('[name="full_name"]') || {value:''}).value.trim();
+  var emailVal = (e.target.querySelector('[name="email"]') || {value:''}).value.trim();
+  var orig = msgField ? msgField.value.trim() : '';
+  var combined = 'Name: ' + (nameVal || '—') + '\nE-Mail: ' + (emailVal || '—');
+  if (orig) combined += '\nNachricht: ' + orig;
+  if (msgField) msgField.value = combined;
   btn.disabled = true;
   btn.textContent = 'Senden...';
   emailjs.sendForm('service_c4wcbog', 'template_2rregej', e.target).then(function() {
