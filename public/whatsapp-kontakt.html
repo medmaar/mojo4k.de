@@ -203,14 +203,14 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
           <li>Absenden – wir melden uns in 5 Minuten</li>
         </ol>
       </div>
-      <form id="waForm" onsubmit="submitWA(event)">
+      <form id="waForm" onsubmit="submitWA(event)" novalidate>
         <div class="form-group">
-          <label class="form-label">Vorname<span class="req">*</span></label>
-          <input type="text" name="first_name" class="form-input" placeholder="Ihr Vorname" required autocomplete="given-name"/>
+          <label class="form-label">Vorname</label>
+          <input type="text" name="first_name" class="form-input" placeholder="Ihr Vorname" autocomplete="given-name"/>
         </div>
         <div class="form-group">
-          <label class="form-label">WhatsApp Nummer<span class="req">*</span></label>
-          <input type="tel" name="whatsapp" class="form-input" placeholder="+49 160 123 4567" required autocomplete="tel"/>
+          <label class="form-label">WhatsApp Nummer</label>
+          <input type="tel" name="whatsapp" class="form-input" placeholder="+49 160 123 4567" autocomplete="tel"/>
           <div style="font-size:11px;color:rgba(255,255,255,.3);margin-top:4px">Bitte mit Ländervorwahl (z.B. +49)</div>
         </div>
         <input type="hidden" name="plan" value="WhatsApp Kontakt – Kostenloser Test"/>

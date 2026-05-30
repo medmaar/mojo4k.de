@@ -324,14 +324,14 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
         </ol>
       </div>
 
-      <form id="orderForm" onsubmit="submitOrder(event)">
+      <form id="orderForm" onsubmit="submitOrder(event)" novalidate>
         <div class="form-group">
-          <label class="form-label">Vollständiger Name<span class="req">*</span></label>
-          <input type="text" name="full_name" class="form-input" placeholder="Vor- und Nachname" required/>
+          <label class="form-label">Vollständiger Name</label>
+          <input type="text" name="full_name" class="form-input" placeholder="Vor- und Nachname"/>
         </div>
         <div class="form-group">
-          <label class="form-label">E-Mail-Adresse<span class="req">*</span></label>
-          <input type="email" name="email" class="form-input" placeholder="ihre@email.de" required/>
+          <label class="form-label">E-Mail-Adresse</label>
+          <input type="email" name="email" class="form-input" placeholder="ihre@email.de"/>
         </div>
         <div class="form-group">
           <label class="form-label">Telefon / WhatsApp<span class="opt">(optional)</span></label>
@@ -575,13 +575,13 @@ function submitOrder(e) {
   btn.textContent = 'Senden...';
   emailjs.send('service_c4wcbog', 'template_2rregej', {
     plan:      d.get('plan'),
-    full_name: d.get('full_name'),
-    email:     d.get('email'),
+    full_name: d.get('full_name') || '—',
+    email:     d.get('email') || '—',
     phone:     d.get('phone') || '—',
     country:   d.get('country'),
     device:    d.get('device') || '—',
     message:   d.get('message') || '—',
-    reply_to:  d.get('email'),
+    reply_to:  d.get('email') || 'no-reply@mojo4k.de',
   }).then(function() {
     e.target.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="font-size:40px;margin-bottom:12px">✅</div><div style="font-family:Inter Tight,sans-serif;font-size:18px;font-weight:800;color:#FFD700;margin-bottom:8px">Bestellung eingegangen!</div><p style="color:rgba(255,255,255,.6);font-size:14px">Wir melden uns in wenigen Minuten per E-Mail.</p></div>';
   }).catch(function(err) {
