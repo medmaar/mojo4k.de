@@ -576,6 +576,8 @@ function submitOrder(e) {
   emailjs.send('service_c4wcbog', 'template_2rregej', {
     plan:      d.get('plan'),
     full_name: d.get('full_name') || '—',
+    name:      d.get('full_name') || '—',
+    from_name: d.get('full_name') || '—',
     email:     d.get('email') || '—',
     phone:     d.get('phone') || '—',
     country:   d.get('country'),

@@ -197,7 +197,7 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
 <button class="db on" onclick="setD(1)" id="db1">1 Gerät</button><button class="db" onclick="setD(2)" id="db2">2 Geräte</button><button class="db" onclick="setD(3)" id="db3">3 Geräte</button><button class="db" onclick="setD(4)" id="db4">4 Geräte</button><button class="db" onclick="setD(5)" id="db5">5 Geräte</button>
 </div>
 
-<div class="pgrid" id="pgrid1" style="display:block"><div class="pcard cw">
+<div class="pgrid" id="pgrid1" style="display:grid"><div class="pcard cw">
   
   <div class="pin">
     <p class="pdur">1 Monat</p>
@@ -404,7 +404,7 @@ function setD(n){
   document.getElementById('db'+n).classList.add('on');
   for(var i=1;i<=5;i++){
     var g=document.getElementById('pgrid'+i);
-    if(g)g.style.display=i===n?'block':'none';
+    if(g)g.style.display=i===n?'grid':'none';
   }
 }
 </script>
