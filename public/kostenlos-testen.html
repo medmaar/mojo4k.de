@@ -565,28 +565,34 @@ function toggleFaq(i) {
   item.querySelector('.faq-q').setAttribute('aria-expanded', item.classList.contains('open'));
 }
 
-function submitOrder(e) {
+async function submitOrder(e) {
   e.preventDefault();
   var btn = e.target.querySelector('.submit-btn');
-  var d = new FormData(e.target);
-  // Bundle name and email into the message field so they always arrive
-  var msgField = e.target.querySelector('[name="message"]');
-  var nameVal = (e.target.querySelector('[name="full_name"]') || {value:''}).value.trim();
-  var emailVal = (e.target.querySelector('[name="email"]') || {value:''}).value.trim();
-  var orig = msgField ? msgField.value.trim() : '';
-  var combined = 'Name: ' + (nameVal || '—') + '\nE-Mail: ' + (emailVal || '—');
-  if (orig) combined += '\nNachricht: ' + orig;
-  if (msgField) msgField.value = combined;
   btn.disabled = true;
   btn.textContent = 'Senden...';
-  emailjs.sendForm('service_c4wcbog', 'template_2rregej', e.target).then(function() {
-    e.target.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="font-size:40px;margin-bottom:12px">✅</div><div style="font-family:Inter Tight,sans-serif;font-size:18px;font-weight:800;color:#FFD700;margin-bottom:8px">Testzugang angefordert!</div><p style="color:rgba(255,255,255,.6);font-size:14px">Wir aktivieren Ihren Testzugang innerhalb von 5 Minuten per WhatsApp oder E-Mail.</p></div>';
-  }).catch(function(err) {
+  var f = e.target;
+  try {
+    var res = await fetch('https://iptv-trial-mojo4kde.medmaar.workers.dev', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name:     (f.querySelector('[name="full_name"]') || {value:''}).value.trim(),
+        email:    (f.querySelector('[name="email"]')     || {value:''}).value.trim(),
+        whatsapp: (f.querySelector('[name="phone"]')     || {value:''}).value.trim(),
+        country:  (f.querySelector('[name="country"]')   || {value:''}).value,
+        device:   (f.querySelector('[name="device"]')    || {value:''}).value,
+        notes:    (f.querySelector('[name="message"]')   || {value:''}).value.trim(),
+      })
+    });
+    var data = await res.json();
+    if (!res.ok || !data.success) throw new Error(data.error || 'Fehler');
+    f.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="font-size:40px;margin-bottom:12px">✅</div><div style="font-family:Inter Tight,sans-serif;font-size:18px;font-weight:800;color:#FFD700;margin-bottom:8px">Testzugang aktiviert!</div><p style="color:rgba(255,255,255,.6);font-size:14px">Ihre Zugangsdaten wurden per E-Mail gesendet. Bitte prüfen Sie Ihren Posteingang.</p></div>';
+  } catch(err) {
     btn.disabled = false;
-    btn.textContent = 'Jetzt bestellen →';
+    btn.textContent = '🚀 Kostenlos testen – Zugang in 5 Minuten';
     alert('Fehler beim Senden. Bitte schreiben Sie uns: kontakt@mojo4k.de');
     console.error(err);
-  });
+  }
 }
 
 window.addEventListener('scroll', () => {
@@ -595,7 +601,5 @@ window.addEventListener('scroll', () => {
 });
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>emailjs.init("CGqUhN-jfhp-Ylqr7");</script>
 </body>
 </html>
