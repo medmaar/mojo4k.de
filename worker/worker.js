@@ -52,17 +52,14 @@ function emailWrap(content) {
   <tr><td align="center">
     <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
            style="max-width:600px;background:#ffffff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-      <tr><td style="background-color:#140438;padding:0;text-align:center;">
-        <div style="padding:28px 36px 20px;">
-          <h1 style="margin:0;font-family:Arial,sans-serif;font-size:26px;font-weight:bold;color:#FFD700;">MOJO4K.DE</h1>
-          <p style="margin:6px 0 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.70);">Premium IPTV Deutschland · 4K Streaming</p>
-        </div>
-        <div style="height:4px;background:linear-gradient(90deg,#111 0%,#CC0000 50%,#FFD700 100%);"></div>
+      <tr><td style="background-color:#4a4fc0;padding:32px 40px;text-align:center;">
+        <h1 style="margin:0;font-family:Arial,sans-serif;font-size:26px;font-weight:bold;color:#ffffff;">Mojo 4K</h1>
+        <p style="margin:6px 0 0;font-family:Arial,sans-serif;font-size:13px;color:rgba(255,255,255,0.80);">Premium IPTV Deutschland · 4K Streaming</p>
       </td></tr>
       <tr><td style="padding:36px 40px;">${content}</td></tr>
       <tr><td style="background-color:#f8f8f8;border-top:1px solid #eeeeee;padding:18px 40px;text-align:center;">
         <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#aaaaaa;">
-          © 2026 MOJO4K.DE · <a href="${SITE_URL}" style="color:#FFD700;text-decoration:none;">mojo4k.de</a>
+          © 2026 MOJO4K.DE · <a href="${SITE_URL}" style="color:#a0a4f8;text-decoration:none;">mojo4k.de</a>
         </p>
       </td></tr>
     </table>
@@ -272,7 +269,7 @@ async function handleFetch(request, env) {
 
     // 5. Admin-Benachrichtigung
     step = "email_admin";
-    await sendEmail(ADMIN_EMAIL, `[Testzugang] ${name} — ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl));
+    await sendEmail(ADMIN_EMAIL, `Automation / mojo4k.de / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl));
 
     // 6. In KV speichern (TTL 4 Tage)
     step = "kv_store";
