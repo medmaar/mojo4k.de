@@ -1,0 +1,10 @@
+name = "iptv-trial-mojo4kde"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[kv_namespaces]]
+binding = "TRIALS"
+id = "b848d7bf9dd74deca3ee42cc727ce7fa"
+
+[triggers]
+crons = ["0 * * * *"]
