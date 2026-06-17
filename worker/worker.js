@@ -1,5 +1,5 @@
 /**
- * MOJO4K.DE — Kostenlos-Testen Worker
+ * Mojo 4K — Kostenlos-Testen Worker
  * Sprache: Deutsch
  * - Erstellt IPTV-Testlinie (USA - All, sub=99)
  * - Sendet Willkommens-E-Mail auf Deutsch
@@ -11,7 +11,7 @@ const API_BASE    = "https://activationpanel.ru/api/api.php";
 const API_KEY     = "35cf68cc83a3a82e1a0ac5361c7b6105";
 const HOST        = "http://terry.thecontentnest.com";
 const RESEND_KEY  = "re_QVAqR2F8_A9BDiVRQPjpPoFrt6fNpka2E";
-const FROM_EMAIL  = "MOJO4K.DE <kontakt@mojo4k.de>";
+const FROM_EMAIL  = "Mojo 4K <kontakt@mojo4k.de>";
 const ADMIN_EMAIL = "kontakt@mojo4k.de";
 const SITE_URL    = "https://mojo4k.de";
 const PACK_NAME   = "USA - All";
@@ -59,7 +59,7 @@ function emailWrap(content) {
       <tr><td style="padding:36px 40px;">${content}</td></tr>
       <tr><td style="background-color:#f8f8f8;border-top:1px solid #eeeeee;padding:18px 40px;text-align:center;">
         <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#aaaaaa;">
-          © 2026 MOJO4K.DE · <a href="${SITE_URL}" style="color:#a0a4f8;text-decoration:none;">mojo4k.de</a>
+          © 2026 Mojo 4K · <a href="${SITE_URL}" style="color:#a0a4f8;text-decoration:none;">mojo4k.de</a>
         </p>
       </td></tr>
     </table>
@@ -131,7 +131,7 @@ function welcomeEmail(name, username, password, m3uUrl) {
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Benötigen Sie Hilfe bei der Einrichtung? Antworten Sie auf diese E-Mail oder schreiben Sie uns direkt auf WhatsApp unter <a href="https://wa.me/${WA_NUMBER}" style="color:#CC0000;text-decoration:none;font-weight:bold;">+1 782-802-6280</a>
     </p>
-    <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Mit freundlichen Grüßen,<br><strong>Das MOJO4K.DE Team</strong></p>
+    <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Mit freundlichen Grüßen,<br><strong>Das Mojo 4K Team</strong></p>
   `);
 }
 
@@ -148,13 +148,13 @@ function reminderEmail(name, username, password, m3uUrl) {
     <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Ihre aktiven Zugangsdaten:</p>
     ${credBox(username, password, m3uUrl)}
     <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Genießen Sie MOJO4K ohne Unterbrechung – wählen Sie jetzt Ihr Abonnement:
+      Genießen Sie Mojo 4K ohne Unterbrechung – wählen Sie jetzt Ihr Abonnement:
     </p>
     ${ctaButton("Jetzt Abonnement wählen →", SITE_URL + "/preise/")}
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Fragen? Antworten Sie auf diese E-Mail oder kontaktieren Sie uns auf WhatsApp unter <a href="https://wa.me/${WA_NUMBER}" style="color:#CC0000;text-decoration:none;font-weight:bold;">+1 782-802-6280</a>
     </p>
-    <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Mit freundlichen Grüßen,<br><strong>Das MOJO4K.DE Team</strong></p>
+    <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Mit freundlichen Grüßen,<br><strong>Das Mojo 4K Team</strong></p>
   `);
 }
 
@@ -163,26 +163,26 @@ function followupEmail(name) {
   return emailWrap(`
     <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">Hallo ${vorname},</p>
     <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Ihr MOJO4K.DE Testzugang ist nun <strong>abgelaufen</strong>.
+      Ihr Mojo 4K Testzugang ist nun <strong>abgelaufen</strong>.
     </p>
     <p style="margin:0 0 22px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Wir hoffen, Sie haben die Qualität unseres Services genossen — +50.000 Kanäle, Bundesliga, Sky Sport, DAZN und +300.000 Filme & Serien in 4K, ohne Unterbrechung.
     </p>
     <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Streamen Sie weiter mit MOJO4K – wählen Sie das Paket, das zu Ihnen passt:
+      Streamen Sie weiter mit Mojo 4K – wählen Sie das Paket, das zu Ihnen passt:
     </p>
     ${ctaButton("Mein Abonnement wählen →", SITE_URL + "/preise/")}
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Haben Sie Fragen? Antworten Sie auf diese E-Mail oder schreiben Sie uns auf WhatsApp unter <a href="https://wa.me/${WA_NUMBER}" style="color:#CC0000;text-decoration:none;font-weight:bold;">+1 782-802-6280</a>
     </p>
-    <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Mit freundlichen Grüßen,<br><strong>Das MOJO4K.DE Team</strong></p>
+    <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Mit freundlichen Grüßen,<br><strong>Das Mojo 4K Team</strong></p>
   `);
 }
 
 function adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl) {
   return `<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"></head>
 <body style="font-family:Arial,sans-serif;font-size:14px;color:#333;padding:20px;">
-  <h2 style="color:#CC0000;margin-top:0;">Neuer Testzugang — MOJO4K.DE</h2>
+  <h2 style="color:#CC0000;margin-top:0;">Neuer Testzugang — Mojo 4K</h2>
   <table cellpadding="6" cellspacing="0" border="0">
     <tr><td style="color:#888;width:120px;">Name</td><td><strong>${name}</strong></td></tr>
     <tr><td style="color:#888;">E-Mail</td><td>${email}</td></tr>
@@ -217,7 +217,7 @@ async function handleFetch(request, env) {
       const trials = await env.TRIALS.list();
       return jsonRes({ bouquet: bq.text.slice(0,400), reseller: ri.text.slice(0,200), kv_keys: trials.keys.length });
     }
-    return new Response("MOJO4K.DE Trial Worker — OK", { status: 200 });
+    return new Response("Mojo 4K Trial Worker — OK", { status: 200 });
   }
 
   if (request.method !== "POST") return jsonRes({ success: false, error: "POST only" }, 405);
@@ -265,7 +265,7 @@ async function handleFetch(request, env) {
 
     // 4. Willkommens-E-Mail
     step = "email_client";
-    await sendEmail(email, "Ihr MOJO4K.DE Testzugang ist bereit – 24h Gratis aktiviert ✓", welcomeEmail(name, username, password, m3uUrl));
+    await sendEmail(email, "Ihr Mojo 4K Testzugang ist bereit – 24h Gratis aktiviert ✓", welcomeEmail(name, username, password, m3uUrl));
 
     // 5. Admin-Benachrichtigung
     step = "email_admin";
@@ -303,7 +303,7 @@ async function handleScheduled(env) {
 
     if (!reminder_sent && now >= expiry - FOUR_HOURS && now < expiry) {
       try {
-        await sendEmail(email, "⏳ Ihr MOJO4K.DE Testzugang läuft in 4 Stunden ab", reminderEmail(name, username, password, m3uUrl));
+        await sendEmail(email, "⏳ Ihr Mojo 4K Testzugang läuft in 4 Stunden ab", reminderEmail(name, username, password, m3uUrl));
         trial.reminder_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 4 * 24 * 60 * 60 });
         console.log(`[cron] Erinnerung → ${email}`);
@@ -312,7 +312,7 @@ async function handleScheduled(env) {
 
     if (!followup_sent && now >= expiry) {
       try {
-        await sendEmail(email, "Ihr MOJO4K.DE Testzugang ist abgelaufen – Jetzt weiterschauen 🎬", followupEmail(name));
+        await sendEmail(email, "Ihr Mojo 4K Testzugang ist abgelaufen – Jetzt weiterschauen 🎬", followupEmail(name));
         trial.followup_sent = true;
         await env.TRIALS.put(key, JSON.stringify(trial), { expirationTtl: 4 * 24 * 60 * 60 });
         console.log(`[cron] Nachfass → ${email}`);
