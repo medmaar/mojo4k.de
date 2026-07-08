@@ -3,5 +3,6 @@ Allow: /
 Disallow: /plan-page
 Disallow: /whatsapp-kontakt
 Disallow: /*-iptv.html
+Disallow: /support/nachricht
 
 Sitemap: https://mojo4k.de/sitemap.xml
