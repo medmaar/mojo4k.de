@@ -8,3 +8,7 @@
 /faqs.html      /faqs/          301
 /preise.html    /preise/        301
 /kontakt.html   /kontakt/       301
+
+# Retired WhatsApp callback-form page -> direct WhatsApp redirect
+/whatsapp-kontakt.html  /support/nachricht  301
+/whatsapp-kontakt       /support/nachricht  301

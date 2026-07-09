@@ -174,7 +174,7 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
       <li><a href="faqs.html">FAQs</a></li>
       <li><a href="kontakt.html">Kontaktiere uns</a></li>
     </ul>
-    <a href="/whatsapp-kontakt" class="ncta">Kostenloser Test</a>
+    <a href="/support/nachricht?msg=Hallo%2C+ich+m%C3%B6chte+einen+kostenlosen+Test" class="ncta">Kostenloser Test</a>
   </div>
 </nav>
 
@@ -237,7 +237,7 @@ if (plan) {
       <ul class="plan-features">
         ${features.map(f => `<li>${f}</li>`).join('')}
       </ul>
-      <a href="/whatsapp-kontakt?plan=${pathname}" class="plan-btn">Jetzt bestellen →</a>
+      <a href="/support/nachricht?msg=${encodeURIComponent('Hallo, ich interessiere mich für ' + plan.title)}" class="plan-btn">Jetzt bestellen →</a>
     </div>
   `;
   document.getElementById('planContent').innerHTML = html;
