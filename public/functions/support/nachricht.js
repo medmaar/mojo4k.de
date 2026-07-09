@@ -14,8 +14,8 @@
 // To change the number or brand tag later, edit the two constants below
 // and push - no need to touch any page.
 
-const WHATSAPP_NUMBER = '4917600000000'; // digits only, no +, spaces or dashes
-const BRAND_GREETING = 'Hallo MOJO4K.DE!';
+const WHATSAPP_NUMBER = '17828026280'; // digits only, no +, spaces or dashes
+const BRAND_GREETING = 'Hallo Mojo 4k !';
 
 function buildMessage(raw) {
   if (!raw) return BRAND_GREETING;
