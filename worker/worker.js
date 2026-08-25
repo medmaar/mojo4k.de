@@ -1,7 +1,7 @@
 /**
  * Mojo 4K — Kostenlos-Testen Worker
  * Sprache: Deutsch
- * - Erstellt IPTV-Testlinie (USA - All, sub=99)
+ * - Erstellt IPTV-Testlinie (Germany, sub=99)
  * - Sendet Willkommens-E-Mail auf Deutsch
  * - Speichert Test in KV
  * - Cron stündlich: T-4h Erinnerung + T=0 Nachfass-E-Mail
@@ -13,7 +13,7 @@ const HOST        = "http://mag.trexlive.me";
 const FROM_EMAIL  = "Mojo 4K <kontakt@mojo4k.de>";
 const ADMIN_EMAIL = "kontakt@mojo4k.de";
 const SITE_URL    = "https://mojo4k.de";
-const PACK_NAME   = "USA - All";
+const PACK_NAME   = "Germany";
 const WA_NUMBER   = "17828026280";
 
 // ── helpers ───────────────────────────────────────────────────────────────────
@@ -345,3 +345,4 @@ export default {
   async fetch(request, env) { return handleFetch(request, env); },
   async scheduled(event, env, ctx) { ctx.waitUntil(handleScheduled(env)); },
 };
+
