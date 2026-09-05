@@ -5,4 +5,22 @@ Disallow: /whatsapp-kontakt
 Disallow: /*-iptv.html
 Disallow: /support/nachricht
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 Sitemap: https://mojo4k.de/sitemap.xml
