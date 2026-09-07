@@ -3466,4 +3466,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- New keyword pages – added 2026-09-07 -->
+  <url><loc>https://mojo4k.de/ip-television/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://mojo4k.de/iptv-germany/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://mojo4k.de/iptv-testline/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.87</priority></url>
+  <url><loc>https://mojo4k.de/iptv-extreme/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- City pages missing from sitemap – added 2026-09-07 -->
+  <url><loc>https://mojo4k.de/iptv-f%C3%BCrstenfeldbruck/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.de/iptv-hamm-2/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.de/iptv-ibbenbüren/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.de/iptv-lüdenscheid-2/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.de/iptv-schwäbisch-gmünd/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.de/iptv-sprockhövel/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://mojo4k.de/iptv-tübingen-2/</loc><lastmod>2026-09-07</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+
 </urlset>
