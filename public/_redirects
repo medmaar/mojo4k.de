@@ -12,3 +12,162 @@
 # Retired WhatsApp callback-form page -> direct WhatsApp redirect
 /whatsapp-kontakt.html  /support/nachricht  301
 /whatsapp-kontakt       /support/nachricht  301
+
+# ── KEYWORD VARIANT REDIRECTS ── SEO: capture alternate search query forms
+
+# "german iptv" / "iptv german" variants
+/iptv-german/           /german-iptv/             301
+/iptv-german            /german-iptv/             301
+/german-iptv.html       /german-iptv/             301
+
+# "germany iptv" variant
+/germany-iptv/          /iptv-germany/            301
+/germany-iptv           /iptv-germany/            301
+
+# "bester iptv" / "bestes iptv" variants
+/bester-iptv/           /bester-iptv-anbieter/    301
+/bestes-iptv/           /bester-iptv-anbieter/    301
+/beste-iptv/            /bester-iptv-anbieter/    301
+/bes-iptv/              /bester-iptv-anbieter/    301
+
+# "anbieter iptv" variant
+/anbieter-iptv/         /iptv-anbieter/           301
+
+# "iptv kaufe" variant
+/iptv-kaufe/            /iptv-kaufen/             301
+
+# "iptv linie" variant
+/iptv-linie/            /iptv-line/               301
+
+# "testline iptv" / "iptv line test" variants
+/testline-iptv/         /iptv-testline/           301
+/iptv-line-test/        /iptv-testline/           301
+
+# "smart ip tv" variant
+/smart-ip-tv/           /smart-iptv-deutschland/  301
+
+# "ip tv" variants (with space → hyphen)
+/ip-tv-anbieter/        /iptv-anbieter/           301
+/ip-tv-stick/           /iptv-stick/              301
+/ip-tv-box/             /iptv-box/                301
+/ip-tv-kosten/          /iptv-kosten/             301
+/ip-tv-kaufen/          /iptv-kaufen/             301
+/ip-tv-receiver/        /iptv-receiver-deutschland/ 301
+/ip-tv-streaming/       /iptv-kaufen/             301
+/ip-tv-smart/           /iptv-smart-tv/           301
+/ip-tv-sky/             /iptv-sky/                301
+/ip-tv-subscription/    /iptv-subscription/       301
+/ip-tv-premium/         /iptv-premium/            301
+/ip-tv-smart-tv/        /iptv-smart-tv/           301
+/ip-television/         /ip-television/           200
+
+# "smarters iptv pro" / "smarters pro" variants
+/smarters-iptv/         /iptv-smarters/           301
+/smarters-pro/          /iptv-smarters/           301
+/smarters-iptv-pro/     /iptv-smarters/           301
+/smarters-iptv-lite/    /iptv-smarters/           301
+/smarters-lite/         /iptv-smarters/           301
+
+# "tivimate premium" / "tivi mate" variants
+/tivi-mate/             /tivimate/                301
+/tivimate-premium/      /tivimate-premium/        200
+
+# "iptv subscription" aliases
+/iptv-sub/              /iptv-subscription/       301
+/iptv-subscribe/        /iptv-subscription/       301
+
+# "iptv free trial" aliases
+/iptv-trial/            /iptv-free-trial/         301
+/iptv-24h-test/         /iptv-free-trial/         301
+/iptv-test-24/          /iptv-free-trial/         301
+/iptv-probe/            /iptv-free-trial/         301
+/iptv-gratis/           /iptv-gratis-testen/      301
+
+# "iptv provider" variant
+/iptv-provider/         /iptv-anbieter/           301
+/iptv-providers/        /iptv-anbieter/           301
+/provider-iptv/         /iptv-anbieter/           301
+
+# "best iptv provider" / "best iptv" variants
+/best-iptv/             /best-iptv-provider/      301
+
+# "iptv server" / "iptv servers" aliases
+/iptv-server/           /iptv-testline/           301
+/iptv-servers/          /iptv-testline/           301
+
+# "iptv m3u kaufen" alias
+/iptv-m3u-kaufen/       /iptv-m3u/               301
+
+# "iptv premium subscription" alias
+/iptv-premium-subscription/ /iptv-premium/        301
+
+# "internet protocol television" alias
+/internet-protocol-television/ /ip-television/    301
+/internet-protocol-tv/ /ip-television/            301
+
+# "iptv lines" alias
+/iptv-lines/            /iptv-line/               301
+
+# "reseller for iptv" variant
+/reseller-for-iptv/     /iptv-reseller-deutschland/ 301
+/reseller-iptv/         /iptv-reseller-deutschland/ 301
+
+# "iptv receiver" alias
+/iptv-receiver/         /iptv-receiver-deutschland/ 301
+
+# "iptv android" alias
+/iptv-android/          /iptv-player-android/     301
+
+# "m3u iptv" / "m3u ip tv" aliases
+/m3u-iptv/              /iptv-m3u/               301
+/m3u-ip-tv/             /iptv-m3u/               301
+
+# "iptv live" alias
+/iptv-live/             /iptv-kaufen/             301
+
+# "stream iptv" alias
+/stream-iptv/           /iptv-kaufen/             301
+
+# "iptv account" alias
+/iptv-account/          /iptv-kaufen/             301
+
+# "iptv buy" alias
+/iptv-buy/              /iptv-kaufen/             301
+/buy-iptv/              /iptv-kaufen/             301
+
+# "iptv service" alias
+/iptv-service/          /iptv-kaufen/             301
+
+# "iptv m3u playlist deutsch" alias
+/iptv-m3u-playlist-deutsch/ /iptv-m3u-playlist-deutschland/ 301
+
+# "iptv smarters pro deutschland" has its own page
+/iptv-smarters-pro/     /iptv-smarters/           301
+
+# "kodi iptv" alias
+/kodi-iptv/             /iptv-kodi-deutschland/   301
+/iptv-kodi/             /iptv-kodi-deutschland/   301
+
+# "stb emu" alias
+/stb-emu-pro/           /stb-emu/                 301
+/stbemu/                /stb-emu/                 301
+/stbemu-pro/            /stb-emu/                 301
+
+# "ott navigator" alias
+/ott-navigator-premium/ /ott-navigator/           301
+
+# "set iptv" alias
+/set-ip-tv/             /set-iptv/                301
+
+# "xciptv" aliases
+/xciptv-fire-tv/        /xciptv/                  301
+/xciptv-firestick/      /xciptv/                  301
+
+# "iptv 1 monat" alias
+/iptv-1-monat/          /iptv-1-monat/            200
+
+# "cloud stream" alias
+/cloudstream/           /cloud-stream/            301
+
+# "iptv smarters com" alias
+/iptv-smarters-com/     /iptv-smarters/           301
