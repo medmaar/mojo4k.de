@@ -46,26 +46,6 @@ p{margin:0 0 10px}p:last-child{margin-bottom:0}
 .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--gfrom),var(--gto));color:#fff;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:700;padding:0 34px;line-height:50px;border-radius:50px;border:none;cursor:pointer;font-size:15px;transition:opacity .3s,transform .2s;text-decoration:none}
 .btn:hover{opacity:.88;transform:translateY(-1px)}
 
-/* ── NAV ── */
-#nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,4,30,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s}
-.ni{max-width:1200px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;height:74px}
-.logo-a{display:flex;align-items:center;gap:9px;text-decoration:none}
-/* Brandenburg Gate SVG logo */
-.logo-gate{flex-shrink:0}
-.logo-txt{font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:900;font-size:1.3rem;letter-spacing:.05em;line-height:1}
-.logo-txt .w{color:#fff}
-.logo-txt .o{background:linear-gradient(135deg,#ff9a3e,#ff5266);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.nmenu{display:flex;gap:26px;list-style:none}
-.nmenu a{color:rgba(255,255,255,.7);font-size:14px;font-weight:600;transition:color .2s}
-.nmenu a:hover{color:#fff}
-.ncta{background:linear-gradient(135deg,#043fff,#00d4d6);color:#fff;font-family:-apple-system,'Segoe UI','Helvetica Neue',Arial,sans-serif;font-weight:700;padding:0 24px;line-height:42px;border-radius:50px;font-size:13px;transition:opacity .2s}
-.ncta:hover{opacity:.85}
-.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
-.hbg span{width:23px;height:2px;background:#fff;border-radius:2px}
-.mmenu{display:none;position:fixed;top:74px;left:0;right:0;z-index:999;background:rgba(10,4,30,.98);padding:18px 22px;border-bottom:1px solid rgba(255,255,255,.07)}
-.mmenu.open{display:block}
-.mmenu a{display:block;padding:11px 0;color:rgba(255,255,255,.78);font-size:15px;font-weight:600;border-bottom:1px solid rgba(255,255,255,.06)}
-
 /* ── HERO ── */
 #hero{min-height:600px;padding-top:74px;display:flex;align-items:center;position:relative;overflow:hidden;background:#140438}
 #hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 22% 62%,rgba(255,82,102,.1),transparent 70%),radial-gradient(ellipse 60% 50% at 82% 28%,rgba(4,63,255,.12),transparent 70%);pointer-events:none}
@@ -403,7 +383,18 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "MOJO4K.DE", "url": "https://mojo4k.de", "logo": "https://mojo4k.de/favicon.svg", "description": "Bester IPTV Anbieter in Deutschland. Über 50.000 Kanäle, 120.000+ VOD in 4K.", "areaServed": ["DE", "AT", "CH"], "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "availableLanguage": "German", "url": "https://mojo4k.de/kontakt/"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "1090", "bestRating": "5", "worstRating": "1"}, "sameAs": ["https://t.me/mojo4kdeutschland"]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "MOJO4K Premium IPTV Abonnement", "description": "Premium IPTV Service in Deutschland mit 50.000+ Kanälen, 120.000+ VOD, 4K Ultra HD, EPG und 24/7 Support.", "brand": {"@type": "Brand", "name": "MOJO4K.DE"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "1090", "bestRating": "5"}, "offers": {"@type": "AggregateOffer", "lowPrice": "9", "highPrice": "59.99", "priceCurrency": "EUR", "offerCount": "8", "availability": "https://schema.org/InStock"}, "review": [{"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Markus B."}, "reviewBody": "Läuft einwandfrei auf meinem Fire Stick 4K. Bundesliga ohne Ruckler. Support war in 3 Minuten da."}, {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Sandra K."}, "reviewBody": "Günstiger als MagentaTV und mehr Kanäle. Einrichtung auf Samsung Smart TV in 5 Minuten."}, {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Thomas H."}, "reviewBody": "Seit 8 Monaten dabei, noch kein einziges Mal Probleme. Champions League in 4K – perfekt."}], "@id": "https://mojo4k.de/#product"}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was ist IPTV und wie funktioniert es?", "acceptedAnswer": {"@type": "Answer", "text": "IPTV überträgt TV-Inhalte über das Internet statt über Kabel oder Satellit. Mit MOJO4K.DE erhalten Sie Zugang zu 50.000+ Live-Kanälen und 120.000+ Filmen in 4K."}}, {"@type": "Question", "name": "Kann ich MOJO4K.DE kostenlos testen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja! Wir bieten einen kostenlosen 24h-Testaccount an. Kontaktieren Sie uns über WhatsApp – ohne Kreditkarte. Kontaktieren Sie uns gerne, falls Sie weitere Fragen haben."}}, {"@type": "Question", "name": "Welche Geräte werden unterstützt?", "acceptedAnswer": {"@type": "Answer", "text": "Fire TV Stick, Android Box, Samsung & LG Smart TV, iPhone, iPad, Android, PC, Mac, MAG-Box, Enigma2, Smarters Pro und TiviMate. Bei weiteren Fragen hilft unser Support jederzeit per WhatsApp."}}, {"@type": "Question", "name": "Ist IPTV legal in Deutschland?", "acceptedAnswer": {"@type": "Answer", "text": "Die IPTV-Technologie selbst ist legal. Nutzer sind für die Einhaltung der Gesetze in ihrem Land verantwortlich. Bei weiteren Fragen hilft unser Support jederzeit per WhatsApp."}}], "@id": "https://mojo4k.de/#faq"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Was ist IPTV und wie funktioniert es?","acceptedAnswer":{"@type":"Answer","text":"IPTV (Internet Protocol Television) überträgt TV-Inhalte über das Internet statt über Kabel oder Satellit. Mit MOJO4K.DE erhalten Sie Zugang zu 50.000+ Live-Kanälen und 120.000+ Filmen in 4K – sofort auf jedem Gerät."}},
+  {"@type":"Question","name":"Kann ich MOJO4K.DE kostenlos testen?","acceptedAnswer":{"@type":"Answer","text":"Ja! Wir bieten einen kostenlosen 24h-IPTV-Free-Trial an. Kontaktieren Sie uns über WhatsApp – ohne Kreditkarte, ohne Vertrag. Der IPTV Free Trial ist sofort aktiv."}},
+  {"@type":"Question","name":"Welche Geräte werden unterstützt?","acceptedAnswer":{"@type":"Answer","text":"Fire TV Stick, Android Box, Samsung & LG Smart TV, iPhone, iPad, Android, PC, Mac, MAG-Box, Enigma2, Smarters Pro, TiviMate, GSE Smart IPTV und IBO Player. Praktisch jedes Gerät mit Internetverbindung."}},
+  {"@type":"Question","name":"Ist IPTV legal in Deutschland?","acceptedAnswer":{"@type":"Answer","text":"Die IPTV-Technologie selbst ist legal. Nutzer sind für die Einhaltung der Gesetze in ihrem Land verantwortlich. Bei weiteren Fragen hilft unser Support jederzeit per WhatsApp."}},
+  {"@type":"Question","name":"Was kostet IPTV bei MOJO4K.DE?","acceptedAnswer":{"@type":"Answer","text":"IPTV Abonnements bei MOJO4K.DE starten ab €9 pro Monat für 1 Gerät. Pakete für bis zu 10 Geräte sind verfügbar. Das Jahresabo bietet das beste Preis-Leistungs-Verhältnis."}},
+  {"@type":"Question","name":"Wie richte ich IPTV Smarters Pro ein?","acceptedAnswer":{"@type":"Answer","text":"Laden Sie IPTV Smarters Pro kostenlos im App Store oder Google Play herunter. Nach dem Kauf bei MOJO4K.DE erhalten Sie Server-URL, Benutzername und Passwort. Tragen Sie diese in Smarters Pro ein und genießen Sie 50.000+ Kanäle."}},
+  {"@type":"Question","name":"Funktioniert IPTV auf dem Amazon Fire TV Stick?","acceptedAnswer":{"@type":"Answer","text":"Ja. MOJO4K.DE funktioniert perfekt auf dem Amazon Fire TV Stick mit Apps wie Smarters Pro, TiviMate oder dem IBO Player. Die Installation dauert unter 5 Minuten."}},
+  {"@type":"Question","name":"Was ist TiviMate und wie nutze ich es mit MOJO4K.DE?","acceptedAnswer":{"@type":"Answer","text":"TiviMate ist einer der besten IPTV-Player für Fire TV Stick und Android. Nach dem Kauf eines MOJO4K.DE-Abos tragen Sie die Zugangsdaten in TiviMate ein und haben sofort Zugriff auf alle Kanäle – mit EPG, Aufnahme-Funktion und eleganter Oberfläche."}},
+  {"@type":"Question","name":"Wie viele Kanäle hat MOJO4K.DE?","acceptedAnswer":{"@type":"Answer","text":"MOJO4K.DE bietet über 50.000 Live-Kanäle aus Deutschland, Österreich, der Schweiz und weltweit – darunter alle deutschen Sender, Sky Sport, DAZN, Bundesliga, Champions League und internationale Sender in 4K Ultra HD."}},
+  {"@type":"Question","name":"Was ist der Unterschied zwischen IPTV und normalem TV?","acceptedAnswer":{"@type":"Answer","text":"Normales TV wird über Antenne, Kabel oder Satellit übertragen. IPTV nutzt Ihr Internetanschluss und bietet mehr Flexibilität: Sie schauen auf jedem Gerät, wann Sie wollen, mit bis zu 4K Ultra HD – und haben Zugriff auf 120.000+ Filme und Serien on demand."}}
+],"@id":"https://mojo4k.de/#faq"}</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -459,7 +450,7 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
 @media (max-width:600px){.whatsapp-float{width:52px;height:52px;right:16px;bottom:16px;}}
 </style>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "IPTV kaufen 2026", "url": "https://mojo4k.de/", "description": "IPTV kaufen 2026 – Bester IPTV Anbieter in Deutschland. 50.000+ Kanäle in 4K, Fire Stick, Smart TV &amp; Smarters Pro. Kostenlos testen bei MOJO4K.DE!", "inLanguage": "de-DE", "datePublished": "2026-01-01", "dateModified": "2026-07-19", "isPartOf": {"@type": "WebSite", "name": "mojo4k.de", "url": "https://mojo4k.de"}, "publisher": {"@type": "Organization", "name": "mojo4k.de", "url": "https://mojo4k.de"}, "@id": "https://mojo4k.de/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "IPTV kaufen 2026", "url": "https://mojo4k.de/", "description": "IPTV kaufen 2026 – Bester IPTV Anbieter in Deutschland. 50.000+ Kanäle in 4K, Fire Stick, Smart TV &amp; Smarters Pro. Kostenlos testen bei MOJO4K.DE!", "inLanguage": "de-DE", "datePublished": "2026-01-01", "dateModified": "2026-09-07", "isPartOf": {"@type": "WebSite", "name": "mojo4k.de", "url": "https://mojo4k.de"}, "publisher": {"@type": "Organization", "name": "mojo4k.de", "url": "https://mojo4k.de"}, "@id": "https://mojo4k.de/"}</script>
 </head>
 <body>
 
@@ -552,8 +543,8 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
   <div class="hero-in" style="position:relative;z-index:2;grid-template-columns:1fr;max-width:700px;text-align:center;gap:30px;padding:60px 22px">
     <div class="revl">
       <div class="h-badge"><span>Zufriedene Kunden &amp; Bewertung</span><span class="h-stars">★</span><strong>4.9 (500.000+)</strong></div>
-      <h1 class="h-title" style="font-size:clamp(28px,5vw,48px)">IPTV kaufen – Bester German IPTV Anbieter</h1>
-      <p class="h-desc" style="font-size:16px;max-width:100%">Deutschlands bester IPTV Anbieter – Germany IPTV mit 50.000+ Sendern, 4K-Qualität &amp; IPTV Abo kostenlos testen. Kompatibel mit IPTV Stick, Android Box, Smart TV &amp; Smarters Pro.</p>
+      <h1 class="h-title" style="font-size:clamp(28px,5vw,48px)">IPTV kaufen – Bester IPTV Anbieter Deutschland 2026</h1>
+      <p class="h-desc" style="font-size:16px;max-width:100%">Deutschlands bester IPTV Anbieter – German IPTV &amp; IPTV Germany mit 50.000+ Sendern in 4K. IPTV Abo kostenlos testen: kompatibel mit IPTV Stick, IPTV Box, Android Box, Smart TV, Smarters Pro, TiviMate &amp; IPTV Player Android.</p>
       <div class="h-btns" style="justify-content:center">
         <a href="/preise.html" class="btn">Jetzt starten</a>
         <a href="/support/nachricht?msg=Hallo%2C+ich+interessiere+mich+f%C3%BCr+IPTV" class="btn-ol">WhatsApp Kontakt</a>
