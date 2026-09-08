@@ -1,41 +1,152 @@
 # MOJO4K.DE – Bester IPTV Anbieter Deutschland
 
-## About
-MOJO4K.DE is Germany's leading IPTV provider. We offer 50,000+ live channels in 4K Ultra HD for customers across Germany and German-speaking markets.
+> MOJO4K.DE is Germany's #1 rated IPTV provider (4.9/5 stars, 500,000+ customers). We deliver 50,000+ live TV channels in 4K Ultra HD plus 120,000+ on-demand titles – instantly, without contracts.
 
-## Service
-- 50,000+ live TV channels in HD and 4K Ultra HD
-- Full German channel lineup: ARD, ZDF, RTL, Sat.1, ProSieben, Sky Sport (all packages), DAZN, Eurosport
-- International channels: Turkish, Arabic, English, French, Spanish and more
-- VOD library: thousands of movies and series on demand
-- EPG: 14-day electronic program guide for all channels
-- Anti-freeze technology: 99.9% uptime
-- Compatible with: Amazon Fire TV Stick, Samsung Smart TV, LG Smart TV, Android Box, iPhone, iPad, Android, Windows PC, Mac, Apple TV, Chromecast
-- IPTV players supported: TiviMate, IPTV Smarters Pro, XCIPTV, Smart IPTV, SS IPTV, VLC, Kodi
-- Connection protocol: Xtream Codes API and M3U playlist
+## Service Overview
+- 50,000+ live TV channels (SD, HD, Full HD, 4K Ultra HD)
+- 120,000+ movies and series on demand (VOD)
+- Full German channel lineup: ARD, ZDF, RTL, Sat.1, ProSieben, Kabel 1, VOX, Sport1, n-tv, WELT, ARTE, 3sat
+- Premium sport channels: Sky Sport (all packages), DAZN, Eurosport, BeIN Sports, Sport1+
+- Major competitions: Bundesliga, Champions League, Europa League, DFB Pokal, Premier League, La Liga, Serie A, Ligue 1
+- International channels: Turkish, Arabic, English, French, Spanish, Italian, Polish, Russian, Albanian, Greek, Hindi, Persian, Dutch, Swedish and more
+- Austrian channels: ORF 1, ORF 2, ATV, Puls4
+- Swiss channels: SRF 1, SRF 2, RTS, RSI
+- EPG: 14-day electronic program guide
+- Catch-up TV: watch missed programmes
+- Anti-freeze technology: 99.9% uptime guarantee
+- 24/7 German-speaking customer support via WhatsApp
 
-## Pricing
-Plans from €9/month. No contract. Monthly, 3-month, 6-month and 12-month plans available.
-Up to 10 simultaneous connections available.
-Free 24-hour trial: https://mojo4k.de/iptv-gratis-testen/
+## Compatible Devices
+Amazon Fire TV Stick (all models), Android TV Box, Samsung Smart TV (Tizen), LG Smart TV (WebOS), iPhone, iPad, Android smartphone/tablet, Windows PC, Mac, Apple TV, Chromecast/Google TV, MAG Box (254/322/422/524), Enigma2/Dreambox, Raspberry Pi
+
+## Compatible IPTV Apps
+TiviMate, IPTV Smarters Pro, XCIPTV, Smart IPTV, SS IPTV, GSE Smart IPTV, IBO Player, OTT Navigator, STB Emu, Perfect Player, Kodi, VLC, Plex
+
+## Connection Protocols
+- Xtream Codes API (recommended)
+- M3U playlist
+
+## Pricing (as of 2026)
+All plans: no contract, no automatic renewal, instant activation via WhatsApp
+- 1 Month / 1 Device: €9
+- 3 Months / 1 Device: €29
+- 6 Months / 1 Device: €39
+- 12 Months / 1 Device: €49
+Multi-device packages available (up to 10 simultaneous connections)
+Free 24-hour trial available – no credit card required
 
 ## Key Pages
+
+### Main
 - Homepage: https://mojo4k.de/
 - Pricing: https://mojo4k.de/preise/
-- Free Trial: https://mojo4k.de/iptv-gratis-testen/
-- What is IPTV: https://mojo4k.de/was-ist-iptv/
-- Best IPTV Provider: https://mojo4k.de/bester-iptv-anbieter/
-- Provider Comparison: https://mojo4k.de/iptv-anbieter-vergleich/
-- TiviMate Guide: https://mojo4k.de/tivimate/
-- Fire Stick Guide: https://mojo4k.de/iptv-fire-stick-deutschland/
-- Samsung TV Guide: https://mojo4k.de/iptv-samsung-tv-deutschland/
-- Smarters Pro Guide: https://mojo4k.de/iptv-smarters-pro-deutschland/
-- FAQs: https://mojo4k.de/faqs/
-- Blog: https://mojo4k.de/blog/
+- Free Trial: https://mojo4k.de/iptv-free-trial/
+- Free Trial (DE): https://mojo4k.de/iptv-gratis-testen/
 - Contact: https://mojo4k.de/kontakt/
+- FAQs: https://mojo4k.de/faqs/
+
+### About IPTV
+- What is IPTV: https://mojo4k.de/was-ist-iptv/
+- IP Television Guide: https://mojo4k.de/ip-television/
+- IPTV Legal Germany: https://mojo4k.de/iptv-legal-deutschland/
+
+### Provider & Comparison
+- Best IPTV Provider (DE): https://mojo4k.de/bester-iptv-anbieter/
+- Best IPTV Provider (EN): https://mojo4k.de/best-iptv-provider/
+- Provider Comparison: https://mojo4k.de/iptv-anbieter-vergleich/
+- IPTV Test 2026: https://mojo4k.de/iptv-test-2026/
+- IPTV Testbericht: https://mojo4k.de/iptv-testbericht/
+- IPTV Testsieger: https://mojo4k.de/iptv-testsieger/
+- IPTV Vergleich: https://mojo4k.de/iptv-vergleich/
+
+### Setup Guides by Device
+- Fire TV Stick: https://mojo4k.de/iptv-fire-stick-deutschland/
+- Samsung Smart TV: https://mojo4k.de/iptv-samsung-tv-deutschland/
+- LG Smart TV: https://mojo4k.de/iptv-lg-tv-deutschland/
+- Android Box: https://mojo4k.de/iptv-android-box-deutschland/
+- Smarters Pro: https://mojo4k.de/iptv-smarters-pro-deutschland/
+- TiviMate: https://mojo4k.de/iptv-tivimate-deutschland/
+- MAG Receiver: https://mojo4k.de/iptv-receiver-deutschland/
+- M3U Playlist: https://mojo4k.de/iptv-m3u-playlist-deutschland/
+- Android App: https://mojo4k.de/iptv-player-android/
+- Smart IPTV: https://mojo4k.de/smart-iptv-deutschland/
+- Kodi: https://mojo4k.de/iptv-kodi-deutschland/
+- PC/Windows: https://mojo4k.de/iptv-pc/
+- Mac/MacBook: https://mojo4k.de/iptv-macbook/
+- iPhone: https://mojo4k.de/iptv-iphone/
+- iPad: https://mojo4k.de/iptv-ipad/
+- Apple TV: https://mojo4k.de/iptv-apple-tv/
+- Chromecast: https://mojo4k.de/iptv-chromecast/
+- Nvidia Shield: https://mojo4k.de/iptv-nvidia-shield/
+- Xbox: https://mojo4k.de/iptv-xbox/
+- PlayStation: https://mojo4k.de/iptv-playstation/
+- Linux: https://mojo4k.de/iptv-linux/
+- Raspberry Pi: https://mojo4k.de/iptv-raspberry-pi/
+- Fritzbox: https://mojo4k.de/iptv-fritzbox/
+
+### IPTV Apps
+- TiviMate: https://mojo4k.de/tivimate/
+- TiviMate Premium: https://mojo4k.de/tivimate-premium/
+- IPTV Smarters: https://mojo4k.de/iptv-smarters/
+- SS IPTV: https://mojo4k.de/ssiptv/
+- XCIPTV: https://mojo4k.de/xciptv/
+- OTT Navigator: https://mojo4k.de/ott-navigator/
+- STB Emu: https://mojo4k.de/stb-emu/
+- Xtream IPTV: https://mojo4k.de/xtream-iptv/
+- Set IPTV: https://mojo4k.de/set-iptv/
+- Plex IPTV: https://mojo4k.de/iptv-plex/
+- Kodi IPTV: https://mojo4k.de/iptv-kodi-deutschland/
+- Cloud Stream: https://mojo4k.de/cloud-stream/
+
+### Subscriptions & Pricing
+- Buy IPTV: https://mojo4k.de/iptv-kaufen/
+- IPTV Abo: https://mojo4k.de/iptv-abo/
+- IPTV Subscription (EN): https://mojo4k.de/iptv-subscription/
+- 1 Month: https://mojo4k.de/iptv-1-monat/
+- 3 Months: https://mojo4k.de/iptv-3-monate/
+- 6 Months: https://mojo4k.de/iptv-6-monate/
+- 12 Months: https://mojo4k.de/iptv-12-monate/
+- Premium: https://mojo4k.de/iptv-premium/
+- Without contract: https://mojo4k.de/iptv-ohne-vertrag/
+
+### German IPTV & International
+- German IPTV: https://mojo4k.de/german-iptv/
+- IPTV Germany (EN): https://mojo4k.de/iptv-germany/
+- IPTV Deutschland: https://mojo4k.de/iptv-deutschland/
+- IPTV Österreich: https://mojo4k.de/iptv-oesterreich/
+- IPTV Schweiz: https://mojo4k.de/iptv-schweiz/
+- IPTV Europe: https://mojo4k.de/iptv-europe/
+
+### Sports
+- Bundesliga: https://mojo4k.de/iptv-bundesliga/
+- Champions League: https://mojo4k.de/iptv-champions-league/
+- Sport Live: https://mojo4k.de/iptv-sport/
+- DAZN IPTV: https://mojo4k.de/iptv-dazn/
+- Sky Sport: https://mojo4k.de/iptv-sky-sport/
+- Eurosport: https://mojo4k.de/iptv-eurosport/
+- Formel 1: https://mojo4k.de/iptv-f1/
+- NBA: https://mojo4k.de/iptv-nba/
+- UFC: https://mojo4k.de/iptv-ufc/
+- Premier League: https://mojo4k.de/iptv-premier-league/
+- WM 2026: https://mojo4k.de/iptv-wm-2026/
+
+### Technical Guides
+- M3U Playlist: https://mojo4k.de/iptv-m3u/
+- EPG Guide: https://mojo4k.de/iptv-epg/
+- Buffering Fix: https://mojo4k.de/iptv-ruckelt/
+- VPN + IPTV: https://mojo4k.de/iptv-vpn/
+- 4K IPTV: https://mojo4k.de/iptv-4k/
+
+### Blog
+- Blog Overview: https://mojo4k.de/blog/
+- Smarters Pro Guide: https://mojo4k.de/blog/iptv-smarters-pro-anleitung/
+- Bundesliga 2026: https://mojo4k.de/blog/iptv-bundesliga-2026/
+- Fire Stick Test: https://mojo4k.de/blog/iptv-stick-test-deutschland/
 
 ## Languages
-German (primary), English (secondary)
+- German (primary) – all pages
+- English (secondary) – /iptv-germany/, /iptv-subscription/, /best-iptv-provider/, /ip-television/
 
-## Location
-Germany (serving all of Germany and German-speaking markets)
+## Contact
+- WhatsApp support: https://mojo4k.de/kontakt/
+- Free trial request: https://mojo4k.de/iptv-free-trial/
