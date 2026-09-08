@@ -5,6 +5,28 @@ Disallow: /whatsapp-kontakt
 Disallow: /*-iptv.html
 Disallow: /support/nachricht
 
+# Allow all major AI & search crawlers explicitly
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
 User-agent: GPTBot
 Allow: /
 
@@ -21,6 +43,18 @@ User-agent: Applebot
 Allow: /
 
 User-agent: anthropic-ai
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: FacebookExternalHit
+Allow: /
+
+User-agent: Twitterbot
 Allow: /
 
 Sitemap: https://mojo4k.de/sitemap.xml
