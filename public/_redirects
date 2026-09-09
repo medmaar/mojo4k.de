@@ -142,7 +142,7 @@
 /iptv-m3u-playlist-deutsch/ /iptv-m3u-playlist-deutschland/ 301
 
 # "iptv smarters pro deutschland" has its own page
-/iptv-smarters-pro/     /iptv-smarters/           301
+/iptv-smarters-pro/     /iptv-smarters-pro/       200
 
 # "kodi iptv" alias
 /kodi-iptv/             /iptv-kodi-deutschland/   301
@@ -171,3 +171,36 @@
 
 # "iptv smarters com" alias
 /iptv-smarters-com/     /iptv-smarters/           301
+
+# "fire tv stick iptv" / "fire tv iptv" variants → new dedicated page
+/fire-tv-iptv/              /fire-tv-stick-iptv/          301
+/iptv-fire-tv/              /fire-tv-stick-iptv/          301
+/iptv-fire-stick/           /fire-tv-stick-iptv/          301
+/iptv-firestick/            /fire-tv-stick-iptv/          301
+/iptv-amazon-stick/         /fire-tv-stick-iptv/          301
+/amazon-fire-stick-iptv/    /fire-tv-stick-iptv/          301
+
+# "iptv premium 4k" variants → new dedicated page
+/iptv-4k-premium/           /iptv-premium-4k/             301
+/premium-iptv-4k/           /iptv-premium-4k/             301
+/iptv-8k/                   /iptv-premium-4k/             301
+/iptv-premium-subscription/ /iptv-premium-4k/             301
+
+# "smarters pro" main variants → new dedicated smarters-pro page
+/ip-smarter-pro/            /iptv-smarters-pro/           301
+/ip-tv-smarters/            /iptv-smarters-pro/           301
+/ip-tv-smart-pro/           /iptv-smarters-pro/           301
+/ip-tv-smarter-pro/         /iptv-smarters-pro/           301
+/smarterspro/               /iptv-smarters-pro/           301
+/smarters-pro-iptv/         /iptv-smarters-pro/           301
+/smarters-tv-pro/           /iptv-smarters-pro/           301
+/iptv-smarters-pro-android/ /iptv-smarters-pro/           301
+/iptv-smarters-pro-fire-tv-stick/ /iptv-smarters-pro/    301
+/iptv-smarters-pro-firestick/ /iptv-smarters-pro/        301
+
+# "iptv stream" / "stream iptv" → informational page
+/iptv-stream/               /iptv-kaufen/                 301
+
+# "my siptv" / "my sip tv" aliases
+/my-siptv/                  /siptv/                       301
+/my-sip-tv/                 /siptv/                       301
