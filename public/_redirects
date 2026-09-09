@@ -204,3 +204,13 @@
 # "my siptv" / "my sip tv" aliases
 /my-siptv/                  /siptv/                       301
 /my-sip-tv/                 /siptv/                       301
+
+# "extreme iptv" brand keyword → dedicated page
+/extreme-ip-tv/             /extreme-iptv/            301
+/iptv-extreme-alternative/  /extreme-iptv/            301
+
+# "iptv app" / "app iptv" / "ip tv app" keyword variants
+/app-iptv/                  /iptv-app/                301
+/ip-tv-app/                 /iptv-app/                301
+/iptv-apps/                 /iptv-app/                301
+/iptv-android/              /iptv-app/                301
