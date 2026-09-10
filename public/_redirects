@@ -242,9 +242,9 @@
 /worldwide-iptv             /world-iptv/                   301
 
 # "xtreme hd iptv" (500/mo) → xtream-iptv (same product family)
-/xtreme-hd-iptv/            /xtream-iptv/                  301
-/xtreme-hd-iptv             /xtream-iptv/                  301
-/xtremehdiptv/              /xtream-iptv/                  301
+/xtreme-hd-iptv/            /xtreme-hd-iptv/               200
+/xtreme-hd-iptv             /xtreme-hd-iptv/               200
+/xtremehdiptv/              /xtreme-hd-iptv/               301
 
 # "cody iptv" (480/mo) → kodi page (same tech stack)
 /cody-iptv/                 /iptv-kodi-deutschland/        301
