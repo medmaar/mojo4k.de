@@ -184,7 +184,6 @@
 /iptv-4k-premium/           /iptv-premium-4k/             301
 /premium-iptv-4k/           /iptv-premium-4k/             301
 /iptv-8k/                   /iptv-premium-4k/             301
-/iptv-premium-subscription/ /iptv-premium-4k/             301
 
 # "smarters pro" main variants → new dedicated smarters-pro page
 /ip-smarter-pro/            /iptv-smarters-pro/           301
@@ -213,11 +212,9 @@
 /app-iptv/                  /iptv-app/                301
 /ip-tv-app/                 /iptv-app/                301
 /iptv-apps/                 /iptv-app/                301
-/iptv-android/              /iptv-app/                301
 
 # M3U keyword variants
 /iptv-m3u-liste/            /iptv-m3u/                301
-/m3u-iptv/                  /iptv-m3u/                301
 /m3u/                       /iptv-m3u/                301
 /m3u-playlist/              /iptv-m3u/                301
 /iptv-m3u-url/              /iptv-m3u/                301
@@ -226,9 +223,7 @@
 # Tester / trial keyword variants
 /iptv-test-line/            /iptv-tester/             301
 /iptv-testline/             /iptv-tester/             301
-/iptv-trial/                /iptv-tester/             301
 /iptv-trial-line/           /iptv-tester/             301
-/iptv-probe/                /iptv-tester/             301
 
 # Playlist keyword variants
 /iptv-play-list/            /iptv-playlist/           301
@@ -238,3 +233,182 @@
 # iptv-6-geraete variant
 /iptv-6-geraete/            /iptv-6-geraete/          200
 /iptv-sechs-geraete/        /iptv-6-geraete/          301
+
+
+# ── KEYWORD EXPANSION BATCH 2 – SEO coverage for missing search terms ──
+
+# "worldwide iptv" (500/mo) → world-iptv
+/worldwide-iptv/            /world-iptv/                   301
+/worldwide-iptv             /world-iptv/                   301
+
+# "xtreme hd iptv" (500/mo) → xtream-iptv (same product family)
+/xtreme-hd-iptv/            /xtream-iptv/                  301
+/xtreme-hd-iptv             /xtream-iptv/                  301
+/xtremehdiptv/              /xtream-iptv/                  301
+
+# "cody iptv" (480/mo) → kodi page (same tech stack)
+/cody-iptv/                 /iptv-kodi-deutschland/        301
+/cody-iptv                  /iptv-kodi-deutschland/        301
+/codyiptv/                  /iptv-kodi-deutschland/        301
+
+# "iptv reddit" / "reddit best iptv" (480–500/mo) → comparison page
+/iptv-reddit/               /bester-iptv-anbieter/         301
+/reddit-best-iptv/          /bester-iptv-anbieter/         301
+/best-iptv-reddit/          /bester-iptv-anbieter/         301
+/best-iptv-provider-reddit/ /best-iptv-provider/           301
+/iptv-forum/                /iptv-anbieter-vergleich/      301
+/iptv-anbieter-forum/       /iptv-anbieter-vergleich/      301
+/iptvforum/                 /iptv-anbieter-vergleich/      301
+
+# "internet protocol tv providers" (480/mo)
+/internet-protocol-tv-providers/  /iptv-anbieter/          301
+
+# "best iptv player" / "best player iptv" (390/mo)
+/best-iptv-player/          /beste-iptv-app/               301
+/best-player-iptv/          /beste-iptv-app/               301
+/bester-iptv-player/        /beste-iptv-app/               301
+/beste-iptv-player-android/ /iptv-player-android/          301
+
+# "smart player tv" (390/mo)
+/smart-player-tv/           /smart-iptv-deutschland/       301
+/smart-player-iptv/         /smart-iptv-deutschland/       301
+
+# "anbieteriptv" (390/mo)
+/anbieteriptv/              /iptv-anbieter/                301
+
+# "ip smart iptv" (320/mo)
+/ip-smart-iptv/             /smart-iptv-deutschland/       301
+
+# "iptv for smart" (320/mo)
+/iptv-for-smart/            /iptv-smart-tv/                301
+
+# "iptv sticks" (320/mo)
+/iptv-sticks/               /iptv-stick/                   301
+
+# "vodafone iptv" / "iptv vodafone" (320/mo)
+/vodafone-iptv/             /iptv-vodafone-internet/       301
+/iptv-vodafone/             /iptv-vodafone-internet/       301
+
+# "app smart iptv" / "ip tv smart player" (260/mo)
+/app-smart-iptv/            /smart-iptv-deutschland/       301
+/ip-tv-smart-player/        /smart-iptv-deutschland/       301
+
+# "besser iptv" / "besseriptv" (50/mo)
+/besser-iptv/               /bester-iptv-anbieter/         301
+/besseriptv/                /bester-iptv-anbieter/         301
+
+# "box android iptv" / "box iptv android" (320/mo)
+/box-android-iptv/          /iptv-android-box/             301
+/box-iptv-android/          /iptv-android-box/             301
+/iptv-box-android/          /iptv-android-box/             301
+
+# "firestick tivimate" (50/mo)
+/firestick-tivimate/        /tivimate/                     301
+
+# "formuler iptv box" (50/mo)
+/formuler-iptv-box/         /iptv-formuler/                301
+
+# "dragon iptv" / "dragoniptv" (50/mo)
+/dragon-iptv/               /iptv-kaufen/                  301
+/dragoniptv/                /iptv-kaufen/                  301
+
+# Missing 500/mo commercial brand keywords
+/tv-team-iptv/              /iptv-kaufen/                  301
+/tvteam-iptv/               /iptv-kaufen/                  301
+/iptv-rapid/                /iptv-kaufen/                  301
+/rapidiptv/                 /iptv-kaufen/                  301
+/maxhd-iptv/                /iptv-premium-4k/              301
+/maxhdiptv/                 /iptv-premium-4k/              301
+/mu3-iptv/                  /iptv-m3u/                     301
+/my-iptv/                   /iptv-kaufen/                  301
+/iptv-one/                  /iptv-kaufen/                  301
+/simpleiptv/                /iptv-kaufen/                  301
+/simple-iptv/               /iptv-kaufen/                  301
+/yu2go/                     /world-iptv/                   301
+/tvip-s-box/                /iptv-box-formuler-mag/        301
+/tvip-s-box-605/            /iptv-box-formuler-mag/        301
+
+# "iptv 12 months" (500/mo) English variant
+/iptv-12-months/            /iptv-12-monate/               301
+
+# "iptv 8k" (500/mo)
+
+# "iptv downloader" (500/mo)
+/iptv-downloader/           /iptv-kaufen/                  301
+
+# "iptv free test" (500/mo)
+/iptv-free-test/            /iptv-free-trial/              301
+
+# "iptv smarters downloader" (500/mo)
+/iptv-smarters-downloader/  /iptv-smarters-pro/            301
+
+# "iptv smarters lite" / "smarters iptv lite" (500/mo)
+/iptv-smarters-lite/        /iptv-smarters/                301
+
+# "iptv smarters pro samsung tv" (500/mo)
+/iptv-smarters-pro-samsung-tv/ /iptv-smarters-pro/         301
+/iptv-smarters-samsung/     /iptv-smarters-pro/            301
+
+# "iptv televizija" (500/mo)
+/iptv-televizija/           /ip-television/                301
+/ip-televizija/             /ip-television/                301
+
+# "iptv vlc" / "vlc ip tv" (500/mo)
+/iptv-vlc/                  /iptv-m3u/                     301
+/vlc-ip-tv/                 /iptv-m3u/                     301
+/ip-tv-vlc/                 /iptv-m3u/                     301
+
+# "jellyfin iptv" (500/mo)
+/jellyfin-iptv/             /iptv-kodi-deutschland/        301
+
+# "kodinerds iptv" (500/mo)
+/kodinerds-iptv/            /iptv-kodi-deutschland/        301
+/kodi-nerds-iptv/           /iptv-kodi-deutschland/        301
+
+# "m3u liste" (500/mo)
+/m3u-liste/                 /iptv-m3u/                     301
+/m3u-list/                  /iptv-m3u/                     301
+
+# "iptv paysafecard" (500/mo)
+/iptv-paysafecard/          /iptv-per-paypal/              301
+
+# "iptv live" additional variant
+/iptv-live-stream/          /iptv-kaufen/                  301
+
+# "iptv angebote" (500/mo)
+/iptv-angebote/             /iptv-kaufen/                  301
+
+# "iptv amazon" / "iptv aliexpress" (500/mo)
+/iptv-amazon/               /fire-tv-stick-iptv/           301
+/iptv-aliexpress/           /iptv-box/                     301
+/iptv-amazon-prime/         /iptv-kaufen/                  301
+
+# Norago / nord brand keywords (50/mo each) - have pages
+/norago/                    /norago-iptv/                  301
+/nordiptv/                  /nord-iptv/                    301
+
+# "iptv web" / "iptv web browser" (500/mo)
+/iptv-web/                  /iptv-kaufen/                  301
+/iptv-web-browser/          /iptv-kaufen/                  301
+/iptv-browser/              /iptv-kaufen/                  301
+
+# "iptv servers" additional variant  
+/iptv-line-test-free/       /iptv-testline/                301
+
+# "iptv m3u liste" / "m3u8 list" (500/mo)
+/iptv-m3u8/                 /iptv-m3u/                     301
+/m3u8-iptv/                 /iptv-m3u/                     301
+/m3u8-list/                 /iptv-m3u/                     301
+/m3u8-liste/                /iptv-m3u/                     301
+/iptv-m3u8-list/            /iptv-m3u/                     301
+
+# "iptv sat" / sat-related
+/sat-ip-tv/                 /iptv-kaufen/                  301
+/iptv-sat/                  /iptv-kaufen/                  301
+
+# Application keyword variants
+/application-iptv-android/  /iptv-player-android/          301
+
+# IP television / internet protocol variants  
+/ip-tv/                     /iptv-kaufen/                  301
+
