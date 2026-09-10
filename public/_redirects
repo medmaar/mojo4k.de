@@ -214,3 +214,27 @@
 /ip-tv-app/                 /iptv-app/                301
 /iptv-apps/                 /iptv-app/                301
 /iptv-android/              /iptv-app/                301
+
+# M3U keyword variants
+/iptv-m3u-liste/            /iptv-m3u/                301
+/m3u-iptv/                  /iptv-m3u/                301
+/m3u/                       /iptv-m3u/                301
+/m3u-playlist/              /iptv-m3u/                301
+/iptv-m3u-url/              /iptv-m3u/                301
+/iptv-m3u-link/             /iptv-m3u/                301
+
+# Tester / trial keyword variants
+/iptv-test-line/            /iptv-tester/             301
+/iptv-testline/             /iptv-tester/             301
+/iptv-trial/                /iptv-tester/             301
+/iptv-trial-line/           /iptv-tester/             301
+/iptv-probe/                /iptv-tester/             301
+
+# Playlist keyword variants
+/iptv-play-list/            /iptv-playlist/           301
+/iptv-channel-list/         /iptv-playlist/           301
+/iptv-kanalliste/           /iptv-playlist/           301
+
+# iptv-6-geraete variant
+/iptv-6-geraete/            /iptv-6-geraete/          200
+/iptv-sechs-geraete/        /iptv-6-geraete/          301
