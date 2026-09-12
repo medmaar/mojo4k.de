@@ -281,10 +281,11 @@ async function handleFetch(request, env) {
 
     // 4. In KV speichern ZUERST (damit Trial immer gespeichert wird, auch wenn E-Mail fehlschlägt)
     step = "kv_store";
+    let welcomeEmailId = null;
     const expiry = Date.now() + 24 * 60 * 60 * 1000;
     await env.TRIALS.put(
       `trial:${email}`,
-      JSON.stringify({ name, email, whatsapp, site: 'mojo4k.de', username, password, m3uUrl, expiry, reminder_sent: false, followup_sent: false, welcome_email_id: welcomeEmailId || null, created_at: Date.now() }),
+      JSON.stringify({ name, email, whatsapp, site: 'mojo4k.de', username, password, m3uUrl, expiry, reminder_sent: false, followup_sent: false, welcome_email_id: null, created_at: Date.now() }),
       { expirationTtl: 30 * 24 * 60 * 60 }
     );
     // Update __keys__ index (read op, not list op — keeps KV list quota safe)
@@ -304,7 +305,15 @@ async function handleFetch(request, env) {
 
     // 5. Willkommens-E-Mail
     step = "email_client";
-    const welcomeEmailId = await sendEmail(email, "Ihr Mojo 4K Testzugang ist bereit – 24h Gratis aktiviert ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
+    welcomeEmailId = await sendEmail(email, "Ihr Mojo 4K Testzugang ist bereit – 24h Gratis aktiviert ✓", welcomeEmail(name, username, password, m3uUrl), RESEND_KEY);
+    // Update KV with welcome_email_id for threading
+    if (welcomeEmailId) {
+      try {
+        const _t = JSON.parse(await env.TRIALS.get(`trial:${email}`) || '{}');
+        _t.welcome_email_id = welcomeEmailId;
+        await env.TRIALS.put(`trial:${email}`, JSON.stringify(_t), { expirationTtl: 30 * 24 * 60 * 60 });
+      } catch(_) {}
+    }
 
     // 6. Admin-Benachrichtigung
     step = "email_admin";
@@ -358,4 +367,5 @@ export default {
   async fetch(request, env) { return handleFetch(request, env); },
   async scheduled(event, env, ctx) { ctx.waitUntil(handleScheduled(env)); },
 };
+
 
