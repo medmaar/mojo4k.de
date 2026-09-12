@@ -1,0 +1,4 @@
+=== GET ===
+Mojo 4K Trial Worker — OK
+=== POST ===
+{"success":true}
