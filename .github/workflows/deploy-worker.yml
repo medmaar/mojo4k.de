@@ -10,27 +10,80 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Deploy to Cloudflare Workers
+      - name: Deploy Worker via Cloudflare API
+        env:
+          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+          WORKER_NAME: iptv-trial-mojo4kde
         run: |
-          RESULT=$(curl -s -X PUT \
-            "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/workers/scripts/iptv-trial-mojo4kde" \
-            -H "Authorization: Bearer ${{ secrets.CF_API_TOKEN }}" \
-            -F 'metadata={"main_module":"worker.js","compatibility_date":"2024-01-01","bindings":[{"type":"kv_namespace","name":"TRIALS","namespace_id":"b848d7bf9dd74deca3ee42cc727ce7fa"}]};type=application/json' \
-            -F "worker.js=@worker/worker.js;type=application/javascript+module")
-          echo "$RESULT" | python3 -c "
-          import sys,json
-          d=json.load(sys.stdin)
-          if d.get('success'): print('Deployed: iptv-trial-mojo4kde')
-          else: print('Error:', d.get('errors')); exit(1)
-          "
+          METADATA=$(cat <<'METADATA'
+          {
+            "main_module": "worker.js",
+            "compatibility_date": "2024-01-01",
+            "bindings": [
+              {
+                "type": "kv_namespace",
+                "name": "TRIALS",
+                "namespace_id": "b848d7bf9dd74deca3ee42cc727ce7fa"
+              }
+            ]
+          }
+          METADATA
+          )
+          curl -s -X PUT \
+            "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/${WORKER_NAME}" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
+            -F "metadata=${METADATA};type=application/json" \
+            -F "worker.js=@worker/worker.js;type=application/javascript+module"
 
       - name: Enable workers.dev subdomain
+        env:
+          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+          WORKER_NAME: iptv-trial-mojo4kde
         run: |
           curl -s -X POST \
-            "https://api.cloudflare.com/client/v4/accounts/${{ secrets.CF_ACCOUNT_ID }}/workers/scripts/iptv-trial-mojo4kde/subdomain" \
-            -H "Authorization: Bearer ${{ secrets.CF_API_TOKEN }}" \
+            "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/${WORKER_NAME}/subdomain" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
             -H "Content-Type: application/json" \
-            -d '{"enabled":true}' | python3 -c "import sys,json; print('Subdomain:', json.load(sys.stdin).get('success'))"
+            -d '{"enabled": true}'
+
+      - name: Set Cron Trigger
+        env:
+          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+          WORKER_NAME: iptv-trial-mojo4kde
+        run: |
+          curl -s -X PUT \
+            "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/${WORKER_NAME}/schedules" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d '[{"cron": "0 * * * *"}]'
+
+      - name: Live test
+        run: |
+          sleep 6
+          mkdir -p .debug
+          echo "=== GET ===" > .debug/test.txt
+          curl -s "https://iptv-trial-mojo4kde.medmaar.workers.dev/" >> .debug/test.txt
+          echo "" >> .debug/test.txt
+          echo "=== POST ===" >> .debug/test.txt
+          curl -s -X POST "https://iptv-trial-mojo4kde.medmaar.workers.dev/" \
+            -H "Content-Type: application/json" \
+            -d '{"name":"Test","email":"elmaaroufi.md@gmail.com","country":"Marokko","whatsapp":"","device":"","notes":""}' \
+            >> .debug/test.txt
+          echo "" >> .debug/test.txt
+          cat .debug/test.txt
+
+      - name: Commit result
+        run: |
+          git config user.name bot
+          git config user.email bot@example.com
+          git add .debug/test.txt
+          git commit -m "debug: live test" || true
+          git push || true
