@@ -10,6 +10,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -62,3 +64,32 @@ jobs:
             -H "Authorization: Bearer ${CF_TOKEN}" \
             -H "Content-Type: application/json" \
             -d '[{"cron": "0 * * * *"}]'
+
+      - name: Verify worker + check RESEND_KEY
+        env:
+          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          sleep 5
+          mkdir -p .debug
+          echo "=== GET ===" > .debug/result.txt
+          curl -s "https://iptv-trial-mojo4kde.medmaar.workers.dev/" >> .debug/result.txt
+          echo "" >> .debug/result.txt
+          echo "=== POST ===" >> .debug/result.txt
+          curl -s -X POST "https://iptv-trial-mojo4kde.medmaar.workers.dev/" \
+            -H "Content-Type: application/json" \
+            -d '{"name":"Alex","email":"Graef.alex1@gmail.com","whatsapp":"+43 664 1635580","country":"Österreich","device":"","notes":""}' \
+            >> .debug/result.txt
+          echo "" >> .debug/result.txt
+          echo "=== RESEND_KEY secret check ===" >> .debug/result.txt
+          curl -s "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/iptv-trial-mojo4kde/secrets" \
+            -H "Authorization: Bearer ${CF_TOKEN}" | python3 -c "import sys,json; d=json.load(sys.stdin); [print(s['name']) for s in d.get('result',[])]" >> .debug/result.txt 2>&1
+          cat .debug/result.txt
+
+      - name: Commit result
+        run: |
+          git config user.name bot
+          git config user.email bot@example.com
+          git add .debug/result.txt
+          git commit -m "debug: verify worker + secrets" || true
+          git push || true
