@@ -1,0 +1,6 @@
+=== GET ===
+Mojo 4K Trial Worker — OK
+=== POST ===
+{"success":true}
+=== RESEND_KEY secret check ===
+RESEND_KEY
