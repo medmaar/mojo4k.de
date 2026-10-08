@@ -88,6 +88,7 @@ select.form-input option{background:#1a0a30;color:#fff}
 .submit-btn{width:100%;padding:15px;background:linear-gradient(135deg,#FFD700,#CC0000);color:#1a0a00;font-weight:800;font-size:16px;border:none;border-radius:12px;cursor:pointer;transition:all 0.2s;margin-top:8px;font-family:inherit;letter-spacing:0.01em}
 .submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(255,206,0,0.3)}
 .submit-btn:disabled{opacity:0.6;cursor:not-allowed;transform:none}
+.form-status{margin:0 0 10px;font-size:13px;text-align:center;color:#ff8a8a}.form-status:empty{display:none}
 .form-note{text-align:center;font-size:12px;color:rgba(255,255,255,0.35);margin-top:10px}
 
 /* FEATURES CARD */
@@ -315,7 +316,7 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
       
     </div>
     <div class="plan-price-suffix">Keine Kreditkarte &middot; Keine versteckten Kosten</div>
-    <p class="plan-subtitle">Formular ausfüllen – Aktivierung in 5 Minuten per WhatsApp oder E-Mail</p>
+    <p class="plan-subtitle">Formular ausfüllen – Zugangsdaten sofort per E-Mail</p>
     <div class="duration-pills">
       <span class="dur-pill active" style="cursor:default">✅ 100% Kostenlos</span>
       <span class="dur-pill" style="cursor:default">⚡ In 5 Min. aktiviert</span>
@@ -332,22 +333,22 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
       
       <div class="form-header">
         <h2>Kostenloser Test anfordern</h2>
-        <p>Füllen Sie das Formular aus. Wir aktivieren Ihren 24h-Testzugang in 5 Minuten.</p>
+        <p>Füllen Sie das Formular aus. Ihr 24h-Testzugang wird automatisch aktiviert.</p>
         <ol class="form-steps">
-          <li>Vollständigen Namen eingeben</li>
-          <li>E-Mail oder WhatsApp-Nummer angeben</li>
-          <li>Absenden – Testzugang in 5 Minuten per WhatsApp</li>
+          <li>E-Mail-Adresse eingeben</li>
+          <li>Absenden</li>
+          <li>Zugangsdaten sofort per E-Mail erhalten</li>
         </ol>
       </div>
 
       <form id="orderForm" onsubmit="submitOrder(event)" novalidate>
         <div class="form-group">
-          <label class="form-label">Vollständiger Name</label>
-          <input type="text" name="full_name" class="form-input" placeholder="z.B. Max Mustermann (Ihr vollständiger Name)"/>
+          <label class="form-label">Vorname<span class="opt">(optional)</span></label>
+          <input type="text" name="full_name" class="form-input" autocomplete="given-name" placeholder="z.B. Max"/>
         </div>
         <div class="form-group">
           <label class="form-label">E-Mail-Adresse</label>
-          <input type="text" name="email" class="form-input" placeholder="z.B. max@gmail.com (Ihre E-Mail-Adresse)"/>
+          <input type="email" name="email" class="form-input" autocomplete="email" inputmode="email" placeholder="z.B. max@gmail.com (Ihre E-Mail-Adresse)"/>
         </div>
         <div class="form-group">
           <label class="form-label">Telefon / WhatsApp<span class="opt">(optional)</span></label>
@@ -390,8 +391,9 @@ footer{background:#0a0010;padding:48px 24px 24px;border-top:1px solid rgba(255,2
           <textarea name="message" class="form-input" placeholder="Besondere Wünsche oder Fragen?"></textarea>
         </div>
         <input type="hidden" name="plan" value="Kostenloser 24h Testzugang"/>
-        <button type="submit" class="submit-btn">🚀 Kostenlos testen – Zugang in 5 Minuten</button>
-        <p class="form-note">Kein Vertrag &middot; Keine Kreditkarte &middot; Testzugang in 5 Minuten</p>
+        <p id="formStatus" class="form-status" role="alert" aria-live="polite"></p>
+        <button type="submit" class="submit-btn">🚀 Kostenlos testen – Zugang sofort per E-Mail</button>
+        <p class="form-note">Kein Vertrag &middot; Keine Kreditkarte &middot; Zugangsdaten sofort per E-Mail</p>
       </form>
     </div>
 
@@ -585,30 +587,45 @@ function toggleFaq(i) {
 
 async function submitOrder(e) {
   e.preventDefault();
-  var btn = e.target.querySelector('.submit-btn');
-  btn.disabled = true;
-  btn.textContent = 'Senden...';
   var f = e.target;
+  var btn = f.querySelector('.submit-btn');
+  var status = document.getElementById('formStatus');
+  var btnLabel = '🚀 Kostenlos testen – Zugang sofort per E-Mail';
+  var val = function (n) { return (f.querySelector('[name="' + n + '"]') || {value:''}).value.trim(); };
+  var email = val('email');
+  var safeEmail = email.replace(/[<>&"']/g, '');
+  status.textContent = '';
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    status.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse ein – dorthin senden wir Ihre Zugangsdaten.';
+    f.querySelector('[name="email"]').focus();
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = 'Wird aktiviert...';
   try {
     var res = await fetch('https://iptv-trial-mojo4kde.medmaar.workers.dev', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        name:     (f.querySelector('[name="full_name"]') || {value:''}).value.trim(),
-        email:    (f.querySelector('[name="email"]')     || {value:''}).value.trim(),
-        whatsapp: (f.querySelector('[name="phone"]')     || {value:''}).value.trim(),
-        country:  (f.querySelector('[name="country"]')   || {value:''}).value,
-        device:   (f.querySelector('[name="device"]')    || {value:''}).value,
-        notes:    (f.querySelector('[name="message"]')   || {value:''}).value.trim(),
+        name:     val('full_name'),
+        email:    email,
+        whatsapp: val('phone'),
+        country:  val('country'),
+        device:   val('device'),
+        notes:    val('message'),
       })
     });
     var data = await res.json();
     if (!res.ok || !data.success) throw new Error(data.error || 'Fehler');
-    f.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="font-size:40px;margin-bottom:12px">✅</div><div style="font-family:Inter Tight,sans-serif;font-size:18px;font-weight:800;color:#FFD700;margin-bottom:8px">Testzugang aktiviert!</div><p style="color:rgba(255,255,255,.6);font-size:14px">Ihre Zugangsdaten wurden per E-Mail gesendet. Bitte prüfen Sie Ihren Posteingang.</p></div>';
+    var title = data.pending ? 'Anfrage erhalten!' : 'Testzugang aktiviert!';
+    var text = data.pending
+      ? 'Ihre Zugangsdaten werden in Kürze an <strong style="color:#fff">' + safeEmail + '</strong> gesendet.'
+      : 'Ihre Zugangsdaten wurden an <strong style="color:#fff">' + safeEmail + '</strong> gesendet.';
+    f.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="font-size:40px;margin-bottom:12px">✅</div><div style="font-family:Inter Tight,sans-serif;font-size:18px;font-weight:800;color:#FFD700;margin-bottom:8px">' + title + '</div><p style="color:rgba(255,255,255,.6);font-size:14px;margin-bottom:10px">' + text + '</p><p style="color:rgba(255,255,255,.6);font-size:14px;margin-bottom:16px">Keine E-Mail erhalten? Bitte prüfen Sie auch Ihren <strong style="color:#fff">Spam-/Junk-Ordner</strong>.</p><a href="/support/nachricht?msg=Ich+habe+eine+Frage+zu+meinem+IPTV+Test." target="_blank" rel="noopener" style="color:#25D366;font-weight:700;font-size:14px">Fragen? Per WhatsApp kontaktieren</a></div>';
   } catch(err) {
     btn.disabled = false;
-    btn.textContent = '🚀 Kostenlos testen – Zugang in 5 Minuten';
-    alert('Fehler beim Senden. Bitte schreiben Sie uns: kontakt@mojo4k.de');
+    btn.textContent = btnLabel;
+    status.innerHTML = (err && /E-Mail-Adresse/.test(err.message) ? err.message : 'Es gab leider ein Problem beim Senden.') + ' Bitte versuchen Sie es erneut oder <a href="/support/nachricht?msg=Ich+m%C3%B6chte+IPTV+kostenlos+testen." target="_blank" rel="noopener" style="color:#25D366">schreiben Sie uns auf WhatsApp</a>.';
     console.error(err);
   }
 }

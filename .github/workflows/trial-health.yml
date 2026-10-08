@@ -1,0 +1,33 @@
+name: Trial Worker Health Check
+
+# Read-only check of the live free-trial worker. It never creates a trial line
+# and never sends an email: it only reads the worker's status, the panel's
+# reseller info and the names (not values) of the worker's secrets.
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'worker/**'
+      - '.github/workflows/trial-health.yml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Worker responds
+        run: |
+          curl -sS -m 20 -w "\nHTTP %{http_code}\n" "https://iptv-trial-mojo4kde.medmaar.workers.dev/"
+
+      - name: Panel + KV status (?debug)
+        run: |
+          curl -sS -m 30 "https://iptv-trial-mojo4kde.medmaar.workers.dev/?debug=1" | python3 -m json.tool || true
+
+      - name: Worker secrets present
+        env:
+          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+        run: |
+          curl -sS -m 20 "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/iptv-trial-mojo4kde/secrets" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
+            | python3 -c "import sys,json; d=json.load(sys.stdin); print('success:', d.get('success'), d.get('errors')); [print(' -', s['name']) for s in d.get('result') or []]"
