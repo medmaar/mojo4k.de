@@ -151,23 +151,46 @@ function welcomeEmail(name, username, password, m3uUrl) {
   `);
 }
 
+function replyJaBox() {
+  return `
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background-color:#fff5f5;border-left:4px solid #CC0000;border-radius:6px;margin-bottom:22px;">
+    <tr><td style="padding:20px 24px;">
+      <p style="margin:0 0 6px;font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#7a0000;font-weight:bold;">
+        📩 Der schnellste Weg?
+      </p>
+      <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:1.6;color:#555555;">
+        Antworten Sie einfach mit <strong>„JA"</strong> auf diese E-Mail — wir aktivieren Ihren Zugang in wenigen Minuten, kein Formular, kein Aufwand.
+      </p>
+    </td></tr>
+  </table>`;
+}
+
 function reminderEmail(name, username, password, m3uUrl) {
   return emailWrap(`
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">${greetingFor(name)}</p>
+    <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">${greetingFor(name)}</p>
     <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Ihr Testzugang <strong>läuft in 4 Stunden ab</strong> ⏳
+      Ihr Testzugang <strong>läuft in 4 Stunden ab</strong> ⏳ — und ehrlich gesagt möchten wir Sie nicht verlieren.
+    </p>
+    <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Sie haben echtes Streaming kennengelernt. Kristallklares 4K, Live-Sport vom ersten Moment an — Bundesliga, Sky Sport, DAZN — und eine Bibliothek so groß, dass Ihnen die Wochenenden ausgehen, bevor der Inhalt aufhört.
     </p>
     <p style="margin:0 0 22px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Nutzen Sie die verbleibende Zeit und genießen Sie Ihren vollständigen Zugang zu +50.000 Kanälen, Bundesliga, Sky Sport, DAZN und +300.000 Filmen & Serien in 4K.
+      <strong>Lassen Sie es nicht hier enden.</strong>
     </p>
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Ihre aktiven Zugangsdaten:</p>
-    ${credBox(username, password, m3uUrl)}
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Genießen Sie Mojo 4K ohne Unterbrechung – wählen Sie jetzt Ihr Abonnement:
+    <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Behalten Sie denselben Zugang. Behalten Sie dieselbe Qualität. Machen Sie es einfach dauerhaft.
+    </p>
+    ${replyJaBox()}
+    <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Möchten Sie lieber zuerst unsere Pakete vergleichen?
     </p>
     ${ctaButton("Jetzt Abonnement wählen →", SITE_URL + "/preise/")}
+    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Ihre aktiven Zugangsdaten:</p>
+    ${credBox(username, password, m3uUrl)}
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Fragen? Antworten Sie auf diese E-Mail oder kontaktieren Sie uns auf WhatsApp unter <a href="https://wa.me/${WA_NUMBER}" style="color:#CC0000;text-decoration:none;font-weight:bold;">+1 782-802-6280</a>
+      Fragen? Antworten Sie auf diese E-Mail oder schreiben Sie uns auf WhatsApp:
+      <a href="https://wa.me/${WA_NUMBER}" style="color:#CC0000;text-decoration:none;font-weight:bold;">+1 782-802-6280</a> — wir sind immer für Sie da.
     </p>
     <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Mit freundlichen Grüßen,<br><strong>Das Mojo 4K Team</strong></p>
   `);
@@ -175,19 +198,27 @@ function reminderEmail(name, username, password, m3uUrl) {
 
 function followupEmail(name) {
   return emailWrap(`
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">${greetingFor(name)}</p>
-    <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Ihr Mojo 4K Testzugang ist nun <strong>abgelaufen</strong>.
-    </p>
-    <p style="margin:0 0 22px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Wir hoffen, Sie haben die Qualität unseres Services genossen — +50.000 Kanäle, Bundesliga, Sky Sport, DAZN und +300.000 Filme & Serien in 4K, ohne Unterbrechung.
+    <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">${greetingFor(name)}</p>
+    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Ihr Testzugang ist beendet — aber hier ist die Sache: <strong>Alles, was Sie gerade erlebt haben, wartet noch auf Sie.</strong>
     </p>
     <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Streamen Sie weiter mit Mojo 4K – wählen Sie das Paket, das zu Ihnen passt:
+      Der Live-Sport. Die Spätabend-Filme. Das kristallklare 4K, das Ihren alten Streamingdienst wie einen schlechten Traum erscheinen ließ.
+    </p>
+    <p style="margin:0 0 22px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Alles davon — nur einen Klick entfernt.
+    </p>
+    <p style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      So machen Sie weiter — gleiche Qualität, keine Unterbrechung:
+    </p>
+    ${replyJaBox()}
+    <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
+      Möchten Sie Ihr Paket lieber selbst auswählen?
     </p>
     ${ctaButton("Mein Abonnement wählen →", SITE_URL + "/preise/")}
     <p style="margin:0 0 20px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
-      Haben Sie Fragen? Antworten Sie auf diese E-Mail oder schreiben Sie uns auf WhatsApp unter <a href="https://wa.me/${WA_NUMBER}" style="color:#CC0000;text-decoration:none;font-weight:bold;">+1 782-802-6280</a>
+      Eine Frage? Antworten Sie auf diese E-Mail oder schreiben Sie uns auf WhatsApp:
+      <a href="https://wa.me/${WA_NUMBER}" style="color:#CC0000;text-decoration:none;font-weight:bold;">+1 782-802-6280</a> — wir würden uns freuen, Sie zu behalten.
     </p>
     <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;color:#555555;">Mit freundlichen Grüßen,<br><strong>Das Mojo 4K Team</strong></p>
   `);
