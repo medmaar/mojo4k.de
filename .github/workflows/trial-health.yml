@@ -85,3 +85,27 @@ jobs:
             src=e.get('source'); md=e.get('\$metadata',{})
             print(md.get('timestamp') or e.get('timestamp'), '|', (md.get('message') or json.dumps(src))[:300])
           "
+
+      - name: Follow-up emails being sent (cron status per trial)
+        env:
+          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+          KV_NS: b848d7bf9dd74deca3ee42cc727ce7fa
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request, urllib.parse
+          base = f"https://api.cloudflare.com/client/v4/accounts/{os.environ['CF_ACCOUNT']}/storage/kv/namespaces/{os.environ['KV_NS']}/values/"
+          def get(k):
+              req = urllib.request.Request(base + urllib.parse.quote(k, safe=''), headers={"Authorization": "Bearer " + os.environ["CF_TOKEN"]})
+              try: return urllib.request.urlopen(req, timeout=20).read().decode()
+              except Exception as e: return None
+          keys = json.loads(get("__keys__") or "[]")
+          now = time.time() * 1000
+          print(f"{len(keys)} trials in index")
+          for e in keys:
+              t = json.loads(get("trial:" + e) or "{}")
+              if not t: print("  (expired)", e[:2] + "***"); continue
+              left = (t.get("expiry", 0) - now) / 3600000
+              print(f"  {e[:2]}***@{e.split('@')[-1]:<14} created {time.strftime('%Y-%m-%d %H:%M', time.gmtime(t.get('created_at',0)/1000))}  "
+                    f"expires_in={left:6.1f}h  reminder_sent={t.get('reminder_sent')}  followup_sent={t.get('followup_sent')}")
+          PY
