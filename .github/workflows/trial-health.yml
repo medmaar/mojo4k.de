@@ -19,6 +19,14 @@ jobs:
         run: |
           curl -sS -m 20 -w "\nHTTP %{http_code}\n" "https://iptv-trial-mojo4kde.medmaar.workers.dev/"
 
+      - name: Site allows the form to reach the worker (CSP)
+        run: |
+          CSP=$(curl -sSI -m 20 "https://mojo4k.de/kostenlos-testen.html" | grep -i '^content-security-policy' || true)
+          echo "$CSP" | grep -o "connect-src[^;]*" || echo "no CSP connect-src"
+          if [ -n "$CSP" ] && ! echo "$CSP" | grep -q "iptv-trial-mojo4kde.medmaar.workers.dev"; then
+            echo "::error::mojo4k.de CSP blocks the trial worker"; exit 1
+          fi
+
       - name: Panel + KV status (?debug)
         run: |
           curl -sS -m 30 "https://iptv-trial-mojo4kde.medmaar.workers.dev/?debug=1" | python3 -m json.tool || true
