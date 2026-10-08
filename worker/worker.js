@@ -18,6 +18,15 @@ const WA_NUMBER   = "17828026280";
 
 // ── helpers ───────────────────────────────────────────────────────────────────
 
+function esc(v) {
+  return String(v ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function greetingFor(name) {
+  const vorname = (name || "").trim().split(/\s+/)[0];
+  return vorname ? `Hallo ${esc(vorname)},` : "Hallo,";
+}
+
 function jsonRes(data, status = 200) {
   return new Response(JSON.stringify(data), {
     status,
@@ -120,9 +129,8 @@ function ctaButton(text, url) {
 // ── email templates ───────────────────────────────────────────────────────────
 
 function welcomeEmail(name, username, password, m3uUrl) {
-  const vorname = name.split(" ")[0];
   return emailWrap(`
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">Hallo ${vorname},</p>
+    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">${greetingFor(name)}</p>
     <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Ihr kostenloser Testzugang ist bereit! 🎉
     </p>
@@ -144,9 +152,8 @@ function welcomeEmail(name, username, password, m3uUrl) {
 }
 
 function reminderEmail(name, username, password, m3uUrl) {
-  const vorname = name.split(" ")[0];
   return emailWrap(`
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">Hallo ${vorname},</p>
+    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">${greetingFor(name)}</p>
     <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Ihr Testzugang <strong>läuft in 4 Stunden ab</strong> ⏳
     </p>
@@ -167,9 +174,8 @@ function reminderEmail(name, username, password, m3uUrl) {
 }
 
 function followupEmail(name) {
-  const vorname = name.split(" ")[0];
   return emailWrap(`
-    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">Hallo ${vorname},</p>
+    <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:15px;color:#333333;">${greetingFor(name)}</p>
     <p style="margin:0 0 14px;font-family:Arial,sans-serif;font-size:14px;line-height:1.65;color:#555555;">
       Ihr Mojo 4K Testzugang ist nun <strong>abgelaufen</strong>.
     </p>
@@ -187,10 +193,17 @@ function followupEmail(name) {
   `);
 }
 
-function adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl) {
+function adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl, panelError = null) {
+  [name, email, country, device, whatsapp, notes] = [name, email, country, device, whatsapp, notes].map(esc);
+  const manual = panelError ? `
+  <p style="background:#fff3cd;border:1px solid #ffe08a;padding:12px;border-radius:6px;">
+    <strong>⚠ Automatische Testlinie fehlgeschlagen — bitte manuell senden.</strong><br>
+    Fehler: ${esc(panelError)}
+  </p>` : "";
   return `<!DOCTYPE html><html lang="de"><head><meta charset="UTF-8"></head>
 <body style="font-family:Arial,sans-serif;font-size:14px;color:#333;padding:20px;">
   <h2 style="color:#CC0000;margin-top:0;">Neuer Testzugang — Mojo 4K</h2>
+${manual}
   <table cellpadding="6" cellspacing="0" border="0">
     <tr><td style="color:#888;width:120px;">Name</td><td><strong>${name}</strong></td></tr>
     <tr><td style="color:#888;">E-Mail</td><td>${email}</td></tr>
@@ -199,9 +212,9 @@ function adminEmail(name, email, country, device, whatsapp, notes, username, pas
     <tr><td style="color:#888;">WhatsApp</td><td>${whatsapp||"—"}</td></tr>
     <tr><td style="color:#888;">Nachricht</td><td>${notes||"—"}</td></tr>
     <tr><td colspan="2"><hr style="border:none;border-top:1px solid #eee;margin:8px 0;"></td></tr>
-    <tr><td style="color:#888;">Benutzername</td><td><strong>${username}</strong></td></tr>
-    <tr><td style="color:#888;">Passwort</td><td><strong>${password}</strong></td></tr>
-    <tr><td style="color:#888;">M3U</td><td style="word-break:break-all;font-size:12px;">${m3uUrl}</td></tr>
+    <tr><td style="color:#888;">Benutzername</td><td><strong>${username || "—"}</strong></td></tr>
+    <tr><td style="color:#888;">Passwort</td><td><strong>${password || "—"}</strong></td></tr>
+    <tr><td style="color:#888;">M3U</td><td style="word-break:break-all;font-size:12px;">${m3uUrl || "—"}</td></tr>
   </table>
 </body></html>`;
 }
@@ -238,8 +251,15 @@ async function handleFetch(request, env) {
   try { body = await request.json(); }
   catch { return jsonRes({ success: false, error: "Ungültiges JSON" }, 400); }
 
-  const { name, email, country, device, whatsapp, notes } = body;
-  if (!name || !email) return jsonRes({ success: false, error: "Name und E-Mail erforderlich" }, 400);
+  const name     = String(body.name || "").trim().slice(0, 100);
+  const email    = String(body.email || "").trim().toLowerCase().slice(0, 200);
+  const country  = String(body.country || "").trim().slice(0, 100);
+  const device   = String(body.device || "").trim().slice(0, 100);
+  const whatsapp = String(body.whatsapp || "").trim().slice(0, 50);
+  const notes    = String(body.notes || "").trim().slice(0, 1000);
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return jsonRes({ success: false, error: "Bitte geben Sie eine gültige E-Mail-Adresse ein." }, 400);
+  }
 
   let step = "bouquet";
   try {
@@ -285,7 +305,11 @@ async function handleFetch(request, env) {
         password = _dP;
         console.log(`[fallback] Panel failed (${panelErr.message}) — using shared demo credentials`);
       } else {
-        throw panelErr;
+        // Kein automatischer Zugang möglich: Lead nicht verlieren, Admin zum manuellen Senden benachrichtigen
+        console.error(`[step=${step}] ${panelErr.message} — admin notified for manual trial`);
+        step = "email_admin_manual";
+        await sendEmail(ADMIN_EMAIL, `MANUELL / mojo4k.de / trial / ${name || "—"} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, "", "", "", panelErr.message), RESEND_KEY);
+        return jsonRes({ success: true, pending: true });
       }
     }
 
@@ -329,7 +353,7 @@ async function handleFetch(request, env) {
 
     // 6. Admin-Benachrichtigung
     step = "email_admin";
-    await sendEmail(ADMIN_EMAIL, `Automation / mojo4k.de / trial / ${name} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl), RESEND_KEY);
+    await sendEmail(ADMIN_EMAIL, `Automation / mojo4k.de / trial / ${name || "—"} / ${email}`, adminEmail(name, email, country, device, whatsapp, notes, username, password, m3uUrl), RESEND_KEY);
 
     return jsonRes({ success: true });
 
