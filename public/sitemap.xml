@@ -203,12 +203,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://mojo4k.de/iptv-arabisch/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.de/iptv-3-monate/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -1451,18 +1445,6 @@
     <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://mojo4k.de/iptv-chinesisch/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.de/iptv-hindi/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
-  </url>
-  <url>
     <loc>https://mojo4k.de/iptv-albanisch/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -1662,12 +1644,6 @@
   </url>
   <url>
     <loc>https://mojo4k.de/iptv-tuerkische-sender/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.65</priority>
-  </url>
-  <url>
-    <loc>https://mojo4k.de/iptv-arabische-sender/</loc>
     <lastmod>2026-09-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
@@ -3184,5 +3160,47 @@
   <url><loc>https://mojo4k.de/iptv-tester/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
   <url><loc>https://mojo4k.de/iptv-playlist/</loc><lastmod>2026-09-09</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
   <url><loc>https://mojo4k.de/xtreme-hd-iptv/</loc><lastmod>2026-09-10</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-apps/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-geraete/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-anbieter-alternativen/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://mojo4k.de/iptv-smarters-pro-fire-tv-stick/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-smarters-pro-samsung-tv/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-smarters-pro-android/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-smarters-pro-windows/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-smarters-pro-apple-tv/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-smarters-lite/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-smarters-pro-premium/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/tivimate-fire-tv-stick/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/tivimate-samsung-tv/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/tivimate-apple-tv/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/smart-iptv-playlist-hochladen/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/smart-iptv-samsung/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/smart-iptv-download/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/ibo-player/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-vlc/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-web-player/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-downloader/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/bester-iptv-player/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/beste-iptv-box/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-set-top-box/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/sky-q-iptv-box/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-ex-yu/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-lifetime/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-aliexpress/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-8k/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-server/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-forum/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-m3u8/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-liste/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-jellyfin/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-aufnehmen/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-roku/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/tv-und-internet/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/mag-box-modelle/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/formuler-tv-box/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/tvip-s-box/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-rumaenisch/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-georgisch/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://mojo4k.de/iptv-england/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
 </urlset>
 

@@ -1,3 +1,4 @@
 # Static HTML only - no build step needed
 .DS_Store
 *.log
+__pycache__/
