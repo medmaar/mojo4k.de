@@ -92,7 +92,6 @@
 /best-iptv/             /best-iptv-provider/      301
 
 # "iptv server" / "iptv servers" aliases
-/iptv-server/           /iptv-testline/           301
 /iptv-servers/          /iptv-testline/           301
 
 # "iptv m3u kaufen" alias
@@ -183,7 +182,6 @@
 # "iptv premium 4k" variants → new dedicated page
 /iptv-4k-premium/           /iptv-premium-4k/             301
 /premium-iptv-4k/           /iptv-premium-4k/             301
-/iptv-8k/                   /iptv-premium-4k/             301
 
 # "smarters pro" main variants → new dedicated smarters-pro page
 /ip-smarter-pro/            /iptv-smarters-pro/           301
@@ -193,8 +191,6 @@
 /smarterspro/               /iptv-smarters-pro/           301
 /smarters-pro-iptv/         /iptv-smarters-pro/           301
 /smarters-tv-pro/           /iptv-smarters-pro/           301
-/iptv-smarters-pro-android/ /iptv-smarters-pro/           301
-/iptv-smarters-pro-fire-tv-stick/ /iptv-smarters-pro/    301
 /iptv-smarters-pro-firestick/ /iptv-smarters-pro/        301
 
 # "iptv stream" / "stream iptv" → informational page
@@ -211,7 +207,6 @@
 # "iptv app" / "app iptv" / "ip tv app" keyword variants
 /app-iptv/                  /iptv-app/                301
 /ip-tv-app/                 /iptv-app/                301
-/iptv-apps/                 /iptv-app/                301
 
 # M3U keyword variants
 /iptv-m3u-liste/            /iptv-m3u/                301
@@ -256,7 +251,6 @@
 /reddit-best-iptv/          /bester-iptv-anbieter/         301
 /best-iptv-reddit/          /bester-iptv-anbieter/         301
 /best-iptv-provider-reddit/ /best-iptv-provider/           301
-/iptv-forum/                /iptv-anbieter-vergleich/      301
 /iptv-anbieter-forum/       /iptv-anbieter-vergleich/      301
 /iptvforum/                 /iptv-anbieter-vergleich/      301
 
@@ -266,7 +260,6 @@
 # "best iptv player" / "best player iptv" (390/mo)
 /best-iptv-player/          /beste-iptv-app/               301
 /best-player-iptv/          /beste-iptv-app/               301
-/bester-iptv-player/        /beste-iptv-app/               301
 /beste-iptv-player-android/ /iptv-player-android/          301
 
 # "smart player tv" (390/mo)
@@ -325,7 +318,6 @@
 /simpleiptv/                /iptv-kaufen/                  301
 /simple-iptv/               /iptv-kaufen/                  301
 /yu2go/                     /world-iptv/                   301
-/tvip-s-box/                /iptv-box-formuler-mag/        301
 /tvip-s-box-605/            /iptv-box-formuler-mag/        301
 
 # "iptv 12 months" (500/mo) English variant
@@ -334,7 +326,6 @@
 # "iptv 8k" (500/mo)
 
 # "iptv downloader" (500/mo)
-/iptv-downloader/           /iptv-kaufen/                  301
 
 # "iptv free test" (500/mo)
 /iptv-free-test/            /iptv-free-trial/              301
@@ -343,10 +334,8 @@
 /iptv-smarters-downloader/  /iptv-smarters-pro/            301
 
 # "iptv smarters lite" / "smarters iptv lite" (500/mo)
-/iptv-smarters-lite/        /iptv-smarters/                301
 
 # "iptv smarters pro samsung tv" (500/mo)
-/iptv-smarters-pro-samsung-tv/ /iptv-smarters-pro/         301
 /iptv-smarters-samsung/     /iptv-smarters-pro/            301
 
 # "iptv televizija" (500/mo)
@@ -354,7 +343,6 @@
 /ip-televizija/             /ip-television/                301
 
 # "iptv vlc" / "vlc ip tv" (500/mo)
-/iptv-vlc/                  /iptv-m3u/                     301
 /vlc-ip-tv/                 /iptv-m3u/                     301
 /ip-tv-vlc/                 /iptv-m3u/                     301
 
@@ -380,7 +368,6 @@
 
 # "iptv amazon" / "iptv aliexpress" (500/mo)
 /iptv-amazon/               /fire-tv-stick-iptv/           301
-/iptv-aliexpress/           /iptv-box/                     301
 /iptv-amazon-prime/         /iptv-kaufen/                  301
 
 # Norago / nord brand keywords (50/mo each) - have pages
@@ -396,7 +383,6 @@
 /iptv-line-test-free/       /iptv-testline/                301
 
 # "iptv m3u liste" / "m3u8 list" (500/mo)
-/iptv-m3u8/                 /iptv-m3u/                     301
 /m3u8-iptv/                 /iptv-m3u/                     301
 /m3u8-list/                 /iptv-m3u/                     301
 /m3u8-liste/                /iptv-m3u/                     301
