@@ -330,6 +330,11 @@ def validate(pages, names):
         words = len(strip_tags(text + json.dumps(p['faq'], ensure_ascii=False)).split())
         if words < 330 and p.get('ld_type') != 'CollectionPage':
             errors.append(f'{s}: thin ({words} words)')
+    redirect_sources = {l.split()[0].rstrip('/') for l in open(os.path.join(PUBLIC, '_redirects'), encoding='utf-8')
+                        if l.strip() and not l.startswith('#')}
+    for p in pages:
+        if '/' + p['slug'] in redirect_sources:
+            errors.append(f'{p["slug"]}: shadowed by a rule in _redirects')
     titles = {}
     for p in pages:
         titles.setdefault(p['title'], []).append(p['slug'])
