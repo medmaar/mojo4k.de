@@ -59,7 +59,6 @@
 /ip-tv-subscription/    /iptv-subscription/       301
 /ip-tv-premium/         /iptv-premium/            301
 /ip-tv-smart-tv/        /iptv-smart-tv/           301
-/ip-television/         /ip-television/           200
 
 # "smarters iptv pro" / "smarters pro" variants
 /smarters-iptv/         /iptv-smarters/           301
@@ -70,7 +69,6 @@
 
 # "tivimate premium" / "tivi mate" variants
 /tivi-mate/             /tivimate/                301
-/tivimate-premium/      /tivimate-premium/        200
 
 # "iptv subscription" aliases
 /iptv-sub/              /iptv-subscription/       301
@@ -80,8 +78,6 @@
 /iptv-trial/            /iptv-free-trial/         301
 /iptv-24h-test/         /iptv-free-trial/         301
 /iptv-test-24/          /iptv-free-trial/         301
-/iptv-probe/            /iptv-free-trial/         301
-/iptv-gratis/           /iptv-gratis-testen/      301
 
 # "iptv provider" variant
 /iptv-provider/         /iptv-anbieter/           301
@@ -92,7 +88,7 @@
 /best-iptv/             /best-iptv-provider/      301
 
 # "iptv server" / "iptv servers" aliases
-/iptv-servers/          /iptv-testline/           301
+/iptv-servers/          /iptv-server/             301
 
 # "iptv m3u kaufen" alias
 /iptv-m3u-kaufen/       /iptv-m3u/               301
@@ -115,7 +111,6 @@
 /iptv-receiver/         /iptv-receiver-deutschland/ 301
 
 # "iptv android" alias
-/iptv-android/          /iptv-player-android/     301
 
 # "m3u iptv" / "m3u ip tv" aliases
 /m3u-iptv/              /iptv-m3u/               301
@@ -141,11 +136,9 @@
 /iptv-m3u-playlist-deutsch/ /iptv-m3u-playlist-deutschland/ 301
 
 # "iptv smarters pro deutschland" has its own page
-/iptv-smarters-pro/     /iptv-smarters-pro/       200
 
 # "kodi iptv" alias
 /kodi-iptv/             /iptv-kodi-deutschland/   301
-/iptv-kodi/             /iptv-kodi-deutschland/   301
 
 # "stb emu" alias
 /stb-emu-pro/           /stb-emu/                 301
@@ -163,7 +156,6 @@
 /xciptv-firestick/      /xciptv/                  301
 
 # "iptv 1 monat" alias
-/iptv-1-monat/          /iptv-1-monat/            200
 
 # "cloud stream" alias
 /cloudstream/           /cloud-stream/            301
@@ -175,7 +167,6 @@
 /fire-tv-iptv/              /fire-tv-stick-iptv/          301
 /iptv-fire-tv/              /fire-tv-stick-iptv/          301
 /iptv-fire-stick/           /fire-tv-stick-iptv/          301
-/iptv-firestick/            /fire-tv-stick-iptv/          301
 /iptv-amazon-stick/         /fire-tv-stick-iptv/          301
 /amazon-fire-stick-iptv/    /fire-tv-stick-iptv/          301
 
@@ -191,7 +182,7 @@
 /smarterspro/               /iptv-smarters-pro/           301
 /smarters-pro-iptv/         /iptv-smarters-pro/           301
 /smarters-tv-pro/           /iptv-smarters-pro/           301
-/iptv-smarters-pro-firestick/ /iptv-smarters-pro/        301
+/iptv-smarters-pro-firestick/ /iptv-smarters-pro-fire-tv-stick/        301
 
 # "iptv stream" / "stream iptv" → informational page
 /iptv-stream/               /iptv-kaufen/                 301
@@ -217,7 +208,6 @@
 
 # Tester / trial keyword variants
 /iptv-test-line/            /iptv-tester/             301
-/iptv-testline/             /iptv-tester/             301
 /iptv-trial-line/           /iptv-tester/             301
 
 # Playlist keyword variants
@@ -226,7 +216,6 @@
 /iptv-kanalliste/           /iptv-playlist/           301
 
 # iptv-6-geraete variant
-/iptv-6-geraete/            /iptv-6-geraete/          200
 /iptv-sechs-geraete/        /iptv-6-geraete/          301
 
 
@@ -237,7 +226,6 @@
 /worldwide-iptv             /world-iptv/                   301
 
 # "xtreme hd iptv" (500/mo) → xtream-iptv (same product family)
-/xtreme-hd-iptv/            /xtreme-hd-iptv/               200
 /xtreme-hd-iptv             /xtreme-hd-iptv/               200
 /xtremehdiptv/              /xtreme-hd-iptv/               301
 
@@ -331,16 +319,16 @@
 /iptv-free-test/            /iptv-free-trial/              301
 
 # "iptv smarters downloader" (500/mo)
-/iptv-smarters-downloader/  /iptv-smarters-pro/            301
+/iptv-smarters-downloader/  /iptv-downloader/              301
 
 # "iptv smarters lite" / "smarters iptv lite" (500/mo)
 
 # "iptv smarters pro samsung tv" (500/mo)
-/iptv-smarters-samsung/     /iptv-smarters-pro/            301
+/iptv-smarters-samsung/     /iptv-smarters-pro-samsung-tv/            301
 
 # "iptv televizija" (500/mo)
-/iptv-televizija/           /ip-television/                301
-/ip-televizija/             /ip-television/                301
+/iptv-televizija/           /iptv-ex-yu/                   301
+/ip-televizija/             /iptv-ex-yu/                   301
 
 # "iptv vlc" / "vlc ip tv" (500/mo)
 /vlc-ip-tv/                 /iptv-m3u/                     301
@@ -368,7 +356,6 @@
 
 # "iptv amazon" / "iptv aliexpress" (500/mo)
 /iptv-amazon/               /fire-tv-stick-iptv/           301
-/iptv-amazon-prime/         /iptv-kaufen/                  301
 
 # Norago / nord brand keywords (50/mo each) - have pages
 /norago/                    /norago-iptv/                  301
@@ -383,13 +370,14 @@
 /iptv-line-test-free/       /iptv-testline/                301
 
 # "iptv m3u liste" / "m3u8 list" (500/mo)
-/m3u8-iptv/                 /iptv-m3u/                     301
-/m3u8-list/                 /iptv-m3u/                     301
-/m3u8-liste/                /iptv-m3u/                     301
-/iptv-m3u8-list/            /iptv-m3u/                     301
+/m3u8-iptv/                 /iptv-m3u8/                     301
+/m3u8-list/                 /iptv-m3u8/                     301
+/m3u8-liste/                /iptv-m3u8/                     301
+/iptv-m3u8-list/            /iptv-m3u8/                     301
 
 # "iptv sat" / sat-related
-/sat-ip-tv/                 /iptv-kaufen/                  301
+/sat-ip-tv/                 /sat-ip/                       301
+/sat-ip-tv                  /sat-ip/                       301
 /iptv-sat/                  /iptv-kaufen/                  301
 
 # Application keyword variants
@@ -482,3 +470,30 @@
 /iptv-geraet                                /iptv-geraete/                    301
 /iptv-app-liste/                            /iptv-apps/                       301
 /iptv-app-liste                             /iptv-apps/                       301
+
+# Keyword gap pass (Oct 2026): spellings and short forms for new and deepened pages
+/iptv-smarter-pro/                          /iptv-smarters-pro/               301
+/iptv-smarter-pro                           /iptv-smarters-pro/               301
+/smarterspro                                /iptv-smarters-pro/               301
+/tivimate-preis/                            /tivimate-premium/                301
+/tivimate-preis                             /tivimate-premium/                301
+/tivimate-price/                            /tivimate-premium/                301
+/tivimate-price                             /tivimate-premium/                301
+/enigma2-iptv/                              /iptv-enigma2/                    301
+/enigma2-iptv                               /iptv-enigma2/                    301
+/gigablue-iptv/                             /iptv-enigma2/                    301
+/gigablue-iptv                              /iptv-enigma2/                    301
+/satip/                                     /sat-ip/                          301
+/satip                                      /sat-ip/                          301
+/iptv-support/                              /iptv-kundenservice/              301
+/iptv-support                               /iptv-kundenservice/              301
+/iptv-customer-service/                     /iptv-kundenservice/              301
+/iptv-customer-service                      /iptv-kundenservice/              301
+/iptv-smarters-lg/                          /iptv-smarters-pro-lg-tv/         301
+/iptv-smarters-lg                           /iptv-smarters-pro-lg-tv/         301
+/iptv-panasonic/                            /iptv-panasonic-tv/               301
+/iptv-panasonic                             /iptv-panasonic-tv/               301
+/iptv-toshiba/                              /iptv-toshiba-tv/                 301
+/iptv-toshiba                               /iptv-toshiba-tv/                 301
+/kodi-live-tv/                              /iptv-kodi/                       301
+/kodi-live-tv                               /iptv-kodi/                       301
