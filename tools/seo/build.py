@@ -23,7 +23,7 @@ UPDATED_ISO = '2026-10-11'
 UPDATED_DE = '11.10.2026'
 
 sys.path.insert(0, HERE)
-BATCHES = ['pages_batch1', 'pages_batch2']
+BATCHES = ['pages_batch1', 'pages_batch2', 'pages_batch3']
 
 
 def load_pages():
