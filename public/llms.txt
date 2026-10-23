@@ -39,11 +39,11 @@ Free 24-hour trial available – no credit card required
 
 ### Main
 - Homepage: https://mojo4k.de/
-- Pricing: https://mojo4k.de/preise/
-- Free Trial: https://mojo4k.de/iptv-free-trial/
-- Free Trial (DE): https://mojo4k.de/iptv-gratis-testen/
-- Contact: https://mojo4k.de/kontakt/
-- FAQs: https://mojo4k.de/faqs/
+- Pricing: https://mojo4k.de/preise-de
+- Free Trial: https://mojo4k.de/iptv-free-trial-de
+- Free Trial (DE): https://mojo4k.de/iptv-gratis-testen-de
+- Contact: https://mojo4k.de/kontakt-de
+- FAQs: https://mojo4k.de/faqs-de
 
 ### About IPTV
 - What is IPTV: https://mojo4k.de/was-ist-iptv/
@@ -51,26 +51,26 @@ Free 24-hour trial available – no credit card required
 - IPTV Legal Germany: https://mojo4k.de/iptv-legal-deutschland/
 
 ### Provider & Comparison
-- Best IPTV Provider (DE): https://mojo4k.de/bester-iptv-anbieter/
+- Best IPTV Provider (DE): https://mojo4k.de/bester-iptv-anbieter-de
 - Best IPTV Provider (EN): https://mojo4k.de/best-iptv-provider/
-- Provider Comparison: https://mojo4k.de/iptv-anbieter-vergleich/
+- Provider Comparison: https://mojo4k.de/iptv-anbieter-vergleich-de
 - IPTV Test 2026: https://mojo4k.de/iptv-test-2026/
 - IPTV Testbericht: https://mojo4k.de/iptv-testbericht/
 - IPTV Testsieger: https://mojo4k.de/iptv-testsieger/
 - IPTV Vergleich: https://mojo4k.de/iptv-vergleich/
 
 ### Setup Guides by Device
-- Fire TV Stick: https://mojo4k.de/iptv-fire-stick-deutschland/
+- Fire TV Stick: https://mojo4k.de/iptv-fire-stick-deutschland-de
 - Samsung Smart TV: https://mojo4k.de/iptv-samsung-tv-deutschland/
 - LG Smart TV: https://mojo4k.de/iptv-lg-tv-deutschland/
-- Android Box: https://mojo4k.de/iptv-android-box-deutschland/
-- Smarters Pro: https://mojo4k.de/iptv-smarters-pro-deutschland/
-- TiviMate: https://mojo4k.de/iptv-tivimate-deutschland/
-- MAG Receiver: https://mojo4k.de/iptv-receiver-deutschland/
-- M3U Playlist: https://mojo4k.de/iptv-m3u-playlist-deutschland/
+- Android Box: https://mojo4k.de/iptv-android-box-deutschland-de
+- Smarters Pro: https://mojo4k.de/iptv-smarters-pro-deutschland-de
+- TiviMate: https://mojo4k.de/iptv-tivimate-deutschland-de
+- MAG Receiver: https://mojo4k.de/iptv-receiver-deutschland-de
+- M3U Playlist: https://mojo4k.de/iptv-m3u-playlist-deutschland-de
 - Android App: https://mojo4k.de/iptv-player-android/
 - Smart IPTV: https://mojo4k.de/smart-iptv-deutschland/
-- Kodi: https://mojo4k.de/iptv-kodi-deutschland/
+- Kodi: https://mojo4k.de/iptv-kodi-deutschland-de
 - PC/Windows: https://mojo4k.de/iptv-pc/
 - Mac/MacBook: https://mojo4k.de/iptv-macbook/
 - iPhone: https://mojo4k.de/iptv-iphone/
@@ -89,18 +89,18 @@ Free 24-hour trial available – no credit card required
 - TiviMate Premium: https://mojo4k.de/tivimate-premium/
 - IPTV Smarters: https://mojo4k.de/iptv-smarters/
 - SS IPTV: https://mojo4k.de/ssiptv/
-- XCIPTV: https://mojo4k.de/xciptv/
+- XCIPTV: https://mojo4k.de/xciptv-de
 - OTT Navigator: https://mojo4k.de/ott-navigator/
 - STB Emu: https://mojo4k.de/stb-emu/
 - Xtream IPTV: https://mojo4k.de/xtream-iptv/
 - Set IPTV: https://mojo4k.de/set-iptv/
 - Plex IPTV: https://mojo4k.de/iptv-plex/
-- Kodi IPTV: https://mojo4k.de/iptv-kodi-deutschland/
+- Kodi IPTV: https://mojo4k.de/iptv-kodi-deutschland-de
 - Cloud Stream: https://mojo4k.de/cloud-stream/
 
 ### Subscriptions & Pricing
-- Buy IPTV: https://mojo4k.de/iptv-kaufen/
-- IPTV Abo: https://mojo4k.de/iptv-abo/
+- Buy IPTV: https://mojo4k.de/iptv-kaufen-de
+- IPTV Abo: https://mojo4k.de/iptv-abo-de
 - IPTV Subscription (EN): https://mojo4k.de/iptv-subscription/
 - 1 Month: https://mojo4k.de/iptv-1-monat/
 - 3 Months: https://mojo4k.de/iptv-3-monate/
@@ -148,8 +148,8 @@ Free 24-hour trial available – no credit card required
 - English (secondary) – /iptv-germany/, /iptv-subscription/, /best-iptv-provider/, /ip-television/
 
 ## Contact
-- WhatsApp support: https://mojo4k.de/kontakt/
-- Free trial request: https://mojo4k.de/iptv-free-trial/
+- WhatsApp support: https://mojo4k.de/kontakt-de
+- Free trial request: https://mojo4k.de/iptv-free-trial-de
 
 ## IPTV Apps & Brand Alternatives
 - https://mojo4k.de/upiptv/ - UpIPTV Alternative: MOJO4K.DE mit 50.000+ Kanälen in 4K
