@@ -97,7 +97,7 @@ const EMAIL_BRAND = {
     "-",
     "—"
   ],
-  "plansUrl": "/preise/",
+  "plansUrl": "/preise-de",
   "money": {
     "pre": "",
     "post": "€",

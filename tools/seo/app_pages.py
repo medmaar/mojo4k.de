@@ -50,8 +50,8 @@ def render_main(spec):
     out = ['<main>', STYLE, '  <section class="hero">', '    <div class="hero-inner">',
            f'      <div class="badge">{spec["badge"]}</div>', f'      <h1>{spec["h1"]}</h1>', f'      <p>{spec["intro"]}</p>',
            '      <div class="hero-btns">',
-           '        <a href="/kostenlos-testen" class="btn-p">24h kostenlos testen</a>',
-           '        <a href="/preise/" class="btn-s">Preise ansehen</a>',
+           '        <a href="/kostenlos-testen-de" class="btn-p">24h kostenlos testen</a>',
+           '        <a href="/preise-de" class="btn-s">Preise ansehen</a>',
            '      </div>', '    </div>', '  </section>']
     for i, (h2, blocks) in enumerate(spec['sections']):
         bg = ' style="background:rgba(255,255,255,.015)"' if i % 2 else ''
@@ -65,8 +65,8 @@ def render_main(spec):
     out += ['  <section><div class="container"><div class="cta-section">',
             f'    <h2>{spec.get("cta_h2", "IPTV-Zugang für " + spec["name"] + " testen")}</h2>',
             f'    <p style="opacity:.85;margin-bottom:24px">{spec.get("cta_p", CTA_P)}</p>',
-            '    <div class="hero-btns"><a href="/kostenlos-testen" class="btn-p">Kostenlosen Test anfordern</a>'
-            '<a href="/preise/" class="btn-s">Pakete ab 9 € ansehen</a></div>',
+            '    <div class="hero-btns"><a href="/kostenlos-testen-de" class="btn-p">Kostenlosen Test anfordern</a>'
+            '<a href="/preise-de" class="btn-s">Pakete ab 9 € ansehen</a></div>',
             '  </div></div></section>', '</main>', '']
     return '\n'.join(out)
 

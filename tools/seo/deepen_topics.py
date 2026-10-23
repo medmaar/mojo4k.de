@@ -6,7 +6,7 @@ general, verifiable technical background. No ratings, customer counts or competi
 
 PRICES = ['1 Monat: 9 €', '3 Monate: 29 € (rund 9,67 € pro Monat)', '6 Monate: 39 € (6,50 € pro Monat)',
           '12 Monate: 49 € (rund 4,08 € pro Monat)']
-TEST = 'Testen Sie vorher 24 Stunden kostenlos über <a href="/kostenlos-testen">das Testformular</a>.'
+TEST = 'Testen Sie vorher 24 Stunden kostenlos über <a href="/kostenlos-testen-de">das Testformular</a>.'
 
 DEEPEN = {
     'iptv-smarters': {
@@ -41,7 +41,7 @@ DEEPEN = {
                 ('p', 'Die Kosten für IPTV setzen sich aus bis zu vier Teilen zusammen. Nur der erste ist laufend; die anderen fallen einmalig oder gar nicht an.'),
                 ('ol', [
                     '<strong>Das Abo</strong> beim IPTV-Anbieter. Bei MOJO4K.DE für 1 Gerät: ' + ', '.join(PRICES) + '.',
-                    '<strong>Ein Abspielgerät</strong>, falls Ihr Fernseher keine passende App hat, zum Beispiel ein <a href="/iptv-stick/">IPTV-Stick</a>.',
+                    '<strong>Ein Abspielgerät</strong>, falls Ihr Fernseher keine passende App hat, zum Beispiel ein <a href="/iptv-stick-de">IPTV-Stick</a>.',
                     '<strong>Eine App-Lizenz</strong> bei manchen Smart-TV-Playern wie <a href="/set-iptv/">Set IPTV</a> oder <a href="/siptv/">SIPTV</a>; Apps wie IPTV Smarters Pro sind kostenlos.',
                     '<strong>Der Internetanschluss</strong>, den Sie meist ohnehin haben. Wir empfehlen mindestens 25 Mbit/s für HD und 50 Mbit/s für 4K.',
                 ]),
@@ -50,7 +50,7 @@ DEEPEN = {
                 ('table', ['Laufzeit', 'Preis', 'pro Monat'], [
                     ['1 Monat', '9 €', '9,00 €'], ['3 Monate', '29 €', '9,67 €'], ['6 Monate', '39 €', '6,50 €'], ['12 Monate', '49 €', '4,08 €'],
                 ]),
-                ('p', 'Pakete für mehrere gleichzeitige Geräte (bis zu 10) kosten entsprechend mehr; die genauen Preise stehen unter <a href="/preise/">Preise</a>. ' + TEST),
+                ('p', 'Pakete für mehrere gleichzeitige Geräte (bis zu 10) kosten entsprechend mehr; die genauen Preise stehen unter <a href="/preise-de">Preise</a>. ' + TEST),
             ]),
         ],
         'faq_title': 'Weitere Fragen zu den IPTV Kosten',
@@ -94,7 +94,7 @@ DEEPEN = {
                     ['<a href="/tivimate/">TiviMate</a>', 'Android TV, Fire TV, Boxen', 'Xtream, M3U'],
                     ['<a href="/iptv-smarters-pro-android/">IPTV Smarters Pro</a>', 'Handy, Tablet, TV', 'Xtream, M3U'],
                     ['<a href="/ott-navigator/">OTT Navigator</a>', 'Android TV, Boxen', 'Xtream, M3U'],
-                    ['<a href="/xciptv/">XCIPTV</a>', 'Handy, TV', 'Xtream'],
+                    ['<a href="/xciptv-de">XCIPTV</a>', 'Handy, TV', 'Xtream'],
                     ['<a href="/iptvpro/">IPTV Pro</a>', 'Handy, Tablet', 'M3U'],
                     ['<a href="/iptv-vlc/">VLC</a>', 'alle Android-Geräte', 'M3U'],
                 ]),
@@ -180,7 +180,7 @@ DEEPEN = {
             ]),
             ('Was Ihr Gerät für 4K-Premium braucht', [
                 ('p', '4K-Streams werden meist in H.265 (HEVC) übertragen. Das Gerät muss diesen Codec in Hardware decodieren können. Aktuelle Fire TV Sticks mit 4K, Android-TV-Boxen und neuere Smart TVs können das; ältere Full-HD-Sticks nicht.'),
-                ('p', 'Dazu kommt die Leitung: wir empfehlen mindestens 50 Mbit/s für 4K. Mehr Details unter <a href="/iptv-4k/">IPTV 4K</a> und <a href="/iptv-premium-4k/">Premium 4K</a>. Pakete ab 9 € im Monat, im Jahr 49 €, siehe <a href="/preise/">Preise</a>.'),
+                ('p', 'Dazu kommt die Leitung: wir empfehlen mindestens 50 Mbit/s für 4K. Mehr Details unter <a href="/iptv-4k/">IPTV 4K</a> und <a href="/iptv-premium-4k/">Premium 4K</a>. Pakete ab 9 € im Monat, im Jahr 49 €, siehe <a href="/preise-de">Preise</a>.'),
             ]),
         ],
         'faq_title': 'Weitere Fragen zu Premium IPTV',
@@ -209,7 +209,7 @@ DEEPEN = {
                     'Kein Impressum, keine Kontaktmöglichkeit, nur ein Telegram-Kanal.',
                     'Kein Test und Vorkasse für ein ganzes Jahr.',
                 ]),
-                ('p', 'Rechtliche Fragen beantwortet <a href="/iptv-legal/">Ist IPTV legal?</a>. Den ausführlichen Anbietervergleich finden Sie unter <a href="/iptv-anbieter-vergleich/">IPTV Anbieter Vergleich</a>. ' + TEST),
+                ('p', 'Rechtliche Fragen beantwortet <a href="/iptv-legal/">Ist IPTV legal?</a>. Den ausführlichen Anbietervergleich finden Sie unter <a href="/iptv-anbieter-vergleich-de">IPTV Anbieter Vergleich</a>. ' + TEST),
             ]),
         ],
         'faq_title': 'Weitere Fragen zum Vergleich',
@@ -251,7 +251,7 @@ DEEPEN = {
                 ]),
             ]),
             ('Mehrere Spiele parallel verfolgen', [
-                ('p', 'Mit einer Multiscreen-fähigen App und einem Paket für mehrere Geräte lassen sich zwei bis vier Spiele gleichzeitig zeigen. Bei MOJO4K.DE gibt es Pakete für bis zu 10 gleichzeitige Geräte, siehe <a href="/preise/">Preise</a>.'),
+                ('p', 'Mit einer Multiscreen-fähigen App und einem Paket für mehrere Geräte lassen sich zwei bis vier Spiele gleichzeitig zeigen. Bei MOJO4K.DE gibt es Pakete für bis zu 10 gleichzeitige Geräte, siehe <a href="/preise-de">Preise</a>.'),
                 ('p', 'Weitere Wettbewerbe: <a href="/iptv-europa-league/">Europa League</a>, <a href="/iptv-bundesliga/">Bundesliga</a>. ' + TEST),
             ]),
         ],
@@ -273,7 +273,7 @@ DEEPEN = {
             ]),
             ('So läuft der Kauf ab', [
                 ('ol', [
-                    'Paket und Geräteanzahl unter <a href="/preise/">Preise</a> wählen.',
+                    'Paket und Geräteanzahl unter <a href="/preise-de">Preise</a> wählen.',
                     'Bestellung abschließen; die Zugangsdaten kommen als Xtream-Login und M3U-Link.',
                     'Daten in Ihrer App eintragen, Anleitungen unter <a href="/iptv-einrichten/">IPTV einrichten</a>.',
                     'Bei Fragen hilft der Support per WhatsApp oder an info@mojo4k.de.',

@@ -170,7 +170,7 @@ PAGES = [
            'Nur Ihren Benutzernamen nennen, nie das Passwort in öffentliche Foren posten.']),
   ]),
   ('So erreichen Sie den Support von MOJO4K', [
-   ('p', 'MOJO4K-Kunden schreiben dem Support über die <a href="/kontakt/">Kontaktseite</a> oder per WhatsApp. Wir helfen bei Zugangsdaten, Senderproblemen und der Einrichtung auf Ihrem Gerät – auch wenn das Problem in der App liegt, sagen wir Ihnen, was zu tun ist. Noch kein Kunde? ' + TRIAL + ' und den Support gleich mittesten.'),
+   ('p', 'MOJO4K-Kunden schreiben dem Support über die <a href="/kontakt-de">Kontaktseite</a> oder per WhatsApp. Wir helfen bei Zugangsdaten, Senderproblemen und der Einrichtung auf Ihrem Gerät – auch wenn das Problem in der App liegt, sagen wir Ihnen, was zu tun ist. Noch kein Kunde? ' + TRIAL + ' und den Support gleich mittesten.'),
   ]),
  ],
  'faq': [

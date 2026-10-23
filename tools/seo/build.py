@@ -228,8 +228,8 @@ def render_page(p, names):
   <h2>{cta[1]}</h2>
   <p>{cta[2]}</p>
   <div class="cta-btns">
-    <a href="/kostenlos-testen.html" class="btn-primary">24h kostenlos testen</a>
-    <a href="/preise/" class="btn-outline">Preise ansehen</a>
+    <a href="/kostenlos-testen-de" class="btn-primary">24h kostenlos testen</a>
+    <a href="/preise-de" class="btn-outline">Preise ansehen</a>
   </div>
 </div>''')
 
