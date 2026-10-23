@@ -9,11 +9,11 @@ import audit  # noqa: E402
 PAGES = ['cloud-stream', 'flix-iptv', 'forevertv', 'hot-iptv', 'set-iptv', 'iptv-line']
 MENU = '''<div class="mobile-menu" id="mMe">
   <a href="/">Startseite</a>
-  <a href="/preise/">Preise</a>
-  <a href="/bester-iptv-anbieter/">Bester IPTV Anbieter</a>
+  <a href="/preise-de">Preise</a>
+  <a href="/bester-iptv-anbieter-de">Bester IPTV Anbieter</a>
   <a href="/iptv-test/">IPTV Test</a>
-  <a href="/kostenlos-testen">Gratis Testen</a>
-  <a href="/faqs/">FAQs</a>
+  <a href="/kostenlos-testen-de">Gratis Testen</a>
+  <a href="/faqs-de">FAQs</a>
 </div>
 '''
 

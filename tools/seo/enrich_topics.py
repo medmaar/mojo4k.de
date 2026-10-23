@@ -1,5 +1,5 @@
 # Enrichment for topic, buying-guide, provider, sport and community pages.
-T = '<a href="/kostenlos-testen.html">24 Stunden kostenlos testen</a>'
+T = '<a href="/kostenlos-testen-de">24 Stunden kostenlos testen</a>'
 
 ENRICH = {
 # ── Grundlagen ───────────────────────────────────────────────────────────────
@@ -133,7 +133,7 @@ ENRICH = {
     ['1 Monat', '€9', 'zum Ausprobieren nach dem Gratistest'],
     ['12 Monate (<strong>IPTV 12 Months</strong>)', '€49', 'günstigster Monatspreis'],
    ]),
-   ('p', 'Alle Laufzeiten und Mehrgeräte-Pakete finden Sie auf der <a href="/preise/">Preisseite</a>.'),
+   ('p', 'Alle Laufzeiten und Mehrgeräte-Pakete finden Sie auf der <a href="/preise-de">Preisseite</a>.'),
   ]),
   ('IPTV Buy, IPTV Service, IPTV Account: so läuft der Kauf', [
    ('p', 'Egal ob Sie „<strong>IPTV buy</strong>", „<strong>IP TV kaufen</strong>" oder vertippt „<strong>IPTV kaufe</strong>" suchen – der Ablauf ist bei MOJO4K immer gleich:'),
@@ -219,7 +219,7 @@ ENRICH = {
     ['Streaming-TV-Apps', 'Zattoo, waipu.tv, Joyn', 'deutsche Sender, Monatsabo'],
     ['Unabhängige IPTV-Dienste', 'MOJO4K', 'App + Zugangsdaten, viele Länder'],
    ]),
-   ('p', 'Vergleichen Sie Anbieter immer mit einem Test zur Primetime. Mehr dazu im <a href="/iptv-anbieter-vergleich/">IPTV Anbieter Vergleich</a>.'),
+   ('p', 'Vergleichen Sie Anbieter immer mit einem Test zur Primetime. Mehr dazu im <a href="/iptv-anbieter-vergleich-de">IPTV Anbieter Vergleich</a>.'),
   ]),
  ],
  'faq': [
@@ -259,7 +259,7 @@ ENRICH = {
     ['<strong>Quzu IPTV</strong> / <strong>Quzu TV</strong>', 'Anbieter- bzw. App-Name', 'nur mit Käuferschutz zahlen'],
     ['<strong>IPTV One</strong>', 'mehrdeutig: Anbieter- und App-Namen', 'genau prüfen, wer dahintersteht'],
     ['<strong>BesserIPTV</strong>', 'Anbietername', 'Impressum suchen'],
-    ['<strong>AnbieterIPTV</strong>', 'meist Suchbegriff, kein bestimmter Dienst', 'siehe <a href="/iptv-anbieter-vergleich/">Anbieter-Vergleich</a>'],
+    ['<strong>AnbieterIPTV</strong>', 'meist Suchbegriff, kein bestimmter Dienst', 'siehe <a href="/iptv-anbieter-vergleich-de">Anbieter-Vergleich</a>'],
     ['<strong>My IPTV</strong>', 'meist der Name einer Player-App', 'App nur aus offiziellen Stores'],
     ['<strong>Rapid Swiss IPTV</strong>', 'Anbietername', 'Testphase nutzen'],
     ['<strong>TV Team IPTV</strong>', 'Anbietername', 'Testphase nutzen'],

@@ -31,7 +31,7 @@ PAGES = [
    ('p', 'Selbst wenn ein Lifetime-Angebot drei Jahre hält, zahlen Sie mit einem Jahresabo kaum mehr – tragen aber nur das Risiko eines Jahres. Und Sie können jederzeit wechseln, wenn die Qualität nicht mehr passt.'),
   ]),
   ('So sparen Sie seriös', [
-   ('ol', ['Erst <a href="/kostenlos-testen.html">24 Stunden kostenlos testen</a>.',
+   ('ol', ['Erst <a href="/kostenlos-testen-de">24 Stunden kostenlos testen</a>.',
            'Dann einen Monat buchen und zur Primetime prüfen.',
            'Erst danach das <a href="/iptv-12-monate/">Jahresabo</a> wählen – es ist pro Monat am günstigsten.',
            'Mit der Familie ein Paket für mehrere Geräte teilen statt mehrere Einzelabos.']),
@@ -205,7 +205,7 @@ PAGES = [
            '„Wie schnell antwortet der Support?"',
            '„Wie lange gibt es den Anbieter schon?"',
            '„Gibt es einen kostenlosen Test?"']),
-   ('p', 'Am Ende ersetzt kein Forum den eigenen Test. Deshalb bieten wir einen <a href="/kostenlos-testen.html">kostenlosen 24h-Test</a> an – testen Sie zu der Uhrzeit, zu der Sie wirklich schauen.'),
+   ('p', 'Am Ende ersetzt kein Forum den eigenen Test. Deshalb bieten wir einen <a href="/kostenlos-testen-de">kostenlosen 24h-Test</a> an – testen Sie zu der Uhrzeit, zu der Sie wirklich schauen.'),
   ]),
   ('Häufige Forenthemen – unsere Anleitungen dazu', [
    ('ul', ['<a href="/tivimate-premium/">TiviMate Premium – lohnt es sich?</a>', '<a href="/bester-iptv-player/">Welcher IPTV Player ist der beste?</a>',
@@ -283,7 +283,7 @@ PAGES = [
    ('p', 'Legal und kostenlos sind dagegen frei empfangbare Mediatheken und offizielle Live-Streams der Sender – diese finden Sie auf den Websites der Sender selbst.'),
   ]),
   ('Ihre persönliche IPTV Liste', [
-   ('p', 'Mit einem Abo bekommen Sie einen persönlichen M3U-Link, der nur für Sie gilt. Bei MOJO4K.DE erhalten Sie Link und Xtream-Codes-Daten nach der Bestellung oder dem <a href="/kostenlos-testen.html">kostenlosen Test</a>. Der Link enthält Benutzername und Passwort – teilen Sie ihn deshalb nicht.'),
+   ('p', 'Mit einem Abo bekommen Sie einen persönlichen M3U-Link, der nur für Sie gilt. Bei MOJO4K.DE erhalten Sie Link und Xtream-Codes-Daten nach der Bestellung oder dem <a href="/kostenlos-testen-de">kostenlosen Test</a>. Der Link enthält Benutzername und Passwort – teilen Sie ihn deshalb nicht.'),
    ('table', ['Laufzeit', 'Preis (1 Gerät)'], [['1 Monat', '€9'], ['3 Monate', '€29'], ['6 Monate', '€39'], ['1 Jahr', '€49']]),
   ]),
   ('IPTV Liste prüfen (IPTV Checker)', [
@@ -418,7 +418,7 @@ PAGES = [
   ]),
   ('Unsere Empfehlung', [
    ('p', 'Wer einen Roku TV besitzt, steckt am besten einen Fire TV Stick oder Google TV Streamer an einen freien HDMI-Port. Dort laufen <a href="/tivimate-fire-tv-stick/">TiviMate</a> und <a href="/iptv-smarters-pro-fire-tv-stick/">Smarters Pro</a> ohne Einschränkungen. In Deutschland sind Fire TV und Google TV ohnehin weiter verbreitet und bekommen mehr App-Support.'),
-   ('p', 'Kaufberatung: <a href="/beste-iptv-box/">Beste IPTV Box 2026</a> und <a href="/iptv-stick/">IPTV Stick</a>.'),
+   ('p', 'Kaufberatung: <a href="/beste-iptv-box/">Beste IPTV Box 2026</a> und <a href="/iptv-stick-de">IPTV Stick</a>.'),
   ]),
   ('Checkliste vor dem Kauf eines neuen Fernsehers', [
    ('ul', ['Google TV (Sony, Philips, TCL, Hisense-Modelle) – alle Android-Apps inkl. TiviMate',
@@ -501,7 +501,7 @@ PAGES = [
   ('MAG Box mit MOJO4K einrichten', [
    ('steps', [
     ('MAC-Adresse ablesen', 'Auf dem Aufkleber unter der Box oder unter Einstellungen → Geräteinfo (beginnt mit 00:1A:79).'),
-    ('MAC an uns senden', 'Über das <a href="/kontakt/">Kontaktformular</a> – wir schalten die Box frei und senden die Portal-URL.'),
+    ('MAC an uns senden', 'Über das <a href="/kontakt-de">Kontaktformular</a> – wir schalten die Box frei und senden die Portal-URL.'),
     ('Portal eintragen', 'Einstellungen → Server → Portale → Portal 1 Name: MOJO4K, Portal 1 URL: die URL von uns.'),
     ('Neustarten', 'Box neu starten – sie lädt direkt das Portal mit Sendern, Filmen und Serien.'),
    ]),
@@ -589,7 +589,7 @@ PAGES = [
   ('Einrichtung im Linux-Modus (Portal)', [
    ('steps', [
     ('MAC-Adresse notieren', 'Steht auf der Unterseite bzw. in den Einstellungen.'),
-    ('Freischaltung anfragen', 'MAC über das <a href="/kontakt/">Kontaktformular</a> an MOJO4K senden; Sie erhalten die Portal-URL.'),
+    ('Freischaltung anfragen', 'MAC über das <a href="/kontakt-de">Kontaktformular</a> an MOJO4K senden; Sie erhalten die Portal-URL.'),
     ('Portal eintragen', 'Einstellungen → TV-Anbieter → Stalker/Portal → URL eintragen.'),
     ('Neustart', 'Die Box lädt das Portal mit allen Sendern.'),
    ]),
@@ -640,7 +640,7 @@ PAGES = [
    ('table', ['Laufzeit', '1 Gerät', 'Hinweis'], [
     ['1 Monat', '€9', 'Zum Kennenlernen'], ['6 Monate', '€39', 'Beliebt'], ['1 Jahr', '€49', 'Inkl. IBO-Player-Aktivierung'],
    ]),
-   ('p', 'Für Familien mit mehreren Fernsehern gibt es Pakete für 2–10 Geräte: <a href="/preise/">alle Preise</a>.'),
+   ('p', 'Für Familien mit mehreren Fernsehern gibt es Pakete für 2–10 Geräte: <a href="/preise-de">alle Preise</a>.'),
   ]),
   ('Tipps für die Familie', [
    ('p', 'Für Eltern und Großeltern ist eine <a href="/mag-box-modelle/">MAG Box</a> mit Zifferntasten oft am einfachsten. Wer viel Sport schaut, sollte den Fernseher per LAN-Kabel verbinden. Und wer am Handy unterwegs schaut, stellt die Qualität auf HD, um Datenvolumen zu sparen.'),
@@ -684,7 +684,7 @@ PAGES = [
    ]),
   ]),
   ('Pakete', [
-   ('p', 'MOJO4K.DE gibt es ab €9 im Monat, das Jahrespaket kostet €49 und enthält die IBO-Player-Aktivierung. Alle Optionen auf der <a href="/preise/">Preisseite</a>.'),
+   ('p', 'MOJO4K.DE gibt es ab €9 im Monat, das Jahrespaket kostet €49 und enthält die IBO-Player-Aktivierung. Alle Optionen auf der <a href="/preise-de">Preisseite</a>.'),
   ]),
  ],
  'faq': [
@@ -726,7 +726,7 @@ PAGES = [
     ('Install an app', 'Fire TV: <a href="/tivimate-fire-tv-stick/">TiviMate</a>. Samsung/LG: <a href="/ibo-player/">IBO Player</a>. iPhone: <a href="/iptv-smarters-pro-apple-tv/">Smarters Player Lite</a>.'),
     ('Find UK categories', 'Browse the international categories and save your favourites.'),
    ]),
-   ('p', 'Unser Support antwortet auch auf Englisch: <a href="/kontakt/">Kontakt</a>.'),
+   ('p', 'Unser Support antwortet auch auf Englisch: <a href="/kontakt-de">Kontakt</a>.'),
   ]),
  ],
  'faq': [

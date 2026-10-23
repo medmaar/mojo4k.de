@@ -1,5 +1,5 @@
 # Enrichment for app / player pages (keywords that were only in meta tags or missing).
-T = '<a href="/kostenlos-testen.html">24 Stunden kostenlos testen</a>'
+T = '<a href="/kostenlos-testen-de">24 Stunden kostenlos testen</a>'
 
 ENRICH = {
 # ── IPTV Smarters ────────────────────────────────────────────────────────────

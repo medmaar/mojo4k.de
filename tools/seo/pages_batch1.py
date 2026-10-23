@@ -2,8 +2,8 @@
 # Facts about third-party apps are kept to what is stable and verifiable; prices of
 # third-party apps are deliberately not quoted because they change often.
 
-TRIAL = '<a href="/kostenlos-testen.html">24h kostenlos testen</a>'
-PRICES = '<a href="/preise/">ab €9 im Monat</a>'
+TRIAL = '<a href="/kostenlos-testen-de">24h kostenlos testen</a>'
+PRICES = '<a href="/preise-de">ab €9 im Monat</a>'
 
 SMARTERS_REL = ['iptv-smarters-pro', 'iptv-smarters-pro-fire-tv-stick', 'iptv-smarters-pro-samsung-tv',
                 'iptv-smarters-pro-android', 'iptv-smarters-pro-windows', 'iptv-smarters-pro-apple-tv',
@@ -165,7 +165,7 @@ PAGES = [
            '<strong>Kurze Laufzeiten</strong> – Monatsabo zuerst, Jahresabo erst nach einem guten Test.',
            '<strong>Sichere Zahlung</strong> – Zahlungswege mit Käuferschutz bevorzugen.',
            '<strong>Stabilität zur Primetime</strong> – testen Sie am Samstag um 15:30 Uhr oder bei einem Champions-League-Abend.']),
-   ('p', 'Mehr dazu in unserem <a href="/iptv-anbieter-vergleich/">IPTV Anbieter Vergleich</a> und bei der Frage <a href="/iptv-legal/">Ist IPTV legal?</a>'),
+   ('p', 'Mehr dazu in unserem <a href="/iptv-anbieter-vergleich-de">IPTV Anbieter Vergleich</a> und bei der Frage <a href="/iptv-legal/">Ist IPTV legal?</a>'),
   ]),
   ('Anbieter-Seiten von A bis Z', [('hub', [
    ('b1g-iptv', 'B1G IPTV', 'Alternative & Vergleich'), ('cloud-stream', 'Cloud Stream', 'Alternative & Vergleich'),
@@ -346,7 +346,7 @@ PAGES = [
     ['Sony / Philips / TCL mit Google TV', '✅ Gut', 'Play Store oder APK'],
     ['Billige No-Name-Boxen (Android 9 und älter)', '⚠️ Teilweise', 'Oft zu wenig RAM'],
    ]),
-   ('p', 'Mehr zur Hardware: <a href="/beste-iptv-box/">Beste IPTV Box 2026</a> und <a href="/iptv-android-box-deutschland/">IPTV auf der Android Box</a>.'),
+   ('p', 'Mehr zur Hardware: <a href="/beste-iptv-box/">Beste IPTV Box 2026</a> und <a href="/iptv-android-box-deutschland-de">IPTV auf der Android Box</a>.'),
   ]),
   ('Profi-Tipps für Android', [
    ('ul', ['<strong>Externer Player:</strong> In den Einstellungen lässt sich VLC oder MX Player als Player wählen – hilfreich bei Ton-Problemen.',
@@ -528,7 +528,7 @@ PAGES = [
            'Laufzeiten ab einem Monat; Jahresabos erst nach dem Test.',
            'Die Zugangsdaten funktionieren auch in anderen Apps (TiviMate, IBO Player, VLC).',
            'Es gibt einen Support, der auf Deutsch antwortet.']),
-   ('p', 'MOJO4K.DE erfüllt alle Punkte: <a href="/preise/">Preise ab €9 im Monat</a>, 1 Jahr ab €49, Test über unser <a href="/kostenlos-testen.html">Testformular</a>.'),
+   ('p', 'MOJO4K.DE erfüllt alle Punkte: <a href="/preise-de">Preise ab €9 im Monat</a>, 1 Jahr ab €49, Test über unser <a href="/kostenlos-testen-de">Testformular</a>.'),
   ]),
   ('Kosten im Überblick', [
    ('table', ['Posten', 'Kosten'], [
@@ -719,7 +719,7 @@ PAGES = [
     ['Nach 7 Tagen keine Wiedergabe', 'Testphase der App abgelaufen', 'App beim Entwickler aktivieren'],
     ['Sender doppelt', 'Zwei Listen hochgeladen', 'Alte Liste über „Delete" entfernen'],
    ]),
-   ('p', 'Kommen Sie nicht weiter, schicken Sie uns die MAC-Adresse – unser Support lädt die Playlist für Sie hoch. <a href="/kontakt/">Zum Kontakt</a>.'),
+   ('p', 'Kommen Sie nicht weiter, schicken Sie uns die MAC-Adresse – unser Support lädt die Playlist für Sie hoch. <a href="/kontakt-de">Zum Kontakt</a>.'),
   ]),
  ],
  'faq': [
@@ -771,7 +771,7 @@ PAGES = [
    ('ul', ['Unter Einstellungen → Allgemein → Netzwerk möglichst LAN statt WLAN verwenden.',
            'Bei großen Senderlisten den Fernseher einmal komplett vom Strom nehmen, um den Speicher zu leeren.',
            'Bildmodus „Film" oder „Filmmaker" reduziert Nachzieheffekte bei Sport.',
-           'Ältere Modelle (vor 2017) mit großer Playlist sind oft überfordert – dann hilft ein <a href="/iptv-fire-stick-deutschland/">Fire TV Stick</a>.']),
+           'Ältere Modelle (vor 2017) mit großer Playlist sind oft überfordert – dann hilft ein <a href="/iptv-fire-stick-deutschland-de">Fire TV Stick</a>.']),
   ]),
  ],
  'faq': [
@@ -841,7 +841,7 @@ PAGES = [
  'badge': '⭐ IBO Player · im Jahrespaket inklusive',
  'h1': '<span class="hl">IBO Player</span> – einrichten, aktivieren, losschauen',
  'intro': 'IBO Player ist ein moderner IPTV-Player für Smart TVs und Streaming-Geräte. Er läuft auf Samsung, LG, Android, Fire TV und Apple-Geräten. Wer bei MOJO4K.DE ein Jahrespaket bucht, bekommt die IBO-Player-Aktivierung dazu.',
- 'info': '🎁 <strong>Inklusive:</strong> Bei allen MOJO4K-Jahrespaketen (ab €49) ist das IBO Player Abo enthalten. <a href="/preise/">Zu den Preisen</a>.',
+ 'info': '🎁 <strong>Inklusive:</strong> Bei allen MOJO4K-Jahrespaketen (ab €49) ist das IBO Player Abo enthalten. <a href="/preise-de">Zu den Preisen</a>.',
  'sections': [
   ('Auf welchen Geräten läuft IBO Player?', [
    ('table', ['Gerät', 'Installation'], [
@@ -857,7 +857,7 @@ PAGES = [
    ('steps', [
     ('IBO Player installieren', 'App aus dem Store Ihres Geräts installieren und öffnen.'),
     ('MAC & Device Key notieren', 'Der Startbildschirm zeigt MAC-Adresse und Device Key. Fotografieren Sie beides.'),
-    ('An uns senden', 'Schicken Sie MAC und Key über unser <a href="/kontakt/">Kontaktformular</a> oder WhatsApp. Wir tragen Ihre Playlist ein und aktivieren die App (Jahrespaket).'),
+    ('An uns senden', 'Schicken Sie MAC und Key über unser <a href="/kontakt-de">Kontaktformular</a> oder WhatsApp. Wir tragen Ihre Playlist ein und aktivieren die App (Jahrespaket).'),
     ('Alternativ selbst eintragen', 'Auf der offiziellen IBO-Website „Manage Playlist" öffnen, MAC + Key eingeben und den MOJO4K-Link hinzufügen.'),
     ('App neu laden', 'In IBO Player „Reload" wählen oder App neu starten – Live-TV, Filme und Serien erscheinen.'),
    ]),
@@ -1250,7 +1250,7 @@ PAGES = [
     ('Filme & Serien', 'Große VOD-Bibliothek – Inhalte mit Untertiteln je nach Titel.'),
     ('Alle Geräte', 'Smart TV, Fire TV Stick, Android Box, iPhone, PC.'),
    ]),
-   ('p', '<strong>IPTV cena (Preis):</strong> 1 Monat €9, 3 Monate €29, 6 Monate €39, 1 Jahr €49 – jeweils für ein Gerät. Pakete für 2–10 Geräte finden Sie unter <a href="/preise/">Preise</a>. Ideal für Familien: ein Paket mit mehreren Geräten, damit Eltern und Kinder parallel schauen können.'),
+   ('p', '<strong>IPTV cena (Preis):</strong> 1 Monat €9, 3 Monate €29, 6 Monate €39, 1 Jahr €49 – jeweils für ein Gerät. Pakete für 2–10 Geräte finden Sie unter <a href="/preise-de">Preise</a>. Ideal für Familien: ein Paket mit mehreren Geräten, damit Eltern und Kinder parallel schauen können.'),
   ]),
   ('Einrichtung in 3 Schritten (Uputstvo)', [
    ('steps', [

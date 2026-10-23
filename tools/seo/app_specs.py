@@ -38,9 +38,9 @@ def mojo_fit(name, how):
         ('p', f'MOJO4K.DE ist kein App-Entwickler, sondern liefert den IPTV-Zugang, den Sie in {name} laden. {how}'),
         ('ul', [
             'Zugang als Xtream-Codes-Login und als M3U-Link, beides in der Bestätigung',
-            '24 Stunden kostenlos testen über <a href="/kostenlos-testen">das Testformular</a>',
+            '24 Stunden kostenlos testen über <a href="/kostenlos-testen-de">das Testformular</a>',
             'Pakete: 9 € für 1 Monat, 29 € für 3 Monate, 39 € für 6 Monate, 49 € für 12 Monate (1 Gerät)',
-            'Bis zu 10 Geräte gleichzeitig mit einem Mehrgeräte-Paket, siehe <a href="/preise/">Preise</a>',
+            'Bis zu 10 Geräte gleichzeitig mit einem Mehrgeräte-Paket, siehe <a href="/preise-de">Preise</a>',
             'Hilfe bei der Einrichtung per WhatsApp und an info@mojo4k.de',
         ]),
     ]
@@ -67,7 +67,7 @@ APPS = {
                     ['Android TV / Google TV', 'Google Play oder APK des Entwicklers', 'je nach Region'],
                     ['Amazon Fire TV Stick', 'per Downloader-App', 'siehe <a href="/iptv-firestick/">Fire TV Anleitung</a>'],
                 ]),
-                ('p', 'Welche Modelle genau unterstützt werden, ändert sich mit jedem App-Update. Prüfen Sie im Store Ihres Fernsehers, ob die App angezeigt wird. Wenn nicht, ist ein <a href="/iptv-stick/">IPTV-Stick</a> meist die einfachere Lösung.'),
+                ('p', 'Welche Modelle genau unterstützt werden, ändert sich mit jedem App-Update. Prüfen Sie im Store Ihres Fernsehers, ob die App angezeigt wird. Wenn nicht, ist ein <a href="/iptv-stick-de">IPTV-Stick</a> meist die einfachere Lösung.'),
             ]),
             ('Flix IPTV einrichten in 5 Schritten', [
                 ('ol', MAC_STEPS),
@@ -468,7 +468,7 @@ APPS = {
                     '<strong>Liste leer:</strong> MAC-Adresse prüfen, Playlist erneut hochladen, Fernseher neu starten.',
                     '<strong>„Playlist not found“:</strong> Der M3U-Link ist falsch oder der Zugang abgelaufen. Den Link testweise im Browser öffnen.',
                     '<strong>Kein TV-Programm:</strong> EPG-URL auf siptv.app ergänzen. Mehr unter <a href="/iptv-epg-probleme/">EPG-Probleme</a>.',
-                    '<strong>App nicht im Store:</strong> Ältere Fernseher werden nicht mehr unterstützt; ein <a href="/iptv-stick/">IPTV-Stick</a> ist dann die Lösung.',
+                    '<strong>App nicht im Store:</strong> Ältere Fernseher werden nicht mehr unterstützt; ein <a href="/iptv-stick-de">IPTV-Stick</a> ist dann die Lösung.',
                 ]),
             ]),
             ('SIPTV mit MOJO4K.DE nutzen', mojo_fit('SIPTV', 'Für SIPTV laden Sie den M3U-Link aus Ihrer Bestätigung auf siptv.app für die MAC-Adresse Ihres Fernsehers hoch.')),
@@ -502,11 +502,11 @@ APPS = {
             ]),
             ('Verbindungen: wie viele Geräte pro Line?', [
                 ('p', 'Jede Line erlaubt eine bestimmte Zahl gleichzeitiger Streams. Bei einer Line für 1 Gerät läuft immer nur ein Stream; startet ein zweites Gerät, bricht meist der erste Stream ab. Sie können die Daten auf mehreren Geräten speichern, nur nicht gleichzeitig schauen.'),
-                ('p', 'Bei MOJO4K.DE gibt es Pakete für 1 bis 10 gleichzeitige Geräte, siehe <a href="/preise/">Preise</a> und zum Beispiel <a href="/iptv-2-geraete/">IPTV für 2 Geräte</a>.'),
+                ('p', 'Bei MOJO4K.DE gibt es Pakete für 1 bis 10 gleichzeitige Geräte, siehe <a href="/preise-de">Preise</a> und zum Beispiel <a href="/iptv-2-geraete/">IPTV für 2 Geräte</a>.'),
             ]),
             ('IPTV Line oder IPTV Testline?', [
                 ('p', 'Eine Testline ist eine IPTV Line mit kurzer Laufzeit, die Anbieter zum Ausprobieren vergeben. Sie hat dieselben Formate wie eine bezahlte Line, läuft aber nach wenigen Stunden ab. So prüfen Sie vor dem Kauf, ob Ihre App, Ihr Gerät und Ihre Leitung zusammenpassen.'),
-                ('p', 'MOJO4K.DE vergibt eine 24-Stunden-Testline über <a href="/kostenlos-testen">das Testformular</a>. Mehr zum Ablauf unter <a href="/iptv-testline/">IPTV Testline</a>.'),
+                ('p', 'MOJO4K.DE vergibt eine 24-Stunden-Testline über <a href="/kostenlos-testen-de">das Testformular</a>. Mehr zum Ablauf unter <a href="/iptv-testline/">IPTV Testline</a>.'),
             ]),
             ('IPTV Line bei MOJO4K.DE', mojo_fit('Ihre App', 'Ihre Line kommt als Xtream-Login und als M3U-Link.')),
         ],

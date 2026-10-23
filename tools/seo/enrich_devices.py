@@ -1,5 +1,5 @@
 # Enrichment for device / hardware pages.
-T = '<a href="/kostenlos-testen.html">24 Stunden kostenlos testen</a>'
+T = '<a href="/kostenlos-testen-de">24 Stunden kostenlos testen</a>'
 
 ENRICH = {
 'fire-tv-stick-iptv/index.html': {
