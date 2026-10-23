@@ -1,13 +1,7 @@
 # Trailing slash redirects (Next.js uses trailingSlash: true)
-/faqs           /faqs/          301
-/kontakt        /kontakt/       301
-/preise         /preise/        301
 /blog           /blog/          301
 
 # Old .html URLs -> clean URLs
-/faqs.html      /faqs/          301
-/preise.html    /preise/        301
-/kontakt.html   /kontakt/       301
 
 # Retired WhatsApp callback-form page -> direct WhatsApp redirect
 /whatsapp-kontakt.html  /support/nachricht  301
@@ -25,16 +19,16 @@
 /germany-iptv           /iptv-germany/            301
 
 # "bester iptv" / "bestes iptv" variants
-/bester-iptv/           /bester-iptv-anbieter/    301
-/bestes-iptv/           /bester-iptv-anbieter/    301
-/beste-iptv/            /bester-iptv-anbieter/    301
-/bes-iptv/              /bester-iptv-anbieter/    301
+/bester-iptv/           /bester-iptv-anbieter-de    301
+/bestes-iptv/           /bester-iptv-anbieter-de    301
+/beste-iptv/            /bester-iptv-anbieter-de    301
+/bes-iptv/              /bester-iptv-anbieter-de    301
 
 # "anbieter iptv" variant
 /anbieter-iptv/         /iptv-anbieter/           301
 
 # "iptv kaufe" variant
-/iptv-kaufe/            /iptv-kaufen/             301
+/iptv-kaufe/            /iptv-kaufen-de             301
 
 # "iptv linie" variant
 /iptv-linie/            /iptv-line/               301
@@ -48,12 +42,12 @@
 
 # "ip tv" variants (with space → hyphen)
 /ip-tv-anbieter/        /iptv-anbieter/           301
-/ip-tv-stick/           /iptv-stick/              301
-/ip-tv-box/             /iptv-box/                301
+/ip-tv-stick/           /iptv-stick-de              301
+/ip-tv-box/             /iptv-box-de                301
 /ip-tv-kosten/          /iptv-kosten/             301
-/ip-tv-kaufen/          /iptv-kaufen/             301
-/ip-tv-receiver/        /iptv-receiver-deutschland/ 301
-/ip-tv-streaming/       /iptv-kaufen/             301
+/ip-tv-kaufen/          /iptv-kaufen-de             301
+/ip-tv-receiver/        /iptv-receiver-deutschland-de 301
+/ip-tv-streaming/       /iptv-kaufen-de             301
 /ip-tv-smart/           /iptv-smart-tv/           301
 /ip-tv-sky/             /iptv-sky/                301
 /ip-tv-subscription/    /iptv-subscription/       301
@@ -75,9 +69,9 @@
 /iptv-subscribe/        /iptv-subscription/       301
 
 # "iptv free trial" aliases
-/iptv-trial/            /iptv-free-trial/         301
-/iptv-24h-test/         /iptv-free-trial/         301
-/iptv-test-24/          /iptv-free-trial/         301
+/iptv-trial/            /iptv-free-trial-de         301
+/iptv-24h-test/         /iptv-free-trial-de         301
+/iptv-test-24/          /iptv-free-trial-de         301
 
 # "iptv provider" variant
 /iptv-provider/         /iptv-anbieter/           301
@@ -104,11 +98,11 @@
 /iptv-lines/            /iptv-line/               301
 
 # "reseller for iptv" variant
-/reseller-for-iptv/     /iptv-reseller-deutschland/ 301
-/reseller-iptv/         /iptv-reseller-deutschland/ 301
+/reseller-for-iptv/     /iptv-reseller-deutschland-de 301
+/reseller-iptv/         /iptv-reseller-deutschland-de 301
 
 # "iptv receiver" alias
-/iptv-receiver/         /iptv-receiver-deutschland/ 301
+/iptv-receiver/         /iptv-receiver-deutschland-de 301
 
 # "iptv android" alias
 
@@ -117,28 +111,28 @@
 /m3u-ip-tv/             /iptv-m3u/               301
 
 # "iptv live" alias
-/iptv-live/             /iptv-kaufen/             301
+/iptv-live/             /iptv-kaufen-de             301
 
 # "stream iptv" alias
-/stream-iptv/           /iptv-kaufen/             301
+/stream-iptv/           /iptv-kaufen-de             301
 
 # "iptv account" alias
-/iptv-account/          /iptv-kaufen/             301
+/iptv-account/          /iptv-kaufen-de             301
 
 # "iptv buy" alias
-/iptv-buy/              /iptv-kaufen/             301
-/buy-iptv/              /iptv-kaufen/             301
+/iptv-buy/              /iptv-kaufen-de             301
+/buy-iptv/              /iptv-kaufen-de             301
 
 # "iptv service" alias
-/iptv-service/          /iptv-kaufen/             301
+/iptv-service/          /iptv-kaufen-de             301
 
 # "iptv m3u playlist deutsch" alias
-/iptv-m3u-playlist-deutsch/ /iptv-m3u-playlist-deutschland/ 301
+/iptv-m3u-playlist-deutsch/ /iptv-m3u-playlist-deutschland-de 301
 
 # "iptv smarters pro deutschland" has its own page
 
 # "kodi iptv" alias
-/kodi-iptv/             /iptv-kodi-deutschland/   301
+/kodi-iptv/             /iptv-kodi-deutschland-de   301
 
 # "stb emu" alias
 /stb-emu-pro/           /stb-emu/                 301
@@ -152,8 +146,8 @@
 /set-ip-tv/             /set-iptv/                301
 
 # "xciptv" aliases
-/xciptv-fire-tv/        /xciptv/                  301
-/xciptv-firestick/      /xciptv/                  301
+/xciptv-fire-tv/        /xciptv-de                  301
+/xciptv-firestick/      /xciptv-de                  301
 
 # "iptv 1 monat" alias
 
@@ -185,7 +179,7 @@
 /iptv-smarters-pro-firestick/ /iptv-smarters-pro-fire-tv-stick/        301
 
 # "iptv stream" / "stream iptv" → informational page
-/iptv-stream/               /iptv-kaufen/                 301
+/iptv-stream/               /iptv-kaufen-de                 301
 
 # "my siptv" / "my sip tv" aliases
 /my-siptv/                  /siptv/                       301
@@ -196,8 +190,8 @@
 /iptv-extreme-alternative/  /extreme-iptv/            301
 
 # "iptv app" / "app iptv" / "ip tv app" keyword variants
-/app-iptv/                  /iptv-app/                301
-/ip-tv-app/                 /iptv-app/                301
+/app-iptv/                  /iptv-app-de                301
+/ip-tv-app/                 /iptv-app-de                301
 
 # M3U keyword variants
 /iptv-m3u-liste/            /iptv-m3u/                301
@@ -230,24 +224,24 @@
 /xtremehdiptv/              /xtreme-hd-iptv/               301
 
 # "cody iptv" (480/mo) → kodi page (same tech stack)
-/cody-iptv/                 /iptv-kodi-deutschland/        301
-/cody-iptv                  /iptv-kodi-deutschland/        301
-/codyiptv/                  /iptv-kodi-deutschland/        301
+/cody-iptv/                 /iptv-kodi-deutschland-de        301
+/cody-iptv                  /iptv-kodi-deutschland-de        301
+/codyiptv/                  /iptv-kodi-deutschland-de        301
 
 # "iptv reddit" / "reddit best iptv" (480–500/mo) → comparison page
-/iptv-reddit/               /bester-iptv-anbieter/         301
-/reddit-best-iptv/          /bester-iptv-anbieter/         301
-/best-iptv-reddit/          /bester-iptv-anbieter/         301
+/iptv-reddit/               /bester-iptv-anbieter-de         301
+/reddit-best-iptv/          /bester-iptv-anbieter-de         301
+/best-iptv-reddit/          /bester-iptv-anbieter-de         301
 /best-iptv-provider-reddit/ /best-iptv-provider/           301
-/iptv-anbieter-forum/       /iptv-anbieter-vergleich/      301
-/iptvforum/                 /iptv-anbieter-vergleich/      301
+/iptv-anbieter-forum/       /iptv-anbieter-vergleich-de      301
+/iptvforum/                 /iptv-anbieter-vergleich-de      301
 
 # "internet protocol tv providers" (480/mo)
 /internet-protocol-tv-providers/  /iptv-anbieter/          301
 
 # "best iptv player" / "best player iptv" (390/mo)
-/best-iptv-player/          /beste-iptv-app/               301
-/best-player-iptv/          /beste-iptv-app/               301
+/best-iptv-player/          /beste-iptv-app-de               301
+/best-player-iptv/          /beste-iptv-app-de               301
 /beste-iptv-player-android/ /iptv-player-android/          301
 
 # "smart player tv" (390/mo)
@@ -264,7 +258,7 @@
 /iptv-for-smart/            /iptv-smart-tv/                301
 
 # "iptv sticks" (320/mo)
-/iptv-sticks/               /iptv-stick/                   301
+/iptv-sticks/               /iptv-stick-de                   301
 
 # "vodafone iptv" / "iptv vodafone" (320/mo)
 /vodafone-iptv/             /iptv-vodafone-internet/       301
@@ -275,8 +269,8 @@
 /ip-tv-smart-player/        /smart-iptv-deutschland/       301
 
 # "besser iptv" / "besseriptv" (50/mo)
-/besser-iptv/               /bester-iptv-anbieter/         301
-/besseriptv/                /bester-iptv-anbieter/         301
+/besser-iptv/               /bester-iptv-anbieter-de         301
+/besseriptv/                /bester-iptv-anbieter-de         301
 
 # "box android iptv" / "box iptv android" (320/mo)
 /box-android-iptv/          /iptv-android-box/             301
@@ -290,21 +284,21 @@
 /formuler-iptv-box/         /iptv-formuler/                301
 
 # "dragon iptv" / "dragoniptv" (50/mo)
-/dragon-iptv/               /iptv-kaufen/                  301
-/dragoniptv/                /iptv-kaufen/                  301
+/dragon-iptv/               /iptv-kaufen-de                  301
+/dragoniptv/                /iptv-kaufen-de                  301
 
 # Missing 500/mo commercial brand keywords
-/tv-team-iptv/              /iptv-kaufen/                  301
-/tvteam-iptv/               /iptv-kaufen/                  301
-/iptv-rapid/                /iptv-kaufen/                  301
-/rapidiptv/                 /iptv-kaufen/                  301
+/tv-team-iptv/              /iptv-kaufen-de                  301
+/tvteam-iptv/               /iptv-kaufen-de                  301
+/iptv-rapid/                /iptv-kaufen-de                  301
+/rapidiptv/                 /iptv-kaufen-de                  301
 /maxhd-iptv/                /iptv-premium-4k/              301
 /maxhdiptv/                 /iptv-premium-4k/              301
 /mu3-iptv/                  /iptv-m3u/                     301
-/my-iptv/                   /iptv-kaufen/                  301
-/iptv-one/                  /iptv-kaufen/                  301
-/simpleiptv/                /iptv-kaufen/                  301
-/simple-iptv/               /iptv-kaufen/                  301
+/my-iptv/                   /iptv-kaufen-de                  301
+/iptv-one/                  /iptv-kaufen-de                  301
+/simpleiptv/                /iptv-kaufen-de                  301
+/simple-iptv/               /iptv-kaufen-de                  301
 /yu2go/                     /world-iptv/                   301
 /tvip-s-box-605/            /iptv-box-formuler-mag/        301
 
@@ -316,7 +310,7 @@
 # "iptv downloader" (500/mo)
 
 # "iptv free test" (500/mo)
-/iptv-free-test/            /iptv-free-trial/              301
+/iptv-free-test/            /iptv-free-trial-de              301
 
 # "iptv smarters downloader" (500/mo)
 /iptv-smarters-downloader/  /iptv-downloader/              301
@@ -335,11 +329,11 @@
 /ip-tv-vlc/                 /iptv-m3u/                     301
 
 # "jellyfin iptv" (500/mo)
-/jellyfin-iptv/             /iptv-kodi-deutschland/        301
+/jellyfin-iptv/             /iptv-kodi-deutschland-de        301
 
 # "kodinerds iptv" (500/mo)
-/kodinerds-iptv/            /iptv-kodi-deutschland/        301
-/kodi-nerds-iptv/           /iptv-kodi-deutschland/        301
+/kodinerds-iptv/            /iptv-kodi-deutschland-de        301
+/kodi-nerds-iptv/           /iptv-kodi-deutschland-de        301
 
 # "m3u liste" (500/mo)
 /m3u-liste/                 /iptv-m3u/                     301
@@ -349,10 +343,10 @@
 /iptv-paysafecard/          /iptv-per-paypal/              301
 
 # "iptv live" additional variant
-/iptv-live-stream/          /iptv-kaufen/                  301
+/iptv-live-stream/          /iptv-kaufen-de                  301
 
 # "iptv angebote" (500/mo)
-/iptv-angebote/             /iptv-kaufen/                  301
+/iptv-angebote/             /iptv-kaufen-de                  301
 
 # "iptv amazon" / "iptv aliexpress" (500/mo)
 /iptv-amazon/               /fire-tv-stick-iptv/           301
@@ -362,9 +356,9 @@
 /nordiptv/                  /nord-iptv/                    301
 
 # "iptv web" / "iptv web browser" (500/mo)
-/iptv-web/                  /iptv-kaufen/                  301
-/iptv-web-browser/          /iptv-kaufen/                  301
-/iptv-browser/              /iptv-kaufen/                  301
+/iptv-web/                  /iptv-kaufen-de                  301
+/iptv-web-browser/          /iptv-kaufen-de                  301
+/iptv-browser/              /iptv-kaufen-de                  301
 
 # "iptv servers" additional variant  
 /iptv-line-test-free/       /iptv-testline/                301
@@ -378,13 +372,13 @@
 # "iptv sat" / sat-related
 /sat-ip-tv/                 /sat-ip/                       301
 /sat-ip-tv                  /sat-ip/                       301
-/iptv-sat/                  /iptv-kaufen/                  301
+/iptv-sat/                  /iptv-kaufen-de                  301
 
 # Application keyword variants
 /application-iptv-android/  /iptv-player-android/          301
 
 # IP television / internet protocol variants  
-/ip-tv/                     /iptv-kaufen/                  301
+/ip-tv/                     /iptv-kaufen-de                  301
 
 
 # ── SEO CLUSTER PAGES (2026-10) ──
@@ -501,8 +495,8 @@
 # ── SEO audit 2026-10-13: duplicate pages, renamed slugs, retired plan stubs ──
 /iptv-hamm-2/  /iptv-hamm/  301
 /iptv-hamm-2  /iptv-hamm/  301
-/iptvapp/  /iptv-app/  301
-/iptvapp  /iptv-app/  301
+/iptvapp/  /iptv-app-de  301
+/iptvapp  /iptv-app-de  301
 /iptv-moers-2/  /iptv-moers/  301
 /iptv-moers-2  /iptv-moers/  301
 /iptv-tübingen-2/  /iptv-tuebingen/  301
@@ -513,8 +507,6 @@
 /iptv-g%C3%B6rlitz-sa/  /iptv-goerlitz/  301
 /iptv-görlitz-sa  /iptv-goerlitz/  301
 /iptv-g%C3%B6rlitz-sa  /iptv-goerlitz/  301
-/iptv-hildesheim-ns/  /iptv-hildesheim/  301
-/iptv-hildesheim-ns  /iptv-hildesheim/  301
 /iptv-jena-th/  /iptv-jena/  301
 /iptv-jena-th  /iptv-jena/  301
 /iptv-salzgitter-ns/  /iptv-salzgitter/  301
@@ -527,10 +519,10 @@
 /iptv-muelheim-ruhr  /iptv-muelheim/  301
 /iptv-chemnitz-2/  /iptv-plauen/  301
 /iptv-chemnitz-2  /iptv-plauen/  301
-/iptv-offenbach-2/  /iptv-hanau/  301
-/iptv-offenbach-2  /iptv-hanau/  301
-/iptv-hamburg-region/  /iptv-hamburg/  301
-/iptv-hamburg-region  /iptv-hamburg/  301
+/iptv-offenbach-2/  /iptv-hanau-de  301
+/iptv-offenbach-2  /iptv-hanau-de  301
+/iptv-hamburg-region/  /iptv-hamburg-de  301
+/iptv-hamburg-region  /iptv-hamburg-de  301
 /iptv-bremen-region/  /iptv-bremen/  301
 /iptv-bremen-region  /iptv-bremen/  301
 /iptv-hessen-land/  /iptv-hessen/  301
@@ -702,4 +694,185 @@
 /1-jahr-10-gerate-iptv  /1-jahr-10-gerate  301
 /1-jahr-10-gerate-iptv.html  /1-jahr-10-gerate  301
 /impressum.html  /impressum  301
-/datenschutz.html  /datenschutz  301
+
+# ── PAGES MOVED TO -de ADDRESSES (Oct 2026) ── one-hop 301 from every old form
+/beste-iptv-app  /beste-iptv-app-de  301
+/beste-iptv-app/  /beste-iptv-app-de  301
+/beste-iptv-app.html  /beste-iptv-app-de  301
+/beste-iptv-app/index.html  /beste-iptv-app-de  301
+/bester-iptv-anbieter  /bester-iptv-anbieter-de  301
+/bester-iptv-anbieter/  /bester-iptv-anbieter-de  301
+/bester-iptv-anbieter.html  /bester-iptv-anbieter-de  301
+/bester-iptv-anbieter/index.html  /bester-iptv-anbieter-de  301
+/datenschutz  /datenschutz-de  301
+/datenschutz/  /datenschutz-de  301
+/datenschutz.html  /datenschutz-de  301
+/datenschutz/index.html  /datenschutz-de  301
+/faqs  /faqs-de  301
+/faqs/  /faqs-de  301
+/faqs.html  /faqs-de  301
+/faqs/index.html  /faqs-de  301
+/iptv-abo  /iptv-abo-de  301
+/iptv-abo/  /iptv-abo-de  301
+/iptv-abo.html  /iptv-abo-de  301
+/iptv-abo/index.html  /iptv-abo-de  301
+/iptv-amazon-prime  /iptv-amazon-prime-de  301
+/iptv-amazon-prime/  /iptv-amazon-prime-de  301
+/iptv-amazon-prime.html  /iptv-amazon-prime-de  301
+/iptv-amazon-prime/index.html  /iptv-amazon-prime-de  301
+/iptv-anbieter-vergleich  /iptv-anbieter-vergleich-de  301
+/iptv-anbieter-vergleich/  /iptv-anbieter-vergleich-de  301
+/iptv-anbieter-vergleich.html  /iptv-anbieter-vergleich-de  301
+/iptv-anbieter-vergleich/index.html  /iptv-anbieter-vergleich-de  301
+/iptv-android-box-deutschland  /iptv-android-box-deutschland-de  301
+/iptv-android-box-deutschland/  /iptv-android-box-deutschland-de  301
+/iptv-android-box-deutschland.html  /iptv-android-box-deutschland-de  301
+/iptv-android-box-deutschland/index.html  /iptv-android-box-deutschland-de  301
+/iptv-app  /iptv-app-de  301
+/iptv-app/  /iptv-app-de  301
+/iptv-app.html  /iptv-app-de  301
+/iptv-app/index.html  /iptv-app-de  301
+/iptv-berlin  /iptv-berlin-de  301
+/iptv-berlin/  /iptv-berlin-de  301
+/iptv-berlin.html  /iptv-berlin-de  301
+/iptv-berlin/index.html  /iptv-berlin-de  301
+/iptv-box  /iptv-box-de  301
+/iptv-box/  /iptv-box-de  301
+/iptv-box.html  /iptv-box-de  301
+/iptv-box/index.html  /iptv-box-de  301
+/iptv-dortmund  /iptv-dortmund-de  301
+/iptv-dortmund/  /iptv-dortmund-de  301
+/iptv-dortmund.html  /iptv-dortmund-de  301
+/iptv-dortmund/index.html  /iptv-dortmund-de  301
+/iptv-dresden  /iptv-dresden-de  301
+/iptv-dresden/  /iptv-dresden-de  301
+/iptv-dresden.html  /iptv-dresden-de  301
+/iptv-dresden/index.html  /iptv-dresden-de  301
+/iptv-fire-stick-deutschland  /iptv-fire-stick-deutschland-de  301
+/iptv-fire-stick-deutschland/  /iptv-fire-stick-deutschland-de  301
+/iptv-fire-stick-deutschland.html  /iptv-fire-stick-deutschland-de  301
+/iptv-fire-stick-deutschland/index.html  /iptv-fire-stick-deutschland-de  301
+/iptv-frankfurt  /iptv-frankfurt-de  301
+/iptv-frankfurt/  /iptv-frankfurt-de  301
+/iptv-frankfurt.html  /iptv-frankfurt-de  301
+/iptv-frankfurt/index.html  /iptv-frankfurt-de  301
+/iptv-free-trial  /iptv-free-trial-de  301
+/iptv-free-trial/  /iptv-free-trial-de  301
+/iptv-free-trial.html  /iptv-free-trial-de  301
+/iptv-free-trial/index.html  /iptv-free-trial-de  301
+/iptv-gratis-testen  /iptv-gratis-testen-de  301
+/iptv-gratis-testen/  /iptv-gratis-testen-de  301
+/iptv-gratis-testen.html  /iptv-gratis-testen-de  301
+/iptv-gratis-testen/index.html  /iptv-gratis-testen-de  301
+/iptv-griechisch  /iptv-griechisch-de  301
+/iptv-griechisch/  /iptv-griechisch-de  301
+/iptv-griechisch.html  /iptv-griechisch-de  301
+/iptv-griechisch/index.html  /iptv-griechisch-de  301
+/iptv-guenstig  /iptv-guenstig-de  301
+/iptv-guenstig/  /iptv-guenstig-de  301
+/iptv-guenstig.html  /iptv-guenstig-de  301
+/iptv-guenstig/index.html  /iptv-guenstig-de  301
+/iptv-hamburg  /iptv-hamburg-de  301
+/iptv-hamburg/  /iptv-hamburg-de  301
+/iptv-hamburg.html  /iptv-hamburg-de  301
+/iptv-hamburg/index.html  /iptv-hamburg-de  301
+/iptv-hanau  /iptv-hanau-de  301
+/iptv-hanau/  /iptv-hanau-de  301
+/iptv-hanau.html  /iptv-hanau-de  301
+/iptv-hanau/index.html  /iptv-hanau-de  301
+/iptv-handball-bundesliga  /iptv-handball-bundesliga-de  301
+/iptv-handball-bundesliga/  /iptv-handball-bundesliga-de  301
+/iptv-handball-bundesliga.html  /iptv-handball-bundesliga-de  301
+/iptv-handball-bundesliga/index.html  /iptv-handball-bundesliga-de  301
+/iptv-hannover  /iptv-hannover-de  301
+/iptv-hannover/  /iptv-hannover-de  301
+/iptv-hannover.html  /iptv-hannover-de  301
+/iptv-hannover/index.html  /iptv-hannover-de  301
+/iptv-hildesheim  /iptv-hildesheim-de  301
+/iptv-hildesheim/  /iptv-hildesheim-de  301
+/iptv-hildesheim.html  /iptv-hildesheim-de  301
+/iptv-hildesheim/index.html  /iptv-hildesheim-de  301
+/iptv-hildesheim-ns  /iptv-hildesheim-de  301
+/iptv-hildesheim-ns/  /iptv-hildesheim-de  301
+/iptv-hildesheim-ns.html  /iptv-hildesheim-de  301
+/iptv-hildesheim-ns/index.html  /iptv-hildesheim-de  301
+/iptv-kaufen  /iptv-kaufen-de  301
+/iptv-kaufen/  /iptv-kaufen-de  301
+/iptv-kaufen.html  /iptv-kaufen-de  301
+/iptv-kaufen/index.html  /iptv-kaufen-de  301
+/iptv-kodi-deutschland  /iptv-kodi-deutschland-de  301
+/iptv-kodi-deutschland/  /iptv-kodi-deutschland-de  301
+/iptv-kodi-deutschland.html  /iptv-kodi-deutschland-de  301
+/iptv-kodi-deutschland/index.html  /iptv-kodi-deutschland-de  301
+/iptv-koeln  /iptv-koeln-de  301
+/iptv-koeln/  /iptv-koeln-de  301
+/iptv-koeln.html  /iptv-koeln-de  301
+/iptv-koeln/index.html  /iptv-koeln-de  301
+/iptv-m3u-playlist-deutschland  /iptv-m3u-playlist-deutschland-de  301
+/iptv-m3u-playlist-deutschland/  /iptv-m3u-playlist-deutschland-de  301
+/iptv-m3u-playlist-deutschland.html  /iptv-m3u-playlist-deutschland-de  301
+/iptv-m3u-playlist-deutschland/index.html  /iptv-m3u-playlist-deutschland-de  301
+/iptv-muenchen  /iptv-muenchen-de  301
+/iptv-muenchen/  /iptv-muenchen-de  301
+/iptv-muenchen.html  /iptv-muenchen-de  301
+/iptv-muenchen/index.html  /iptv-muenchen-de  301
+/iptv-receiver-deutschland  /iptv-receiver-deutschland-de  301
+/iptv-receiver-deutschland/  /iptv-receiver-deutschland-de  301
+/iptv-receiver-deutschland.html  /iptv-receiver-deutschland-de  301
+/iptv-receiver-deutschland/index.html  /iptv-receiver-deutschland-de  301
+/iptv-reseller-deutschland  /iptv-reseller-deutschland-de  301
+/iptv-reseller-deutschland/  /iptv-reseller-deutschland-de  301
+/iptv-reseller-deutschland.html  /iptv-reseller-deutschland-de  301
+/iptv-reseller-deutschland/index.html  /iptv-reseller-deutschland-de  301
+/iptv-singen  /iptv-singen-de  301
+/iptv-singen/  /iptv-singen-de  301
+/iptv-singen.html  /iptv-singen-de  301
+/iptv-singen/index.html  /iptv-singen-de  301
+/iptv-sky-documentaries  /iptv-sky-documentaries-de  301
+/iptv-sky-documentaries/  /iptv-sky-documentaries-de  301
+/iptv-sky-documentaries.html  /iptv-sky-documentaries-de  301
+/iptv-sky-documentaries/index.html  /iptv-sky-documentaries-de  301
+/iptv-smarters-pro-deutschland  /iptv-smarters-pro-deutschland-de  301
+/iptv-smarters-pro-deutschland/  /iptv-smarters-pro-deutschland-de  301
+/iptv-smarters-pro-deutschland.html  /iptv-smarters-pro-deutschland-de  301
+/iptv-smarters-pro-deutschland/index.html  /iptv-smarters-pro-deutschland-de  301
+/iptv-stick  /iptv-stick-de  301
+/iptv-stick/  /iptv-stick-de  301
+/iptv-stick.html  /iptv-stick-de  301
+/iptv-stick/index.html  /iptv-stick-de  301
+/iptv-stuttgart  /iptv-stuttgart-de  301
+/iptv-stuttgart/  /iptv-stuttgart-de  301
+/iptv-stuttgart.html  /iptv-stuttgart-de  301
+/iptv-stuttgart/index.html  /iptv-stuttgart-de  301
+/iptv-tivimate-deutschland  /iptv-tivimate-deutschland-de  301
+/iptv-tivimate-deutschland/  /iptv-tivimate-deutschland-de  301
+/iptv-tivimate-deutschland.html  /iptv-tivimate-deutschland-de  301
+/iptv-tivimate-deutschland/index.html  /iptv-tivimate-deutschland-de  301
+/iptv-viersen  /iptv-viersen-de  301
+/iptv-viersen/  /iptv-viersen-de  301
+/iptv-viersen.html  /iptv-viersen-de  301
+/iptv-viersen/index.html  /iptv-viersen-de  301
+/iptv-wismar  /iptv-wismar-de  301
+/iptv-wismar/  /iptv-wismar-de  301
+/iptv-wismar.html  /iptv-wismar-de  301
+/iptv-wismar/index.html  /iptv-wismar-de  301
+/iptv-wolfenbuettel  /iptv-wolfenbuettel-de  301
+/iptv-wolfenbuettel/  /iptv-wolfenbuettel-de  301
+/iptv-wolfenbuettel.html  /iptv-wolfenbuettel-de  301
+/iptv-wolfenbuettel/index.html  /iptv-wolfenbuettel-de  301
+/kontakt  /kontakt-de  301
+/kontakt/  /kontakt-de  301
+/kontakt.html  /kontakt-de  301
+/kontakt/index.html  /kontakt-de  301
+/kostenlos-testen  /kostenlos-testen-de  301
+/kostenlos-testen/  /kostenlos-testen-de  301
+/kostenlos-testen.html  /kostenlos-testen-de  301
+/kostenlos-testen/index.html  /kostenlos-testen-de  301
+/preise  /preise-de  301
+/preise/  /preise-de  301
+/preise.html  /preise-de  301
+/preise/index.html  /preise-de  301
+/xciptv  /xciptv-de  301
+/xciptv/  /xciptv-de  301
+/xciptv.html  /xciptv-de  301
+/xciptv/index.html  /xciptv-de  301
