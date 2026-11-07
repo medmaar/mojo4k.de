@@ -24,4 +24,4 @@ Deployed via Cloudflare Pages with:
 ## Success screens
 After a free-trial request (`/kostenlos-testen-de`) or a plan order (`/1-monat-1-gerat` … `/1-jahr-10-gerate`) a full-screen
 checkmark overlay appears. Texts live in `CELEBRATE` in `public/celebrate.js`; after editing, bump `?v=` in the
-`<script src="/celebrate.js?v=1">` tags (JS is cached for a year). Preview: `?celebrate=trial` or `?celebrate=order`.
+`<script src="/celebrate.js?v=2">` tags (JS is cached for a year). Preview: `?celebrate=trial` or `?celebrate=order`.
