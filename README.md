@@ -20,3 +20,8 @@ Premium IPTV Website für Deutschland — built with Next.js 13 + Tailwind CSS.
 Deployed via Cloudflare Pages with:
 - Build command: `npx next build`
 - Output directory: `out`
+
+## Success screens
+After a free-trial request (`/kostenlos-testen-de`) or a plan order (`/1-monat-1-gerat` … `/1-jahr-10-gerate`) a full-screen
+checkmark overlay appears. Texts live in `CELEBRATE` in `public/celebrate.js`; after editing, bump `?v=` in the
+`<script src="/celebrate.js?v=1">` tags (JS is cached for a year). Preview: `?celebrate=trial` or `?celebrate=order`.

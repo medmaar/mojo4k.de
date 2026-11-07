@@ -628,6 +628,7 @@ async function submitOrder(e) {
       ? 'Ihre Zugangsdaten werden in Kürze an <strong style="color:#fff">' + safeEmail + '</strong> gesendet.'
       : 'Ihre Zugangsdaten wurden an <strong style="color:#fff">' + safeEmail + '</strong> gesendet.';
     f.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="font-size:40px;margin-bottom:12px">✅</div><div style="font-family:Inter Tight,sans-serif;font-size:18px;font-weight:800;color:#FFD700;margin-bottom:8px">' + title + '</div><p style="color:rgba(255,255,255,.6);font-size:14px;margin-bottom:10px">' + text + '</p><p style="color:rgba(255,255,255,.6);font-size:14px;margin-bottom:16px">Keine E-Mail erhalten? Bitte prüfen Sie auch Ihren <strong style="color:#fff">Spam-/Junk-Ordner</strong>.</p><a href="/support/nachricht?msg=Ich+habe+eine+Frage+zu+meinem+IPTV+Test." target="_blank" rel="noopener" style="color:#25D366;font-weight:700;font-size:14px">Fragen? Per WhatsApp kontaktieren</a></div>';
+    try { if (window.mojoCelebrate) mojoCelebrate('trial', email); } catch (_) {}
   } catch(err) {
     btn.disabled = false;
     btn.textContent = btnLabel;
@@ -725,5 +726,6 @@ window.addEventListener('scroll', () => {
   }
 })();
 </script>
+<script src="/celebrate.js?v=1" defer></script>
 </body>
 </html>

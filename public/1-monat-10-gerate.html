@@ -590,6 +590,7 @@ function submitOrder(e) {
   btn.disabled = true;
   btn.textContent = 'Senden...';
   emailjs.sendForm('service_c4wcbog', 'template_2rregej', e.target).then(function() {
+    try { if (window.mojoCelebrate) mojoCelebrate('order', emailVal); } catch (_) {}
     e.target.innerHTML = '<div style="text-align:center;padding:32px 0"><div style="font-size:40px;margin-bottom:12px">✅</div><div style="font-family:Inter Tight,sans-serif;font-size:18px;font-weight:800;color:#FFD700;margin-bottom:8px">Bestellung eingegangen!</div><p style="color:rgba(255,255,255,.6);font-size:14px">Wir melden uns in wenigen Minuten per E-Mail.</p></div>';
   }).catch(function(err) {
     btn.disabled = false;
@@ -688,6 +689,7 @@ window.addEventListener('scroll', () => {
   }
 })();
 </script>
+<script src="/celebrate.js?v=1" defer></script>
 <script src="https://iptv-trial-mojo4kde.medmaar.workers.dev/invoice.js" defer></script>
 </body>
 </html>
