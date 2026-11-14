@@ -47,3 +47,7 @@ jobs:
               for k in hit: print(" ", k, "=", ev[k].get("value") if ev[k].get("type") == "plain_text" else "(secret)")
               if not hit: print("  no TRIAL_SERVER_URL override")
           PY
+      - name: mojo4k.uk recent Pages deployments
+        run: |
+          curl -sS -m 30 "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/pages/projects/mojo4k-uk/deployments" -H "Authorization: Bearer ${CF_TOKEN}" \
+            | python3 -c "import sys,json; d=json.load(sys.stdin); print('success:', d.get('success'), d.get('errors')); [print(x.get('created_on'), x.get('environment'), (x.get('deployment_trigger') or {}).get('metadata',{}).get('commit_hash','')[:7], [(s.get('name'), s.get('status')) for s in x.get('stages') or []]) for x in (d.get('result') or [])[:6]]"
