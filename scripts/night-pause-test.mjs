@@ -50,7 +50,14 @@ let fail = 0, n = 0;
 for (const [repo, domain, plan, pages] of SITES) {
   const file = path.join(dir, `iptv-trial-${WORKER[repo]}.js`);
   const copy = path.join(tmp, repo + ".mjs");
-  fs.copyFileSync(file, copy);
+  // Cloudflare returns the live script as multipart form data: keep only the script part.
+  let code = fs.readFileSync(file, "utf8");
+  if (code.startsWith("--")) {
+    const boundary = code.slice(0, code.indexOf("\r\n") >= 0 ? code.indexOf("\r\n") : code.indexOf("\n"));
+    const part = code.split(boundary)[1];
+    code = part.slice(part.search(/\r?\n\r?\n/)).replace(/^\r?\n\r?\n/, "").replace(/\r?\n$/, "");
+  }
+  fs.writeFileSync(copy, code);
   const mod = await import(pathToFileURL(copy).href);
   const call = pages
     ? (req, env) => mod.onRequest({ request: req, env })
