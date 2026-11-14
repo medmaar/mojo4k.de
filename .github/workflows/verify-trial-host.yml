@@ -28,11 +28,22 @@ jobs:
             if [ "$NEW" = 0 ] || [ "$OLD" != 0 ]; then FAIL=1; fi
           done
           exit $FAIL
-      - name: mojo4k.uk Pages deployment
+      - name: mojo4k.uk Pages deployment and server override
         run: |
-          curl -sS -m 30 "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/pages/projects/mojo4k/deployments?env=production&per_page=3" -H "Authorization: Bearer ${CF_TOKEN}" \
-            | python3 -c "import sys,json; d=json.load(sys.stdin); print('success:', d.get('success'), d.get('errors')); [print(x.get('created_on'), (x.get('deployment_trigger') or {}).get('metadata',{}).get('commit_hash','')[:7], (x.get('latest_stage') or {}).get('name'), (x.get('latest_stage') or {}).get('status')) for x in d.get('result') or []]"
-      - name: mojo4k.uk Pages env vars that override the server
-        run: |
-          curl -sS -m 30 "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/pages/projects/mojo4k" -H "Authorization: Bearer ${CF_TOKEN}" \
-            | python3 -c "import sys,json; d=json.load(sys.stdin); r=(d.get('result') or {}).get('deployment_configs',{}).get('production',{}).get('env_vars') or {}; print('success:', d.get('success')); [print(' ', k, '=', (v.get('value') if v.get('type')=='plain_text' else '(secret)')) for k,v in r.items() if k.startswith('TRIAL_SERVER')] or print('  no TRIAL_SERVER_URL override')"
+          API="https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/pages/projects"
+          curl -sS -m 30 "$API?per_page=50" -H "Authorization: Bearer ${CF_TOKEN}" > projects.json
+          python3 - <<'PY'
+          import json
+          d = json.load(open("projects.json"))
+          print("success:", d.get("success"), d.get("errors"))
+          for p in d.get("result") or []:
+              doms = p.get("domains") or []
+              if not any("mojo4k.uk" in x for x in doms): continue
+              print("project:", p.get("name"), doms)
+              lp = p.get("latest_deployment") or {}
+              print("latest:", lp.get("created_on"), (lp.get("deployment_trigger") or {}).get("metadata", {}).get("commit_hash", "")[:7], (lp.get("latest_stage") or {}).get("name"), (lp.get("latest_stage") or {}).get("status"))
+              ev = (p.get("deployment_configs") or {}).get("production", {}).get("env_vars") or {}
+              hit = [k for k in ev if k.startswith("TRIAL_SERVER")]
+              for k in hit: print(" ", k, "=", ev[k].get("value") if ev[k].get("type") == "plain_text" else "(secret)")
+              if not hit: print("  no TRIAL_SERVER_URL override")
+          PY
