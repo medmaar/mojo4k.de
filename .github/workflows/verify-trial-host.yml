@@ -1,0 +1,38 @@
+name: Verify live trial server host
+
+# Read-only: downloads the code each live trial Worker is running and checks
+# which server host its trial emails use. Also shows mojo4k.uk's latest Pages
+# deployment. Never creates a trial or sends an email.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+    steps:
+      - name: Live Worker code
+        run: |
+          API="https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}"
+          FAIL=0
+          for W in iptv-trial-maple4k iptv-trial-maplehd iptv-trial-maplestreamtv iptv-trial-iptvmapletv iptv-trial-iptvmojo iptv-trial-mojo4ktv iptv-trial-buyiptvnorway iptv-trial-norgesiptv iptv-trial-flimmerkanal iptv-trial-iptvvde iptv-trial-mojo4kde iptv-trial-streamdeutschland iptv-trial-mojo4kfr iptv-trial-streambleu; do
+            curl -sS -m 30 "$API/workers/scripts/$W/content/v2" -H "Authorization: Bearer ${CF_TOKEN}" -o code.js
+            NEW=$(grep -c 'line.truthdaily.me' code.js || true)
+            OLD=$(grep -c 'fanjerseysonline' code.js || true)
+            HOSTLINE=$(grep -oE '(const (HOST|PANEL_HOST) *= *"[^"]*")' code.js | head -1)
+            M3U=$(grep -c 'const h = EMAIL_BRAND.host' code.js || true)
+            echo "$W | bytes=$(wc -c < code.js) | $HOSTLINE | truthdaily=$NEW | fanjerseysonline=$OLD | new-m3u-rewrite=$M3U"
+            if [ "$NEW" = 0 ] || [ "$OLD" != 0 ]; then FAIL=1; fi
+          done
+          exit $FAIL
+      - name: mojo4k.uk Pages deployment
+        run: |
+          curl -sS -m 30 "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/pages/projects/mojo4k/deployments?env=production&per_page=3" -H "Authorization: Bearer ${CF_TOKEN}" \
+            | python3 -c "import sys,json; d=json.load(sys.stdin); print('success:', d.get('success'), d.get('errors')); [print(x.get('created_on'), (x.get('deployment_trigger') or {}).get('metadata',{}).get('commit_hash','')[:7], (x.get('latest_stage') or {}).get('name'), (x.get('latest_stage') or {}).get('status')) for x in d.get('result') or []]"
+      - name: mojo4k.uk Pages env vars that override the server
+        run: |
+          curl -sS -m 30 "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/pages/projects/mojo4k" -H "Authorization: Bearer ${CF_TOKEN}" \
+            | python3 -c "import sys,json; d=json.load(sys.stdin); r=(d.get('result') or {}).get('deployment_configs',{}).get('production',{}).get('env_vars') or {}; print('success:', d.get('success')); [print(' ', k, '=', (v.get('value') if v.get('type')=='plain_text' else '(secret)')) for k,v in r.items() if k.startswith('TRIAL_SERVER')] or print('  no TRIAL_SERVER_URL override')"
