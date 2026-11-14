@@ -31,7 +31,7 @@ jobs:
       - name: mojo4k.uk Pages deployment and server override
         run: |
           API="https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/pages/projects"
-          curl -sS -m 30 "$API?per_page=50" -H "Authorization: Bearer ${CF_TOKEN}" > projects.json
+          curl -sS -m 30 "$API" -H "Authorization: Bearer ${CF_TOKEN}" > projects.json
           python3 - <<'PY'
           import json
           d = json.load(open("projects.json"))
