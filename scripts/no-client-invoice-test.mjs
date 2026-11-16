@@ -43,7 +43,13 @@ const kv = () => { const m = new Map(); return { get: async (k) => m.get(k) ?? n
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "nc-"));
 let fail = 0, n = 0;
 for (const [w, domain, plans] of SITES) {
-  const src = fs.readFileSync(path.join(dir, `iptv-trial-${w}.js`), "utf8");
+  // Cloudflare returns the live script as multipart form data: keep only the script part.
+  let src = fs.readFileSync(path.join(dir, `iptv-trial-${w}.js`), "utf8");
+  if (src.startsWith("--")) {
+    const boundary = src.slice(0, src.indexOf("\r\n") >= 0 ? src.indexOf("\r\n") : src.indexOf("\n"));
+    const part = src.split(boundary)[1];
+    src = part.slice(part.search(/\r?\n\r?\n/)).replace(/^\r?\n\r?\n/, "").replace(/\r?\n$/, "");
+  }
   const staticOk = !src.includes("T().subject, invoiceEmail(") && src.includes('const INVOICE_MODE = "notify_owner"');
   const copy = path.join(tmp, w + ".mjs");
   fs.writeFileSync(copy, src);
