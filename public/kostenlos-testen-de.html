@@ -632,7 +632,7 @@ async function submitOrder(e) {
   } catch(err) {
     btn.disabled = false;
     btn.textContent = btnLabel;
-    status.innerHTML = (err && /E-Mail-Adresse/.test(err.message) ? err.message : 'Es gab leider ein Problem beim Senden.') + ' Bitte versuchen Sie es erneut oder <a href="/support/nachricht?msg=Ich+m%C3%B6chte+IPTV+kostenlos+testen." target="_blank" rel="noopener" style="color:#25D366">schreiben Sie uns auf WhatsApp</a>.';
+    status.textContent = (err && /E-Mail-Adresse/.test(err.message)) ? err.message : 'Unsere kostenlosen Testzugänge sind derzeit pausiert.';
     console.error(err);
   }
 }
