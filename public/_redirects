@@ -1,3 +1,7 @@
+# Home page lives at /de/
+/               /de/            301
+/index.html     /de/            301
+
 # Trailing slash redirects (Next.js uses trailingSlash: true)
 /blog           /blog/          301
 
