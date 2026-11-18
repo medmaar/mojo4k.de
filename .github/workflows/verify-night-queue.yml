@@ -1,0 +1,36 @@
+name: Verify live invoices and night queue
+
+# Read-only: downloads the code each live trial Worker is running and runs its invoice handler with a fake
+# clock, fake KV and fake Resend (never sends an email). Checks every price gets its own link from 05:00 to
+# 00:59 UTC, night orders (01:00 to 04:59) are queued, and the 05:00 flush sends each one exactly once.
+# mojo4k.uk (Pages) is tested from this commit's copy of its invoice.js when given, and its live route is pinged.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+      CF_ACCOUNT: ${{ secrets.CF_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Download live Worker code
+        run: |
+          mkdir -p live
+          for W in maple4k maplehd maplestreamtv iptvmapletv iptvmojo mojo4ktv buyiptvnorway norgesiptv flimmerkanal iptvvde mojo4kde streamdeutschland mojo4kfr streambleu; do
+            curl -sS -m 30 "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/iptv-trial-$W/content/v2" -H "Authorization: Bearer ${CF_TOKEN}" -o live/iptv-trial-$W.js
+            echo "iptv-trial-$W | bytes=$(wc -c < live/iptv-trial-$W.js) | send_client=$(grep -c 'INVOICE_MODE = "send_client"' live/iptv-trial-$W.js || true) | queue=$(grep -c 'async function flushQueue' live/iptv-trial-$W.js || true)"
+          done
+      - name: Fake-clock test on the live code
+        run: node scripts/night-queue-test.mjs live
+      - name: Live /invoice-flush routes answer (daytime run sends only what is queued)
+        if: always()
+        run: |
+          for U in https://iptv-trial-maple4k.medmaar.workers.dev https://iptv-trial-mojo4kde.medmaar.workers.dev https://mojo4k.uk/api; do
+            echo "$U → $(curl -sS -m 60 -w ' HTTP %{http_code}' "$U/invoice-flush")"
+          done
