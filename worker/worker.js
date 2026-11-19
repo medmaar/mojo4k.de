@@ -8,7 +8,7 @@
  */
 
 const API_BASE    = "https://activationpanel.ru/api/api.php";
-const API_KEY     = "35cf68cc83a3a82e1a0ac5361c7b6105";
+let API_KEY = ""; // set per request from env.PANEL_API_KEY (Cloudflare secret) — never hardcode it
 const HOST        = "http://line.truthdaily.me"; // main portal: M3U links and first server in trial emails
 const ALT_HOST    = "http://line.trxdnscloud.ru"; // second portal URL shown in trial emails
 const FROM_EMAIL  = "Mojo 4K <kontakt@mojo4k.de>";
@@ -571,9 +571,40 @@ ${manual}
 </body></html>`;
 }
 
+// ── trial bot guard ──────────────────────────────────────────────────────────
+// Runs before any panel call or email. Returns a reason string for a bot, or "".
+// Bots get a normal-looking reply but no trial line, no credits used, no emails.
+const TRIAL_DISPOSABLE = /@(mailinator|guerrillamail|sharklasers|10minutemail|temp-?mail|tempmail|yopmail|trashmail|getnada|dispostable|maildrop|fakeinbox|throwawaymail|mintemail|mohmal|emailondeck|moakt|tmpmail|burnermail)\./i;
+async function trialBotCheck(request, env, body, name, email) {
+  const b = body || {};
+  // 1. Honeypot fields: hidden inputs real visitors never fill
+  if (String(b.website || b.hp || b.company_url || "").trim()) return "honeypot";
+  // 2. Form submitted too fast (ts = time the form was shown, ms)
+  const ts = Number(b.ts || b.form_ts || 0);
+  if (ts > 1e12 && Date.now() - ts < 3000) return "too_fast";
+  // 3. Random-looking names such as "hiiujqqrhj5626395654"
+  const n = String(name || "").trim();
+  if ((n.match(/\d/g) || []).length >= 4) return "name_digits";
+  if (/https?:|www\.|<|>/i.test(n)) return "name_link";
+  if (n.length >= 12 && !/\s/.test(n) && !/[aeiouyäöüåæøéèàâêîôûáíóú]{1}.*[aeiouyäöüåæøéèàâêîôûáíóú]/i.test(n)) return "name_no_vowels";
+  // 4. Throwaway mailboxes
+  if (TRIAL_DISPOSABLE.test(String(email || ""))) return "disposable_email";
+  // 5. Max 3 trial requests per IP per 24h
+  const kv = env.TRIALS || env.TRIAL_KV;
+  const ip = request.headers.get("CF-Connecting-IP") || "";
+  if (kv && ip) {
+    const key = `rl:trial:${ip}`;
+    const count = Number(await kv.get(key) || 0);
+    if (count >= 3) return "ip_rate_limit";
+    try { await kv.put(key, String(count + 1), { expirationTtl: 24 * 60 * 60 }); } catch (_) {}
+  }
+  return "";
+}
+
 // ── fetch handler ─────────────────────────────────────────────────────────────
 
 async function handleFetch(request, env) {
+  API_KEY = env.PANEL_API_KEY || "";
   const RESEND_KEY = env.RESEND_KEY;
   if (request.method === "OPTIONS") {
     return new Response(null, { headers: {
@@ -585,7 +616,7 @@ async function handleFetch(request, env) {
 
   if (request.method === "GET") {
     const u = new URL(request.url);
-    if (u.searchParams.has("debug")) {
+    if (u.searchParams.has("debug") && env.DEBUG_TOKEN && u.searchParams.get("debug") === env.DEBUG_TOKEN) {
       const bq = await apiGet({ action: "bouquet" });
       const ri = await apiGet({ action: "reseller_info" });
       // Zero list ops: read __keys__ index instead of kv.list()
@@ -612,6 +643,9 @@ async function handleFetch(request, env) {
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return jsonRes({ success: false, error: "Bitte geben Sie eine gültige E-Mail-Adresse ein." }, 400);
   }
+
+  const _bot = await trialBotCheck(request, env, body, name, email);
+  if (_bot) { console.log(`[bot] trial blocked (${_bot}) ${email}`); return jsonRes({ success: true, pending: true }); }
 
   let step = "bouquet";
   try {
@@ -687,7 +721,7 @@ async function handleFetch(request, env) {
     // Zentralen KV-Reader benachrichtigen
     const _kvBody = JSON.stringify({ name, email, whatsapp, site: 'mojo4k.de', phone: whatsapp, created_at: Date.now() });
     const _kvPost = () => fetch('https://iptv-kv-reader.medmaar.workers.dev/add',
-      { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: _kvBody });
+      { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-KV-Token': env.KV_TOKEN || '' }, body: _kvBody });
     try { await _kvPost(); }
     catch(_) { try { await new Promise(r => setTimeout(r, 1500)); await _kvPost(); } catch(__) {} }
 
@@ -718,6 +752,7 @@ async function handleFetch(request, env) {
 // ── cron handler ──────────────────────────────────────────────────────────────
 
 async function handleScheduled(env) {
+  API_KEY = env.PANEL_API_KEY || "";
   const RESEND_KEY = env.RESEND_KEY;
   const now = Date.now();
   const FOUR_HOURS = 4 * 60 * 60 * 1000;

@@ -29,7 +29,7 @@ jobs:
 
       - name: Panel + KV status (?debug)
         run: |
-          curl -sS -m 30 "https://iptv-trial-mojo4kde.medmaar.workers.dev/?debug=1" | python3 -m json.tool || true
+          curl -sS -m 30 "https://iptv-trial-mojo4kde.medmaar.workers.dev/?debug=${{ secrets.DEBUG_TOKEN }}" | python3 -m json.tool || true
 
       - name: Worker secrets present
         env:
