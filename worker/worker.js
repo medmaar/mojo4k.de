@@ -837,8 +837,9 @@ const INVOICE_MODE = "send_client";
 
 // Night queue: invoices are emailed to clients from 05:00 to 00:59 UTC (UTC+0 all year, no DST).
 // An order placed from 01:00 to 04:59 UTC is saved in the Worker's KV ("invoiceq:" keys) and emailed
-// after 05:00 by flushQueue(): GET/POST <base>/invoice-flush (run by a scheduled GitHub workflow in
-// mojo4k.de at 05:00 UTC and a few times after) and every daytime order also sends what is waiting.
+// after 05:00 by flushQueue(): GET/POST <base>/invoice-flush. mojo4k.de's Worker cron (every hour, on the hour)
+// calls it on every site; a GitHub workflow is a backup (GitHub starts scheduled runs hours late), and every
+// daytime order also sends what is waiting.
 // The site inbox hears about the night order at once ("sale queued / ...") and again when it is sent.
 // To change the hours, edit these two numbers.
 const NIGHT_PAUSE_FROM_UTC = 1; // first queued hour (01:00)
@@ -1166,17 +1167,19 @@ async function flushQueue(env) {
   if (nightPaused()) return { ok: true, sent: 0, waiting: null, note: "night: queue is sent from 05:00 UTC" };
   const kv = kvOf(env);
   if (!kv) return { ok: true, sent: 0, waiting: 0, note: "no kv" };
+  let sent = 0, failed = 0, keys = [], cursor;
+  do {
+    const page = await kv.list({ prefix: QKEY(), cursor });
+    keys.push(...page.keys.map((k) => k.name));
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+  // Nothing waiting: no KV writes at all (this runs every hour from the scheduled sender).
+  if (!keys.length) return { ok: true, sent: 0, failed: 0, waiting: 0 };
   // One run at a time (the scheduled run and a daytime order can arrive together).
   const lock = `invoiceq-lock:${SITE.domain}`;
-  if (await kv.get(lock)) return { ok: true, sent: 0, waiting: null, note: "another run is sending" };
+  if (await kv.get(lock)) return { ok: true, sent: 0, waiting: keys.length, note: "another run is sending" };
   await kv.put(lock, "1", { expirationTtl: 60 });
-  let sent = 0, failed = 0, keys = [], cursor;
   try {
-    do {
-      const page = await kv.list({ prefix: QKEY(), cursor });
-      keys.push(...page.keys.map((k) => k.name));
-      cursor = page.list_complete ? null : page.cursor;
-    } while (cursor);
     keys.sort();
     for (const key of keys) {
       const raw = await kv.get(key);
@@ -1302,7 +1305,32 @@ return { handle, flushQueue, hookScript, invoiceEmail, parsePlan, describe, link
 
 export default {
   async fetch(request, env) { return (await INVOICE.handle(request, env)) || tkLogoResponse(request) || handleFetch(request, env); },
-  async scheduled(event, env, ctx) { ctx.waitUntil(handleScheduled(env)); },
+  async scheduled(event, env, ctx) {
+    ctx.waitUntil(handleScheduled(env));
+    ctx.waitUntil(flushAllInvoiceQueues(env));
+  },
 };
+
+// Night invoice queue sender for ALL sites (this Worker has one of the account's 5 cron slots).
+// Every hour outside 01:00-04:59 UTC it asks each site's Worker to email the invoices saved at night.
+// Each call only sends what is waiting, once; an empty queue costs one KV list. Other Workers are reached
+// through service bindings (FLUSH_*, set in .github/workflows/deploy-worker.yml): a Worker can't fetch
+// another Worker's workers.dev URL directly. mojo4k.uk is a Pages site on its own domain.
+const FLUSH_TARGETS = ["FLUSH_MAPLE4K", "FLUSH_MAPLEHD", "FLUSH_MAPLESTREAMTV", "FLUSH_IPTVMAPLETV", "FLUSH_IPTVMOJO",
+  "FLUSH_MOJO4KTV", "FLUSH_BUYIPTVNORWAY", "FLUSH_FLIMMERKANAL", "FLUSH_IPTVVDE", "FLUSH_STREAMDEUTSCHLAND",
+  "FLUSH_MOJO4KFR", "FLUSH_STREAMBLEU"];
+async function flushAllInvoiceQueues(env) {
+  const h = new Date().getUTCHours();
+  if (h >= 1 && h < 5) return [];
+  const runs = [
+    ["mojo4k.de", () => INVOICE.flushQueue(env)],
+    ...FLUSH_TARGETS.filter((b) => env[b]).map((b) => [b, async () => (await env[b].fetch("https://worker/invoice-flush", { method: "POST" })).json()]),
+    ["mojo4k.uk", async () => (await fetch("https://mojo4k.uk/api/invoice-flush", { method: "POST" })).json()],
+  ];
+  const out = await Promise.allSettled(runs.map(([, f]) => f()));
+  const report = out.map((r, i) => `${runs[i][0]}: ${r.status === "fulfilled" ? JSON.stringify(r.value) : "ERROR " + r.reason}`);
+  console.log("[invoice-queue]", report.join(" | "));
+  return report;
+}
 
 

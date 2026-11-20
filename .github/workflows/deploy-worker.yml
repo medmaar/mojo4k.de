@@ -29,7 +29,19 @@ jobs:
                 "type": "kv_namespace",
                 "name": "TRIALS",
                 "namespace_id": "b848d7bf9dd74deca3ee42cc727ce7fa"
-              }
+              },
+              { "type": "service", "name": "FLUSH_MAPLE4K", "service": "iptv-trial-maple4k" },
+              { "type": "service", "name": "FLUSH_MAPLEHD", "service": "iptv-trial-maplehd" },
+              { "type": "service", "name": "FLUSH_MAPLESTREAMTV", "service": "iptv-trial-maplestreamtv" },
+              { "type": "service", "name": "FLUSH_IPTVMAPLETV", "service": "iptv-trial-iptvmapletv" },
+              { "type": "service", "name": "FLUSH_IPTVMOJO", "service": "iptv-trial-iptvmojo" },
+              { "type": "service", "name": "FLUSH_MOJO4KTV", "service": "iptv-trial-mojo4ktv" },
+              { "type": "service", "name": "FLUSH_BUYIPTVNORWAY", "service": "iptv-trial-buyiptvnorway" },
+              { "type": "service", "name": "FLUSH_FLIMMERKANAL", "service": "iptv-trial-flimmerkanal" },
+              { "type": "service", "name": "FLUSH_IPTVVDE", "service": "iptv-trial-iptvvde" },
+              { "type": "service", "name": "FLUSH_STREAMDEUTSCHLAND", "service": "iptv-trial-streamdeutschland" },
+              { "type": "service", "name": "FLUSH_MOJO4KFR", "service": "iptv-trial-mojo4kfr" },
+              { "type": "service", "name": "FLUSH_STREAMBLEU", "service": "iptv-trial-streambleu" }
             ]
           }
           METADATA
