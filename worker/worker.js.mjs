@@ -1304,7 +1304,13 @@ return { handle, flushQueue, hookScript, invoiceEmail, parsePlan, describe, link
 // ── end invoice emails ──
 
 export default {
-  async fetch(request, env) { return (await INVOICE.handle(request, env)) || tkLogoResponse(request) || handleFetch(request, env); },
+  async fetch(request, env) {
+    // Last run of the hourly night-invoice sender (below), for checking it fires on time.
+    if (new URL(request.url).pathname === "/invoice-queue-status") {
+      return new Response((await env.TRIALS.get("invoiceq-lastrun")) || "{}", { headers: { "Content-Type": "application/json" } });
+    }
+    return (await INVOICE.handle(request, env)) || tkLogoResponse(request) || handleFetch(request, env);
+  },
   async scheduled(event, env, ctx) {
     ctx.waitUntil(handleScheduled(env));
     ctx.waitUntil(flushAllInvoiceQueues(env));
@@ -1330,6 +1336,7 @@ async function flushAllInvoiceQueues(env) {
   const out = await Promise.allSettled(runs.map(([, f]) => f()));
   const report = out.map((r, i) => `${runs[i][0]}: ${r.status === "fulfilled" ? JSON.stringify(r.value) : "ERROR " + r.reason}`);
   console.log("[invoice-queue]", report.join(" | "));
+  await env.TRIALS.put("invoiceq-lastrun", JSON.stringify({ at: new Date().toISOString(), report })).catch(() => {});
   return report;
 }
 

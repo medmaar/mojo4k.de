@@ -60,3 +60,6 @@ jobs:
           python3 -c "import json,sys; print(json.dumps({'query':sys.argv[1],'variables':{'a':sys.argv[2],'s':sys.argv[3],'u':sys.argv[4]}}))" "$Q" "$CF_ACCOUNT" "$SINCE" "$UNTIL" > q.json
           curl -sS -m 30 https://api.cloudflare.com/client/v4/graphql -H "Authorization: Bearer ${CF_TOKEN}" -H "Content-Type: application/json" --data @q.json \
             | python3 -c "import sys,json; d=json.load(sys.stdin); print('errors:', d.get('errors')); [print(x) for a in ((d.get('data') or {}).get('viewer') or {}).get('accounts', []) for x in a.get('workersInvocationsScheduled', [])]"
+      - name: Last run of mojo4k.de's hourly night-invoice sender
+        if: always()
+        run: curl -sS -m 30 https://iptv-trial-mojo4kde.medmaar.workers.dev/invoice-queue-status; echo
