@@ -52,3 +52,11 @@ jobs:
           for W in maple4k maplehd maplestreamtv iptvmapletv iptvmojo mojo4ktv buyiptvnorway norgesiptv flimmerkanal iptvvde mojo4kde streamdeutschland mojo4kfr streambleu; do
             echo "iptv-trial-$W | $(curl -sS -m 30 "https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT}/workers/scripts/iptv-trial-$W/schedules" -H "Authorization: Bearer ${CF_TOKEN}" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('success'), d.get('errors'), [s.get('cron') for s in (d.get('result') or {}).get('schedules', [])])")"
           done
+      - name: mojo4k.de cron runs in the last 30 hours
+        if: always()
+        run: |
+          SINCE=$(date -u -d '30 hours ago' +%Y-%m-%dT%H:%M:%SZ); UNTIL=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          Q='query($a:String!,$s:Time!,$u:Time!){viewer{accounts(filter:{accountTag:$a}){workersInvocationsScheduled(limit:40,orderBy:[datetime_DESC],filter:{scriptName:"iptv-trial-mojo4kde",datetime_geq:$s,datetime_leq:$u}){cron status datetime}}}}'
+          python3 -c "import json,sys; print(json.dumps({'query':sys.argv[1],'variables':{'a':sys.argv[2],'s':sys.argv[3],'u':sys.argv[4]}}))" "$Q" "$CF_ACCOUNT" "$SINCE" "$UNTIL" > q.json
+          curl -sS -m 30 https://api.cloudflare.com/client/v4/graphql -H "Authorization: Bearer ${CF_TOKEN}" -H "Content-Type: application/json" --data @q.json \
+            | python3 -c "import sys,json; d=json.load(sys.stdin); print('errors:', d.get('errors')); [print(x) for a in ((d.get('data') or {}).get('viewer') or {}).get('accounts', []) for x in a.get('workersInvocationsScheduled', [])]"
