@@ -39,9 +39,9 @@ CLUSTERS = {
     'international': ('iptv-alle-sender', 'Internationale Sender', """
         iptv-europe iptv-england iptv-oesterreich iptv-oesterreich-sender iptv-schweiz iptv-schweiz-sender
         iptv-suedtirol iptv-alpen iptv-albanisch iptv-ex-yu iptv-franzoesisch iptv-georgisch iptv-griechisch
-        iptv-italienisch iptv-kurdisch iptv-niederlaendisch iptv-persisch iptv-polnisch iptv-polnische-sender
+        iptv-italienisch iptv-niederlaendisch iptv-polnisch iptv-polnische-sender
         iptv-portugiesisch iptv-rumaenisch iptv-russisch iptv-russische-sender iptv-schwedisch iptv-spanisch
-        iptv-tuerkisch iptv-tuerkische-sender iptv-ukrainisch"""),
+        iptv-ukrainisch"""),
     'geraete': ('iptv-geraete', 'Geräte', """
         iptv-firestick fire-tv-stick-iptv iptv-fire-stick-deutschland iptv-fire-cube iptv-stick iptv-box
         beste-iptv-box iptv-set-top-box iptv-android-box iptv-android-box-deutschland iptv-android iptv-android-tv

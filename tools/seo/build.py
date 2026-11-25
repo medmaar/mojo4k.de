@@ -266,7 +266,7 @@ EXISTING_NAMES = {
     'iptv-sky': 'IPTV Sky', 'iptv-sky-sport': 'Sky Sport IPTV', 'iptv-sky-alternative': 'Sky Alternative', 'iptv-ruckelt-buffering': 'IPTV ruckelt',
     'iptv-einrichten': 'IPTV einrichten', 'iptv-legal': 'Ist IPTV legal?', 'iptv-vpn': 'IPTV VPN', 'was-ist-iptv': 'Was ist IPTV?',
     'iptv-alle-sender': 'IPTV alle Sender', 'iptv-albanisch': 'IPTV Albanisch', 'iptv-russisch': 'IPTV Russisch', 'iptv-polnisch': 'IPTV Polnisch',
-    'iptv-griechisch': 'IPTV Griechisch', 'iptv-tuerkisch': 'IPTV Türkisch', 'iptv-italienisch': 'IPTV Italienisch',
+    'iptv-griechisch': 'IPTV Griechisch', 'iptv-italienisch': 'IPTV Italienisch',
     'iptv-telekom': 'IPTV Telekom', 'iptv-magenta-tv': 'MagentaTV vs. IPTV', 'iptv-vodafone-internet': 'IPTV Vodafone',
     'iptv-glasfaser': 'IPTV Glasfaser', 'iptv-router': 'IPTV Router', 'iptv-fritzbox': 'IPTV FritzBox', 'iptv-catchup': 'IPTV Catch-Up',
     'iptv-4k': 'IPTV 4K', 'iptv-premium-4k': 'IPTV Premium 4K', 'iptv-test': 'IPTV Test', 'iptv-abo': 'IPTV Abo',
