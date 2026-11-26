@@ -11,9 +11,9 @@ import os from "node:os";
 import { pathToFileURL } from "node:url";
 
 const LINKS = {
-  9: "Andiamo", 18: "Allons-y", 27: "Vamonos", 29: "Deutschland", 36: "Pme", 39: "VamosLa", 45: "Idemo", 49: "osterreich", 50: "Magyarorszg", 69: "DanubeDuo", 75: "MediterraneanTrio", 89: "WesternFour", 99: "CentralEFour", 105: "SunSeaFive", 120: "TheGrandTourSix", 135: "WesternSouthernSeven", 140: "CentralEasternEight", 175: "TheGrandEuropeanNine", 180: "TheExpandedEuropeTen", 225: "TheCompleteCollection",
+  9: "croissPourseniorset", 18: "LibroAttivitaViaggioper", 27: "EserciziVariati", 29: "EserciziVariati", 36: "EdizioneEserciziVariati", 39: "CruciverbaperNonni", 45: "MemoriaperAnzianiIntelligenti", 49: "MotsMlsMalvoyants", 50: "CapolavoriePagineImmortali", 69: "GiochidiMemoriaperAnzianiunviaggio", 75: "MusicaeVitadiPaese", 89: "CruciverbaPerAnzianieAdulti", 99: "VeneziaeCittdArteCofanetto", 105: "ParoleIntrecciateper", 120: "AttivitaCaratteriGrandiperAnziani", 135: "IntrecciateperAnzianie", 140: "MemorieFesteSporteSaggezza", 175: "OttoLibridaNordaSud", 180: "GrandeRaccoltadellaVita", 225: "NaturaeSaporiCofanetto",
 };
-const url = (k) => `https://www.exploringnewlocationdaily.com/l/${k}?wanted=true`;
+const url = (k) => `https://www.thewordshome.com/l/${k}?wanted=true`;
 // [months, devices, price] for the USD/EUR plans, and mojo4k.uk's GBP plans with the USD price they map to.
 const PLANS = [[1,1,9],[3,1,29],[6,1,39],[12,1,49],[1,2,18],[3,2,50],[6,2,69],[12,2,89],[1,3,27],[3,3,75],[6,3,105],[12,3,135],
   [1,4,36],[3,4,99],[6,4,140],[12,4,180],[1,5,45],[3,5,120],[6,5,175],[12,5,225]];
