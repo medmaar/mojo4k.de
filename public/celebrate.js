@@ -1,7 +1,7 @@
 /* Full-screen success screen after a free-trial request or a plan order.
    Called by the forms: mojoCelebrate("trial", email) or mojoCelebrate("order", email).
    Preview without submitting: add ?celebrate=trial or ?celebrate=order to the URL of the
-   trial page (/kostenlos-testen-de) or any plan page (e.g. /1-jahr-1-gerat).
+   trial page (/de/kostenlos-testen) or any plan page (e.g. /1-jahr-1-gerat).
    To change the texts, edit CELEBRATE below and bump ?v= in the <script> tags (JS is cached for a year). */
 (function () {
   var CELEBRATE = {
